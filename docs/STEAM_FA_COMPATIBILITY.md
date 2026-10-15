@@ -145,3 +145,13 @@ startSeconds = tonumber(startSeconds) or 0
 - 保留内部旧文件名/作者版本历史作为来源，不据文件名中的v1断言当前上传版本低。真正的地图内容身份与安装目录冲突须另行确认。
 
 精确来源、保留与舍弃见 [整合记录](CONSOLIDATION_2026-10-16.md)。
+
+
+## 2026-10-15 外部代码和社区维修证据入口
+
+- [AI_REPAIR_PLAYBOOK.md](AI_REPAIR_PLAYBOOK.md) 把本手册的原则转为逐步检查、最小补丁、验收、回滚程序（不开发软件）。
+- [API_EVIDENCE_MATRIX.md](API_EVIDENCE_MATRIX.md) 记录 `GetArmyBrain`、`GetFactionIndex`、`GetArmyStartPos`、`CreateUnitNearSpot`、`CreateUnitHPR`、`MarkerToPosition`、`OnPopulate/OnStart`、`ScenarioInfo.Options` 的**实际公开源码使用位置**，并明确各项 Steam 实测仍待证明。
+- [ADVANCED_OPTIONS_REPAIR_GUIDE.md](ADVANCED_OPTIONS_REPAIR_GUIDE.md) 区分 ACU/SACU、玩家阵营/额外单位阵营、额外数量/总数、全局/单独玩家槽设置，以及默认关闭、空槽、多人和胜负验收要求。
+- [COMMUNITY_REPAIR_CASES.md](COMMUNITY_REPAIR_CASES.md) 汇总 FAF Map Editor 的原版另存失败、`EffectTemplate` 空字符串、水面路径不更新、无 Alpha DDS、地形类型保存错误等真实社区报告；是诊断线索，不是每张地图均受影响的结论。
+
+再次强调：`v56/v60` 是 `.scmap` 数据格式，与 Steam/FAF 运行环境不能机械等同；地图高级选项能否在目标 Steam 原版大厅真正显示尚未得到实机证据。

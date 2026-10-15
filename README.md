@@ -4,12 +4,20 @@
 
 > **当前状态：知识库包含历史ZIP审计、本机83张复核及71张整合记录；地图源码/资源未上传本仓库。** 本轮23张修改图均为“已修改待实测”，不是Steam游戏运行通过。以前未取回完整源码的GPT记录仍不能当作已验证事实。
 
+## 当前研究范围
+
+**只研究 AI 如何检查、修复已有地图及按需增加地图内高级设置（工程师/ACU/SACU、种族、数量等）**。当前不开发地图修复软件，也不实施 AI 生成地图。Steam 原版为主要验收目标；FAF 作为独立兼容环境和公开源码参考。研究教程不代表任何地图已经实机验证。
+
 ## 给 Codex 的入口
 
 **先阅读仓库根目录 [AGENTS.md](AGENTS.md)**，再按任务查阅：
 
 | 文件 | 内容 |
 | --- | --- |
+| [docs/AI_REPAIR_PLAYBOOK.md](docs/AI_REPAIR_PLAYBOOK.md) | **AI 修图任务入口**：地图诊断、最小补丁、验证与回滚步骤 |
+| [docs/ADVANCED_OPTIONS_REPAIR_GUIDE.md](docs/ADVANCED_OPTIONS_REPAIR_GUIDE.md) | **高级设置实操教程**：额外工程师/指挥官、种族/数量、默认及胜负问题 |
+| [docs/API_EVIDENCE_MATRIX.md](docs/API_EVIDENCE_MATRIX.md) | Lua/API 调用证据、Steam/FAF 适用范围及核对清单 |
+| [docs/COMMUNITY_REPAIR_CASES.md](docs/COMMUNITY_REPAIR_CASES.md) | Github 编辑器 Issues 与作者故障案例、候选修复方法 |
 | [docs/STEAM_FA_COMPATIBILITY.md](docs/STEAM_FA_COMPATIBILITY.md) | Steam/FAF 兼容差异、Lua 接口核对顺序、已知风险与修复方案 |
 | [docs/FEATURE_LIBRARY.md](docs/FEATURE_LIBRARY.md) | 工程师、额外指挥官、阵营、难度、刷怪等选项的真实参考位置 |
 | [docs/KNOWN_MAP_FINDINGS.md](docs/KNOWN_MAP_FINDINGS.md) | 当前压缩包已发现的问题、重复地形分组与优先级 |

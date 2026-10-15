@@ -7,7 +7,7 @@
 - 本仓库最初只有文档；不能假定 `04槽位.zip`、Steam 安装或 FAF 源码在本地可用。缺失时写“未提供/未验证”，不得伪造分析结果。
 
 ## 开工前必须做
-1. 阅读 `README.md`、`docs/KNOWN_MAP_FINDINGS.md`、`docs/STEAM_FA_COMPATIBILITY.md`、`docs/TEST_AND_RELEASE.md`。
+1. 阅读 `README.md`、`docs/KNOWN_MAP_FINDINGS.md`、`docs/STEAM_FA_COMPATIBILITY.md`、`docs/TEST_AND_RELEASE.md`，以及 `docs/AI_REPAIR_PLAYBOOK.md`、`docs/ADVANCED_OPTIONS_REPAIR_GUIDE.md`、`docs/API_EVIDENCE_MATRIX.md`、`docs/COMMUNITY_REPAIR_CASES.md`。
 2. 确认 `git status`、目标 Steam 构建及实际游戏路径；明确当前处理的地图、版本、原始哈希/来源与备份。
 3. 从游戏自身 `gamedata/*.scd` 或可靠的 Steam 原版对照源码，确认每个引擎 API；**禁止直接把 FAF 当前源码中存在的函数视为 Steam 可用**。
 4. 先静态审计，形成最小补丁；不得批量格式化、重命名、重绘 `.scmap`、改变资源点/出生点或删除作者信息。
@@ -67,3 +67,15 @@
 - 逐图保存升版前后值、比较来源和实际Lua求值结果。工具词法token可能将多位数字拆开，禁止只替换第一个数字token。
 - 用户本轮明确允许将可兼容优点移入保留图，并舍弃不可兼容部分、删除已归档旧目录；本轮取舍见 `docs/CONSOLIDATION_2026-10-16.md`。这是本轮授权，不自动覆盖以后新增文件或新删除计划。
 - 淘汰前必须逐文件验证完整原始备份；报告明确列出保留、舍弃、未实测内容。测试状态不能因用户同意删除而升级。
+
+
+## AI 地图修复研究与高级设置：长期强制规则（2026-10-15）
+
+- **当前任务仅研究/修复现有地图**，不自动生成地图、不开发地图维修软件。用户仅请求研究与文档时，不得自行修改任何实际地图源码、资源或发布包。
+- 修图时遵循 [`docs/AI_REPAIR_PLAYBOOK.md`](docs/AI_REPAIR_PLAYBOOK.md)：先确认当前地图来源/哈希和第一条根因日志，再建立包含 `.scmap`、scenario/save/script/options、`src/vendor`、波次/命令表的完整依赖图，以最小补丁修复。
+- Steam 与 FAF 分别验证，使用 [`docs/API_EVIDENCE_MATRIX.md`](docs/API_EVIDENCE_MATRIX.md) 追溯每条 API 的定义、示例调用、sim/UI、实际目标游戏构建、来源许可证与运行证据。**不得只靠 FAF 存在 API 就认定 Steam 支持。**
+- 当用户要求新增开局指挥官/工程师/种族/数量等选项，必须遵循 [`docs/ADVANCED_OPTIONS_REPAIR_GUIDE.md`](docs/ADVANCED_OPTIONS_REPAIR_GUIDE.md)：保留原始开局（默认不添加）、分清玩家阵营/附加单位阵营、ACU/SACU、额外数量/总数量及每玩家/全局范围。
+- **先验证目标 Steam 大厅是否加载自定义 `*_options.lua`**，再分别验证菜单显示、`ScenarioInfo.Options` 真实读值和 sim 中生成效果；无法证明则标注“不支持/待实测”，不能伪称可配置。
+- 增加单位必须检查真实已占用 Army、预置和默认 ACU、四族蓝图、生成安全位置、sim 侧仅生成一次、多人成员同步、死亡和胜负判定。添加的功能不改变原地图已有波次、阵营、保护目标规则，除非用户明确授权修改。
+- 用 [`docs/COMMUNITY_REPAIR_CASES.md`](docs/COMMUNITY_REPAIR_CASES.md) 排查已知贴图/地图格式/特效标记及联机问题；外部作者的 Issue 是调查线索不是本地图已复现证据。
+- 每遇新可复用 API/修复教程/真实案例，须在**同一分支和 PR**中补充以上相应文件，并更新功能库、兼容手册与验证矩阵；保留原作者署名/授权链接，禁止凭猜测标记“Steam 已修复”。
