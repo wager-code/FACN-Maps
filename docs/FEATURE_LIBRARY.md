@@ -80,3 +80,13 @@
 | Escape v4 | FACNCountSequentialMarkers / FACNDetectEscortMarkers | 分别检查WAYPOINT_0起、BOSS_BATTLE_1起、MAP_EXPANSION_1起；缺号回退，不能盲目count-1。 |
 
 验证的是隔离真实函数/建表入口；实机和多人待测，不能将这些功能直接称为已发布组件。完整取舍与版本号见 [整合报告](CONSOLIDATION_2026-10-16.md)。
+
+
+## 外部源码复核：四族开局单位选项（仅源码可证，Steam 待实测；2026-10-15）
+
+| 来源地图 | 声明/实现在何处 | 源码证据和移植重点 |
+| --- | --- | --- |
+| [Genesis of the Order](https://github.com/SupremeCommanderMaps/Genesis_of_the_Order_Survival) | [`Genesis_of_the_Order_Survival_options.lua`](https://github.com/SupremeCommanderMaps/Genesis_of_the_Order_Survival/blob/main/Genesis_of_the_Order_Survival_options.lua) `Option_AllFactions`; [`Utilities/AllFactions.lua`](https://github.com/SupremeCommanderMaps/Genesis_of_the_Order_Survival/blob/main/Utilities/AllFactions.lua); [`Functionality/GameSetup.lua`](https://github.com/SupremeCommanderMaps/Genesis_of_the_Order_Survival/blob/main/Functionality/GameSetup.lua) | 0关；1同族3工程师；2同族1 ACU；3其他三族工程师；4其他三族 ACU。取有效 PlayerArmies → Brain/GetFactionIndex/GetArmyStartPos → 对应蓝图 CreateUnitNearSpot。必须保留原胜负逻辑。 |
+| [5th Dimension Center EE](https://github.com/SupremeCommanderMaps/Survival5thDimensionCenterEE) | [`*_options.lua`](https://github.com/SupremeCommanderMaps/Survival5thDimensionCenterEE/blob/master/survival_5th_dimension_center_ee_options.lua) `opt_CenterAllFactions` | 0关；1每玩家3工程师；2每玩家3 ACU。与 Genesis 的“1 ACU”不可混用；需查实际脚本读取链。 |
+
+完整的 **选项 key/pref/default/values → 脚本取值 → 玩家槽/种族 → 生成坐标与单位数量 → ACU 失败规则 → 多人验证** 操作教程见 [ADVANCED_OPTIONS_REPAIR_GUIDE.md](ADVANCED_OPTIONS_REPAIR_GUIDE.md)。相关源代码接口表见 [API_EVIDENCE_MATRIX.md](API_EVIDENCE_MATRIX.md)。以上不是 Steam 原版大厅支持的证明；未实际运行地图，不可标记通过。
