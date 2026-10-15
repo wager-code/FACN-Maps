@@ -80,3 +80,14 @@
 | Escape v4 | FACNCountSequentialMarkers / FACNDetectEscortMarkers | 分别检查WAYPOINT_0起、BOSS_BATTLE_1起、MAP_EXPANSION_1起；缺号回退，不能盲目count-1。 |
 
 验证的是隔离真实函数/建表入口；实机和多人待测，不能将这些功能直接称为已发布组件。完整取舍与版本号见 [整合报告](CONSOLIDATION_2026-10-16.md)。
+
+
+## 62张玩法组件检索（2026-10-16）
+
+新增[逐图代码地图册](SURVIVAL_CODE_ATLAS_2026-10-16.md)：每图给函数文件/行号、核心调用线索、菜单值/消费者和SHA-256。后续用当前哈希核对版本再移植。
+
+- 第一层可研究：Omega/5th practice的固定波次、目标死亡与准备计时。
+- 配套迁移：Horde的成对波表/命令、BlackSun的阶段/门、Escape/Run的路点/扩区；不要只提取一段刷兵。
+- 复杂系统：Endless的收入驱动、Anerle的队伍资源与竞争、Rainmakers/Order/Stranded的目标/事件模块；应按完整状态机理解。
+- 普通大厅AI布局和空初始化图不是内置波次模板。备用库未进入调用链也不能当作已经游戏验证的通用组件。
+- 本轮只修既有偏好键和原生API，不改变玩法、不新增全图菜单。未来制作的技术路线见[AI地图制作](AI_MAP_AUTHORING.md)。

@@ -1,0 +1,5197 @@
+{
+  "date": "2026-10-16",
+  "map_count": 62,
+  "lua_files": 627,
+  "options": 361,
+  "function_definitions": 2833,
+  "game_started": false,
+  "full_lua_checks": 689,
+  "data_checks_passed": 62,
+  "syntax_failures": [
+    {
+      "id": "syntax:1:info-theme.lua",
+      "status": 3,
+      "message": "[string \"static-check\"](2): `}' expected (to close `{' at line 1) near `='"
+    },
+    {
+      "id": "syntax:9:vendor/EntropyLib/src/EventDispatcher.lua",
+      "status": 3,
+      "message": "[string \"static-check\"](35): unexpected symbol near `...'"
+    },
+    {
+      "id": "syntax:29:vendor/EntropyLib/src/EventDispatcher.lua",
+      "status": 3,
+      "message": "[string \"static-check\"](35): unexpected symbol near `...'"
+    },
+    {
+      "id": "syntax:51:vendor/lib/src/EventDispatcher.lua",
+      "status": 3,
+      "message": "[string \"static-check\"](35): unexpected symbol near `...'"
+    },
+    {
+      "id": "syntax:71:vendor/EntropyLib/src/EventDispatcher.lua",
+      "status": 3,
+      "message": "[string \"static-check\"](35): unexpected symbol near `...'"
+    }
+  ],
+  "wave_maps": 25,
+  "wave_cases": 75,
+  "maintenance_maps": 9,
+  "maintenance_checks": 37,
+  "portable_scanner_maps": 62,
+  "maps": [
+    {
+      "id": 1,
+      "name": "Rainmakers Survival",
+      "version": 65,
+      "relative_folder": "03槽位/rainmakers_survival",
+      "slots": 3,
+      "gameplay": "火炮阵地防守与战役事件",
+      "learning_value": "任务对象、地面AI及事件配置分离，适合研究多目标守护和剧情调度。",
+      "maintenance_boundary": "战役UI与事件链完整审查；同名FAF任务提示问题已有已关闭记录，不推断当前Steam复现。",
+      "verification_status": "沿用前次静态复核；本轮未改",
+      "lua_files": 74,
+      "options": 9,
+      "core_functions": [
+        {
+          "file": "Rainmakers_survival_script.lua",
+          "name": "OnPopulate",
+          "line": 76,
+          "end_line": 89,
+          "sha256": "a9f2b684651f160b83b35d6d963ef1c3d628654d12bf50f2eb2efb9e5cde7c12"
+        },
+        {
+          "file": "Rainmakers_survival_script.lua",
+          "name": "OnStart",
+          "line": 91,
+          "end_line": 137,
+          "sha256": "ca023d3c2df616b03e169d1b8847854aa80aea0c9047c9796ea54274c858d8c9"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 0,
+      "main_file_hashes": [
+        {
+          "path": "Rainmakers_survival_options.lua",
+          "bytes": 6179,
+          "sha256": "d68e9424e92bf0cafaf5351f40ab4fa7215fb2a4484034f14f192389d25c4a51"
+        },
+        {
+          "path": "Rainmakers_survival_save.lua",
+          "bytes": 2103440,
+          "sha256": "c06e04a35eeb0a040c7e3db79ea3b4bda15e303182d2cd72e8550079ef660b84"
+        },
+        {
+          "path": "Rainmakers_survival_scenario.lua",
+          "bytes": 1199,
+          "sha256": "0f6d6d6c1e027b6e5aa03901d0337c25a33df688a87254157a6ec8efee874f58"
+        },
+        {
+          "path": "Rainmakers_survival_script.lua",
+          "bytes": 5577,
+          "sha256": "41fb5a7acf3f99f72f78cf7d2b72499568b71521ae5b95bbc9d06704ad81dca5"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "SH1R3_Mycelium2_Survival",
+      "version": 1,
+      "relative_folder": "03槽位/SH1R3_Mycelium2_Survival",
+      "slots": 3,
+      "gameplay": "三槽Mycelium经典生存",
+      "learning_value": "常规/首领波次、开局单位保护及地形精简思路。",
+      "maintenance_boundary": "3槽与4槽属于独立配置；全局武器/资源覆盖不能直接移植。",
+      "verification_status": "沿用前次静态复核；本轮未改",
+      "lua_files": 4,
+      "options": 3,
+      "core_functions": [
+        {
+          "file": "sh1r3_mycelium2_Survival_script.lua",
+          "name": "OnPopulate",
+          "line": 609,
+          "end_line": 619,
+          "sha256": "11fa71ddfb2aba3ddf152b04efa68a545437c1cf3892d4d92e0c199429f17bd9"
+        },
+        {
+          "file": "sh1r3_mycelium2_Survival_script.lua",
+          "name": "OnStart",
+          "line": 763,
+          "end_line": 770,
+          "sha256": "151dc0600422f956eb987e5b3ade473de21947025763995b6353ef9eae50cfe9"
+        },
+        {
+          "file": "sh1r3_mycelium2_Survival_script.lua",
+          "name": "Survival_InitGame",
+          "line": 775,
+          "end_line": 849,
+          "sha256": "e8c780e2c08ccf7d32bb3c4d2c0c8344414448f97a6e1f76186c9553581554c5"
+        },
+        {
+          "file": "sh1r3_mycelium2_Survival_script.lua",
+          "name": "Survival_Tick",
+          "line": 1051,
+          "end_line": 1152,
+          "sha256": "b50c0cde1ae3c5fd1c80cd3320dce84a02e54ea12d1b52214b5dc012f45d1ee5"
+        },
+        {
+          "file": "sh1r3_mycelium2_Survival_script.lua",
+          "name": "Survival_UpdateWaves",
+          "line": 1157,
+          "end_line": 1186,
+          "sha256": "58038941c85084993379f37630d73405d7f0a985c296318f471f889a64f907dd"
+        },
+        {
+          "file": "sh1r3_mycelium2_Survival_script.lua",
+          "name": "Survival_SpawnWave",
+          "line": 1191,
+          "end_line": 1233,
+          "sha256": "1d6663dcae8df5877cbd0cfe73ee97979163f74c63958010d5c2019dd77b7250"
+        },
+        {
+          "file": "sh1r3_mycelium2_Survival_script.lua",
+          "name": "Survival_SpawnUnit",
+          "line": 1238,
+          "end_line": 1256,
+          "sha256": "a51cdb3715b43b958d8adf562592665685e1877a20a5156c18e60638678b14d5"
+        },
+        {
+          "file": "sh1r3_mycelium2_Survival_script.lua",
+          "name": "Survival_CalcWaveCounts",
+          "line": 1491,
+          "end_line": 1499,
+          "sha256": "6727db424e42663a102b68403131dab2602249100ea6a8d3376dc83d5508e838"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 3,
+      "main_file_hashes": [
+        {
+          "path": "SH1R3_Mycelium2_Survival_options.lua",
+          "bytes": 2351,
+          "sha256": "7e90ddb86f4e40d606a210041361b3bd8748dc7d621b4b6ad68efc6ad165b96f"
+        },
+        {
+          "path": "sh1r3_mycelium2_Survival_save.lua",
+          "bytes": 67288,
+          "sha256": "03d8a7881fbe292a2681d7ce94a7336a2b7fb752da029d76c1b3be52b60ffc3e"
+        },
+        {
+          "path": "sh1r3_mycelium2_Survival_scenario.lua",
+          "bytes": 1306,
+          "sha256": "39669b06821b9eba5bf4ff5ced8b0ec4c42f5374e45bd741fbfedd3f5dd8ff00"
+        },
+        {
+          "path": "sh1r3_mycelium2_Survival_script.lua",
+          "bytes": 53855,
+          "sha256": "3ba40363d1c811f88e08727cfbc4ba13a775f9b8435d0240d22eaaf082ef3730"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Survival Omega v3",
+      "version": 3,
+      "relative_folder": "03槽位/Survival Omega",
+      "slots": 3,
+      "gameplay": "Omega经典守点",
+      "learning_value": "定时波表、特殊波、目标死亡回调；可作入门研究样本。",
+      "maintenance_boundary": "已将两种BlackOps后期单位改为原版近似，模型/武器/平衡有损失，需测后期。",
+      "verification_status": "已修改待实测",
+      "lua_files": 4,
+      "options": 3,
+      "core_functions": [
+        {
+          "file": "Survival Omega_script.lua",
+          "name": "OnPopulate",
+          "line": 609,
+          "end_line": 622,
+          "sha256": "c273fd42c8a26673d746a3c430973adb31ebed1dbae9760bb9eb67cb43d96dcb"
+        },
+        {
+          "file": "Survival Omega_script.lua",
+          "name": "OnStart",
+          "line": 697,
+          "end_line": 705,
+          "sha256": "536b541e36cf4b09f044c388ac1a4fe3e8f13bec13abad55152f96e964232183"
+        },
+        {
+          "file": "Survival Omega_script.lua",
+          "name": "Survival_InitGame",
+          "line": 711,
+          "end_line": 793,
+          "sha256": "129b814d80938c2f6648eb73534feb4cf4b606311141c244af6fbd032c0dac4f"
+        },
+        {
+          "file": "Survival Omega_script.lua",
+          "name": "Survival_Tick",
+          "line": 999,
+          "end_line": 1097,
+          "sha256": "d0295e5cb1214d0fc85673b695d90a58e0707f5be811bc5970b3350921ce2313"
+        },
+        {
+          "file": "Survival Omega_script.lua",
+          "name": "Survival_UpdateWaves",
+          "line": 1101,
+          "end_line": 1130,
+          "sha256": "58038941c85084993379f37630d73405d7f0a985c296318f471f889a64f907dd"
+        },
+        {
+          "file": "Survival Omega_script.lua",
+          "name": "Survival_SpawnWave",
+          "line": 1136,
+          "end_line": 1179,
+          "sha256": "4262d0d9f0ce511324c6295d45bfc376451e9d091da39877d9dcde3ca24a9735"
+        },
+        {
+          "file": "Survival Omega_script.lua",
+          "name": "Survival_SpawnUnit",
+          "line": 1185,
+          "end_line": 1197,
+          "sha256": "300040de84c70e34bfbfb0e332c872d613164b9292203dbe5cb3e2f647402482"
+        },
+        {
+          "file": "Survival Omega_script.lua",
+          "name": "Survival_CalcWaveCounts",
+          "line": 1439,
+          "end_line": 1448,
+          "sha256": "316deaef5720cef29444b0c009d7f54328b3de5de278bdc83012689b270b068d"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 3,
+      "main_file_hashes": [
+        {
+          "path": "Survival Omega_options.lua",
+          "bytes": 2906,
+          "sha256": "c871a6682eaa13ff3c8ceeaf3af6a419cb40e54ce7c406fa862d549f18f1de45"
+        },
+        {
+          "path": "Survival Omega_save.lua",
+          "bytes": 60866,
+          "sha256": "dce98afd380bf9c2951fa0e7e781447103bd2469ce16587ef5518e6d95a42ded"
+        },
+        {
+          "path": "Survival Omega_scenario.lua",
+          "bytes": 1029,
+          "sha256": "2fc149547077b732b50589ae105bbc9f80a83233796202012554d3df2945af6d"
+        },
+        {
+          "path": "Survival Omega_script.lua",
+          "bytes": 52078,
+          "sha256": "cab4a5d6bddaf07b61f66fcf661fa46cd64fe90e3779946132a1412da52f46eb"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "5iver Survival Brainsucka",
+      "version": 1,
+      "relative_folder": "04槽位/5iver Survival Brainsucka",
+      "slots": 4,
+      "gameplay": "Brainsucka编译脚本生存",
+      "learning_value": "可学习文件结构和已公开选项，但不作为可维护源码模板。",
+      "maintenance_boundary": "主要行为在字节码，文本未找到选项消费者不等于无效；不能伪造反编译源码。",
+      "verification_status": "沿用前次静态复核；本轮未改",
+      "lua_files": 6,
+      "options": 2,
+      "core_functions": [],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 0,
+      "main_file_hashes": [
+        {
+          "path": "5iver Survival Brainsucka_options.lua",
+          "bytes": 1265,
+          "sha256": "5fa8636c82bf2103ac284701924d0e342f88a7d97a420c504efb13fc2c5cd53c"
+        },
+        {
+          "path": "5iver Survival Brainsucka_save.luac",
+          "bytes": 165724,
+          "sha256": "45cdcaaf16fc02924fd50d6ed12177264cd3f2753ff88add483e0434e65cffc9"
+        },
+        {
+          "path": "5iver Survival Brainsucka_scenario.lua",
+          "bytes": 1021,
+          "sha256": "311a0b161b886d41a8068472f28b636bb80016f4a6f103ad4278f062ec4e0989"
+        },
+        {
+          "path": "5iver Survival Brainsucka_script.luac",
+          "bytes": 75162,
+          "sha256": "5196bac19638740a1ec05bfba485e9e9eeb36056982ee170a88d88de79388146"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Black Sun Defense v2",
+      "version": 2,
+      "relative_folder": "04槽位/BBF_BlackSunDefense",
+      "slots": 4,
+      "gameplay": "Black Sun阶段/传送门防守",
+      "learning_value": "目标生命可选规则、成对门与阶段转换。",
+      "maintenance_boundary": "保持新目标和成对门胜利逻辑；旧固定生命只是选项，不混入旧门模型。",
+      "verification_status": "已修改待实测",
+      "lua_files": 4,
+      "options": 3,
+      "core_functions": [
+        {
+          "file": "BBF_BlackSunDefense_script.lua",
+          "name": "OnPopulate",
+          "line": 192,
+          "end_line": 199,
+          "sha256": "8da30f54f91970b15821961ffbca3413f4ad95078e9a471389a9f15578a48444"
+        },
+        {
+          "file": "BBF_BlackSunDefense_script.lua",
+          "name": "OnStart",
+          "line": 204,
+          "end_line": 207,
+          "sha256": "a8860d0b8baa09ba9199e7b1c3854507f552bd8edb40f87dba99a775c06d249b"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 0,
+      "main_file_hashes": [
+        {
+          "path": "BBF_BlackSunDefense_options.lua",
+          "bytes": 2013,
+          "sha256": "a209c1d53a32f516b36fe06c19fa659c088fb627edfd577a3f4898c2210d07c8"
+        },
+        {
+          "path": "BBF_BlackSunDefense_save.lua",
+          "bytes": 71667,
+          "sha256": "31721c07cd5d496e1bd0bf9afe5ff87d59195c974987d6c47c2303bc1e305c0b"
+        },
+        {
+          "path": "BBF_BlackSunDefense_scenario.lua",
+          "bytes": 994,
+          "sha256": "7f904d0adccfe78b3d53cee27f564542c18cafba283b458d31a4df6f676e2530"
+        },
+        {
+          "path": "BBF_BlackSunDefense_script.lua",
+          "bytes": 49016,
+          "sha256": "7bbd57271b682076253b15cd99f946ae5cc92f5b64a87ee0e79f23f39547af0d"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Desert Swarm v1c Beta",
+      "version": 1,
+      "relative_folder": "04槽位/Desert_Swarm_v1c_Beta",
+      "slots": 4,
+      "gameplay": "Desert Swarm经典波次",
+      "learning_value": "普通波表和持续/快速生成结构。",
+      "maintenance_boundary": "名称含Swarm但内置波次可定位，与外置Swarm模式图区别处理。",
+      "verification_status": "沿用前次静态复核；本轮未改",
+      "lua_files": 4,
+      "options": 3,
+      "core_functions": [
+        {
+          "file": "Desert_Swarm_v1c_Beta_script.lua",
+          "name": "OnPopulate",
+          "line": 803,
+          "end_line": 816,
+          "sha256": "c273fd42c8a26673d746a3c430973adb31ebed1dbae9760bb9eb67cb43d96dcb"
+        },
+        {
+          "file": "Desert_Swarm_v1c_Beta_script.lua",
+          "name": "OnStart",
+          "line": 891,
+          "end_line": 899,
+          "sha256": "536b541e36cf4b09f044c388ac1a4fe3e8f13bec13abad55152f96e964232183"
+        },
+        {
+          "file": "Desert_Swarm_v1c_Beta_script.lua",
+          "name": "Survival_InitGame",
+          "line": 905,
+          "end_line": 978,
+          "sha256": "3df53e8985bf384e2d3900d3f92acff0bd6ec0fad3c86617384ebbeab6477f16"
+        },
+        {
+          "file": "Desert_Swarm_v1c_Beta_script.lua",
+          "name": "Survival_Tick",
+          "line": 1187,
+          "end_line": 1277,
+          "sha256": "6ba4a2c61e0a1cdf7272284ff255ea31269fb1a0c7276209ea2110e5df0d3d68"
+        },
+        {
+          "file": "Desert_Swarm_v1c_Beta_script.lua",
+          "name": "Survival_UpdateWaves",
+          "line": 1283,
+          "end_line": 1312,
+          "sha256": "58038941c85084993379f37630d73405d7f0a985c296318f471f889a64f907dd"
+        },
+        {
+          "file": "Desert_Swarm_v1c_Beta_script.lua",
+          "name": "Survival_SpawnWave",
+          "line": 1318,
+          "end_line": 1360,
+          "sha256": "1d6663dcae8df5877cbd0cfe73ee97979163f74c63958010d5c2019dd77b7250"
+        },
+        {
+          "file": "Desert_Swarm_v1c_Beta_script.lua",
+          "name": "Survival_SpawnUnit",
+          "line": 1366,
+          "end_line": 1384,
+          "sha256": "a62cae6da0d028cd6f18987ff1dd2ea8b1cb0c40d1bf1deec50b058980b78511"
+        },
+        {
+          "file": "Desert_Swarm_v1c_Beta_script.lua",
+          "name": "Survival_CalcWaveCounts",
+          "line": 1608,
+          "end_line": 1616,
+          "sha256": "6727db424e42663a102b68403131dab2602249100ea6a8d3376dc83d5508e838"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 3,
+      "main_file_hashes": [
+        {
+          "path": "Desert_Swarm_v1c_Beta_options.lua",
+          "bytes": 2376,
+          "sha256": "d140078ab0c0b0c1a64f5abbfa0c8f4fdcf6a3073ca1fa5ab3f00f5528448a38"
+        },
+        {
+          "path": "Desert_Swarm_v1c_Beta_save.lua",
+          "bytes": 78204,
+          "sha256": "dc4ccfbedd404b265eb82c761739b8ae82cba6e29fb8521072103960387e55fe"
+        },
+        {
+          "path": "Desert_Swarm_v1c_Beta_scenario.lua",
+          "bytes": 910,
+          "sha256": "99b03639d85250b5ae00b4d6d0cef5b3f8569bc08bb9f3408d120219f8f7d827"
+        },
+        {
+          "path": "Desert_Swarm_v1c_Beta_script.lua",
+          "bytes": 56707,
+          "sha256": "4c6839087a8b419ac92233837cbd7e23052ca680eb3481c43a1d32d4a9315671"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Dreamy Survival v16",
+      "version": 16,
+      "relative_folder": "04槽位/dreamy_survival",
+      "slots": 4,
+      "gameplay": "Dreamy经典波次改版",
+      "learning_value": "更强的阶段单位组合；可对照人数/数量设置。",
+      "maintenance_boundary": "先前FAF防空已近似替换；作者推荐难度不代表目标Steam实测。",
+      "verification_status": "已修改待实测",
+      "lua_files": 4,
+      "options": 3,
+      "core_functions": [
+        {
+          "file": "dreamy_survival_script.lua",
+          "name": "OnPopulate",
+          "line": 5254,
+          "end_line": 5268,
+          "sha256": "b66c8a97c729f25eb037c616de04a28d3115abafc580212a58c3af3242f1bdcb"
+        },
+        {
+          "file": "dreamy_survival_script.lua",
+          "name": "OnStart",
+          "line": 5343,
+          "end_line": 5351,
+          "sha256": "85f7c5cbf822e915e15bba4d310e1edea5c779c3ed8190736398ce1867c79a01"
+        },
+        {
+          "file": "dreamy_survival_script.lua",
+          "name": "Survival_InitGame",
+          "line": 5357,
+          "end_line": 5431,
+          "sha256": "7f4a7815ebadcf856cb1e14fbc8fa168f4bb47953d106a5d36126d8b00f26367"
+        },
+        {
+          "file": "dreamy_survival_script.lua",
+          "name": "Survival_Tick",
+          "line": 5650,
+          "end_line": 5740,
+          "sha256": "15da0c3f0567f3d8ad5279f9edbf1e9c227b8249a72afd41113e24a845c1c034"
+        },
+        {
+          "file": "dreamy_survival_script.lua",
+          "name": "Survival_UpdateWaves",
+          "line": 5746,
+          "end_line": 5775,
+          "sha256": "aef373f033d4eb19442b143f0b28d47f7f7fc847815c42941a3b51f9c774a9b3"
+        },
+        {
+          "file": "dreamy_survival_script.lua",
+          "name": "Survival_SpawnWave",
+          "line": 5781,
+          "end_line": 5815,
+          "sha256": "c6e5ae43248befc02ece500398708db7386088107dc89ad83773fc375f28b985"
+        },
+        {
+          "file": "dreamy_survival_script.lua",
+          "name": "Survival_SpawnUnit",
+          "line": 5821,
+          "end_line": 5839,
+          "sha256": "a1429cf24a23f560dc7082a9fd94ee1f096082b9f1cc3f0d0dbf46ddc22f035f"
+        },
+        {
+          "file": "dreamy_survival_script.lua",
+          "name": "Survival_CalcWaveCounts",
+          "line": 6063,
+          "end_line": 6071,
+          "sha256": "3d78de2aa312341c61f124aa45412a4d1ff1481c5a58fb3736f9fc6827b0f20e"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 3,
+      "main_file_hashes": [
+        {
+          "path": "dreamy_survival_options.lua",
+          "bytes": 2011,
+          "sha256": "4804b3d7885c7d6965290a21e7bcee9b500528fe124929ea799b82f83ee71ca5"
+        },
+        {
+          "path": "dreamy_survival_save.lua",
+          "bytes": 131002,
+          "sha256": "4dace91cdbf03e50217894bfe7a1d13bb557f5dad22e0491a75f28002d021f26"
+        },
+        {
+          "path": "dreamy_survival_scenario.lua",
+          "bytes": 1016,
+          "sha256": "300678aae877fd067ae5ff5d61437043e045224dd4d7784ecdfb0f7115d00ab8"
+        },
+        {
+          "path": "dreamy_survival_script.lua",
+          "bytes": 152614,
+          "sha256": "8453629d381cbac7dc75da93a9cc4ef6a9173dda69f908b07772a173ceb86019"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Endless Survival Defense",
+      "version": 17,
+      "relative_folder": "04槽位/endless_survival_defense",
+      "slots": 4,
+      "gameplay": "经济驱动、随机AI性格与竞争生存",
+      "learning_value": "按玩家经济形成敌军预算、选择兵种和AI风格；击杀质量目标。",
+      "maintenance_boundary": "不能套固定分钟波表公式；质量击杀统计需单测运输机/载员和多方计分。",
+      "verification_status": "沿用前次静态复核；本轮未改",
+      "lua_files": 24,
+      "options": 24,
+      "core_functions": [
+        {
+          "file": "endless_survival_defense_script.lua",
+          "name": "OnPopulate",
+          "line": 364,
+          "end_line": 383,
+          "sha256": "4fd5f5f8762a5c94cb155b11dc8a194ce8d02563980f0c65e2a78a6cfed62191"
+        },
+        {
+          "file": "endless_survival_defense_script.lua",
+          "name": "OnStart",
+          "line": 387,
+          "end_line": 396,
+          "sha256": "4d6bf0cbe86238a89f265577f6cfa43d7c02719401900a52eb4d8f8e7c1169a8"
+        },
+        {
+          "file": "endless_survival_defense_script.lua",
+          "name": "Survival_InitGame",
+          "line": 432,
+          "end_line": 446,
+          "sha256": "25fc2b362ebe56a81f157c8fefdef6cc01f35f016c25deae6e5dc1c40afd2e40"
+        },
+        {
+          "file": "endless_survival_defense_script.lua",
+          "name": "Survival_Tick",
+          "line": 735,
+          "end_line": 759,
+          "sha256": "cc86fc1d5b4e713a88fb72fcedb8dc2bac93f131ff501d55660e830d8bec7851"
+        },
+        {
+          "file": "endless_survival_defense_script.lua",
+          "name": "checkEndgame",
+          "line": 761,
+          "end_line": 791,
+          "sha256": "26a38a80659cc6dba3060e6eb97d8dee8d14f24eff6ab389c7752467aa7f1440"
+        },
+        {
+          "file": "endless_survival_defense_script.lua",
+          "name": "Survival_SpawnWave",
+          "line": 984,
+          "end_line": 1085,
+          "sha256": "bb899fb1a922884bbf8727feb759a70525132f97a241a23e43b72f0c97289307"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 0,
+      "main_file_hashes": [
+        {
+          "path": "endless_survival_defense_options.lua",
+          "bytes": 19874,
+          "sha256": "ab2cedb7e7ae4225ec0be97974f951babdec3515b75f3eb98c672f6c8cd06229"
+        },
+        {
+          "path": "endless_survival_defense_save.lua",
+          "bytes": 198385,
+          "sha256": "66dfb3ef893f5c11c23fe46111bea4923c522919d0187666461ebe24750d10fb"
+        },
+        {
+          "path": "endless_survival_defense_scenario.lua",
+          "bytes": 3781,
+          "sha256": "4e1ddc2b305ea6c30b3b34250da7ed0d46444d1c445ee071e944b708f6a4cee1"
+        },
+        {
+          "path": "endless_survival_defense_script.lua",
+          "bytes": 68224,
+          "sha256": "faf27e9147f28588856b29bed5d5f6f55c6315b202a5692235f8021c2f4bbf3a"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Fort Ictus Survival v9",
+      "version": 9,
+      "relative_folder": "04槽位/fort_ictus_survival",
+      "slots": 4,
+      "gameplay": "Fort Ictus经典守点",
+      "learning_value": "多阶段波表、目标保护、出生位置与编队命令分离。",
+      "maintenance_boundary": "后期防空替代和地图原有地形通路仍需游戏验证。",
+      "verification_status": "已修改待实测",
+      "lua_files": 4,
+      "options": 3,
+      "core_functions": [
+        {
+          "file": "Fort_Ictus_Survival_script.lua",
+          "name": "OnPopulate",
+          "line": 932,
+          "end_line": 945,
+          "sha256": "fdd8a10a10f6416355a1838003e59f23b6adea14239e65c6293be625ad93dbe1"
+        },
+        {
+          "file": "Fort_Ictus_Survival_script.lua",
+          "name": "OnStart",
+          "line": 1020,
+          "end_line": 1028,
+          "sha256": "85f7c5cbf822e915e15bba4d310e1edea5c779c3ed8190736398ce1867c79a01"
+        },
+        {
+          "file": "Fort_Ictus_Survival_script.lua",
+          "name": "Survival_InitGame",
+          "line": 1034,
+          "end_line": 1118,
+          "sha256": "6b6b33b9917f0f9da64e28d8d22c3efbcedb91330d0a015d94748466dd18a523"
+        },
+        {
+          "file": "Fort_Ictus_Survival_script.lua",
+          "name": "Survival_Tick",
+          "line": 1327,
+          "end_line": 1417,
+          "sha256": "c49b028971bf1fa22c6e093ad6aa3f0743efc1b7815369eedb43a8ac4e4146d6"
+        },
+        {
+          "file": "Fort_Ictus_Survival_script.lua",
+          "name": "Survival_UpdateWaves",
+          "line": 1423,
+          "end_line": 1452,
+          "sha256": "aef373f033d4eb19442b143f0b28d47f7f7fc847815c42941a3b51f9c774a9b3"
+        },
+        {
+          "file": "Fort_Ictus_Survival_script.lua",
+          "name": "Survival_SpawnWave",
+          "line": 1458,
+          "end_line": 1500,
+          "sha256": "2160fb2922bc63cdee707955fd1663faa9ad162fbe7cb5bdd1a25f8456aeec6e"
+        },
+        {
+          "file": "Fort_Ictus_Survival_script.lua",
+          "name": "Survival_SpawnUnit",
+          "line": 1506,
+          "end_line": 1524,
+          "sha256": "a1429cf24a23f560dc7082a9fd94ee1f096082b9f1cc3f0d0dbf46ddc22f035f"
+        },
+        {
+          "file": "Fort_Ictus_Survival_script.lua",
+          "name": "Survival_CalcWaveCounts",
+          "line": 1748,
+          "end_line": 1756,
+          "sha256": "b1fa90ccadfc7f6034bb71972a405c79861084e7bb6af4f5ff31260ef956e25f"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 3,
+      "main_file_hashes": [
+        {
+          "path": "Fort_Ictus_Survival_options.lua",
+          "bytes": 2275,
+          "sha256": "f45260da963e65fabf826c65a21a8dbeddae45fa0e63cf1512dc769240d292f8"
+        },
+        {
+          "path": "Fort_Ictus_Survival_save.lua",
+          "bytes": 391432,
+          "sha256": "5e2616a723af1c86a3167075032169634190e622f6cef1254d40c7bb8d367572"
+        },
+        {
+          "path": "Fort_Ictus_Survival_scenario.lua",
+          "bytes": 976,
+          "sha256": "9c6b22423c4be8866fed7d772c8dd629a7889868b5fafc96e108d3d37d74225b"
+        },
+        {
+          "path": "Fort_Ictus_Survival_script.lua",
+          "bytes": 59173,
+          "sha256": "d7396d0c58707e7f7e3f40869762c5656768549cb235eab7887dc28f6cb3aa8d"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Sexy Survival v13",
+      "version": 13,
+      "relative_folder": "04槽位/sexy_survival",
+      "slots": 4,
+      "gameplay": "Sexy经典波次改版",
+      "learning_value": "四族单位池和阶段组合，适合研究阵营数据表。",
+      "maintenance_boundary": "多族FAF防空已降为对应T2近似，强度和射程变化需要重新体验。",
+      "verification_status": "已修改待实测",
+      "lua_files": 4,
+      "options": 3,
+      "core_functions": [
+        {
+          "file": "sexy_survival_script.lua",
+          "name": "OnPopulate",
+          "line": 5796,
+          "end_line": 5810,
+          "sha256": "428644a59118f6f9199c5da466390c1e7e2e2a2257041bf5180d4b72d65165ea"
+        },
+        {
+          "file": "sexy_survival_script.lua",
+          "name": "OnStart",
+          "line": 5885,
+          "end_line": 5893,
+          "sha256": "85f7c5cbf822e915e15bba4d310e1edea5c779c3ed8190736398ce1867c79a01"
+        },
+        {
+          "file": "sexy_survival_script.lua",
+          "name": "Survival_InitGame",
+          "line": 5899,
+          "end_line": 5973,
+          "sha256": "275bb0c21268f49ca3ce1ba047fd243f55000f426fb7b39c95d552e72920367d"
+        },
+        {
+          "file": "sexy_survival_script.lua",
+          "name": "Survival_Tick",
+          "line": 6192,
+          "end_line": 6282,
+          "sha256": "bd8a5cc538891001886f6b628c0e9f046cd4697d68aaa3b5c28dc76e7cf9c345"
+        },
+        {
+          "file": "sexy_survival_script.lua",
+          "name": "Survival_UpdateWaves",
+          "line": 6288,
+          "end_line": 6317,
+          "sha256": "aef373f033d4eb19442b143f0b28d47f7f7fc847815c42941a3b51f9c774a9b3"
+        },
+        {
+          "file": "sexy_survival_script.lua",
+          "name": "Survival_SpawnWave",
+          "line": 6323,
+          "end_line": 6357,
+          "sha256": "c6e5ae43248befc02ece500398708db7386088107dc89ad83773fc375f28b985"
+        },
+        {
+          "file": "sexy_survival_script.lua",
+          "name": "Survival_SpawnUnit",
+          "line": 6363,
+          "end_line": 6381,
+          "sha256": "a1429cf24a23f560dc7082a9fd94ee1f096082b9f1cc3f0d0dbf46ddc22f035f"
+        },
+        {
+          "file": "sexy_survival_script.lua",
+          "name": "Survival_CalcWaveCounts",
+          "line": 6605,
+          "end_line": 6613,
+          "sha256": "3d78de2aa312341c61f124aa45412a4d1ff1481c5a58fb3736f9fc6827b0f20e"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 3,
+      "main_file_hashes": [
+        {
+          "path": "sexy_survival_options.lua",
+          "bytes": 2509,
+          "sha256": "4e2d42314b00135d84d582be0a3307f84e249820e5f12fd7247356ac1daf4ee8"
+        },
+        {
+          "path": "sexy_survival_save.lua",
+          "bytes": 92822,
+          "sha256": "b472a5a8ec03884e45ff02144f5ae096f20dddfe965538e90316689f09e1513b"
+        },
+        {
+          "path": "sexy_survival_scenario.lua",
+          "bytes": 947,
+          "sha256": "02ae672ccb2a47a009508fc3b3256677b23bb0808a04a41941f5edc01bc51d34"
+        },
+        {
+          "path": "sexy_survival_script.lua",
+          "bytes": 167078,
+          "sha256": "760dc298868925bc214a9a778e4ddc27f733c1387c882b830514b6acfd861659"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "SH1R3_Mycelium2_Survival",
+      "version": 2,
+      "relative_folder": "04槽位/sh1r3_mycelium2_survival",
+      "slots": 4,
+      "gameplay": "四槽Mycelium经典生存",
+      "learning_value": "4槽保护/波次结构，与3槽版做人数边界对照。",
+      "maintenance_boundary": "不要因预览和主体代码相近删掉人数版本；武器覆盖要检查对其他单位的影响。",
+      "verification_status": "沿用前次静态复核；本轮未改",
+      "lua_files": 4,
+      "options": 3,
+      "core_functions": [
+        {
+          "file": "SH1R3_Mycelium2_Survival_script.lua",
+          "name": "OnPopulate",
+          "line": 609,
+          "end_line": 619,
+          "sha256": "11fa71ddfb2aba3ddf152b04efa68a545437c1cf3892d4d92e0c199429f17bd9"
+        },
+        {
+          "file": "SH1R3_Mycelium2_Survival_script.lua",
+          "name": "OnStart",
+          "line": 763,
+          "end_line": 770,
+          "sha256": "151dc0600422f956eb987e5b3ade473de21947025763995b6353ef9eae50cfe9"
+        },
+        {
+          "file": "SH1R3_Mycelium2_Survival_script.lua",
+          "name": "Survival_InitGame",
+          "line": 775,
+          "end_line": 849,
+          "sha256": "8054d27d26f65d1c48a3c0bf09e152d9e20dababfed39ab3e5d2c5114b8ed448"
+        },
+        {
+          "file": "SH1R3_Mycelium2_Survival_script.lua",
+          "name": "Survival_Tick",
+          "line": 1051,
+          "end_line": 1152,
+          "sha256": "f6a5c802881710f7563a285f38543ecaf8658d4486b944951d99175f93e4c276"
+        },
+        {
+          "file": "SH1R3_Mycelium2_Survival_script.lua",
+          "name": "Survival_UpdateWaves",
+          "line": 1157,
+          "end_line": 1186,
+          "sha256": "58038941c85084993379f37630d73405d7f0a985c296318f471f889a64f907dd"
+        },
+        {
+          "file": "SH1R3_Mycelium2_Survival_script.lua",
+          "name": "Survival_SpawnWave",
+          "line": 1191,
+          "end_line": 1233,
+          "sha256": "1d6663dcae8df5877cbd0cfe73ee97979163f74c63958010d5c2019dd77b7250"
+        },
+        {
+          "file": "SH1R3_Mycelium2_Survival_script.lua",
+          "name": "Survival_SpawnUnit",
+          "line": 1238,
+          "end_line": 1256,
+          "sha256": "a51cdb3715b43b958d8adf562592665685e1877a20a5156c18e60638678b14d5"
+        },
+        {
+          "file": "SH1R3_Mycelium2_Survival_script.lua",
+          "name": "Survival_CalcWaveCounts",
+          "line": 1491,
+          "end_line": 1499,
+          "sha256": "6727db424e42663a102b68403131dab2602249100ea6a8d3376dc83d5508e838"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 3,
+      "main_file_hashes": [
+        {
+          "path": "SH1R3_Mycelium2_Survival_options.lua",
+          "bytes": 2351,
+          "sha256": "7e90ddb86f4e40d606a210041361b3bd8748dc7d621b4b6ad68efc6ad165b96f"
+        },
+        {
+          "path": "SH1R3_Mycelium2_Survival_save.lua",
+          "bytes": 74231,
+          "sha256": "5224651ae91094af14193d62a94ee8bab1f4bc94504f24b0d7238fb01760082e"
+        },
+        {
+          "path": "SH1R3_Mycelium2_Survival_scenario.lua",
+          "bytes": 1142,
+          "sha256": "b40188a88dfc30b87bfe2cb80e55fb3e5a8c5df4cd3ac89c8b5fa7f192691074"
+        },
+        {
+          "path": "SH1R3_Mycelium2_Survival_script.lua",
+          "bytes": 53978,
+          "sha256": "0801487686cfa931c99d04635a1eb9ec1d6994cf410d4b4731664a633da8f891"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Survival of the Fittest",
+      "version": 1,
+      "relative_folder": "04槽位/Supreme_survival",
+      "slots": 4,
+      "gameplay": "Survival of the Fittest竞争生存",
+      "learning_value": "玩家索引、个人进攻与击杀计数，可用于PvPvE设计参考。",
+      "maintenance_boundary": "不按纯合作守点处理；联盟、玩家淘汰和计分必须共同迁移。",
+      "verification_status": "沿用前次静态复核；本轮未改",
+      "lua_files": 3,
+      "options": 0,
+      "core_functions": [
+        {
+          "file": "Supreme_survival_script.lua",
+          "name": "OnPopulate",
+          "line": 284,
+          "end_line": 292,
+          "sha256": "aae8dd8dfe8a1342ed3feb1db206ce0d4de7a31dcd5717ac110f2de9dc3f816f"
+        },
+        {
+          "file": "Supreme_survival_script.lua",
+          "name": "OnStart",
+          "line": 296,
+          "end_line": 320,
+          "sha256": "e8d382c09aad89483fcf0bdb68a41670e2b0fdc3950fec4d664281ef700804fb"
+        },
+        {
+          "file": "Supreme_survival_script.lua",
+          "name": "spawnWave",
+          "line": 420,
+          "end_line": 525,
+          "sha256": "da2537b1a3c8107b4969621b4e4af80f84130f75b93226e56dd3839c68cf5316"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 0,
+      "main_file_hashes": [
+        {
+          "path": "Supreme_survival_save.lua",
+          "bytes": 24072,
+          "sha256": "0c95406a98926d0543e5cb17fe7b3abfbf24ff30e346e65ab33571587f58a290"
+        },
+        {
+          "path": "Supreme_survival_scenario.lua",
+          "bytes": 736,
+          "sha256": "a820379ae14a58dc222250f1d09ca46388bba8037bed6d52def6153eaea0f36d"
+        },
+        {
+          "path": "Supreme_survival_script.lua",
+          "bytes": 22026,
+          "sha256": "9ffc4d9765ea5c159c263767da9231684cd52535870f8fd5d00e7999d45922b3"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Survival Attack",
+      "version": 1,
+      "relative_folder": "04槽位/survival attack",
+      "slots": 4,
+      "gameplay": "移动战列舰目标与进攻任务",
+      "learning_value": "护送/移动目标、区域推进、首领、援军、紧急护盾和结局。",
+      "maintenance_boundary": "目标运动和路线绑地形；不是把静态目标换成海军单位就能复用。",
+      "verification_status": "沿用前次静态复核；本轮未改",
+      "lua_files": 4,
+      "options": 4,
+      "core_functions": [
+        {
+          "file": "survival attack_script.lua",
+          "name": "OnPopulate",
+          "line": 33,
+          "end_line": 39,
+          "sha256": "7d9abd8ba915942e8f8df7f9817099547164b37a7604023a23a9024c673954a8"
+        },
+        {
+          "file": "survival attack_script.lua",
+          "name": "OnStart",
+          "line": 42,
+          "end_line": 45,
+          "sha256": "f081c68fa5c0881d693dd8847e0d048b12142b4887d47c42a63df6ad724a2296"
+        },
+        {
+          "file": "survival attack_script.lua",
+          "name": "Survival_InitGame",
+          "line": 115,
+          "end_line": 194,
+          "sha256": "cf85926f241ca93740317feb4e9c149a3aa149b4a6651a2752ff2becbb30e24c"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 0,
+      "main_file_hashes": [
+        {
+          "path": "Survival Attack_options.lua",
+          "bytes": 1774,
+          "sha256": "40013ca736c6f779258c79b02407e9fdfbdb625c3237f9f31b071d2295bcda8a"
+        },
+        {
+          "path": "survival attack_save.lua",
+          "bytes": 522819,
+          "sha256": "a09c00e73c05cd2a5f61d2a7ff6bafc7b71895783b4f6f0768fdec0d7a5c5d2e"
+        },
+        {
+          "path": "survival attack_scenario.lua",
+          "bytes": 1266,
+          "sha256": "2d56b31e58736d1fd7327dded28ae959893e3bc0daf0c6a8e5a0057ae96b5385"
+        },
+        {
+          "path": "survival attack_script.lua",
+          "bytes": 59608,
+          "sha256": "a277a8fb39f64486db634810f42aea13b2f9cba88441a14c63ff72e653d6f54b"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Survival Run v8",
+      "version": 1,
+      "relative_folder": "04槽位/Survival Run",
+      "slots": 4,
+      "gameplay": "Survival Run撤离护送",
+      "learning_value": "路点推进、首领、扩区、水域检查及胜利检查。",
+      "maintenance_boundary": "原显示v8与配置修订字段语义不同；后续修订须纳入作者版本下限。",
+      "verification_status": "沿用前次静态复核；本轮未改",
+      "lua_files": 4,
+      "options": 3,
+      "core_functions": [
+        {
+          "file": "Survival Run v8_script.lua",
+          "name": "OnPopulate",
+          "line": 72,
+          "end_line": 78,
+          "sha256": "7d9abd8ba915942e8f8df7f9817099547164b37a7604023a23a9024c673954a8"
+        },
+        {
+          "file": "Survival Run v8_script.lua",
+          "name": "OnStart",
+          "line": 81,
+          "end_line": 84,
+          "sha256": "f081c68fa5c0881d693dd8847e0d048b12142b4887d47c42a63df6ad724a2296"
+        },
+        {
+          "file": "Survival Run v8_script.lua",
+          "name": "Survival_InitGame",
+          "line": 158,
+          "end_line": 303,
+          "sha256": "3465202276fdfcfedca3f74417a0cf3606d2b322475263a7ac37e9ed3fa9dab4"
+        },
+        {
+          "file": "Survival Run v8_script.lua",
+          "name": "VictoryCheck",
+          "line": 781,
+          "end_line": 801,
+          "sha256": "f31553f9e1e5cc1ec9919bf8400613d2ebb7e12c42303e3a44da2975fd663789"
+        },
+        {
+          "file": "Survival Run v8_script.lua",
+          "name": "Survival_SpawnUnit",
+          "line": 1019,
+          "end_line": 1033,
+          "sha256": "a90a8d563ec7af8f2ee4ef9e09f59cb5374ccaeab9e8181764e7bec5101d2bef"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 0,
+      "main_file_hashes": [
+        {
+          "path": "Survival Run v8_options.lua",
+          "bytes": 1642,
+          "sha256": "b0189aa2babb30f61136819626d5e40ee36ec62f7d6c8d432d35943c074ad07e"
+        },
+        {
+          "path": "Survival Run v8_save.lua",
+          "bytes": 653640,
+          "sha256": "e5bff87e512ba6e2c85ee96c4147e5120bd8f91a6e3e29660c380100d2a1450e"
+        },
+        {
+          "path": "Survival Run v8_scenario.lua",
+          "bytes": 1113,
+          "sha256": "d45b39190f42a6756246538d72f778e8c909b369dd9b372ea0dd02da135752cf"
+        },
+        {
+          "path": "Survival Run v8_script.lua",
+          "bytes": 45742,
+          "sha256": "903ba7c717fc0e60bbd5dfb24b06a57f87182a3e02d3d09cc5c738c416d76729"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "survival_5thdimension v6",
+      "version": 1,
+      "relative_folder": "04槽位/survival_5thdimension",
+      "slots": 4,
+      "gameplay": "四槽沙漠5th经典防守",
+      "learning_value": "多指挥官起始与经典阶段波表。",
+      "maintenance_boundary": "与6槽/8人/16人/练习版分别维护；不要按目录名覆盖。",
+      "verification_status": "沿用前次静态复核；本轮未改",
+      "lua_files": 4,
+      "options": 3,
+      "core_functions": [
+        {
+          "file": "survival_5thdimension_v6_script.lua",
+          "name": "OnPopulate",
+          "line": 749,
+          "end_line": 762,
+          "sha256": "fdd8a10a10f6416355a1838003e59f23b6adea14239e65c6293be625ad93dbe1"
+        },
+        {
+          "file": "survival_5thdimension_v6_script.lua",
+          "name": "OnStart",
+          "line": 837,
+          "end_line": 845,
+          "sha256": "85f7c5cbf822e915e15bba4d310e1edea5c779c3ed8190736398ce1867c79a01"
+        },
+        {
+          "file": "survival_5thdimension_v6_script.lua",
+          "name": "Survival_InitGame",
+          "line": 851,
+          "end_line": 924,
+          "sha256": "07297c4c4125e20acd8a9e0b7ce8c54122d5aaf992f4e336bd4559cc3dd1cce3"
+        },
+        {
+          "file": "survival_5thdimension_v6_script.lua",
+          "name": "Survival_Tick",
+          "line": 1133,
+          "end_line": 1223,
+          "sha256": "7aa9bfab50180334b1fb51daeda95d43a086e32520ed3504fe4f97ddcb7634ea"
+        },
+        {
+          "file": "survival_5thdimension_v6_script.lua",
+          "name": "Survival_UpdateWaves",
+          "line": 1229,
+          "end_line": 1258,
+          "sha256": "aef373f033d4eb19442b143f0b28d47f7f7fc847815c42941a3b51f9c774a9b3"
+        },
+        {
+          "file": "survival_5thdimension_v6_script.lua",
+          "name": "Survival_SpawnWave",
+          "line": 1264,
+          "end_line": 1306,
+          "sha256": "2160fb2922bc63cdee707955fd1663faa9ad162fbe7cb5bdd1a25f8456aeec6e"
+        },
+        {
+          "file": "survival_5thdimension_v6_script.lua",
+          "name": "Survival_SpawnUnit",
+          "line": 1312,
+          "end_line": 1330,
+          "sha256": "a1429cf24a23f560dc7082a9fd94ee1f096082b9f1cc3f0d0dbf46ddc22f035f"
+        },
+        {
+          "file": "survival_5thdimension_v6_script.lua",
+          "name": "Survival_CalcWaveCounts",
+          "line": 1554,
+          "end_line": 1562,
+          "sha256": "3d78de2aa312341c61f124aa45412a4d1ff1481c5a58fb3736f9fc6827b0f20e"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 3,
+      "main_file_hashes": [
+        {
+          "path": "survival_5thdimension_v6_options.lua",
+          "bytes": 2320,
+          "sha256": "42cf2cb66796bde24968d495b876bbb7b3bfe66de0b20ce55bb5832b553c2364"
+        },
+        {
+          "path": "survival_5thdimension_v6_save.lua",
+          "bytes": 106663,
+          "sha256": "6337c9689dc5440619cf21f26a6935b67f015f4bceabdb7ff59ca83e73fba6b0"
+        },
+        {
+          "path": "survival_5thdimension_v6_scenario.lua",
+          "bytes": 1149,
+          "sha256": "b60be11b5d38542e4081fc81c6975564a4a0c5f43eeba12c742bd88c45f83766"
+        },
+        {
+          "path": "survival_5thdimension_v6_script.lua",
+          "bytes": 53402,
+          "sha256": "d72e5a54a356dce49d63dc614365d385d77f9257ddb465a4d99e410403281670"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "survival_5thdimension_practice v9",
+      "version": 9,
+      "relative_folder": "04槽位/survival_5thdimension_practice",
+      "slots": 4,
+      "gameplay": "practice阵营选择与可选人数缩放",
+      "learning_value": "固定4人/实际防守人数选择，缺人补指挥官。",
+      "maintenance_boundary": "人数也影响目标生命/回血/能量；必须测零防守槽和不连续占槽。",
+      "verification_status": "已修改待实测",
+      "lua_files": 4,
+      "options": 8,
+      "core_functions": [
+        {
+          "file": "survival_5thdimension_practice_script.lua",
+          "name": "OnPopulate",
+          "line": 754,
+          "end_line": 767,
+          "sha256": "c273fd42c8a26673d746a3c430973adb31ebed1dbae9760bb9eb67cb43d96dcb"
+        },
+        {
+          "file": "survival_5thdimension_practice_script.lua",
+          "name": "OnStart",
+          "line": 842,
+          "end_line": 849,
+          "sha256": "cfa8ba421e1598a60e73529844d469217f240b976c7eaa14344b7ad4c47ba8cb"
+        },
+        {
+          "file": "survival_5thdimension_practice_script.lua",
+          "name": "Survival_InitGame",
+          "line": 855,
+          "end_line": 1011,
+          "sha256": "86c350da980de540e20b80053931842649a749b3dc5cb895eb1f4b94add04681"
+        },
+        {
+          "file": "survival_5thdimension_practice_script.lua",
+          "name": "Survival_Tick",
+          "line": 1219,
+          "end_line": 1309,
+          "sha256": "6ba4a2c61e0a1cdf7272284ff255ea31269fb1a0c7276209ea2110e5df0d3d68"
+        },
+        {
+          "file": "survival_5thdimension_practice_script.lua",
+          "name": "Survival_UpdateWaves",
+          "line": 1315,
+          "end_line": 1344,
+          "sha256": "58038941c85084993379f37630d73405d7f0a985c296318f471f889a64f907dd"
+        },
+        {
+          "file": "survival_5thdimension_practice_script.lua",
+          "name": "Survival_SpawnWave",
+          "line": 1350,
+          "end_line": 1392,
+          "sha256": "1d6663dcae8df5877cbd0cfe73ee97979163f74c63958010d5c2019dd77b7250"
+        },
+        {
+          "file": "survival_5thdimension_practice_script.lua",
+          "name": "Survival_SpawnUnit",
+          "line": 1398,
+          "end_line": 1416,
+          "sha256": "a62cae6da0d028cd6f18987ff1dd2ea8b1cb0c40d1bf1deec50b058980b78511"
+        },
+        {
+          "file": "survival_5thdimension_practice_script.lua",
+          "name": "Survival_CalcWaveCounts",
+          "line": 1640,
+          "end_line": 1648,
+          "sha256": "6727db424e42663a102b68403131dab2602249100ea6a8d3376dc83d5508e838"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 3,
+      "main_file_hashes": [
+        {
+          "path": "survival_5thdimension_practice_options.lua",
+          "bytes": 4775,
+          "sha256": "084b568e5c3b188ce12ff44fbce4e1d5a084199ea9f7a2ca312aeb4943691de3"
+        },
+        {
+          "path": "survival_5thdimension_practice_save.lua",
+          "bytes": 86013,
+          "sha256": "19bab61f217661375834d103d0ecbed1001a3ace3302e536f173356fd5260042"
+        },
+        {
+          "path": "survival_5thdimension_practice_scenario.lua",
+          "bytes": 1247,
+          "sha256": "bf16bab160f7294623595fdfe24ab6adddde1e32aae0b467505cb564ec422cb2"
+        },
+        {
+          "path": "survival_5thdimension_practice_script.lua",
+          "bytes": 58109,
+          "sha256": "51c51ccb1dc906929fec8406e14946b9fe5ba3068778f1405be59b015df94116"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Survival Blackbox 10",
+      "version": 1,
+      "relative_folder": "04槽位/Survival_BlackBox_10",
+      "slots": 4,
+      "gameplay": "Blackbox多阶段守宫殿",
+      "learning_value": "任务阶段、门、护盾/目标强化、单位限制与仅指挥官模式。",
+      "maintenance_boundary": "仅ACU/SACU选项关联限制和胜负，不能只复制发单位函数；MOD支持是条件功能。",
+      "verification_status": "沿用前次静态复核；本轮未改",
+      "lua_files": 4,
+      "options": 12,
+      "core_functions": [
+        {
+          "file": "Survival_BlackBox_10_script.lua",
+          "name": "OnPopulate",
+          "line": 92,
+          "end_line": 147,
+          "sha256": "5d9e051986857c1da6543418e1044252d7cf4e03e622ad7f5a21630e7ba63d41"
+        },
+        {
+          "file": "Survival_BlackBox_10_script.lua",
+          "name": "OnStart",
+          "line": 151,
+          "end_line": 208,
+          "sha256": "698ae6298d237664ab70cfdd795d528f5c4e37fd314d2ac53bbdb0aad47571ee"
+        },
+        {
+          "file": "Survival_BlackBox_10_script.lua",
+          "name": "PlayerWin",
+          "line": 398,
+          "end_line": 414,
+          "sha256": "7bda28465908595490b19f7f677580f99fbbf0db48d9113d28fc310cbf45b4ef"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 0,
+      "main_file_hashes": [
+        {
+          "path": "Survival_BlackBox_10_options.lua",
+          "bytes": 8042,
+          "sha256": "716848fda5ebe48beb9d5f16f9a051d2988760280cecb109095082065acd781c"
+        },
+        {
+          "path": "Survival_BlackBox_10_save.lua",
+          "bytes": 548279,
+          "sha256": "a88fe8c8beb77f9ec0e670313ca5ef44949f5032b1f0f98f3089d4faef60adad"
+        },
+        {
+          "path": "Survival_BlackBox_10_scenario.lua",
+          "bytes": 1323,
+          "sha256": "bcee7953581c260e2cc27caea181827cc44973e3bc3bc438e4861ccd1eb3b6d1"
+        },
+        {
+          "path": "Survival_BlackBox_10_script.lua",
+          "bytes": 98781,
+          "sha256": "f787a26e76f77dbbd35a85a8c9e10fe060c640d63c3bbcc94119428687615217"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Survival Defense Atoll",
+      "version": 1,
+      "relative_folder": "04槽位/survival_defense_atoll",
+      "slots": 4,
+      "gameplay": "Atoll环礁守点",
+      "learning_value": "海岛布局上的经典波次、目标与命令生成。",
+      "maintenance_boundary": "海岸通路、海空出生位置和后期数量需分别验证。",
+      "verification_status": "沿用前次静态复核；本轮未改",
+      "lua_files": 5,
+      "options": 3,
+      "core_functions": [
+        {
+          "file": "Survival_Defense_Atoll_script.lua",
+          "name": "OnPopulate",
+          "line": 636,
+          "end_line": 648,
+          "sha256": "85de0d18d8acffbe60f62634298cc3a3ed1b2e76f48e63d10959dfcc24e7d35a"
+        },
+        {
+          "file": "Survival_Defense_Atoll_script.lua",
+          "name": "OnStart",
+          "line": 723,
+          "end_line": 731,
+          "sha256": "85f7c5cbf822e915e15bba4d310e1edea5c779c3ed8190736398ce1867c79a01"
+        },
+        {
+          "file": "Survival_Defense_Atoll_script.lua",
+          "name": "Survival_InitGame",
+          "line": 737,
+          "end_line": 813,
+          "sha256": "15a43ec169291abd4770f63e6d2b1b7309e1b9652833f70bd1c5a522277bef24"
+        },
+        {
+          "file": "Survival_Defense_Atoll_script.lua",
+          "name": "Survival_Tick",
+          "line": 1041,
+          "end_line": 1134,
+          "sha256": "4e39baa3dca4c742fc5d59595adf6d578bbd488872440bbaef0ffb0202684b44"
+        },
+        {
+          "file": "Survival_Defense_Atoll_script.lua",
+          "name": "Survival_UpdateWaves",
+          "line": 1140,
+          "end_line": 1169,
+          "sha256": "aef373f033d4eb19442b143f0b28d47f7f7fc847815c42941a3b51f9c774a9b3"
+        },
+        {
+          "file": "Survival_Defense_Atoll_script.lua",
+          "name": "Survival_SpawnWave",
+          "line": 1175,
+          "end_line": 1221,
+          "sha256": "6e93c1a154915e965aebd82dfcb5e0ae439d6373b14a951d40f5b8cad90528e9"
+        },
+        {
+          "file": "Survival_Defense_Atoll_script.lua",
+          "name": "Survival_SpawnUnit",
+          "line": 1227,
+          "end_line": 1240,
+          "sha256": "28bca6839b74ababce460d9d98756eb5185f09cfd2065ffcbfb566b796adcc47"
+        },
+        {
+          "file": "Survival_Defense_Atoll_script.lua",
+          "name": "Survival_CalcWaveCounts",
+          "line": 1464,
+          "end_line": 1472,
+          "sha256": "3d78de2aa312341c61f124aa45412a4d1ff1481c5a58fb3736f9fc6827b0f20e"
+        },
+        {
+          "file": "Survival_Defense_Atoll_script_Old.lua",
+          "name": "OnPopulate",
+          "line": 4,
+          "end_line": 7,
+          "sha256": "cc918d5d50f2dfa11d3b83dcd293d10971cf0510870862e6f2bae37638ad7a6a"
+        },
+        {
+          "file": "Survival_Defense_Atoll_script_Old.lua",
+          "name": "OnStart",
+          "line": 9,
+          "end_line": 10,
+          "sha256": "f92604334d1435ac7eaa2fe02a9e22c6351968025b4f05367c50431c651b83a0"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 3,
+      "main_file_hashes": [
+        {
+          "path": "Survival_Defense_Atoll_options.lua",
+          "bytes": 2465,
+          "sha256": "bdf383d71052e4e92c32b72b075a1e96b72fabff3acd7e16031eebddee890a39"
+        },
+        {
+          "path": "Survival_Defense_Atoll_save.lua",
+          "bytes": 96772,
+          "sha256": "9d7a2a832e3e31e4ed7f99bb17a8f0adf302ca8c4c98015bbc2b82ef8c56b61f"
+        },
+        {
+          "path": "Survival_Defense_Atoll_scenario.lua",
+          "bytes": 885,
+          "sha256": "cda9ecb308d5fc28c951a1052304828404045443d81053b099f2127d38dad9a2"
+        },
+        {
+          "path": "Survival_Defense_Atoll_script.lua",
+          "bytes": 57548,
+          "sha256": "9efcb650c37d7b5b5c9240156b9c0bb8caaa559a8989b8589e786feca3a82d46"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Survival Escape v5",
+      "version": 5,
+      "relative_folder": "04槽位/Survival_Escape",
+      "slots": 4,
+      "gameplay": "Escape护送与扩区",
+      "learning_value": "稳健连续编号识别；路点/首领/扩区缺号回退。",
+      "maintenance_boundary": "本轮修正StartTime偏好键；原StartTime值0保留，不擅改成索引1。",
+      "verification_status": "已修改待实测",
+      "lua_files": 4,
+      "options": 2,
+      "core_functions": [
+        {
+          "file": "Survival_Escape_script.lua",
+          "name": "FACNCountSequentialMarkers",
+          "line": 30,
+          "end_line": 44,
+          "sha256": "9d663de9fe159b98f67886def642364795ece1c90dfa85e0433c058c69f2bb1b"
+        },
+        {
+          "file": "Survival_Escape_script.lua",
+          "name": "FACNDetectEscortMarkers",
+          "line": 45,
+          "end_line": 50,
+          "sha256": "c647f68c5bc35407fe14ca5e64805b640efb5381407e2f6bd986cef1b7168a20"
+        },
+        {
+          "file": "Survival_Escape_script.lua",
+          "name": "OnPopulate",
+          "line": 55,
+          "end_line": 61,
+          "sha256": "cd0b9a66427515ec65503af06955d2bd21099e2cdec7b9d8cfbd9e3cfc17c56f"
+        },
+        {
+          "file": "Survival_Escape_script.lua",
+          "name": "OnStart",
+          "line": 64,
+          "end_line": 67,
+          "sha256": "f081c68fa5c0881d693dd8847e0d048b12142b4887d47c42a63df6ad724a2296"
+        },
+        {
+          "file": "Survival_Escape_script.lua",
+          "name": "Survival_InitGame",
+          "line": 140,
+          "end_line": 226,
+          "sha256": "99416ffc250e0f7d5f2f933bffbca174703fed88d192981f2a1acc92251c5b57"
+        },
+        {
+          "file": "Survival_Escape_script.lua",
+          "name": "VictoryCheck",
+          "line": 333,
+          "end_line": 353,
+          "sha256": "bebe4b02294d1aa3316d83649bfea03e6b456f0bf18d7039a1893aa1e1ec4aeb"
+        },
+        {
+          "file": "Survival_Escape_script.lua",
+          "name": "Survival_SpawnUnit",
+          "line": 695,
+          "end_line": 709,
+          "sha256": "c1740ae5e7e3fb249d12807db82661ce57813ddcdba5eab0f4930432337725fe"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 0,
+      "main_file_hashes": [
+        {
+          "path": "Survival_Escape_options.lua",
+          "bytes": 1042,
+          "sha256": "e373fcb61c0e760868a2efd0d7e22e9ad8be16cba72039a5a0dc8f9952291ec1"
+        },
+        {
+          "path": "Survival_Escape_save.lua",
+          "bytes": 327267,
+          "sha256": "6dd1397e86dfc6338af11a4eee79d20a9406abaea75001c48a823e9406ea9bc8"
+        },
+        {
+          "path": "Survival_Escape_scenario.lua",
+          "bytes": 1073,
+          "sha256": "b6bf593a4f7a942ee33d4ce238fbdf1359dcd589d961a56cc59e202e3414d5dc"
+        },
+        {
+          "path": "Survival_Escape_script.lua",
+          "bytes": 38734,
+          "sha256": "38d5a6c81b8e4a66b93ae66c565f430acb56bdf8bdb1882ead9544ff5739b1b4"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Survival EXtreme",
+      "version": 1,
+      "relative_folder": "04槽位/Survival_Extreme",
+      "slots": 4,
+      "gameplay": "Extreme传送门/超级武器防守",
+      "learning_value": "门死亡回调、阶段生成、核打击和胜负结束。",
+      "maintenance_boundary": "全局难度与门状态/线程绑在一起，不能仅复制spawnWave。",
+      "verification_status": "沿用前次静态复核；本轮未改",
+      "lua_files": 4,
+      "options": 4,
+      "core_functions": [
+        {
+          "file": "Survival_Extreme_script.lua",
+          "name": "OnPopulate",
+          "line": 59,
+          "end_line": 81,
+          "sha256": "a998227a06da0f6582cc85b36d18900ebfea74630e5db8be2ef333340aedd9f5"
+        },
+        {
+          "file": "Survival_Extreme_script.lua",
+          "name": "OnStart",
+          "line": 140,
+          "end_line": 154,
+          "sha256": "c7dd1691ba18a24744a3d7f980c7911810f1d105851403065a1bfd2c28b83011"
+        },
+        {
+          "file": "Survival_Extreme_script.lua",
+          "name": "gameLogic",
+          "line": 686,
+          "end_line": 699,
+          "sha256": "3fd94e40306a2ce9a6f50eebfc15d3f2efe9d1578063b75e11258a3c440b9566"
+        },
+        {
+          "file": "Survival_Extreme_script.lua",
+          "name": "spawnWaves",
+          "line": 742,
+          "end_line": 780,
+          "sha256": "35121cc8119d6de5d3fc23481ee74a8cf88280a76982e0981d06eb2d5de4f697"
+        },
+        {
+          "file": "Survival_Extreme_script.lua",
+          "name": "spawnWave",
+          "line": 782,
+          "end_line": 851,
+          "sha256": "e8d288ec49f5c7da4f86cf6bf91d341009b451e3a7a4de400f7001d88bcbdcf7"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 0,
+      "main_file_hashes": [
+        {
+          "path": "Survival_Extreme_options.lua",
+          "bytes": 2316,
+          "sha256": "0fc926b194082ad98be562add37c7154cd61dda983a87f9919e5d67febdf813b"
+        },
+        {
+          "path": "Survival_Extreme_save.lua",
+          "bytes": 56811,
+          "sha256": "dada02ec3747c1360f048f41cf2a64a145a5a62654174c103dc6fd2c25dabaf1"
+        },
+        {
+          "path": "Survival_Extreme_scenario.lua",
+          "bytes": 853,
+          "sha256": "24fc6ab9f1007f17ebbc79ed6d7675fe7932a2bda7089e9163173e74a49a8081"
+        },
+        {
+          "path": "Survival_Extreme_script.lua",
+          "bytes": 34785,
+          "sha256": "2b77f590c9e26ae4a2d8918ba575ae66b91826cd254751248c3235fae5a0bae9"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Survival EXtreme Desert v3",
+      "version": 3,
+      "relative_folder": "04槽位/Survival_ExtremeDesert",
+      "slots": 4,
+      "gameplay": "Extreme Desert常规版",
+      "learning_value": "地形变体上的门/超级武器脚本与基础胜负。",
+      "maintenance_boundary": "此前明确舍弃V2fA独立地形和强度，不声称完整复刻旧版。",
+      "verification_status": "已修改待实测",
+      "lua_files": 4,
+      "options": 4,
+      "core_functions": [
+        {
+          "file": "Survival_ExtremeDesert_script.lua",
+          "name": "OnPopulate",
+          "line": 55,
+          "end_line": 88,
+          "sha256": "147638050b85472f432bbf33d107e4b4880c59775dad184807f9c4c01c6fa7e5"
+        },
+        {
+          "file": "Survival_ExtremeDesert_script.lua",
+          "name": "OnStart",
+          "line": 147,
+          "end_line": 161,
+          "sha256": "3c2cbc1a4302482d74688ca103384d15ba8ccf3ea0ad785424cbb9d4bf43d64d"
+        },
+        {
+          "file": "Survival_ExtremeDesert_script.lua",
+          "name": "gameLogic",
+          "line": 641,
+          "end_line": 662,
+          "sha256": "c0919b36cdf829d37bce811f9cd52354c06ae1a167b0636fbeef0577633d0a67"
+        },
+        {
+          "file": "Survival_ExtremeDesert_script.lua",
+          "name": "spawnWaves",
+          "line": 708,
+          "end_line": 736,
+          "sha256": "b13c9f3b239c7680fad975ed9eaf515aa4de06622b95523c694ae093d9e0af17"
+        },
+        {
+          "file": "Survival_ExtremeDesert_script.lua",
+          "name": "spawnWave",
+          "line": 738,
+          "end_line": 802,
+          "sha256": "221766576dfdf07cca151cb02db111c792d89b0430b75d26b8a99be075ffa25e"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 0,
+      "main_file_hashes": [
+        {
+          "path": "Survival_ExtremeDesert_options.lua",
+          "bytes": 2178,
+          "sha256": "51c6e4e76b44a51c6f12702410f4af77075c9c69bbec2f2c477c9835d9f3a4b9"
+        },
+        {
+          "path": "Survival_ExtremeDesert_save.lua",
+          "bytes": 53472,
+          "sha256": "bd7ade99c53bcc2359f09e033db908dce700e69d1b9450dc1736f34ee797049b"
+        },
+        {
+          "path": "Survival_ExtremeDesert_scenario.lua",
+          "bytes": 984,
+          "sha256": "64df238c470cfcc489e1a68a83eaa116efce5ac2ff8d05405be68c823b2e3826"
+        },
+        {
+          "path": "Survival_ExtremeDesert_script.lua",
+          "bytes": 33708,
+          "sha256": "a870cd0c9bf604064f5d407b248a05b786cba70a0291bbbfa1b65d6572653978"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Survival EXtreme NavyV2",
+      "version": 1,
+      "relative_folder": "04槽位/Survival_ExtremeNavy",
+      "slots": 4,
+      "gameplay": "四槽Extreme Navy",
+      "learning_value": "海战波次和门/目标规则。",
+      "maintenance_boundary": "与8槽Navy各有大厅军队和存档，水深与海军路线必须另测。",
+      "verification_status": "沿用前次静态复核；本轮未改",
+      "lua_files": 4,
+      "options": 4,
+      "core_functions": [
+        {
+          "file": "Survival_ExtremeNavyV2_script.lua",
+          "name": "OnPopulate",
+          "line": 59,
+          "end_line": 81,
+          "sha256": "a998227a06da0f6582cc85b36d18900ebfea74630e5db8be2ef333340aedd9f5"
+        },
+        {
+          "file": "Survival_ExtremeNavyV2_script.lua",
+          "name": "OnStart",
+          "line": 140,
+          "end_line": 154,
+          "sha256": "c7dd1691ba18a24744a3d7f980c7911810f1d105851403065a1bfd2c28b83011"
+        },
+        {
+          "file": "Survival_ExtremeNavyV2_script.lua",
+          "name": "gameLogic",
+          "line": 687,
+          "end_line": 700,
+          "sha256": "3fd94e40306a2ce9a6f50eebfc15d3f2efe9d1578063b75e11258a3c440b9566"
+        },
+        {
+          "file": "Survival_ExtremeNavyV2_script.lua",
+          "name": "spawnWaves",
+          "line": 743,
+          "end_line": 781,
+          "sha256": "35121cc8119d6de5d3fc23481ee74a8cf88280a76982e0981d06eb2d5de4f697"
+        },
+        {
+          "file": "Survival_ExtremeNavyV2_script.lua",
+          "name": "spawnWave",
+          "line": 783,
+          "end_line": 852,
+          "sha256": "e8d288ec49f5c7da4f86cf6bf91d341009b451e3a7a4de400f7001d88bcbdcf7"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 0,
+      "main_file_hashes": [
+        {
+          "path": "Survival_ExtremeNavyV2_options.lua",
+          "bytes": 2320,
+          "sha256": "c18cfedaaec7fe915fa31f23718d8d012bd12c51c9c5e5a2970adfe67802bfbd"
+        },
+        {
+          "path": "Survival_ExtremeNavyV2_save.lua",
+          "bytes": 57382,
+          "sha256": "c80d893306615bfc7b666532a6ca308d0784fd21f3ea9d13fe25b77f098caaa5"
+        },
+        {
+          "path": "Survival_ExtremeNavyV2_scenario.lua",
+          "bytes": 932,
+          "sha256": "d67134e82b7ed5448924176d5ac69f90fc62db81a7893e7282020ff2ee1df84b"
+        },
+        {
+          "path": "Survival_ExtremeNavyV2_script.lua",
+          "bytes": 34770,
+          "sha256": "364a6d464ceffd5165819525d384c29eb996e1f4267fa119ccc8b9d3141e9a38"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Survival Horde EE v22",
+      "version": 22,
+      "relative_folder": "04槽位/survival_horde_ee",
+      "slots": 4,
+      "gameplay": "Horde EE分路线防守",
+      "learning_value": "EE/Aeon配对波表+命令、路线关闭、空军及回收。",
+      "maintenance_boundary": "两个表必须同时切换；4条防守路线不等于文件里所有army都是人类。",
+      "verification_status": "已修改待实测",
+      "lua_files": 30,
+      "options": 7,
+      "core_functions": [
+        {
+          "file": "survival_horde_ee_script.lua",
+          "name": "CreateWaves",
+          "line": 486,
+          "end_line": 494,
+          "sha256": "462f7feb73f1914ff829d03bab1230be5b0bf6da39a7cbfb8ff90bcd6059ffb8"
+        },
+        {
+          "file": "survival_horde_ee_script.lua",
+          "name": "CreateWaveTableOrders",
+          "line": 496,
+          "end_line": 505,
+          "sha256": "ada6d8a7d90e73e836e74ae2400c70da727cc441162c5718c53935ec6098a402"
+        },
+        {
+          "file": "survival_horde_ee_script.lua",
+          "name": "OnPopulate",
+          "line": 552,
+          "end_line": 851,
+          "sha256": "167f5b49262a103375c7d7dc10733671db0c3aa4e2a106761e1db72a17a4f158"
+        },
+        {
+          "file": "survival_horde_ee_script.lua",
+          "name": "OnStart",
+          "line": 856,
+          "end_line": 860,
+          "sha256": "0100b7f10e34391d4d7b3802cde46a16dae5a39d6b619da8a0ddcdd681cf5936"
+        },
+        {
+          "file": "survival_horde_ee_script.lua",
+          "name": "OnPlayerVictory",
+          "line": 982,
+          "end_line": 1015,
+          "sha256": "fc932b344028a2ce348e54dcd8f4740f2b461639d03041ac7e93ab18fc28baf4"
+        },
+        {
+          "file": "survival_horde_ee_script.lua",
+          "name": "OnPlayerDefeat",
+          "line": 1035,
+          "end_line": 1085,
+          "sha256": "fdc851a009dbd3d55346d3dacd1064d319517b31146f6885fd914c0453e5d334"
+        },
+        {
+          "file": "survival_horde_ee_script.lua",
+          "name": "Survival_Tick",
+          "line": 1091,
+          "end_line": 1642,
+          "sha256": "06694594713bf4985f2d8d9acb7f8807330b7df441d594479c6d9df2d84b5bdc"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 0,
+      "main_file_hashes": [
+        {
+          "path": "survival_horde_ee_options.lua",
+          "bytes": 8906,
+          "sha256": "bc9aac5866a178143dc8d8d24631dc611612663f7dfe7b4ef02d5070fc1bcced"
+        },
+        {
+          "path": "survival_horde_ee_save.lua",
+          "bytes": 136403,
+          "sha256": "4d2a31e0d677879151dde3e037fadc84840c9e32cf633367706f908996ed1064"
+        },
+        {
+          "path": "survival_horde_ee_scenario.lua",
+          "bytes": 1398,
+          "sha256": "945f1ee2bc36b9bff58034db8e79416d04ee075bdbb751c4ded5dfb172885b50"
+        },
+        {
+          "path": "survival_horde_ee_script.lua",
+          "bytes": 86474,
+          "sha256": "62bed7fb343b1059062440e02e66deca9241642c423c9d1257af05d43e71f38c"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Survival Insane (Beta1)",
+      "version": 1,
+      "relative_folder": "04槽位/Survival_Insane_Beta1",
+      "slots": 4,
+      "gameplay": "Insane挑战版",
+      "learning_value": "高压生成与门/特殊武器组合，研究挑战平衡。",
+      "maintenance_boundary": "挑战玩法单独保留；不能因相似地形按Extreme常规版覆盖。",
+      "verification_status": "沿用前次静态复核；本轮未改",
+      "lua_files": 4,
+      "options": 4,
+      "core_functions": [
+        {
+          "file": "Survival_Insane_Beta1_script.lua",
+          "name": "OnPopulate",
+          "line": 61,
+          "end_line": 83,
+          "sha256": "3959373fec39b017f52bf23bcab666e886bbc8e510c6820a3c07150b5909c66c"
+        },
+        {
+          "file": "Survival_Insane_Beta1_script.lua",
+          "name": "OnStart",
+          "line": 142,
+          "end_line": 156,
+          "sha256": "c7dd1691ba18a24744a3d7f980c7911810f1d105851403065a1bfd2c28b83011"
+        },
+        {
+          "file": "Survival_Insane_Beta1_script.lua",
+          "name": "gameLogic",
+          "line": 919,
+          "end_line": 932,
+          "sha256": "3fd94e40306a2ce9a6f50eebfc15d3f2efe9d1578063b75e11258a3c440b9566"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 0,
+      "main_file_hashes": [
+        {
+          "path": "Survival_Insane_Beta1_options.lua",
+          "bytes": 2756,
+          "sha256": "3e25f375ddbcfd74a8c7c43064251152baca7cda3e82e5518a6cc551ed6b3de8"
+        },
+        {
+          "path": "Survival_Insane_Beta1_save.lua",
+          "bytes": 56826,
+          "sha256": "ba6ed604999cc9e281057d81c4a1f5146c36b829d91dd3bda0a0004072084e17"
+        },
+        {
+          "path": "Survival_Insane_Beta1_scenario.lua",
+          "bytes": 888,
+          "sha256": "377fcf1dd0370edde32a2515747987d2861446f472cafec1eff1c93ed113262e"
+        },
+        {
+          "path": "Survival_Insane_Beta1_script.lua",
+          "bytes": 40551,
+          "sha256": "9db1631a362f3f3914e379351e61beb3924455b77ecded138a0bbcc2f471ad12"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Survival Insane NvS (Beta1)",
+      "version": 1,
+      "relative_folder": "04槽位/Survival_Insane_NvS_Beta1",
+      "slots": 4,
+      "gameplay": "Insane North vs South挑战",
+      "learning_value": "南北攻防方向、密集生成和结束规则。",
+      "maintenance_boundary": "需看两侧AI和玩家槽配置，不能只根据普通Extreme的数量公式修复。",
+      "verification_status": "沿用前次静态复核；本轮未改",
+      "lua_files": 4,
+      "options": 4,
+      "core_functions": [
+        {
+          "file": "Survival_Insane_NvS_Beta1_script.lua",
+          "name": "OnPopulate",
+          "line": 67,
+          "end_line": 91,
+          "sha256": "d2fe8e6e70a2e8dd866186f92154a693d095ebb58d331c1f22b1182dad6c212c"
+        },
+        {
+          "file": "Survival_Insane_NvS_Beta1_script.lua",
+          "name": "OnStart",
+          "line": 150,
+          "end_line": 164,
+          "sha256": "c7dd1691ba18a24744a3d7f980c7911810f1d105851403065a1bfd2c28b83011"
+        },
+        {
+          "file": "Survival_Insane_NvS_Beta1_script.lua",
+          "name": "gameLogic",
+          "line": 881,
+          "end_line": 894,
+          "sha256": "3fd94e40306a2ce9a6f50eebfc15d3f2efe9d1578063b75e11258a3c440b9566"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 0,
+      "main_file_hashes": [
+        {
+          "path": "Survival_Insane_NvS_Beta1_options.lua",
+          "bytes": 2748,
+          "sha256": "e8a8eed1e6d38c5fa5a6a08bd5a14d49d9c34aaca91270824f38c17e66023d2c"
+        },
+        {
+          "path": "Survival_Insane_NvS_Beta1_save.lua",
+          "bytes": 120139,
+          "sha256": "ce4adfb73dab9cd03b54d0d1401dd02baf98543477698a6f4af562691798893f"
+        },
+        {
+          "path": "Survival_Insane_NvS_Beta1_scenario.lua",
+          "bytes": 936,
+          "sha256": "8d9e86829574ef8fb68a586307a23e66704a866912aaefd7abe7aabb623a6f78"
+        },
+        {
+          "path": "Survival_Insane_NvS_Beta1_script.lua",
+          "bytes": 41482,
+          "sha256": "d921fdf3f90d6a7deb3b03e5cfd3ed7dee0cbdff6fd28ea90e8a9e078f10ea6c"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "name": "Survival North and South Barrens",
+      "version": 1,
+      "relative_folder": "04槽位/survival_NorthSouth_Barrens",
+      "slots": 4,
+      "gameplay": "North and South Barrens",
+      "learning_value": "南北门与波次组织；与Insane NvS对照。",
+      "maintenance_boundary": "独立脚本/地图变体，不按相同预览判完全重复。",
+      "verification_status": "沿用前次静态复核；本轮未改",
+      "lua_files": 4,
+      "options": 4,
+      "core_functions": [
+        {
+          "file": "survival_NorthSouth_Barrens_script.lua",
+          "name": "OnPopulate",
+          "line": 63,
+          "end_line": 87,
+          "sha256": "78287efe712e48af3f141f91317f8e4c920d86a177b8604342d099278f7655cb"
+        },
+        {
+          "file": "survival_NorthSouth_Barrens_script.lua",
+          "name": "OnStart",
+          "line": 146,
+          "end_line": 160,
+          "sha256": "c7dd1691ba18a24744a3d7f980c7911810f1d105851403065a1bfd2c28b83011"
+        },
+        {
+          "file": "survival_NorthSouth_Barrens_script.lua",
+          "name": "gameLogic",
+          "line": 693,
+          "end_line": 706,
+          "sha256": "3fd94e40306a2ce9a6f50eebfc15d3f2efe9d1578063b75e11258a3c440b9566"
+        },
+        {
+          "file": "survival_NorthSouth_Barrens_script.lua",
+          "name": "spawnWaves",
+          "line": 749,
+          "end_line": 787,
+          "sha256": "35121cc8119d6de5d3fc23481ee74a8cf88280a76982e0981d06eb2d5de4f697"
+        },
+        {
+          "file": "survival_NorthSouth_Barrens_script.lua",
+          "name": "spawnWave",
+          "line": 789,
+          "end_line": 858,
+          "sha256": "e8d288ec49f5c7da4f86cf6bf91d341009b451e3a7a4de400f7001d88bcbdcf7"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 0,
+      "main_file_hashes": [
+        {
+          "path": "Survival_NorthSouth_Barrens_options.lua",
+          "bytes": 2418,
+          "sha256": "95ff88d00063a551bcfa33176dfc64d92bed56cb6f97bf849b94149871c12a3f"
+        },
+        {
+          "path": "survival_NorthSouth_Barrens_save.lua",
+          "bytes": 106315,
+          "sha256": "ebca45ba7feadef0cb85e77675b5699f5d308f84edf1eee5c11ff02edbaf599e"
+        },
+        {
+          "path": "survival_NorthSouth_Barrens_scenario.lua",
+          "bytes": 979,
+          "sha256": "2d8fb0378709541e6085a11aa47cb338a0fcd5259e18307f74afbd59921a27a5"
+        },
+        {
+          "path": "survival_NorthSouth_Barrens_script.lua",
+          "bytes": 35106,
+          "sha256": "c243977ad0890f998d83014280d3f0ad53187db3d49fbb5a1e635db09991cd8b"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "name": "Survival Sea Fleet v7",
+      "version": 7,
+      "relative_folder": "04槽位/survival_sea_fleet",
+      "slots": 4,
+      "gameplay": "Sea Fleet海军与空军",
+      "learning_value": "专用海空单位表、生成/攻击坐标和无尽选项。",
+      "maintenance_boundary": "本轮只修Wreckage偏好拼写；海军出水、可通行和目标攻击需实测。",
+      "verification_status": "已修改待实测",
+      "lua_files": 4,
+      "options": 5,
+      "core_functions": [
+        {
+          "file": "survival_sea_fleet_script.lua",
+          "name": "OnPopulate",
+          "line": 310,
+          "end_line": 323,
+          "sha256": "a3649525709a9eb9dfa851bcecf5874986b04a3a5d5b4148f1000465a155b6a2"
+        },
+        {
+          "file": "survival_sea_fleet_script.lua",
+          "name": "OnStart",
+          "line": 398,
+          "end_line": 406,
+          "sha256": "85f7c5cbf822e915e15bba4d310e1edea5c779c3ed8190736398ce1867c79a01"
+        },
+        {
+          "file": "survival_sea_fleet_script.lua",
+          "name": "Survival_InitGame",
+          "line": 412,
+          "end_line": 511,
+          "sha256": "ade5e5633f55e03ca5ed28cb16ce84b7caba84651d45945cef497ee68d4d0089"
+        },
+        {
+          "file": "survival_sea_fleet_script.lua",
+          "name": "Survival_Tick",
+          "line": 671,
+          "end_line": 761,
+          "sha256": "a592db2e6ee0d24e0297872fc54994f8735d8720f16c00e000791cebe767edce"
+        },
+        {
+          "file": "survival_sea_fleet_script.lua",
+          "name": "Survival_SpawnWave",
+          "line": 765,
+          "end_line": 838,
+          "sha256": "ba4dd254aefecdd19a51044d23ba18c8468275af468ac6b1dc4fe243c469b900"
+        },
+        {
+          "file": "survival_sea_fleet_script.lua",
+          "name": "Survival_SpawnUnit",
+          "line": 842,
+          "end_line": 869,
+          "sha256": "3d6e5a54cf14e9bc7d144cdcd7727aa77bbf99ebf9b4d92960902a1c3211447e"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 0,
+      "main_file_hashes": [
+        {
+          "path": "survival_sea_fleet_options.lua",
+          "bytes": 2319,
+          "sha256": "536df56ab788fe20713271e483afd21cce94fc607dc5dcdea55a7bdb04f3a539"
+        },
+        {
+          "path": "survival_sea_fleet_save.lua",
+          "bytes": 87746,
+          "sha256": "e1bfb40646ef308493d7fd0021c78385b6d0908f4c1d4fe7a9ee390b0b05719f"
+        },
+        {
+          "path": "survival_sea_fleet_scenario.lua",
+          "bytes": 1011,
+          "sha256": "ba03fd095c86f134e59c2fcc1107817a842c6d20813cd86659ad086c5ed5340b"
+        },
+        {
+          "path": "survival_sea_fleet_script.lua",
+          "bytes": 34666,
+          "sha256": "e1d1fa7d405cb3caef37100b4e5d37073e1397845a5f712a33b1866f8bcf4417"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "name": "Genesis of the Order Survival v13",
+      "version": 13,
+      "relative_folder": "05槽位/genesis_of_the_order_survival",
+      "slots": 5,
+      "gameplay": "Genesis of the Order剧情事件生存",
+      "learning_value": "GameSetup/GameStart/GameProgression、联盟、目标与事件分层。",
+      "maintenance_boundary": "本轮修复区域初始化错误模块API；事件树/战役UI和多人仍待实测。",
+      "verification_status": "已修改待实测",
+      "lua_files": 51,
+      "options": 6,
+      "core_functions": [
+        {
+          "file": "Functionality/GameSetup.lua",
+          "name": "TheRedOrTheBluePill",
+          "line": 21,
+          "end_line": 50,
+          "sha256": "c1aac8175a1ef475071082ea4d5cee1b30f7ce0c23a82f9c174e25eafc00db29"
+        },
+        {
+          "file": "Functionality/GameSetup.lua",
+          "name": "InitializeGame",
+          "line": 52,
+          "end_line": 62,
+          "sha256": "210590652f22f8b41dac7b49304ffb92e48effced332d320afe639f660e3d436"
+        },
+        {
+          "file": "Functionality/Objectives.lua",
+          "name": "SetupObjectives",
+          "line": 6,
+          "end_line": 100,
+          "sha256": "3c076e66b0ea45a54c18e1f53c3f9794b0fd4c0551200941a23a5fb12ffec8fe"
+        },
+        {
+          "file": "Functionality/PlayableArea.lua",
+          "name": "SetArea",
+          "line": 3,
+          "end_line": 17,
+          "sha256": "449c366092936ff99ed6785202f0de0e4b6fb4e1bbd5dd2c28fae56cdd45725f"
+        },
+        {
+          "file": "Genesis_of_the_Order_Survival_script.lua",
+          "name": "OnPopulate",
+          "line": 44,
+          "end_line": 53,
+          "sha256": "4696b6af09bffe418866cdb2b86d11baf7404a0263ae0d39954094bca9c70480"
+        },
+        {
+          "file": "Genesis_of_the_Order_Survival_script.lua",
+          "name": "OnStart",
+          "line": 55,
+          "end_line": 62,
+          "sha256": "c30da3fb9dc685cd1a63de23e0d353dc1c80816a42b0645c8122d684e7bef51f"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 0,
+      "main_file_hashes": [
+        {
+          "path": "Genesis_of_the_Order_Survival_options.lua",
+          "bytes": 8084,
+          "sha256": "cd5cfe6fa500b267f2bbcc65436c6cb8396b44ea0e8df798997cc58a0279a991"
+        },
+        {
+          "path": "Genesis_of_the_Order_Survival_save.lua",
+          "bytes": 349741,
+          "sha256": "b1301ce292493e9201321a9c316e06970ff3be86de6b82de0cec4206f14f35ee"
+        },
+        {
+          "path": "Genesis_of_the_Order_Survival_scenario.lua",
+          "bytes": 1010,
+          "sha256": "d1b67619917f0eb079f573628eba2186ad154c853b32fd09e2b4d170f5d93f53"
+        },
+        {
+          "path": "Genesis_of_the_Order_Survival_script.lua",
+          "bytes": 8281,
+          "sha256": "cecebfbef25960e66984e34c4b759854b059b24597e5ff9e1ed32fa633022fbf"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "name": "Broad Front Survival v8",
+      "version": 8,
+      "relative_folder": "06槽位/broad_front_survival",
+      "slots": 6,
+      "gameplay": "Broad Front预建基地生存",
+      "learning_value": "不依赖默认ACU的防守入口、预建初始军队与波次。",
+      "maintenance_boundary": "不能强行为所有槽补ACU导致胜负改变；FAF防空已近似替换。",
+      "verification_status": "已修改待实测",
+      "lua_files": 4,
+      "options": 3,
+      "core_functions": [
+        {
+          "file": "Broad_Front_Survival_script.lua",
+          "name": "OnPopulate",
+          "line": 897,
+          "end_line": 910,
+          "sha256": "fdd8a10a10f6416355a1838003e59f23b6adea14239e65c6293be625ad93dbe1"
+        },
+        {
+          "file": "Broad_Front_Survival_script.lua",
+          "name": "OnStart",
+          "line": 985,
+          "end_line": 993,
+          "sha256": "85f7c5cbf822e915e15bba4d310e1edea5c779c3ed8190736398ce1867c79a01"
+        },
+        {
+          "file": "Broad_Front_Survival_script.lua",
+          "name": "Survival_InitGame",
+          "line": 999,
+          "end_line": 1083,
+          "sha256": "620a151415cc4354ca2dd38ea46e4b7f85f7d4f080cdf8010384098f33e30e6d"
+        },
+        {
+          "file": "Broad_Front_Survival_script.lua",
+          "name": "Survival_Tick",
+          "line": 1292,
+          "end_line": 1382,
+          "sha256": "0870cb5a4fb0ec9b8589cbd84c17c581c562d7265c7382ff2fc277ec89803dd6"
+        },
+        {
+          "file": "Broad_Front_Survival_script.lua",
+          "name": "Survival_UpdateWaves",
+          "line": 1388,
+          "end_line": 1417,
+          "sha256": "aef373f033d4eb19442b143f0b28d47f7f7fc847815c42941a3b51f9c774a9b3"
+        },
+        {
+          "file": "Broad_Front_Survival_script.lua",
+          "name": "Survival_SpawnWave",
+          "line": 1423,
+          "end_line": 1465,
+          "sha256": "2160fb2922bc63cdee707955fd1663faa9ad162fbe7cb5bdd1a25f8456aeec6e"
+        },
+        {
+          "file": "Broad_Front_Survival_script.lua",
+          "name": "Survival_SpawnUnit",
+          "line": 1471,
+          "end_line": 1489,
+          "sha256": "a1429cf24a23f560dc7082a9fd94ee1f096082b9f1cc3f0d0dbf46ddc22f035f"
+        },
+        {
+          "file": "Broad_Front_Survival_script.lua",
+          "name": "Survival_CalcWaveCounts",
+          "line": 1713,
+          "end_line": 1721,
+          "sha256": "b1fa90ccadfc7f6034bb71972a405c79861084e7bb6af4f5ff31260ef956e25f"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 3,
+      "main_file_hashes": [
+        {
+          "path": "Broad_Front_Survival_options.lua",
+          "bytes": 2275,
+          "sha256": "f45260da963e65fabf826c65a21a8dbeddae45fa0e63cf1512dc769240d292f8"
+        },
+        {
+          "path": "Broad_Front_Survival_save.lua",
+          "bytes": 179535,
+          "sha256": "96cebe4b3394732c835889ea3fd6e8cff555f885f189eeb2b9b94ab05617f634"
+        },
+        {
+          "path": "Broad_Front_Survival_scenario.lua",
+          "bytes": 1080,
+          "sha256": "bbf20900dee278a1b26e66fd4a537b59b97b14c6c80d0cd35d9c72396e43112a"
+        },
+        {
+          "path": "Broad_Front_Survival_script.lua",
+          "bytes": 58067,
+          "sha256": "e9edfb58547bbbdc4d06288728ff8edf424611e2dcba9bb7d380f031f478d85c"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "name": "desert front survival v25",
+      "version": 25,
+      "relative_folder": "06槽位/desert_front_survival",
+      "slots": 6,
+      "gameplay": "Desert Front多模式守点",
+      "learning_value": "gamemodes、units、waves分离和可选MOD检测。",
+      "maintenance_boundary": "本轮修Wreckage偏好；仅模组单位模式另有依赖，默认原版分支另审。",
+      "verification_status": "已修改待实测",
+      "lua_files": 38,
+      "options": 18,
+      "core_functions": [
+        {
+          "file": "desert_front_survival_script.lua",
+          "name": "OnPopulate",
+          "line": 203,
+          "end_line": 225,
+          "sha256": "7ed2814d0b417fd1295953273c046f63585335432d9652a8bffd886af3cf6678"
+        },
+        {
+          "file": "desert_front_survival_script.lua",
+          "name": "OnStart",
+          "line": 228,
+          "end_line": 240,
+          "sha256": "27aef3d48e41dfddbc87e1959bf9ff209e98dfe8f74d71c6944bcee6e768025e"
+        },
+        {
+          "file": "desert_front_survival_script.lua",
+          "name": "SetupGame",
+          "line": 242,
+          "end_line": 273,
+          "sha256": "19c3fb7dc8d0c38196c776e5352e08cff906b2bd1f2b290447dac65a78183f71"
+        },
+        {
+          "file": "desert_front_survival_script.lua",
+          "name": "GameUpdate",
+          "line": 297,
+          "end_line": 441,
+          "sha256": "b16a584dc7b929091c16ef2b93baddb731dde1c707c7da4c76dfa2562d14e205"
+        },
+        {
+          "file": "desert_front_survival_script.lua",
+          "name": "SpawnWave",
+          "line": 443,
+          "end_line": 479,
+          "sha256": "f840c64f1b40b9cf9919d799e10019d3c895586eab8f6af5e5da13f702229bde"
+        },
+        {
+          "file": "desert_front_survival_script.lua",
+          "name": "WaveUpdate",
+          "line": 482,
+          "end_line": 529,
+          "sha256": "4b8ea85e817ce4effdf413301e6f0cdf6bf28a22d84a793324eec75ca09815b7"
+        },
+        {
+          "file": "desert_front_survival_script.lua",
+          "name": "SpawnBossWave",
+          "line": 532,
+          "end_line": 604,
+          "sha256": "633bad8bfe3fe396a1fbed6c9570e7b724695a0504acad8625b44fd3cb84b441"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 0,
+      "main_file_hashes": [
+        {
+          "path": "desert_front_survival_options.lua",
+          "bytes": 13105,
+          "sha256": "b325ba2960193fcff32c7040cf9f476db125c4b7cb1b83d59f768e948d54bfea"
+        },
+        {
+          "path": "desert_front_survival_save.lua",
+          "bytes": 38437,
+          "sha256": "40fd657fb34f9ed8a760b1da00d2d31ca309c3b612c0da24dd3c5d16052e3801"
+        },
+        {
+          "path": "desert_front_survival_scenario.lua",
+          "bytes": 962,
+          "sha256": "9f4533492fc4986cce886a78e32e20966c8871c0f42188c0f667d32482986297"
+        },
+        {
+          "path": "desert_front_survival_script.lua",
+          "bytes": 58577,
+          "sha256": "bdb6b57d9a331b96dd67ee0cf7892f858a3f99a693c1f0624d6e98aa18a425ef"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "name": "survival_5thdimension v8",
+      "version": 1,
+      "relative_folder": "06槽位/survival_5thdimension",
+      "slots": 6,
+      "gameplay": "六槽沙漠5th",
+      "learning_value": "扩展玩家的经典波次和多指挥官配置。",
+      "maintenance_boundary": "与4槽同名目录，在安装/内容中心需独立身份，不能覆盖。",
+      "verification_status": "沿用前次静态复核；本轮未改",
+      "lua_files": 4,
+      "options": 3,
+      "core_functions": [
+        {
+          "file": "survival_5thdimension_v8_script.lua",
+          "name": "OnPopulate",
+          "line": 773,
+          "end_line": 786,
+          "sha256": "fdd8a10a10f6416355a1838003e59f23b6adea14239e65c6293be625ad93dbe1"
+        },
+        {
+          "file": "survival_5thdimension_v8_script.lua",
+          "name": "OnStart",
+          "line": 861,
+          "end_line": 869,
+          "sha256": "85f7c5cbf822e915e15bba4d310e1edea5c779c3ed8190736398ce1867c79a01"
+        },
+        {
+          "file": "survival_5thdimension_v8_script.lua",
+          "name": "Survival_InitGame",
+          "line": 875,
+          "end_line": 948,
+          "sha256": "07297c4c4125e20acd8a9e0b7ce8c54122d5aaf992f4e336bd4559cc3dd1cce3"
+        },
+        {
+          "file": "survival_5thdimension_v8_script.lua",
+          "name": "Survival_Tick",
+          "line": 1157,
+          "end_line": 1247,
+          "sha256": "7aa9bfab50180334b1fb51daeda95d43a086e32520ed3504fe4f97ddcb7634ea"
+        },
+        {
+          "file": "survival_5thdimension_v8_script.lua",
+          "name": "Survival_UpdateWaves",
+          "line": 1253,
+          "end_line": 1282,
+          "sha256": "aef373f033d4eb19442b143f0b28d47f7f7fc847815c42941a3b51f9c774a9b3"
+        },
+        {
+          "file": "survival_5thdimension_v8_script.lua",
+          "name": "Survival_SpawnWave",
+          "line": 1288,
+          "end_line": 1330,
+          "sha256": "2160fb2922bc63cdee707955fd1663faa9ad162fbe7cb5bdd1a25f8456aeec6e"
+        },
+        {
+          "file": "survival_5thdimension_v8_script.lua",
+          "name": "Survival_SpawnUnit",
+          "line": 1336,
+          "end_line": 1354,
+          "sha256": "a1429cf24a23f560dc7082a9fd94ee1f096082b9f1cc3f0d0dbf46ddc22f035f"
+        },
+        {
+          "file": "survival_5thdimension_v8_script.lua",
+          "name": "Survival_CalcWaveCounts",
+          "line": 1578,
+          "end_line": 1586,
+          "sha256": "3d78de2aa312341c61f124aa45412a4d1ff1481c5a58fb3736f9fc6827b0f20e"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 3,
+      "main_file_hashes": [
+        {
+          "path": "survival_5thdimension_v8_options.lua",
+          "bytes": 2321,
+          "sha256": "ba9ba1be0ba4f84b129c10ab7d69e08809afb69d8305144a03ae7f748b537ef5"
+        },
+        {
+          "path": "survival_5thdimension_v8_save.lua",
+          "bytes": 101503,
+          "sha256": "0c366acbb798269318ddd4430128f2c0341f755eff445ebaacb962f8a8c418d8"
+        },
+        {
+          "path": "survival_5thdimension_v8_scenario.lua",
+          "bytes": 1192,
+          "sha256": "2db707b420fa745a41d2770cbd5d0bbbac2bed9d8e3b553a2c6f3d32cee0272a"
+        },
+        {
+          "path": "survival_5thdimension_v8_script.lua",
+          "bytes": 53842,
+          "sha256": "a9ee4b8e86f757eb51bb10336749f0dc045956c6c19d02f834e025a58755944d"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "name": "Survival Genesis v17",
+      "version": 17,
+      "relative_folder": "06槽位/survival_genesis",
+      "slots": 6,
+      "gameplay": "Genesis多模式与无尽",
+      "learning_value": "人数/波次平衡、首领与独立单位池。",
+      "maintenance_boundary": "本轮修偏好；动态MOD与禁造规则、选模式仍需逐支验证。",
+      "verification_status": "已修改待实测",
+      "lua_files": 22,
+      "options": 16,
+      "core_functions": [
+        {
+          "file": "Survival_Genesis_script.lua",
+          "name": "OnPopulate",
+          "line": 166,
+          "end_line": 191,
+          "sha256": "3144a86bbb22ca489822bf4f2b987032a027ea0443ebc7d6ae784ae555dee00e"
+        },
+        {
+          "file": "Survival_Genesis_script.lua",
+          "name": "OnStart",
+          "line": 194,
+          "end_line": 201,
+          "sha256": "4db97c7e46ce652b41d40492aafec353c69eca1defb47fdf78ffd3e470a7341c"
+        },
+        {
+          "file": "Survival_Genesis_script.lua",
+          "name": "SetupGame",
+          "line": 203,
+          "end_line": 243,
+          "sha256": "6b1be0b56b2af00a0c5d1aec000be46aa9eb67cdb667a7f9fc4dc35e688742c4"
+        },
+        {
+          "file": "Survival_Genesis_script.lua",
+          "name": "GameUpdate",
+          "line": 245,
+          "end_line": 384,
+          "sha256": "8b3502a8de52c90f02eddbcf4e91cad9a12b3b60229e67b1381a6645a7aec6d6"
+        },
+        {
+          "file": "Survival_Genesis_script.lua",
+          "name": "SpawnWave",
+          "line": 386,
+          "end_line": 428,
+          "sha256": "144eb41b760e30a91a1ac89b66dd5477e6ac41b69cdbe70a1d5683955b758588"
+        },
+        {
+          "file": "Survival_Genesis_script.lua",
+          "name": "SpawnBossWave",
+          "line": 430,
+          "end_line": 480,
+          "sha256": "fd0ee059299b9b7a43cd2f2c7a8d379dba68410fdeb511aab4bed0f855e55efa"
+        },
+        {
+          "file": "Survival_Genesis_script.lua",
+          "name": "WaveUpdate",
+          "line": 632,
+          "end_line": 677,
+          "sha256": "334304c4dece15f8ae93184e43f2778b7b36845352b9865b578608f7ebd478e5"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 0,
+      "main_file_hashes": [
+        {
+          "path": "Survival_Genesis_options.lua",
+          "bytes": 12399,
+          "sha256": "1a84377cf27c750e9bda1397c797d94478ccedd82442df412d4e174fb839b03d"
+        },
+        {
+          "path": "Survival_Genesis_save.lua",
+          "bytes": 36055,
+          "sha256": "ab7c77df86e6b416d8fe47fc5ebe8245f91fa2fa467afe765c19f67f1a1926fb"
+        },
+        {
+          "path": "Survival_Genesis_scenario.lua",
+          "bytes": 1139,
+          "sha256": "1439e505b7da9ec0b390e4c71ffe9592b3e626a40a96512cfc5a02d1dc98bd33"
+        },
+        {
+          "path": "Survival_Genesis_script.lua",
+          "bytes": 47826,
+          "sha256": "842ded6581ea8c0a893ccfb59de6a2dfe3d275f0bc73bbeee4208c62f4163563"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "name": "Zhunas Crater Swarm Survival",
+      "version": 3,
+      "relative_folder": "07槽位/zhunas_crater_swarm_survival",
+      "slots": 7,
+      "gameplay": "仅初始化地形，外置模式待调查",
+      "learning_value": "可作地形/出生点参考，不可直接作为内置生存模板。",
+      "maintenance_boundary": "OnStart为空且没有地图波次链；未找到确证专用MOD声明，仍待调查，不能承诺有生存玩法。",
+      "verification_status": "沿用前次静态复核；本轮未改",
+      "lua_files": 3,
+      "options": 0,
+      "core_functions": [
+        {
+          "file": "Zhunas_Crater_Swarm_Survival_script.lua",
+          "name": "OnPopulate",
+          "line": 4,
+          "end_line": 7,
+          "sha256": "cc918d5d50f2dfa11d3b83dcd293d10971cf0510870862e6f2bae37638ad7a6a"
+        },
+        {
+          "file": "Zhunas_Crater_Swarm_Survival_script.lua",
+          "name": "OnStart",
+          "line": 9,
+          "end_line": 10,
+          "sha256": "f92604334d1435ac7eaa2fe02a9e22c6351968025b4f05367c50431c651b83a0"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 0,
+      "main_file_hashes": [
+        {
+          "path": "Zhunas_Crater_Swarm_Survival_save.lua",
+          "bytes": 85459,
+          "sha256": "b74c24672d57acecd82784f154c87f0df301052f79b0d2dbc0eadef085cf235f"
+        },
+        {
+          "path": "Zhunas_Crater_Swarm_Survival_scenario.lua",
+          "bytes": 1021,
+          "sha256": "4040aedc8fbd794ed323ce2307ff1dd8ee0d1c2abcd243c36fb03adb0c3fcd79"
+        },
+        {
+          "path": "Zhunas_Crater_Swarm_Survival_script.lua",
+          "bytes": 278,
+          "sha256": "4591d7969e592acbb61f953478833e75cc3a742ce4dbf477db79c5f1dc1932de"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "name": "5iver Survival LandNaval v2",
+      "version": 2,
+      "relative_folder": "08槽位/5iver_survival_landnaval",
+      "slots": 8,
+      "gameplay": "LandNaval八槽海陆对半",
+      "learning_value": "门、炮台、运输机/航母、空投和海陆生成协调。",
+      "maintenance_boundary": "运输机承载单位、海军深度、特殊单位和多人计数要共同测。",
+      "verification_status": "沿用前次静态复核；本轮未改",
+      "lua_files": 4,
+      "options": 25,
+      "core_functions": [
+        {
+          "file": "5iver_survival_landnaval_v2_script.lua",
+          "name": "OnPopulate",
+          "line": 172,
+          "end_line": 575,
+          "sha256": "111f6e64f645b16c0962ef0e7b3420b7f05d10085671eea7c285cb7504fc87a0"
+        },
+        {
+          "file": "5iver_survival_landnaval_v2_script.lua",
+          "name": "OnStart",
+          "line": 633,
+          "end_line": 650,
+          "sha256": "b0a06d0a4c4fbc3b55a644bdce9200f164e875134ae94fc6f73b60336daf8ba6"
+        },
+        {
+          "file": "5iver_survival_landnaval_v2_script.lua",
+          "name": "gameLogic",
+          "line": 717,
+          "end_line": 803,
+          "sha256": "6e9c366b4d44e4b4aaa9ff767fa16ad8c4df69788b5ccc76ba4b4fb1c34dd055"
+        },
+        {
+          "file": "5iver_survival_landnaval_v2_script.lua",
+          "name": "spawnWave",
+          "line": 1912,
+          "end_line": 2690,
+          "sha256": "d8422200ad11622d4d377c8d218f1f76c81af83284d1caea027d13475ee9afab"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 0,
+      "main_file_hashes": [
+        {
+          "path": "5iver_survival_landnaval_v2_options.lua",
+          "bytes": 18050,
+          "sha256": "e5c65f210826f4635151afe8b7f396eee541b7a1ef0df10cb86e61d04097f581"
+        },
+        {
+          "path": "5iver_survival_landnaval_v2_save.lua",
+          "bytes": 114538,
+          "sha256": "4eef6e299f8ac021648d7e45193c92d414b522c70fbade38d8bc0513ff56679f"
+        },
+        {
+          "path": "5iver_survival_landnaval_v2_scenario.lua",
+          "bytes": 990,
+          "sha256": "96671d79478696d85a3453deb1d6d51b8c4ec925caec2b69f28aca1c6d6d24d4"
+        },
+        {
+          "path": "5iver_survival_landnaval_v2_script.lua",
+          "bytes": 157866,
+          "sha256": "a6d00a91c9a03200e172f367f97449cb7b9d2657f17a0eac42d6067e6f202c94"
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "name": "AIX survival TeamPlayAI",
+      "version": 1,
+      "relative_folder": "08槽位/AIX survival TeamPlayAI",
+      "slots": 8,
+      "gameplay": "大厅AI对战布局",
+      "learning_value": "出生点和AI路径布置，不是固定波次模板。",
+      "maintenance_boundary": "说明推荐人类1/2对抗7/8的Sorian AIx；推荐AI不等于强制专用SIM模组。",
+      "verification_status": "沿用前次静态复核；本轮未改",
+      "lua_files": 3,
+      "options": 0,
+      "core_functions": [
+        {
+          "file": "AIX survival TeamPlayAI_script.lua",
+          "name": "OnPopulate",
+          "line": 3,
+          "end_line": 5,
+          "sha256": "3d30c9ddc5d0105ba3e15ca357cfef2734a37a7b32b2667a184a7b135c3046a0"
+        },
+        {
+          "file": "AIX survival TeamPlayAI_script.lua",
+          "name": "OnStart",
+          "line": 7,
+          "end_line": 8,
+          "sha256": "2756994518b2a8336648d6d07d05f3247b657374bf15a02f155d00c07d73d24c"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 0,
+      "main_file_hashes": [
+        {
+          "path": "AIX survival TeamPlayAI_save.lua",
+          "bytes": 118628,
+          "sha256": "fc374de83a5729ef8406d24de40e6a2c172435cbbcb828f81ee8b84a212b7835"
+        },
+        {
+          "path": "AIX survival TeamPlayAI_scenario.lua",
+          "bytes": 1469,
+          "sha256": "37737e0a2e9a92320a1359ac8d3d01dd2d21d02b54ebe2e6f90d565b77f8a66a"
+        },
+        {
+          "path": "AIX survival TeamPlayAI_script.lua",
+          "bytes": 189,
+          "sha256": "6d4cc64cfd5e52841d359bb29ffa9afa8b84b430e5629356d43974ab0effe865"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "name": "Battle of Thermopylae Survival",
+      "version": 1,
+      "relative_folder": "08槽位/battle of thermopylae survival",
+      "slots": 8,
+      "gameplay": "Thermopylae八人经典防守",
+      "learning_value": "多人入口与阶段单位表。",
+      "maintenance_boundary": "人数扩大后的刷兵数量、空槽和性能边界要实际验证。",
+      "verification_status": "沿用前次静态复核；本轮未改",
+      "lua_files": 4,
+      "options": 3,
+      "core_functions": [
+        {
+          "file": "battle of thermopylae survival_script.lua",
+          "name": "OnPopulate",
+          "line": 803,
+          "end_line": 816,
+          "sha256": "c273fd42c8a26673d746a3c430973adb31ebed1dbae9760bb9eb67cb43d96dcb"
+        },
+        {
+          "file": "battle of thermopylae survival_script.lua",
+          "name": "OnStart",
+          "line": 891,
+          "end_line": 899,
+          "sha256": "536b541e36cf4b09f044c388ac1a4fe3e8f13bec13abad55152f96e964232183"
+        },
+        {
+          "file": "battle of thermopylae survival_script.lua",
+          "name": "Survival_InitGame",
+          "line": 905,
+          "end_line": 978,
+          "sha256": "3df53e8985bf384e2d3900d3f92acff0bd6ec0fad3c86617384ebbeab6477f16"
+        },
+        {
+          "file": "battle of thermopylae survival_script.lua",
+          "name": "Survival_Tick",
+          "line": 1187,
+          "end_line": 1277,
+          "sha256": "6ba4a2c61e0a1cdf7272284ff255ea31269fb1a0c7276209ea2110e5df0d3d68"
+        },
+        {
+          "file": "battle of thermopylae survival_script.lua",
+          "name": "Survival_UpdateWaves",
+          "line": 1283,
+          "end_line": 1312,
+          "sha256": "58038941c85084993379f37630d73405d7f0a985c296318f471f889a64f907dd"
+        },
+        {
+          "file": "battle of thermopylae survival_script.lua",
+          "name": "Survival_SpawnWave",
+          "line": 1318,
+          "end_line": 1360,
+          "sha256": "1d6663dcae8df5877cbd0cfe73ee97979163f74c63958010d5c2019dd77b7250"
+        },
+        {
+          "file": "battle of thermopylae survival_script.lua",
+          "name": "Survival_SpawnUnit",
+          "line": 1366,
+          "end_line": 1384,
+          "sha256": "a62cae6da0d028cd6f18987ff1dd2ea8b1cb0c40d1bf1deec50b058980b78511"
+        },
+        {
+          "file": "battle of thermopylae survival_script.lua",
+          "name": "Survival_CalcWaveCounts",
+          "line": 1608,
+          "end_line": 1616,
+          "sha256": "6727db424e42663a102b68403131dab2602249100ea6a8d3376dc83d5508e838"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 3,
+      "main_file_hashes": [
+        {
+          "path": "battle of thermopylae survival_options.lua",
+          "bytes": 2376,
+          "sha256": "d140078ab0c0b0c1a64f5abbfa0c8f4fdcf6a3073ca1fa5ab3f00f5528448a38"
+        },
+        {
+          "path": "battle of thermopylae survival_save.lua",
+          "bytes": 96221,
+          "sha256": "716b7dc71d1f7994ba8f1f0fc391f02bfe59784d7686319ef3040a14c7ce38b6"
+        },
+        {
+          "path": "battle of thermopylae survival_scenario.lua",
+          "bytes": 1347,
+          "sha256": "078007cda0e7f082702e548525d9efaadfe5fc9dfe56e3a2e20fb06bdde18533"
+        },
+        {
+          "path": "battle of thermopylae survival_script.lua",
+          "bytes": 56740,
+          "sha256": "a0f298627ae69117ef4dd855f211177230e9194075cc855dd9e21b6adb5e25b9"
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "name": "beach survival",
+      "version": 6,
+      "relative_folder": "08槽位/beach_survival",
+      "slots": 8,
+      "gameplay": "Beach经典防守",
+      "learning_value": "Desert Swarm派生的海滩布局与阶段波表。",
+      "maintenance_boundary": "海滩通路和出生随机范围不能从沙漠版照搬坐标。",
+      "verification_status": "沿用前次静态复核；本轮未改",
+      "lua_files": 4,
+      "options": 3,
+      "core_functions": [
+        {
+          "file": "beach_survival_script.lua",
+          "name": "OnPopulate",
+          "line": 2817,
+          "end_line": 2831,
+          "sha256": "b66c8a97c729f25eb037c616de04a28d3115abafc580212a58c3af3242f1bdcb"
+        },
+        {
+          "file": "beach_survival_script.lua",
+          "name": "OnStart",
+          "line": 2906,
+          "end_line": 2914,
+          "sha256": "85f7c5cbf822e915e15bba4d310e1edea5c779c3ed8190736398ce1867c79a01"
+        },
+        {
+          "file": "beach_survival_script.lua",
+          "name": "Survival_InitGame",
+          "line": 2920,
+          "end_line": 2992,
+          "sha256": "d50c1d7940712be1e4274387b76c123a4a84f14cb733e88eed8584de1d28d002"
+        },
+        {
+          "file": "beach_survival_script.lua",
+          "name": "Survival_Tick",
+          "line": 3211,
+          "end_line": 3301,
+          "sha256": "7aa9bfab50180334b1fb51daeda95d43a086e32520ed3504fe4f97ddcb7634ea"
+        },
+        {
+          "file": "beach_survival_script.lua",
+          "name": "Survival_UpdateWaves",
+          "line": 3307,
+          "end_line": 3336,
+          "sha256": "aef373f033d4eb19442b143f0b28d47f7f7fc847815c42941a3b51f9c774a9b3"
+        },
+        {
+          "file": "beach_survival_script.lua",
+          "name": "Survival_SpawnWave",
+          "line": 3342,
+          "end_line": 3376,
+          "sha256": "c6e5ae43248befc02ece500398708db7386088107dc89ad83773fc375f28b985"
+        },
+        {
+          "file": "beach_survival_script.lua",
+          "name": "Survival_SpawnUnit",
+          "line": 3382,
+          "end_line": 3400,
+          "sha256": "a1429cf24a23f560dc7082a9fd94ee1f096082b9f1cc3f0d0dbf46ddc22f035f"
+        },
+        {
+          "file": "beach_survival_script.lua",
+          "name": "Survival_CalcWaveCounts",
+          "line": 3624,
+          "end_line": 3632,
+          "sha256": "3d78de2aa312341c61f124aa45412a4d1ff1481c5a58fb3736f9fc6827b0f20e"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 3,
+      "main_file_hashes": [
+        {
+          "path": "beach_survival_options.lua",
+          "bytes": 2297,
+          "sha256": "5558296067fa773fd0d2b60d1658ec57eb2f8f077839b0192c78c4d9d75a5f30"
+        },
+        {
+          "path": "beach_survival_save.lua",
+          "bytes": 134382,
+          "sha256": "44cc2075e0d82cc044862e6af3c3e726b55a3083bb631ed1ff3f339b4e302e61"
+        },
+        {
+          "path": "beach_survival_scenario.lua",
+          "bytes": 899,
+          "sha256": "5e9e4faa87bf01703f33bc9fde64d8a7ef0d1c525f676d2d2a0d751dfdc300da"
+        },
+        {
+          "path": "beach_survival_script.lua",
+          "bytes": 104136,
+          "sha256": "458c4f67885bb87d1d1b1d150561fa153b040341e348c244f8c2c16059bee913"
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "name": "Center Arena Survival v18",
+      "version": 18,
+      "relative_folder": "08槽位/center_arena_survival",
+      "slots": 8,
+      "gameplay": "Center Arena经典防守",
+      "learning_value": "中心目标、外侧生成点和阶段平衡。",
+      "maintenance_boundary": "此前FAF防空已替换；需测目标攻路和后期压力。",
+      "verification_status": "已修改待实测",
+      "lua_files": 4,
+      "options": 3,
+      "core_functions": [
+        {
+          "file": "center_arena_survival_script.lua",
+          "name": "OnPopulate",
+          "line": 750,
+          "end_line": 763,
+          "sha256": "fdd8a10a10f6416355a1838003e59f23b6adea14239e65c6293be625ad93dbe1"
+        },
+        {
+          "file": "center_arena_survival_script.lua",
+          "name": "OnStart",
+          "line": 838,
+          "end_line": 846,
+          "sha256": "85f7c5cbf822e915e15bba4d310e1edea5c779c3ed8190736398ce1867c79a01"
+        },
+        {
+          "file": "center_arena_survival_script.lua",
+          "name": "Survival_InitGame",
+          "line": 852,
+          "end_line": 941,
+          "sha256": "8ac2621cc71de0877a7bcbc7f031a4cca24e8abc6b32f262cc343c950191cfd0"
+        },
+        {
+          "file": "center_arena_survival_script.lua",
+          "name": "Survival_Tick",
+          "line": 1150,
+          "end_line": 1240,
+          "sha256": "c49b028971bf1fa22c6e093ad6aa3f0743efc1b7815369eedb43a8ac4e4146d6"
+        },
+        {
+          "file": "center_arena_survival_script.lua",
+          "name": "Survival_UpdateWaves",
+          "line": 1246,
+          "end_line": 1275,
+          "sha256": "aef373f033d4eb19442b143f0b28d47f7f7fc847815c42941a3b51f9c774a9b3"
+        },
+        {
+          "file": "center_arena_survival_script.lua",
+          "name": "Survival_SpawnWave",
+          "line": 1281,
+          "end_line": 1323,
+          "sha256": "2160fb2922bc63cdee707955fd1663faa9ad162fbe7cb5bdd1a25f8456aeec6e"
+        },
+        {
+          "file": "center_arena_survival_script.lua",
+          "name": "Survival_SpawnUnit",
+          "line": 1329,
+          "end_line": 1347,
+          "sha256": "a1429cf24a23f560dc7082a9fd94ee1f096082b9f1cc3f0d0dbf46ddc22f035f"
+        },
+        {
+          "file": "center_arena_survival_script.lua",
+          "name": "Survival_CalcWaveCounts",
+          "line": 1571,
+          "end_line": 1579,
+          "sha256": "3d78de2aa312341c61f124aa45412a4d1ff1481c5a58fb3736f9fc6827b0f20e"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 3,
+      "main_file_hashes": [
+        {
+          "path": "center_arena_survival_options.lua",
+          "bytes": 2275,
+          "sha256": "f45260da963e65fabf826c65a21a8dbeddae45fa0e63cf1512dc769240d292f8"
+        },
+        {
+          "path": "center_arena_survival_save.lua",
+          "bytes": 123501,
+          "sha256": "4904c7b2372d76301cbe6a2348744140283135b64cf8c6cf2dfc1e87759b4c48"
+        },
+        {
+          "path": "center_arena_survival_scenario.lua",
+          "bytes": 997,
+          "sha256": "fe3ee97a33db397cb560f267db3e3e838e919b49ed5d7d4071cbab5525bdbee2"
+        },
+        {
+          "path": "center_arena_survival_script.lua",
+          "bytes": 55512,
+          "sha256": "b492441d6a8524660cd3b91c7c2ff4b57429e254114e5f8ea034b952ad65161a"
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "name": "Final Rush Survival",
+      "version": 6,
+      "relative_folder": "08槽位/Final Rush Survival",
+      "slots": 8,
+      "gameplay": "Final Rush科技解锁与随机事件",
+      "learning_value": "陆海空分科技生成、玩家目标选择、猎手和自动资源线程。",
+      "maintenance_boundary": "运输/海军/随机事件与限制解锁复杂，需查同步随机数和阶段边界。",
+      "verification_status": "沿用前次静态复核；本轮未改",
+      "lua_files": 4,
+      "options": 7,
+      "core_functions": [
+        {
+          "file": "Final Rush Survival_script.lua",
+          "name": "OnPopulate",
+          "line": 198,
+          "end_line": 243,
+          "sha256": "a9108fd0312b24fcee2b3b94a3ce6680c7e6ad768dee9fe295ec28ab2a4a0420"
+        },
+        {
+          "file": "Final Rush Survival_script.lua",
+          "name": "OnStart",
+          "line": 245,
+          "end_line": 247,
+          "sha256": "a5e9225774b3127e5f3fbfa2a17c495c3ce5632c78a3d2808c25126339734a41"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 0,
+      "main_file_hashes": [
+        {
+          "path": "Final Rush Survival_options.lua",
+          "bytes": 3694,
+          "sha256": "0fc66eb204e0b41573210c040617162208504eede196feff5fc84d048bd955d5"
+        },
+        {
+          "path": "Final Rush Survival_save.lua",
+          "bytes": 108829,
+          "sha256": "8ee891ea784b2ad70e310a846c7cfbd37016027f6c3d0250a0d5fadd137a76b7"
+        },
+        {
+          "path": "Final Rush Survival_scenario.lua",
+          "bytes": 1349,
+          "sha256": "1265d98bd1769e8c25a8aef90703906749ad5ad666af609b09906feae2fdab3a"
+        },
+        {
+          "path": "Final Rush Survival_script.lua",
+          "bytes": 67236,
+          "sha256": "f262266a5b709b287f2d8b8141b9f0ab41a26c634d0329962bfcbe3f8ab3eed2"
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "name": "Forges Survival",
+      "version": 5,
+      "relative_folder": "08槽位/forges_survival",
+      "slots": 8,
+      "gameplay": "Forges经典防守",
+      "learning_value": "标准波次的地形变体，可研究脚本与存档的坐标契约。",
+      "maintenance_boundary": "不要以同函数名断定同地形/同难度，检查存档和单位表。",
+      "verification_status": "沿用前次静态复核；本轮未改",
+      "lua_files": 4,
+      "options": 3,
+      "core_functions": [
+        {
+          "file": "Forges_Survival_script.lua",
+          "name": "OnPopulate",
+          "line": 749,
+          "end_line": 762,
+          "sha256": "fdd8a10a10f6416355a1838003e59f23b6adea14239e65c6293be625ad93dbe1"
+        },
+        {
+          "file": "Forges_Survival_script.lua",
+          "name": "OnStart",
+          "line": 837,
+          "end_line": 845,
+          "sha256": "85f7c5cbf822e915e15bba4d310e1edea5c779c3ed8190736398ce1867c79a01"
+        },
+        {
+          "file": "Forges_Survival_script.lua",
+          "name": "Survival_InitGame",
+          "line": 851,
+          "end_line": 924,
+          "sha256": "07297c4c4125e20acd8a9e0b7ce8c54122d5aaf992f4e336bd4559cc3dd1cce3"
+        },
+        {
+          "file": "Forges_Survival_script.lua",
+          "name": "Survival_Tick",
+          "line": 1133,
+          "end_line": 1223,
+          "sha256": "7aa9bfab50180334b1fb51daeda95d43a086e32520ed3504fe4f97ddcb7634ea"
+        },
+        {
+          "file": "Forges_Survival_script.lua",
+          "name": "Survival_UpdateWaves",
+          "line": 1229,
+          "end_line": 1258,
+          "sha256": "aef373f033d4eb19442b143f0b28d47f7f7fc847815c42941a3b51f9c774a9b3"
+        },
+        {
+          "file": "Forges_Survival_script.lua",
+          "name": "Survival_SpawnWave",
+          "line": 1264,
+          "end_line": 1306,
+          "sha256": "2160fb2922bc63cdee707955fd1663faa9ad162fbe7cb5bdd1a25f8456aeec6e"
+        },
+        {
+          "file": "Forges_Survival_script.lua",
+          "name": "Survival_SpawnUnit",
+          "line": 1312,
+          "end_line": 1330,
+          "sha256": "a1429cf24a23f560dc7082a9fd94ee1f096082b9f1cc3f0d0dbf46ddc22f035f"
+        },
+        {
+          "file": "Forges_Survival_script.lua",
+          "name": "Survival_CalcWaveCounts",
+          "line": 1554,
+          "end_line": 1562,
+          "sha256": "3d78de2aa312341c61f124aa45412a4d1ff1481c5a58fb3736f9fc6827b0f20e"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 3,
+      "main_file_hashes": [
+        {
+          "path": "Forges_Survival_options.lua",
+          "bytes": 1453,
+          "sha256": "846e74edaf9deea3f24dfa2eb0eed614b5669f31c2b2fe536bebb71fa5172d33"
+        },
+        {
+          "path": "Forges_Survival_save.lua",
+          "bytes": 226741,
+          "sha256": "664ebee89e6be88acf6c1e31b03729ce0ba1201a8b77583250fb982f3fd169be"
+        },
+        {
+          "path": "Forges_Survival_scenario.lua",
+          "bytes": 908,
+          "sha256": "8f6d2f508f7c6ce365593965e31a7a27e0b3908dc04f4ded0c78805e7817572a"
+        },
+        {
+          "path": "Forges_Survival_script.lua",
+          "bytes": 53403,
+          "sha256": "464ebc44e6a0110148a5f95aae57c69c8ef0ab9786eed8cb6b430f230c7876bf"
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "name": "Not Agincourt Survival",
+      "version": 4,
+      "relative_folder": "08槽位/not_agincourt_survival",
+      "slots": 8,
+      "gameplay": "Not Agincourt合作守点",
+      "learning_value": "经典守点框架及合作军队布局。",
+      "maintenance_boundary": "少人、空槽、目标死亡及终局需要实际回归。",
+      "verification_status": "沿用前次静态复核；本轮未改",
+      "lua_files": 4,
+      "options": 3,
+      "core_functions": [
+        {
+          "file": "Not_Agincourt_Survival_script.lua",
+          "name": "OnPopulate",
+          "line": 803,
+          "end_line": 816,
+          "sha256": "fdd8a10a10f6416355a1838003e59f23b6adea14239e65c6293be625ad93dbe1"
+        },
+        {
+          "file": "Not_Agincourt_Survival_script.lua",
+          "name": "OnStart",
+          "line": 891,
+          "end_line": 899,
+          "sha256": "85f7c5cbf822e915e15bba4d310e1edea5c779c3ed8190736398ce1867c79a01"
+        },
+        {
+          "file": "Not_Agincourt_Survival_script.lua",
+          "name": "Survival_InitGame",
+          "line": 905,
+          "end_line": 978,
+          "sha256": "07297c4c4125e20acd8a9e0b7ce8c54122d5aaf992f4e336bd4559cc3dd1cce3"
+        },
+        {
+          "file": "Not_Agincourt_Survival_script.lua",
+          "name": "Survival_Tick",
+          "line": 1187,
+          "end_line": 1277,
+          "sha256": "7aa9bfab50180334b1fb51daeda95d43a086e32520ed3504fe4f97ddcb7634ea"
+        },
+        {
+          "file": "Not_Agincourt_Survival_script.lua",
+          "name": "Survival_UpdateWaves",
+          "line": 1283,
+          "end_line": 1312,
+          "sha256": "aef373f033d4eb19442b143f0b28d47f7f7fc847815c42941a3b51f9c774a9b3"
+        },
+        {
+          "file": "Not_Agincourt_Survival_script.lua",
+          "name": "Survival_SpawnWave",
+          "line": 1318,
+          "end_line": 1360,
+          "sha256": "2160fb2922bc63cdee707955fd1663faa9ad162fbe7cb5bdd1a25f8456aeec6e"
+        },
+        {
+          "file": "Not_Agincourt_Survival_script.lua",
+          "name": "Survival_SpawnUnit",
+          "line": 1366,
+          "end_line": 1384,
+          "sha256": "a1429cf24a23f560dc7082a9fd94ee1f096082b9f1cc3f0d0dbf46ddc22f035f"
+        },
+        {
+          "file": "Not_Agincourt_Survival_script.lua",
+          "name": "Survival_CalcWaveCounts",
+          "line": 1608,
+          "end_line": 1616,
+          "sha256": "3d78de2aa312341c61f124aa45412a4d1ff1481c5a58fb3736f9fc6827b0f20e"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 3,
+      "main_file_hashes": [
+        {
+          "path": "Not_Agincourt_Survival_options.lua",
+          "bytes": 2321,
+          "sha256": "9c6f39e7b2b257dee578d1ae451e1fe8617949c96247285779ebd815a17f87a2"
+        },
+        {
+          "path": "Not_Agincourt_Survival_save.lua",
+          "bytes": 165139,
+          "sha256": "6d0c9b65076db3ead127ffa939816d73f6edab605071eeffc7071212d7355ca9"
+        },
+        {
+          "path": "Not_Agincourt_Survival_scenario.lua",
+          "bytes": 932,
+          "sha256": "d92c2ff9c46e4dcab03ef36a5f5767a5aac1b040ee1f87d84d9c9607a169cef7"
+        },
+        {
+          "path": "Not_Agincourt_Survival_script.lua",
+          "bytes": 54990,
+          "sha256": "34d919221730240fdd2484ef6fbf3e41fad3ebd8f94a9f9b90e8fc2e926cc6f7"
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "name": "Survival Light 2a",
+      "version": 2,
+      "relative_folder": "08槽位/Survival Light 2a",
+      "slots": 8,
+      "gameplay": "Light 2a工厂/指挥官防守",
+      "learning_value": "预建三级工厂、Bonus和额外生存规则。",
+      "maintenance_boundary": "不是Omega重复图；奖励/重命名目标/失败处理与存档相互关联。",
+      "verification_status": "沿用前次静态复核；本轮未改",
+      "lua_files": 4,
+      "options": 12,
+      "core_functions": [
+        {
+          "file": "Survival Light 2a_script.lua",
+          "name": "OnPopulate",
+          "line": 73,
+          "end_line": 119,
+          "sha256": "fa6d302ead5d8802470b192aba6331638fed88cab6d1f90c27ed39eb949312e8"
+        },
+        {
+          "file": "Survival Light 2a_script.lua",
+          "name": "OnStart",
+          "line": 124,
+          "end_line": 138,
+          "sha256": "690cf5b0d713204bc7b130dcdd974969f0c19324c1bcc3fea355388cca44284c"
+        },
+        {
+          "file": "Survival Light 2a_script.lua",
+          "name": "gameLogic",
+          "line": 660,
+          "end_line": 672,
+          "sha256": "2901a0307443124f79e488b2cf4f5522fe7b5d42590e948efde525273ef10d1f"
+        },
+        {
+          "file": "Survival Light 2a_script.lua",
+          "name": "spawnWaves",
+          "line": 764,
+          "end_line": 798,
+          "sha256": "1c8da384acad75d46f7a4cf5a53530ad5065aa43f7f6ca8bebaf1b520ca73bb1"
+        },
+        {
+          "file": "Survival Light 2a_script.lua",
+          "name": "spawnWave",
+          "line": 1050,
+          "end_line": 1160,
+          "sha256": "5aa010d23e67c8793a67cb50af7b537f48e0bfbb56aa28750002b485f6e3835d"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 0,
+      "main_file_hashes": [
+        {
+          "path": "Survival Light 2a_options.lua",
+          "bytes": 6761,
+          "sha256": "913ab74d675ab8ff6365ccc8b233687fc61ea392780568cc4e34d4fb1df12154"
+        },
+        {
+          "path": "Survival Light 2a_save.lua",
+          "bytes": 82717,
+          "sha256": "abb67ed4af4b83ec2788c4e6658d3fd6219c15a1d0fb057f660532c0d7fad53a"
+        },
+        {
+          "path": "Survival Light 2a_scenario.lua",
+          "bytes": 1530,
+          "sha256": "28eb72e6bba20f43255f8dd123adedea932bcd84d95fc3cfd9ad0d2937c5e5cc"
+        },
+        {
+          "path": "Survival Light 2a_script.lua",
+          "bytes": 57534,
+          "sha256": "515c084e0f070240c53bfbefb3134a53e315a6d9ed2819f65b8835b517965393"
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "name": "Survival 5th Dimension Center EE v7",
+      "version": 7,
+      "relative_folder": "08槽位/survival_5th_dimension_center_ee",
+      "slots": 8,
+      "gameplay": "Center EE扩展经典守点",
+      "learning_value": "人数调整、RangeBoat、经济/回收、模块化波次。",
+      "maintenance_boundary": "主脚本不是全部波表；测试src和vendor依赖，35分钟描述不等于所有选项相同。",
+      "verification_status": "已修改待实测",
+      "lua_files": 21,
+      "options": 9,
+      "core_functions": [
+        {
+          "file": "survival_5th_dimension_center_ee_script.lua",
+          "name": "OnPopulate",
+          "line": 215,
+          "end_line": 233,
+          "sha256": "972d8813971a596d04b9d19215b3eebc5ee283036b6ec4a28218a4683c76f068"
+        },
+        {
+          "file": "survival_5th_dimension_center_ee_script.lua",
+          "name": "OnStart",
+          "line": 334,
+          "end_line": 337,
+          "sha256": "c4b6104543ed441694187aa4944cb3d88e21f045d63f48561442461ca26662e9"
+        },
+        {
+          "file": "survival_5th_dimension_center_ee_script.lua",
+          "name": "Survival_InitGame",
+          "line": 343,
+          "end_line": 390,
+          "sha256": "3477b5cbe7cbd97bb206e685327e5160995f5c863e1eb15e63ae200f6d1a66b6"
+        },
+        {
+          "file": "survival_5th_dimension_center_ee_script.lua",
+          "name": "Survival_Tick",
+          "line": 521,
+          "end_line": 637,
+          "sha256": "dfa633d8cfa0155d0f79cd5c8a750b89a688b6c0f8c4f590f9bcb325772454a3"
+        },
+        {
+          "file": "survival_5th_dimension_center_ee_script.lua",
+          "name": "Survival_UpdateWaves",
+          "line": 643,
+          "end_line": 655,
+          "sha256": "9c4f156defd61075ba694a15229cb26456f51b6ac9147f3ecb243c6190b22828"
+        },
+        {
+          "file": "survival_5th_dimension_center_ee_script.lua",
+          "name": "Survival_SpawnUnit",
+          "line": 731,
+          "end_line": 742,
+          "sha256": "f7f7c63167422b120432c5ef2d551a249864840a1bae471e873a6f10bae02408"
+        },
+        {
+          "file": "survival_5th_dimension_center_ee_script.lua",
+          "name": "Survival_SpawnWave",
+          "line": 770,
+          "end_line": 778,
+          "sha256": "adbe8a7a2c65a96c5ec925c607a0232de2408fe518aa5e338f48bf817d7ab127"
+        },
+        {
+          "file": "survival_5th_dimension_center_ee_script.lua",
+          "name": "Survival_CalcWaveCounts",
+          "line": 788,
+          "end_line": 792,
+          "sha256": "cbedadbb6197ef61d8d153abbf7317dff434637d7195ddb5987f50a91c268930"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 0,
+      "main_file_hashes": [
+        {
+          "path": "survival_5th_dimension_center_ee_options.lua",
+          "bytes": 8036,
+          "sha256": "da5d4a2e06a4dfabad2e4bebf8ddb15bed2876df3032dad9a769df48953d60eb"
+        },
+        {
+          "path": "survival_5th_dimension_center_ee_save.lua",
+          "bytes": 104450,
+          "sha256": "b9d20797392554dfd6ba59fab8c8b0ff6128bfcd1593da38bab9240d31040a8d"
+        },
+        {
+          "path": "survival_5th_dimension_center_ee_scenario.lua",
+          "bytes": 1702,
+          "sha256": "908777261bf6b9693ef6b4d59dbf80614efedc6faefa5c1b4f1361d956e2fc2e"
+        },
+        {
+          "path": "survival_5th_dimension_center_ee_script.lua",
+          "bytes": 24694,
+          "sha256": "1f1f29823a9a6bafa1d50a3d2b4225dd7a59f580a9165c13447306519c77be56"
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "name": "survival_5thdimension 8 player",
+      "version": 4,
+      "relative_folder": "08槽位/survival_5thdimension_8_player",
+      "slots": 8,
+      "gameplay": "真正八人5th",
+      "learning_value": "8个玩家合作的经典波次与人数配置。",
+      "maintenance_boundary": "与practice旧AI占槽方式不同，不能混称同一种8槽。",
+      "verification_status": "沿用前次静态复核；本轮未改",
+      "lua_files": 4,
+      "options": 3,
+      "core_functions": [
+        {
+          "file": "survival_5thdimension_8_player_script.lua",
+          "name": "OnPopulate",
+          "line": 749,
+          "end_line": 762,
+          "sha256": "fdd8a10a10f6416355a1838003e59f23b6adea14239e65c6293be625ad93dbe1"
+        },
+        {
+          "file": "survival_5thdimension_8_player_script.lua",
+          "name": "OnStart",
+          "line": 837,
+          "end_line": 845,
+          "sha256": "85f7c5cbf822e915e15bba4d310e1edea5c779c3ed8190736398ce1867c79a01"
+        },
+        {
+          "file": "survival_5thdimension_8_player_script.lua",
+          "name": "Survival_InitGame",
+          "line": 851,
+          "end_line": 927,
+          "sha256": "c221ecaaeafd6ea9374a40dd102e9ad59d9620e33c52f2ac69778949512af1ce"
+        },
+        {
+          "file": "survival_5thdimension_8_player_script.lua",
+          "name": "Survival_Tick",
+          "line": 1136,
+          "end_line": 1226,
+          "sha256": "7aa9bfab50180334b1fb51daeda95d43a086e32520ed3504fe4f97ddcb7634ea"
+        },
+        {
+          "file": "survival_5thdimension_8_player_script.lua",
+          "name": "Survival_UpdateWaves",
+          "line": 1232,
+          "end_line": 1261,
+          "sha256": "aef373f033d4eb19442b143f0b28d47f7f7fc847815c42941a3b51f9c774a9b3"
+        },
+        {
+          "file": "survival_5thdimension_8_player_script.lua",
+          "name": "Survival_SpawnWave",
+          "line": 1267,
+          "end_line": 1309,
+          "sha256": "2160fb2922bc63cdee707955fd1663faa9ad162fbe7cb5bdd1a25f8456aeec6e"
+        },
+        {
+          "file": "survival_5thdimension_8_player_script.lua",
+          "name": "Survival_SpawnUnit",
+          "line": 1315,
+          "end_line": 1333,
+          "sha256": "a1429cf24a23f560dc7082a9fd94ee1f096082b9f1cc3f0d0dbf46ddc22f035f"
+        },
+        {
+          "file": "survival_5thdimension_8_player_script.lua",
+          "name": "Survival_CalcWaveCounts",
+          "line": 1557,
+          "end_line": 1565,
+          "sha256": "3d78de2aa312341c61f124aa45412a4d1ff1481c5a58fb3736f9fc6827b0f20e"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 3,
+      "main_file_hashes": [
+        {
+          "path": "survival_5thdimension_8_player_options.lua",
+          "bytes": 3102,
+          "sha256": "23af72a8d0b2c64b7c99484035da6df9a3a8b6e2d12c249dfb0b2ce079667cc5"
+        },
+        {
+          "path": "survival_5thdimension_8_player_save.lua",
+          "bytes": 123067,
+          "sha256": "6614cb64f957fbe2009e40e50c804528d7446ce4a1e236d03c7d5cfd5d511277"
+        },
+        {
+          "path": "survival_5thdimension_8_player_scenario.lua",
+          "bytes": 1000,
+          "sha256": "f2e20c9245f432a10f192c203fae85bf41225369140fc2911b7655359235a762"
+        },
+        {
+          "path": "survival_5thdimension_8_player_script.lua",
+          "bytes": 53524,
+          "sha256": "fdc14df344cc696e94277bd084c93b4a466d39ddcc60975770ceff061ba1a0cb"
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "name": "Survival EXtreme NavyV28",
+      "version": 1,
+      "relative_folder": "08槽位/Survival_ExtremeNavy",
+      "slots": 8,
+      "gameplay": "八槽Extreme Navy",
+      "learning_value": "8槽海战的门、特殊武器和波次。",
+      "maintenance_boundary": "外置预览曾被Onix复用但实图不同；保留独立玩法。",
+      "verification_status": "沿用前次静态复核；本轮未改",
+      "lua_files": 4,
+      "options": 4,
+      "core_functions": [
+        {
+          "file": "Survival_ExtremeNavyV28_script.lua",
+          "name": "OnPopulate",
+          "line": 63,
+          "end_line": 85,
+          "sha256": "a998227a06da0f6582cc85b36d18900ebfea74630e5db8be2ef333340aedd9f5"
+        },
+        {
+          "file": "Survival_ExtremeNavyV28_script.lua",
+          "name": "OnStart",
+          "line": 144,
+          "end_line": 158,
+          "sha256": "c7dd1691ba18a24744a3d7f980c7911810f1d105851403065a1bfd2c28b83011"
+        },
+        {
+          "file": "Survival_ExtremeNavyV28_script.lua",
+          "name": "gameLogic",
+          "line": 691,
+          "end_line": 704,
+          "sha256": "3fd94e40306a2ce9a6f50eebfc15d3f2efe9d1578063b75e11258a3c440b9566"
+        },
+        {
+          "file": "Survival_ExtremeNavyV28_script.lua",
+          "name": "spawnWaves",
+          "line": 747,
+          "end_line": 785,
+          "sha256": "35121cc8119d6de5d3fc23481ee74a8cf88280a76982e0981d06eb2d5de4f697"
+        },
+        {
+          "file": "Survival_ExtremeNavyV28_script.lua",
+          "name": "spawnWave",
+          "line": 787,
+          "end_line": 856,
+          "sha256": "e8d288ec49f5c7da4f86cf6bf91d341009b451e3a7a4de400f7001d88bcbdcf7"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 0,
+      "main_file_hashes": [
+        {
+          "path": "Survival_ExtremeNavyV28_options.lua",
+          "bytes": 2320,
+          "sha256": "c18cfedaaec7fe915fa31f23718d8d012bd12c51c9c5e5a2970adfe67802bfbd"
+        },
+        {
+          "path": "Survival_ExtremeNavyV28_save.lua",
+          "bytes": 63095,
+          "sha256": "3afdb18404dcdfdb7eafdfb35aa7d38bf15effe367de29a8b93b1f9eb026e115"
+        },
+        {
+          "path": "Survival_ExtremeNavyV28_scenario.lua",
+          "bytes": 1268,
+          "sha256": "7dd3a01beb0e54bb79c80877cc25095e1979f3986ab10e65c38702cacaa275ae"
+        },
+        {
+          "path": "Survival_ExtremeNavyV28_script.lua",
+          "bytes": 35086,
+          "sha256": "5896bf70d9d05255da1cea71bacc7632d20cc1465158ffc104109d92486b0338"
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "name": "voodoo battle survival new v25",
+      "version": 25,
+      "relative_folder": "08槽位/voodoo_battle_survival_new",
+      "slots": 8,
+      "gameplay": "Voodoo New多模式",
+      "learning_value": "18项设置与条件单位池；与Desert Front系对照。",
+      "maintenance_boundary": "本轮修偏好并按源码v24保守升v25；不恢复旧73质量点布局。",
+      "verification_status": "已修改待实测",
+      "lua_files": 38,
+      "options": 18,
+      "core_functions": [
+        {
+          "file": "voodoo_battle_survival_new_script.lua",
+          "name": "OnPopulate",
+          "line": 203,
+          "end_line": 225,
+          "sha256": "7ed2814d0b417fd1295953273c046f63585335432d9652a8bffd886af3cf6678"
+        },
+        {
+          "file": "voodoo_battle_survival_new_script.lua",
+          "name": "OnStart",
+          "line": 228,
+          "end_line": 240,
+          "sha256": "27aef3d48e41dfddbc87e1959bf9ff209e98dfe8f74d71c6944bcee6e768025e"
+        },
+        {
+          "file": "voodoo_battle_survival_new_script.lua",
+          "name": "SetupGame",
+          "line": 242,
+          "end_line": 273,
+          "sha256": "19c3fb7dc8d0c38196c776e5352e08cff906b2bd1f2b290447dac65a78183f71"
+        },
+        {
+          "file": "voodoo_battle_survival_new_script.lua",
+          "name": "GameUpdate",
+          "line": 297,
+          "end_line": 441,
+          "sha256": "b16a584dc7b929091c16ef2b93baddb731dde1c707c7da4c76dfa2562d14e205"
+        },
+        {
+          "file": "voodoo_battle_survival_new_script.lua",
+          "name": "SpawnWave",
+          "line": 443,
+          "end_line": 479,
+          "sha256": "f840c64f1b40b9cf9919d799e10019d3c895586eab8f6af5e5da13f702229bde"
+        },
+        {
+          "file": "voodoo_battle_survival_new_script.lua",
+          "name": "WaveUpdate",
+          "line": 482,
+          "end_line": 529,
+          "sha256": "4b8ea85e817ce4effdf413301e6f0cdf6bf28a22d84a793324eec75ca09815b7"
+        },
+        {
+          "file": "voodoo_battle_survival_new_script.lua",
+          "name": "SpawnBossWave",
+          "line": 532,
+          "end_line": 604,
+          "sha256": "633bad8bfe3fe396a1fbed6c9570e7b724695a0504acad8625b44fd3cb84b441"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 0,
+      "main_file_hashes": [
+        {
+          "path": "voodoo_battle_survival_new_options.lua",
+          "bytes": 13105,
+          "sha256": "b325ba2960193fcff32c7040cf9f476db125c4b7cb1b83d59f768e948d54bfea"
+        },
+        {
+          "path": "voodoo_battle_survival_new_save.lua",
+          "bytes": 47015,
+          "sha256": "15ebe7794e2d49a30be0c3ce10373abd7dbba1c277902af190c71f042a140981"
+        },
+        {
+          "path": "voodoo_battle_survival_new_scenario.lua",
+          "bytes": 1161,
+          "sha256": "0074adfacefcd877f2ccb06a47c3b5bdf69818d6771f58bf7e156e50eb1f5d56"
+        },
+        {
+          "path": "voodoo_battle_survival_new_script.lua",
+          "bytes": 58577,
+          "sha256": "bdb6b57d9a331b96dd67ee0cf7892f858a3f99a693c1f0624d6e98aa18a425ef"
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "name": "naval survival onix v70",
+      "version": 70,
+      "relative_folder": "09槽位/naval_survival_onix",
+      "slots": 9,
+      "gameplay": "Naval Onix海战变体",
+      "learning_value": "Onix海战生成与门逻辑；预览已校正。",
+      "maintenance_boundary": "ARMY_SUPERWEAPON同时在大厅与ExtraArmies，特殊第九槽意图待实测；不擅删。",
+      "verification_status": "已修改待实测",
+      "lua_files": 4,
+      "options": 4,
+      "core_functions": [
+        {
+          "file": "naval_survival_onix_script.lua",
+          "name": "OnPopulate",
+          "line": 63,
+          "end_line": 85,
+          "sha256": "93c0b942adc855f62cf9ee89c1db3b4311416f79dfcf21d05fda6596d5b994a7"
+        },
+        {
+          "file": "naval_survival_onix_script.lua",
+          "name": "OnStart",
+          "line": 144,
+          "end_line": 158,
+          "sha256": "69124362fb73b0db34a9642fa1cbc0ca6c5e1c985e485c7975c0b2d4d84f98e7"
+        },
+        {
+          "file": "naval_survival_onix_script.lua",
+          "name": "gameLogic",
+          "line": 691,
+          "end_line": 704,
+          "sha256": "4ed13523d3b78ae33fb954d8d355d6230b8b78283c99e5287ddfeb0043094582"
+        },
+        {
+          "file": "naval_survival_onix_script.lua",
+          "name": "spawnWaves",
+          "line": 747,
+          "end_line": 785,
+          "sha256": "2d8be4203cf6cfe0a1b6c7ef5144ca1f3823d0ce14272cf65137300b9339d129"
+        },
+        {
+          "file": "naval_survival_onix_script.lua",
+          "name": "spawnWave",
+          "line": 787,
+          "end_line": 856,
+          "sha256": "be087319af7be5ac29916c94374a29dd610e6712325feee67fc87c14fe567353"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 0,
+      "main_file_hashes": [
+        {
+          "path": "naval_survival_onix_options.lua",
+          "bytes": 2254,
+          "sha256": "5baec49baa65a93f82d3d2210d558bd2fed6d11550a911c5b88b623da08ebf4c"
+        },
+        {
+          "path": "naval_survival_onix_save.lua",
+          "bytes": 92664,
+          "sha256": "d7d746a280c0cfcb647f0ef56d60e36ed424dda4b16ec3fc16736b60db687c66"
+        },
+        {
+          "path": "naval_survival_onix_scenario.lua",
+          "bytes": 996,
+          "sha256": "a54b770d973ff3d3d996ac4987f916fc2c83d36fd57869ea248b70759ddc53fb"
+        },
+        {
+          "path": "naval_survival_onix_script.lua",
+          "bytes": 34090,
+          "sha256": "30d861faf8944975f83d42ab19db91870ae200d50cc924a026849447cea64444"
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "name": "pass survival aix v2",
+      "version": 15,
+      "relative_folder": "09槽位/pass_survival_aix",
+      "slots": 9,
+      "gameplay": "AIX布局与军队初始化",
+      "learning_value": "AI对战、初始化和传送限制布局参考。",
+      "maintenance_boundary": "地图内没有自动生存波次，需大厅配置AI；AIX字样不能当专用生存MOD证据。",
+      "verification_status": "沿用前次静态复核；本轮未改",
+      "lua_files": 3,
+      "options": 0,
+      "core_functions": [
+        {
+          "file": "pass_survival_aix_v2_script.lua",
+          "name": "OnPopulate",
+          "line": 4,
+          "end_line": 12,
+          "sha256": "6e32c1143bf3f8d550f5d663aaf479bdeccd2af81906420bfa7a33011cb47929"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 0,
+      "main_file_hashes": [
+        {
+          "path": "pass_survival_aix_v2_save.lua",
+          "bytes": 115229,
+          "sha256": "6a75d3fbf5b0f0b378b5b6eeb4b37014a382c9720b4ee2a25e51abced4281fab"
+        },
+        {
+          "path": "pass_survival_aix_v2_scenario.lua",
+          "bytes": 844,
+          "sha256": "43149b9c89b31c90fd2324098ca28d1f900eae60de1645c0ef399620d12d2294"
+        },
+        {
+          "path": "pass_survival_aix_v2_script.lua",
+          "bytes": 322,
+          "sha256": "89b2484c2b7e7de112157030108a5e58295ffc9298bac6b3ba2a4c777757c0f5"
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "name": "Survival Terror Lands v2",
+      "version": 2,
+      "relative_folder": "10槽位/survival_terror_lands",
+      "slots": 10,
+      "gameplay": "Terror Lands多模式守点",
+      "learning_value": "SetupACUs、首领、禁造、回收与可选MOD基础分支。",
+      "maintenance_boundary": "本轮修偏好；首领/无尽/路线和MOD限定模式逐项实测。",
+      "verification_status": "已修改待实测",
+      "lua_files": 34,
+      "options": 18,
+      "core_functions": [
+        {
+          "file": "Survival_Terror_Lands_script.lua",
+          "name": "OnPopulate",
+          "line": 200,
+          "end_line": 225,
+          "sha256": "0fc4e200e982bed2bbd7fc63523e15e599e042ad5ce48dbbc94c69d19c9951ac"
+        },
+        {
+          "file": "Survival_Terror_Lands_script.lua",
+          "name": "OnStart",
+          "line": 228,
+          "end_line": 240,
+          "sha256": "27aef3d48e41dfddbc87e1959bf9ff209e98dfe8f74d71c6944bcee6e768025e"
+        },
+        {
+          "file": "Survival_Terror_Lands_script.lua",
+          "name": "SetupGame",
+          "line": 242,
+          "end_line": 273,
+          "sha256": "375349ab6f8042dd5172a36c0fee96df90749ac9ce2162dc2d4835c5d8af177f"
+        },
+        {
+          "file": "Survival_Terror_Lands_script.lua",
+          "name": "GameUpdate",
+          "line": 297,
+          "end_line": 441,
+          "sha256": "48b3fe33162d375c371c22b37ff9ea8f4fa9ce63b4b5a4b7324ca001bc218062"
+        },
+        {
+          "file": "Survival_Terror_Lands_script.lua",
+          "name": "SpawnWave",
+          "line": 443,
+          "end_line": 479,
+          "sha256": "f840c64f1b40b9cf9919d799e10019d3c895586eab8f6af5e5da13f702229bde"
+        },
+        {
+          "file": "Survival_Terror_Lands_script.lua",
+          "name": "WaveUpdate",
+          "line": 482,
+          "end_line": 529,
+          "sha256": "4b8ea85e817ce4effdf413301e6f0cdf6bf28a22d84a793324eec75ca09815b7"
+        },
+        {
+          "file": "Survival_Terror_Lands_script.lua",
+          "name": "SpawnBossWave",
+          "line": 532,
+          "end_line": 604,
+          "sha256": "633bad8bfe3fe396a1fbed6c9570e7b724695a0504acad8625b44fd3cb84b441"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 0,
+      "main_file_hashes": [
+        {
+          "path": "Survival_Terror_Lands_options.lua",
+          "bytes": 11680,
+          "sha256": "e2b4cd28a16c93f78cbd93e1df04e4d554f64cdae4291bdee735a9cdf051c54c"
+        },
+        {
+          "path": "Survival_Terror_Lands_save.lua",
+          "bytes": 39383,
+          "sha256": "ec0b9c734b480388df78bd53b98297dd3bb2f701821a5c8621a594330c2427be"
+        },
+        {
+          "path": "Survival_Terror_Lands_scenario.lua",
+          "bytes": 999,
+          "sha256": "05493e04f040c7cbe1440c8e6f01b9cb235bc05940246deaf36f850cb4f877a4"
+        },
+        {
+          "path": "Survival_Terror_Lands_script.lua",
+          "bytes": 49470,
+          "sha256": "dcf28504bf4c72b9ebcbca525ae8bed389c185c255bf916e53ccba0697672b2c"
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "name": "66安尔乐v05C",
+      "version": 5,
+      "relative_folder": "12槽位/Anerle",
+      "slots": 12,
+      "gameplay": "Anerle分队与竞争波次",
+      "learning_value": "按玩家/队伍生成资源和波次映射；存活队伍判定。",
+      "maintenance_boundary": "资源函数拼写虽不标准但一致调用可有效，不为美观批量改函数名。",
+      "verification_status": "沿用前次静态复核；本轮未改",
+      "lua_files": 3,
+      "options": 0,
+      "core_functions": [
+        {
+          "file": "Anerle.v05C_script.lua",
+          "name": "OnPopulate",
+          "line": 728,
+          "end_line": 732,
+          "sha256": "7bc23faadd5c750812ebee7e4b993da329884aaeb1c52a20590c0d5153d0ffef"
+        },
+        {
+          "file": "Anerle.v05C_script.lua",
+          "name": "OnStart",
+          "line": 734,
+          "end_line": 827,
+          "sha256": "d001470fb4e0906fb3eaf5b0e7ca0bdafe238f8a87ef379b7a8d9c0afb6e6bb6"
+        },
+        {
+          "file": "Anerle.v05C_script.lua",
+          "name": "getWaveByArmy",
+          "line": 1058,
+          "end_line": 1066,
+          "sha256": "79dd3fd1424d2af9ad344b890b7a89a3bca8fe3f448fd84c19424816f1e11b61"
+        },
+        {
+          "file": "Anerle.v05C_script.lua",
+          "name": "isDeadTeam",
+          "line": 1068,
+          "end_line": 1088,
+          "sha256": "00b7d35dd7cba6135aae91cd538e47b3e671cffa8868a0d2f3dede0d8caa48af"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 0,
+      "main_file_hashes": [
+        {
+          "path": "Anerle.v05C_save.lua",
+          "bytes": 57039,
+          "sha256": "acd186da93d8d3db8043da4549112aec22c4bfe6bf24edad93c2d8b94e614d9e"
+        },
+        {
+          "path": "Anerle.v05C_scenario.lua",
+          "bytes": 1457,
+          "sha256": "ad1f67ca2a4e54563828dc053abac114cf50aa0f3d37dc3a6676163567cac69e"
+        },
+        {
+          "path": "Anerle.v05C_script.lua",
+          "bytes": 33728,
+          "sha256": "2189674388f7b261073810faddf24e583b38b08d5d78899e89db9b48a7d7623f"
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "name": "Survival EpischeLAN v6",
+      "version": 6,
+      "relative_folder": "12槽位/survival_epischelan",
+      "slots": 12,
+      "gameplay": "EpischeLAN多门攻防",
+      "learning_value": "门死亡胜利、特殊武器、SAM和大人数布局。",
+      "maintenance_boundary": "Redone独立地形此前按授权舍弃；当前不重做资源/出生布局。",
+      "verification_status": "已修改待实测",
+      "lua_files": 5,
+      "options": 6,
+      "core_functions": [
+        {
+          "file": "Survival_EpischeLAN_script.lua",
+          "name": "OnPopulate",
+          "line": 72,
+          "end_line": 100,
+          "sha256": "c4b4dcb1137ed1b7ee92370e6ae219065c526c125a8a62ad8ea7c0461370a220"
+        },
+        {
+          "file": "Survival_EpischeLAN_script.lua",
+          "name": "OnStart",
+          "line": 159,
+          "end_line": 173,
+          "sha256": "11265e8c758ace04365084f51dd01c68d5fea273a489e68eb2d85742818190cf"
+        },
+        {
+          "file": "Survival_EpischeLAN_script.lua",
+          "name": "gameLogic",
+          "line": 737,
+          "end_line": 750,
+          "sha256": "bb08c134cb3eaf067e8d8f17ade64636c89454b9b22d517ba4a1bd48f6b2253a"
+        },
+        {
+          "file": "Survival_EpischeLAN_script.lua",
+          "name": "spawnWaves",
+          "line": 793,
+          "end_line": 832,
+          "sha256": "b47804caeaebad2d9e2975eefb0e5fd1244f0983636e0f620eccb6924e73c26b"
+        },
+        {
+          "file": "Survival_EpischeLAN_script.lua",
+          "name": "spawnWave",
+          "line": 834,
+          "end_line": 903,
+          "sha256": "be087319af7be5ac29916c94374a29dd610e6712325feee67fc87c14fe567353"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 0,
+      "main_file_hashes": [
+        {
+          "path": "Survival_EpischeLAN_options.lua",
+          "bytes": 3343,
+          "sha256": "564e1ef80d68f74e1063b0a69fc7de24680966ccd57d9169270dd6d717ab5322"
+        },
+        {
+          "path": "Survival_EpischeLAN_save.lua",
+          "bytes": 140551,
+          "sha256": "50a6b80c836c88a3b9b7186cd28368828da259d456f140b88c6022a1bdad1eab"
+        },
+        {
+          "path": "Survival_EpischeLAN_scenario.lua",
+          "bytes": 1058,
+          "sha256": "5abdd5b4e9523c165899ad5c83d886f9a82bd089d7625c6ce1bdec4a04198b7e"
+        },
+        {
+          "path": "Survival_EpischeLAN_script.lua",
+          "bytes": 37799,
+          "sha256": "a95f1c915c537c4e1469716ecc63b59d7914b7d16d96caae186dad2da6e9a451"
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "name": "survival_5thdimension 16 player",
+      "version": 8,
+      "relative_folder": "16槽位/survival_5thdimension_16_player",
+      "slots": 16,
+      "gameplay": "十六人5th",
+      "learning_value": "16人配置与经典波次的扩展边界。",
+      "maintenance_boundary": "大量玩家/军队上限和性能需实际目标版本核验，不凭槽位特殊判坏图。",
+      "verification_status": "沿用前次静态复核；本轮未改",
+      "lua_files": 4,
+      "options": 3,
+      "core_functions": [
+        {
+          "file": "survival_5thdimension_16_player_script.lua",
+          "name": "OnPopulate",
+          "line": 749,
+          "end_line": 762,
+          "sha256": "fdd8a10a10f6416355a1838003e59f23b6adea14239e65c6293be625ad93dbe1"
+        },
+        {
+          "file": "survival_5thdimension_16_player_script.lua",
+          "name": "OnStart",
+          "line": 837,
+          "end_line": 845,
+          "sha256": "85f7c5cbf822e915e15bba4d310e1edea5c779c3ed8190736398ce1867c79a01"
+        },
+        {
+          "file": "survival_5thdimension_16_player_script.lua",
+          "name": "Survival_InitGame",
+          "line": 851,
+          "end_line": 924,
+          "sha256": "e5d339f53451abad155968309ea321d90563238536f23201f94c957622bae276"
+        },
+        {
+          "file": "survival_5thdimension_16_player_script.lua",
+          "name": "Survival_Tick",
+          "line": 1133,
+          "end_line": 1223,
+          "sha256": "776ae8e214140cbd288d006c877359d32b1284e9a6aa1ff78aef78b5639aac70"
+        },
+        {
+          "file": "survival_5thdimension_16_player_script.lua",
+          "name": "Survival_UpdateWaves",
+          "line": 1229,
+          "end_line": 1258,
+          "sha256": "aef373f033d4eb19442b143f0b28d47f7f7fc847815c42941a3b51f9c774a9b3"
+        },
+        {
+          "file": "survival_5thdimension_16_player_script.lua",
+          "name": "Survival_SpawnWave",
+          "line": 1264,
+          "end_line": 1306,
+          "sha256": "2160fb2922bc63cdee707955fd1663faa9ad162fbe7cb5bdd1a25f8456aeec6e"
+        },
+        {
+          "file": "survival_5thdimension_16_player_script.lua",
+          "name": "Survival_SpawnUnit",
+          "line": 1312,
+          "end_line": 1330,
+          "sha256": "a1429cf24a23f560dc7082a9fd94ee1f096082b9f1cc3f0d0dbf46ddc22f035f"
+        },
+        {
+          "file": "survival_5thdimension_16_player_script.lua",
+          "name": "Survival_CalcWaveCounts",
+          "line": 1554,
+          "end_line": 1562,
+          "sha256": "3d78de2aa312341c61f124aa45412a4d1ff1481c5a58fb3736f9fc6827b0f20e"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 3,
+      "main_file_hashes": [
+        {
+          "path": "survival_5thdimension_16_player_options.lua",
+          "bytes": 2533,
+          "sha256": "8753d453ad0cef82dcfd4d760d26bbad20c4c82b9d640596018617259d6056e6"
+        },
+        {
+          "path": "survival_5thdimension_16_player_save.lua",
+          "bytes": 138523,
+          "sha256": "ed522fd0c16fad61d519b7800e21e31f5ba49f64860133200951c64ac22fd598"
+        },
+        {
+          "path": "survival_5thdimension_16_player_scenario.lua",
+          "bytes": 1095,
+          "sha256": "b7a5b09b3bd531a36a7a8adb4dbd4a7206b86ad052b9ab1154b2c0ad5a634f34"
+        },
+        {
+          "path": "survival_5thdimension_16_player_script.lua",
+          "bytes": 53929,
+          "sha256": "3f5d6f3f1a008ce30e6ccaa27076e0f9f8607ebd25cbe3cacb10f53953602ffb"
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "name": "Survival DDay Horde",
+      "version": 2,
+      "relative_folder": "待测试_依赖与资源核对/04槽位/survival_dday_horde",
+      "slots": 4,
+      "gameplay": "DDay Horde海滩路线防守",
+      "learning_value": "成对单位表/命令表、空投/空军与空路线关闭。",
+      "maintenance_boundary": "Steam缺失Floe_prop.bp候选资源；不凭缺图就称整个脚本不能运行。",
+      "verification_status": "沿用前次静态复核；本轮未改",
+      "lua_files": 10,
+      "options": 3,
+      "core_functions": [
+        {
+          "file": "survival_dday_horde_script.lua",
+          "name": "CreateWaves",
+          "line": 540,
+          "end_line": 548,
+          "sha256": "9c9863746a8377a45f76af55d9aa01f34c76cbf3e9f565a7ff76f003d8c74cf4"
+        },
+        {
+          "file": "survival_dday_horde_script.lua",
+          "name": "CreateWaveTableOrders",
+          "line": 550,
+          "end_line": 559,
+          "sha256": "2c7b7ee464721f4e7379beeadff059888f5537c2b913fbf55b14a17a93664ea1"
+        },
+        {
+          "file": "survival_dday_horde_script.lua",
+          "name": "OnPopulate",
+          "line": 588,
+          "end_line": 909,
+          "sha256": "72dcc67036a2e5d2c4f49dbc9e950979c4237d16302f96635bc16ec1c073b045"
+        },
+        {
+          "file": "survival_dday_horde_script.lua",
+          "name": "OnStart",
+          "line": 914,
+          "end_line": 919,
+          "sha256": "fde7a36c0ace64119bb1e0f1d7a84766fab66e5ad4ec5d12673d24734e5201a7"
+        },
+        {
+          "file": "survival_dday_horde_script.lua",
+          "name": "OnPlayerVictory",
+          "line": 1034,
+          "end_line": 1068,
+          "sha256": "40cec2f8696345adc9decb493ec6a9bf457b954041a520c24750c05e919e8a12"
+        },
+        {
+          "file": "survival_dday_horde_script.lua",
+          "name": "OnPlayerDefeat",
+          "line": 1089,
+          "end_line": 1140,
+          "sha256": "94e8ed3a628d554f33bbaf3657589de87df97ca5e9d264455e47e60242aeaaa7"
+        },
+        {
+          "file": "survival_dday_horde_script.lua",
+          "name": "Survival_Tick",
+          "line": 1144,
+          "end_line": 1801,
+          "sha256": "c92ee6e6f7af593434fb9baab6db71f35681e6f19097d0e7efd4bc36c54d679e"
+        }
+      ],
+      "missing_scmap_assets": [
+        "/env/Seraphim II/Props/Floe_prop.bp"
+      ],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 0,
+      "main_file_hashes": [
+        {
+          "path": "survival_dday_horde_options.lua",
+          "bytes": 1437,
+          "sha256": "19819698bd98145575aeb61406af7d2573c3e19cbdff42d0712094b8fb94e354"
+        },
+        {
+          "path": "survival_dday_horde_save.lua",
+          "bytes": 155937,
+          "sha256": "8c750afebe1dc928bcc49d2d8660641ad7c01e8aeed2b86f3f76371991700dba"
+        },
+        {
+          "path": "survival_dday_horde_scenario.lua",
+          "bytes": 1059,
+          "sha256": "6591a4cc26bf48fb4cfea80314e8892643d79433060d7ba9140ca6cd9657c306"
+        },
+        {
+          "path": "survival_dday_horde_script.lua",
+          "bytes": 90494,
+          "sha256": "3f8004a8b827fec8cb629de0d2a2cbc8277eb450e1007e01906c45dfec3e33df"
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "name": "Aeon Illuminate Survival v12",
+      "version": 12,
+      "relative_folder": "待测试_依赖与资源核对/05槽位/aeon_illuminate_survival",
+      "slots": 5,
+      "gameplay": "Aeon Illuminate黑日守护",
+      "learning_value": "阵营单位表、目标保护和运行中难度控制入口。",
+      "maintenance_boundary": "初始FAF防空/支援工厂已近似替换；4个备用EventDispatcher之一不在活动调用链证据中。",
+      "verification_status": "已修改待实测",
+      "lua_files": 32,
+      "options": 8,
+      "core_functions": [
+        {
+          "file": "Aeon_Illuminate_Survival_script.lua",
+          "name": "OnPopulate",
+          "line": 104,
+          "end_line": 122,
+          "sha256": "ba1879e19a16eb4570953b2698dc2c608a6f5f80b0449eaa05b7485999f32590"
+        },
+        {
+          "file": "Aeon_Illuminate_Survival_script.lua",
+          "name": "OnStart",
+          "line": 126,
+          "end_line": 129,
+          "sha256": "e65057bbce1251e8af5b0e266bedc890f3fba8ed6f1c53b8b84267ae845e8ac8"
+        },
+        {
+          "file": "Aeon_Illuminate_Survival_script.lua",
+          "name": "Survival_InitGame",
+          "line": 133,
+          "end_line": 188,
+          "sha256": "260e95542d9b3b239ad4da5facdeec1cf9e4dfaf694a07997ffc7a3aaf6c858e"
+        },
+        {
+          "file": "Aeon_Illuminate_Survival_script.lua",
+          "name": "Survival_Tick",
+          "line": 417,
+          "end_line": 503,
+          "sha256": "03963ec866926e1703a1c7f000b174d62a762ff06f5c748e4515135695e4d973"
+        },
+        {
+          "file": "Aeon_Illuminate_Survival_script.lua",
+          "name": "Survival_UpdateWaves",
+          "line": 509,
+          "end_line": 538,
+          "sha256": "1e684e0132983e1b0ea1989368f72d4aec8628e07c2228921d305353230d2f06"
+        },
+        {
+          "file": "Aeon_Illuminate_Survival_script.lua",
+          "name": "Survival_SpawnUnit",
+          "line": 554,
+          "end_line": 598,
+          "sha256": "75da872c6c6e6df4824c25850a11948f6208d2054f7de848908195827f87ae6b"
+        },
+        {
+          "file": "Aeon_Illuminate_Survival_script.lua",
+          "name": "Survival_SpawnWave",
+          "line": 600,
+          "end_line": 630,
+          "sha256": "fce229222ce4d9a556408b296f2ba504b4090db8b5317af65d86176f635053e3"
+        },
+        {
+          "file": "Aeon_Illuminate_Survival_script.lua",
+          "name": "Survival_CalcWaveCounts",
+          "line": 840,
+          "end_line": 848,
+          "sha256": "3d78de2aa312341c61f124aa45412a4d1ff1481c5a58fb3736f9fc6827b0f20e"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 0,
+      "main_file_hashes": [
+        {
+          "path": "Aeon_Illuminate_Survival_options.lua",
+          "bytes": 9227,
+          "sha256": "48018e042de12c7d18e38da8cc8527f97f8edcede9e5804df8cbf06d14056930"
+        },
+        {
+          "path": "Aeon_Illuminate_Survival_save.lua",
+          "bytes": 211206,
+          "sha256": "8f4a573587f71e78257a1a253cfc52e30ede367ad83e38acef643a3c350b3dc6"
+        },
+        {
+          "path": "Aeon_Illuminate_Survival_scenario.lua",
+          "bytes": 1194,
+          "sha256": "c8dfba85a6086c25669d246f5ff18ac5d3d76d8c6b75958384ea368898259712"
+        },
+        {
+          "path": "Aeon_Illuminate_Survival_script.lua",
+          "bytes": 32993,
+          "sha256": "d0da763359b4f0db60263e2a0a0c5d27454d96892d7621f17d7f723a3e04c884"
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "name": "deadzone survival v9",
+      "version": 9,
+      "relative_folder": "待测试_依赖与资源核对/06槽位/deadzone_survival",
+      "slots": 6,
+      "gameplay": "Deadzone经典守点",
+      "learning_value": "阶段表和随机出生/编队的常规实现。",
+      "maintenance_boundary": "FAF防空已替换，仍在资源与运行待测区，不承诺实机通过。",
+      "verification_status": "已修改待实测",
+      "lua_files": 4,
+      "options": 3,
+      "core_functions": [
+        {
+          "file": "deadzone_survival_script.lua",
+          "name": "OnPopulate",
+          "line": 896,
+          "end_line": 909,
+          "sha256": "fdd8a10a10f6416355a1838003e59f23b6adea14239e65c6293be625ad93dbe1"
+        },
+        {
+          "file": "deadzone_survival_script.lua",
+          "name": "OnStart",
+          "line": 984,
+          "end_line": 992,
+          "sha256": "85f7c5cbf822e915e15bba4d310e1edea5c779c3ed8190736398ce1867c79a01"
+        },
+        {
+          "file": "deadzone_survival_script.lua",
+          "name": "Survival_InitGame",
+          "line": 998,
+          "end_line": 1082,
+          "sha256": "759b1ab3e6ba1f8cfc2bb72bcba598cc39e12f21c8f4b04b329478ea5de92305"
+        },
+        {
+          "file": "deadzone_survival_script.lua",
+          "name": "Survival_Tick",
+          "line": 1291,
+          "end_line": 1381,
+          "sha256": "0870cb5a4fb0ec9b8589cbd84c17c581c562d7265c7382ff2fc277ec89803dd6"
+        },
+        {
+          "file": "deadzone_survival_script.lua",
+          "name": "Survival_UpdateWaves",
+          "line": 1387,
+          "end_line": 1416,
+          "sha256": "aef373f033d4eb19442b143f0b28d47f7f7fc847815c42941a3b51f9c774a9b3"
+        },
+        {
+          "file": "deadzone_survival_script.lua",
+          "name": "Survival_SpawnWave",
+          "line": 1422,
+          "end_line": 1464,
+          "sha256": "2160fb2922bc63cdee707955fd1663faa9ad162fbe7cb5bdd1a25f8456aeec6e"
+        },
+        {
+          "file": "deadzone_survival_script.lua",
+          "name": "Survival_SpawnUnit",
+          "line": 1470,
+          "end_line": 1488,
+          "sha256": "a1429cf24a23f560dc7082a9fd94ee1f096082b9f1cc3f0d0dbf46ddc22f035f"
+        },
+        {
+          "file": "deadzone_survival_script.lua",
+          "name": "Survival_CalcWaveCounts",
+          "line": 1712,
+          "end_line": 1720,
+          "sha256": "b1fa90ccadfc7f6034bb71972a405c79861084e7bb6af4f5ff31260ef956e25f"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 3,
+      "main_file_hashes": [
+        {
+          "path": "deadzone_survival_options.lua",
+          "bytes": 2275,
+          "sha256": "f45260da963e65fabf826c65a21a8dbeddae45fa0e63cf1512dc769240d292f8"
+        },
+        {
+          "path": "deadzone_survival_save.lua",
+          "bytes": 119394,
+          "sha256": "8cfc6f26718fcb8b4bd3ff18b35b7c2ccc1cd230f46fe94cf762962c90fb274b"
+        },
+        {
+          "path": "deadzone_survival_scenario.lua",
+          "bytes": 1075,
+          "sha256": "02abc9477b3dacc1fb7139eacccfcada2dc7267b4fce594461561e5893ac8a30"
+        },
+        {
+          "path": "deadzone_survival_script.lua",
+          "bytes": 57500,
+          "sha256": "e3576b021b8b69d50673d65335eaf67fa36a1f599e23296bf29fe0a82b0dbc98"
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "name": "Survival Experimental Factory",
+      "version": 3,
+      "relative_folder": "待测试_依赖与资源核对/06槽位/survival_experimental_factory",
+      "slots": 6,
+      "gameplay": "Experimental Factory实验级突击",
+      "learning_value": "小单位池的实验级数量/刷新控制，可研究计数边界。",
+      "maintenance_boundary": "实验级通路/单位拥堵与高频生成性能须单测，不能只测首波。",
+      "verification_status": "沿用前次静态复核；本轮未改",
+      "lua_files": 4,
+      "options": 3,
+      "core_functions": [
+        {
+          "file": "Survival_Experimental_Factory_script.lua",
+          "name": "OnPopulate",
+          "line": 339,
+          "end_line": 352,
+          "sha256": "fdd8a10a10f6416355a1838003e59f23b6adea14239e65c6293be625ad93dbe1"
+        },
+        {
+          "file": "Survival_Experimental_Factory_script.lua",
+          "name": "OnStart",
+          "line": 427,
+          "end_line": 435,
+          "sha256": "85f7c5cbf822e915e15bba4d310e1edea5c779c3ed8190736398ce1867c79a01"
+        },
+        {
+          "file": "Survival_Experimental_Factory_script.lua",
+          "name": "Survival_InitGame",
+          "line": 441,
+          "end_line": 529,
+          "sha256": "42c438998a1b9e0d246e33c176900e04d7942138da127a7a70a12df4e16f8283"
+        },
+        {
+          "file": "Survival_Experimental_Factory_script.lua",
+          "name": "Survival_Tick",
+          "line": 738,
+          "end_line": 828,
+          "sha256": "f0e4e81e0567d418892601a11072ead493a84658c86eaec80142ed6b93a51503"
+        },
+        {
+          "file": "Survival_Experimental_Factory_script.lua",
+          "name": "Survival_UpdateWaves",
+          "line": 834,
+          "end_line": 863,
+          "sha256": "aef373f033d4eb19442b143f0b28d47f7f7fc847815c42941a3b51f9c774a9b3"
+        },
+        {
+          "file": "Survival_Experimental_Factory_script.lua",
+          "name": "Survival_SpawnWave",
+          "line": 869,
+          "end_line": 909,
+          "sha256": "c4e8c3badd4ed9f9be713f3096083ff02884415b0171063daba545e01eff9399"
+        },
+        {
+          "file": "Survival_Experimental_Factory_script.lua",
+          "name": "Survival_SpawnUnit",
+          "line": 915,
+          "end_line": 933,
+          "sha256": "a1429cf24a23f560dc7082a9fd94ee1f096082b9f1cc3f0d0dbf46ddc22f035f"
+        },
+        {
+          "file": "Survival_Experimental_Factory_script.lua",
+          "name": "Survival_CalcWaveCounts",
+          "line": 1157,
+          "end_line": 1163,
+          "sha256": "14faf8a4dcf5a7d5321bfe736be0f2719f782fa6646ba3f7f632b2951c9513fe"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 3,
+      "main_file_hashes": [
+        {
+          "path": "Survival_Experimental_Factory_options.lua",
+          "bytes": 1976,
+          "sha256": "305d930e98e0736a79bc19e1d810fff5d8fe5be413fa06d874b4a61b4c6e57ff"
+        },
+        {
+          "path": "Survival_Experimental_Factory_save.lua",
+          "bytes": 84896,
+          "sha256": "f92ec3cdcfed16abaf3d015b16ae97fbb018c48694988f6c715829bf11bfe5ca"
+        },
+        {
+          "path": "Survival_Experimental_Factory_scenario.lua",
+          "bytes": 1042,
+          "sha256": "63b1fe7b6e0288bb8fac9b73819a061c70db9c7dcc720f35fc6e663ccff2aa7f"
+        },
+        {
+          "path": "Survival_Experimental_Factory_script.lua",
+          "bytes": 40570,
+          "sha256": "76349fe4170479d3a61df877490357f3e48da652012fa7dba894d03851982d35"
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "name": "Survival Stranded v23",
+      "version": 23,
+      "relative_folder": "待测试_依赖与资源核对/06槽位/survival_stranded",
+      "slots": 6,
+      "gameplay": "Stranded多模块海陆空防守",
+      "learning_value": "目标计时、门、海陆部队、空投、区域和友军模块。",
+      "maintenance_boundary": "本轮修区域API；上轮初始FAF单位改原版，部署、海军和胜负仍待实测。",
+      "verification_status": "已修改待实测",
+      "lua_files": 24,
+      "options": 10,
+      "core_functions": [
+        {
+          "file": "Allfactions.lua",
+          "name": "OnStart",
+          "line": 5,
+          "end_line": 77,
+          "sha256": "2b9abaf9dcf862fd4d7ee30dec71495be55af23d4b377278bf9f720067f156d7"
+        },
+        {
+          "file": "Areas.lua",
+          "name": "OnStart",
+          "line": 34,
+          "end_line": 56,
+          "sha256": "b7f8f66a47c5ff78fb05f90f332a575db31e16e79226f7c46fec7492176b88a8"
+        },
+        {
+          "file": "Defaultoptions.lua",
+          "name": "OnStart",
+          "line": 9,
+          "end_line": 60,
+          "sha256": "5bab1a068eeb61f1a2fd3892fca1029f1e8eae97d823b76ccf0cb1618ba0ef65"
+        },
+        {
+          "file": "Defenceobject.lua",
+          "name": "UpdateGameTimeObjective",
+          "line": 18,
+          "end_line": 53,
+          "sha256": "e5725e49c197a49b4094402039d8e96298139c44f8d1bfbdee46ae71a696ec3f"
+        },
+        {
+          "file": "Defenceobject.lua",
+          "name": "OnStart",
+          "line": 55,
+          "end_line": 136,
+          "sha256": "f860dcbbf6db55b4beaaf88eceef0e9be1037a046104a64e9e801420d83d742e"
+        },
+        {
+          "file": "GameTime.lua",
+          "name": "UpdateGameTimeObjective",
+          "line": 4,
+          "end_line": 21,
+          "sha256": "2ecba89793dfa37cfe1340ee02af9555817ea92e8712895a88e876aa933353ad"
+        },
+        {
+          "file": "Gateplatoons.lua",
+          "name": "OnStart",
+          "line": 84,
+          "end_line": 118,
+          "sha256": "97079bb9fba9466d79c9343b986b5b971b36b49f5357ea4d43caac472557e243"
+        },
+        {
+          "file": "Gates.lua",
+          "name": "OnStart",
+          "line": 10,
+          "end_line": 98,
+          "sha256": "ec644cf62b4071b0ce7b16e624a197ce2bd036558e2658d3dd5be5a835e5977c"
+        },
+        {
+          "file": "Landplatoons.lua",
+          "name": "OnStart",
+          "line": 95,
+          "end_line": 130,
+          "sha256": "13f868216304880ad10a3c3648c4864e0cfe2e843add4fb0e6e19936803c5423"
+        },
+        {
+          "file": "Markers.lua",
+          "name": "OnStart",
+          "line": 29,
+          "end_line": 133,
+          "sha256": "b32e20401340da5c2a4876c5c636cae14d8f0fd47b784ff85c0fa62355922759"
+        },
+        {
+          "file": "Navyplatoons.lua",
+          "name": "OnStart",
+          "line": 85,
+          "end_line": 111,
+          "sha256": "6ffbb58e24ae0769547c65db5fe121a3127b209bff2f28b50bdfb674e230d9e7"
+        },
+        {
+          "file": "Platoons.lua",
+          "name": "OnStart",
+          "line": 163,
+          "end_line": 171,
+          "sha256": "e35b8b0b8c72e34facff7ae9557fd9c8287ac216e5415b69307a7bb12dc68d50"
+        },
+        {
+          "file": "survival_stranded_script.lua",
+          "name": "OnPopulate",
+          "line": 46,
+          "end_line": 52,
+          "sha256": "836f8394fbb077f5ca5d790e6c7a60b3346a53ffe60324794133f60af54be946"
+        },
+        {
+          "file": "survival_stranded_script.lua",
+          "name": "OnStart",
+          "line": 54,
+          "end_line": 159,
+          "sha256": "78808fd9b2f859a367844af666df8ad92e77a076970eb2a7376dba060533b813"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 0,
+      "main_file_hashes": [
+        {
+          "path": "survival_stranded_options.lua",
+          "bytes": 10552,
+          "sha256": "29ac66b94ef172a7b0d55a5cdf5503da46f07058245575d14843c83baa04e240"
+        },
+        {
+          "path": "survival_stranded_save.lua",
+          "bytes": 477158,
+          "sha256": "fa6a303ce9c59690730d426d2ce2ce43108d93365054f2117a8e995770729829"
+        },
+        {
+          "path": "survival_stranded_scenario.lua",
+          "bytes": 1108,
+          "sha256": "949cf53e1a6a55b08e889efdc154f90b5a6c4e9eb1a21656fd91db22ba66a825"
+        },
+        {
+          "path": "survival_stranded_script.lua",
+          "bytes": 6050,
+          "sha256": "bf4d1c2ae7830a75eed782756ed9882ccaf611d5c5cc649d09d06fe93edb899f"
+        }
+      ]
+    },
+    {
+      "id": 78,
+      "name": "Dune Survival v2",
+      "version": 2,
+      "relative_folder": "待测试_依赖与资源核对/08槽位/dune_survival",
+      "slots": 8,
+      "gameplay": "Dune城市守点",
+      "learning_value": "经典波次与城市存档初始部队配置。",
+      "maintenance_boundary": "FAF工厂改普通工厂，经济/HQ功能已变化；资源与路径待测试。",
+      "verification_status": "已修改待实测",
+      "lua_files": 4,
+      "options": 3,
+      "core_functions": [
+        {
+          "file": "Dune_Survival_script.lua",
+          "name": "OnPopulate",
+          "line": 803,
+          "end_line": 816,
+          "sha256": "fdd8a10a10f6416355a1838003e59f23b6adea14239e65c6293be625ad93dbe1"
+        },
+        {
+          "file": "Dune_Survival_script.lua",
+          "name": "OnStart",
+          "line": 891,
+          "end_line": 899,
+          "sha256": "85f7c5cbf822e915e15bba4d310e1edea5c779c3ed8190736398ce1867c79a01"
+        },
+        {
+          "file": "Dune_Survival_script.lua",
+          "name": "Survival_InitGame",
+          "line": 905,
+          "end_line": 978,
+          "sha256": "07297c4c4125e20acd8a9e0b7ce8c54122d5aaf992f4e336bd4559cc3dd1cce3"
+        },
+        {
+          "file": "Dune_Survival_script.lua",
+          "name": "Survival_Tick",
+          "line": 1187,
+          "end_line": 1277,
+          "sha256": "7aa9bfab50180334b1fb51daeda95d43a086e32520ed3504fe4f97ddcb7634ea"
+        },
+        {
+          "file": "Dune_Survival_script.lua",
+          "name": "Survival_UpdateWaves",
+          "line": 1283,
+          "end_line": 1312,
+          "sha256": "aef373f033d4eb19442b143f0b28d47f7f7fc847815c42941a3b51f9c774a9b3"
+        },
+        {
+          "file": "Dune_Survival_script.lua",
+          "name": "Survival_SpawnWave",
+          "line": 1318,
+          "end_line": 1360,
+          "sha256": "2160fb2922bc63cdee707955fd1663faa9ad162fbe7cb5bdd1a25f8456aeec6e"
+        },
+        {
+          "file": "Dune_Survival_script.lua",
+          "name": "Survival_SpawnUnit",
+          "line": 1366,
+          "end_line": 1384,
+          "sha256": "a1429cf24a23f560dc7082a9fd94ee1f096082b9f1cc3f0d0dbf46ddc22f035f"
+        },
+        {
+          "file": "Dune_Survival_script.lua",
+          "name": "Survival_CalcWaveCounts",
+          "line": 1608,
+          "end_line": 1616,
+          "sha256": "3d78de2aa312341c61f124aa45412a4d1ff1481c5a58fb3736f9fc6827b0f20e"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 3,
+      "main_file_hashes": [
+        {
+          "path": "Dune_Survival_options.lua",
+          "bytes": 2321,
+          "sha256": "ba9ba1be0ba4f84b129c10ab7d69e08809afb69d8305144a03ae7f748b537ef5"
+        },
+        {
+          "path": "Dune_Survival_save.lua",
+          "bytes": 294403,
+          "sha256": "1a001992dbcad39d3eb340f8efd759d106c66d08e46f341af3065dc1530c083c"
+        },
+        {
+          "path": "Dune_Survival_scenario.lua",
+          "bytes": 1118,
+          "sha256": "56e94da658d7982be44bee2f3d16a1a6ee6efcdb2c8cda55901d2f5e19f2f189"
+        },
+        {
+          "path": "Dune_Survival_script.lua",
+          "bytes": 55051,
+          "sha256": "e3711c7cb0e52184f9959747d07756bf8b3841a254c5821fc8b8a0ac953e2ee7"
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "name": "onixs voodoo survival v17",
+      "version": 17,
+      "relative_folder": "待测试_依赖与资源核对/08槽位/onixs_voodoo_survival",
+      "slots": 8,
+      "gameplay": "Onix Voodoo扩展多模式",
+      "learning_value": "额外防守目标、核波、敌基地胜利与选项化难度。",
+      "maintenance_boundary": "本轮修偏好；22项设置与条件MOD池，需验证无模组默认和后期分支。",
+      "verification_status": "已修改待实测",
+      "lua_files": 34,
+      "options": 22,
+      "core_functions": [
+        {
+          "file": "onixs_voodoo_survival_script.lua",
+          "name": "OnPopulate",
+          "line": 262,
+          "end_line": 292,
+          "sha256": "809a4e35279b0a17c4ca12ea20bc5db0748e64fa69f992d87dbaac97d335db0b"
+        },
+        {
+          "file": "onixs_voodoo_survival_script.lua",
+          "name": "OnStart",
+          "line": 295,
+          "end_line": 307,
+          "sha256": "27aef3d48e41dfddbc87e1959bf9ff209e98dfe8f74d71c6944bcee6e768025e"
+        },
+        {
+          "file": "onixs_voodoo_survival_script.lua",
+          "name": "SetupGame",
+          "line": 309,
+          "end_line": 342,
+          "sha256": "854c9488af5484905a382bd9e61f5472fa45dd06620b72fe0417e2b9ebf59d4d"
+        },
+        {
+          "file": "onixs_voodoo_survival_script.lua",
+          "name": "GameUpdate",
+          "line": 389,
+          "end_line": 541,
+          "sha256": "8a9946e038786efcff641138a835972ae802f92d139e35e6afc6c8e0edc8a29d"
+        },
+        {
+          "file": "onixs_voodoo_survival_script.lua",
+          "name": "SpawnWave",
+          "line": 543,
+          "end_line": 619,
+          "sha256": "a040697211db69e5eccfd951bd3dc711af1d17eed19fe172a8fe1b4805b721de"
+        },
+        {
+          "file": "onixs_voodoo_survival_script.lua",
+          "name": "WaveUpdate",
+          "line": 743,
+          "end_line": 790,
+          "sha256": "4b8ea85e817ce4effdf413301e6f0cdf6bf28a22d84a793324eec75ca09815b7"
+        },
+        {
+          "file": "onixs_voodoo_survival_script.lua",
+          "name": "SpawnBossWave",
+          "line": 816,
+          "end_line": 888,
+          "sha256": "633bad8bfe3fe396a1fbed6c9570e7b724695a0504acad8625b44fd3cb84b441"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 0,
+      "main_file_hashes": [
+        {
+          "path": "onixs_voodoo_survival_options.lua",
+          "bytes": 13027,
+          "sha256": "43ee41f7a17a60d1ed108185031be6d0e376d8084c05c82290034d591a5dc099"
+        },
+        {
+          "path": "onixs_voodoo_survival_save.lua",
+          "bytes": 180452,
+          "sha256": "4634273e126a050d6c066204b9a76626650e7d0441d9b1b8bde9d656b5aa98bc"
+        },
+        {
+          "path": "onixs_voodoo_survival_scenario.lua",
+          "bytes": 1071,
+          "sha256": "0c73854d8cd388fd23f371e231ec170cacc7d88c978516f8f63b2fc04e8c1061"
+        },
+        {
+          "path": "onixs_voodoo_survival_script.lua",
+          "bytes": 60631,
+          "sha256": "dec6cec48171d0d585ffea34b8955d9a8e96aa7af13f100ac026f021d936cc12"
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "name": "Survival Temple v5",
+      "version": 5,
+      "relative_folder": "待测试_依赖与资源核对/08槽位/survival_temple",
+      "slots": 8,
+      "gameplay": "Temple山顶守护",
+      "learning_value": "4～8人中心目标和多路进攻。",
+      "maintenance_boundary": "缺失Floe_Floe_specteam.dds候选资源；FAF防空已替换，未擅改二进制贴图。",
+      "verification_status": "已修改待实测",
+      "lua_files": 4,
+      "options": 3,
+      "core_functions": [
+        {
+          "file": "survival_temple_script.lua",
+          "name": "OnPopulate",
+          "line": 750,
+          "end_line": 763,
+          "sha256": "fdd8a10a10f6416355a1838003e59f23b6adea14239e65c6293be625ad93dbe1"
+        },
+        {
+          "file": "survival_temple_script.lua",
+          "name": "OnStart",
+          "line": 838,
+          "end_line": 846,
+          "sha256": "85f7c5cbf822e915e15bba4d310e1edea5c779c3ed8190736398ce1867c79a01"
+        },
+        {
+          "file": "survival_temple_script.lua",
+          "name": "Survival_InitGame",
+          "line": 852,
+          "end_line": 941,
+          "sha256": "7aed4cceb72f315379bc9e7da7e20b1f57d71c06df133661f9d511ab38d84741"
+        },
+        {
+          "file": "survival_temple_script.lua",
+          "name": "Survival_Tick",
+          "line": 1150,
+          "end_line": 1240,
+          "sha256": "c49b028971bf1fa22c6e093ad6aa3f0743efc1b7815369eedb43a8ac4e4146d6"
+        },
+        {
+          "file": "survival_temple_script.lua",
+          "name": "Survival_UpdateWaves",
+          "line": 1246,
+          "end_line": 1275,
+          "sha256": "aef373f033d4eb19442b143f0b28d47f7f7fc847815c42941a3b51f9c774a9b3"
+        },
+        {
+          "file": "survival_temple_script.lua",
+          "name": "Survival_SpawnWave",
+          "line": 1281,
+          "end_line": 1323,
+          "sha256": "2160fb2922bc63cdee707955fd1663faa9ad162fbe7cb5bdd1a25f8456aeec6e"
+        },
+        {
+          "file": "survival_temple_script.lua",
+          "name": "Survival_SpawnUnit",
+          "line": 1329,
+          "end_line": 1347,
+          "sha256": "a1429cf24a23f560dc7082a9fd94ee1f096082b9f1cc3f0d0dbf46ddc22f035f"
+        },
+        {
+          "file": "survival_temple_script.lua",
+          "name": "Survival_CalcWaveCounts",
+          "line": 1571,
+          "end_line": 1579,
+          "sha256": "3d78de2aa312341c61f124aa45412a4d1ff1481c5a58fb3736f9fc6827b0f20e"
+        }
+      ],
+      "missing_scmap_assets": [
+        "/env/Seraphim II/Props/Floe_Floe_specteam.dds"
+      ],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 3,
+      "main_file_hashes": [
+        {
+          "path": "survival_temple_options.lua",
+          "bytes": 2275,
+          "sha256": "f45260da963e65fabf826c65a21a8dbeddae45fa0e63cf1512dc769240d292f8"
+        },
+        {
+          "path": "survival_temple_save.lua",
+          "bytes": 125874,
+          "sha256": "8d3d4dc52f7b74223695c182577f5d49d2b3d6e0eda5504039fd54826d1328f5"
+        },
+        {
+          "path": "survival_temple_scenario.lua",
+          "bytes": 977,
+          "sha256": "edd7197f6d07565c03d9fba5589afdb12e37aa464d351d2dd885f966487c3490"
+        },
+        {
+          "path": "survival_temple_script.lua",
+          "bytes": 55514,
+          "sha256": "8b9abebf4eef6668ddf226c1d1fdb9f5bd0b374dceecff3912c96cdca330f518"
+        }
+      ]
+    },
+    {
+      "id": 81,
+      "name": "survival_生存AN_voodoo_no_mods v4",
+      "version": 4,
+      "relative_folder": "待测试_依赖与资源核对/08槽位/survival_voodoo_AN_no_mods",
+      "slots": 8,
+      "gameplay": "AN Voodoo无模组改版",
+      "learning_value": "经典波次和已修正的真实单位限制。",
+      "maintenance_boundary": "作者no_mods说明不是Steam资源证明；原FAF防空已替换，仍待测试。",
+      "verification_status": "已修改待实测",
+      "lua_files": 4,
+      "options": 3,
+      "core_functions": [
+        {
+          "file": "survival_voodoo_AN_no_mods_script.lua",
+          "name": "OnPopulate",
+          "line": 791,
+          "end_line": 804,
+          "sha256": "fdd8a10a10f6416355a1838003e59f23b6adea14239e65c6293be625ad93dbe1"
+        },
+        {
+          "file": "survival_voodoo_AN_no_mods_script.lua",
+          "name": "OnStart",
+          "line": 879,
+          "end_line": 887,
+          "sha256": "85f7c5cbf822e915e15bba4d310e1edea5c779c3ed8190736398ce1867c79a01"
+        },
+        {
+          "file": "survival_voodoo_AN_no_mods_script.lua",
+          "name": "Survival_InitGame",
+          "line": 893,
+          "end_line": 977,
+          "sha256": "43c66a425c32a31a361c6f50d7fc4c404b6f76dd82a457441f15b6133a631322"
+        },
+        {
+          "file": "survival_voodoo_AN_no_mods_script.lua",
+          "name": "Survival_Tick",
+          "line": 1186,
+          "end_line": 1276,
+          "sha256": "c49b028971bf1fa22c6e093ad6aa3f0743efc1b7815369eedb43a8ac4e4146d6"
+        },
+        {
+          "file": "survival_voodoo_AN_no_mods_script.lua",
+          "name": "Survival_UpdateWaves",
+          "line": 1282,
+          "end_line": 1311,
+          "sha256": "aef373f033d4eb19442b143f0b28d47f7f7fc847815c42941a3b51f9c774a9b3"
+        },
+        {
+          "file": "survival_voodoo_AN_no_mods_script.lua",
+          "name": "Survival_SpawnWave",
+          "line": 1317,
+          "end_line": 1359,
+          "sha256": "2160fb2922bc63cdee707955fd1663faa9ad162fbe7cb5bdd1a25f8456aeec6e"
+        },
+        {
+          "file": "survival_voodoo_AN_no_mods_script.lua",
+          "name": "Survival_SpawnUnit",
+          "line": 1365,
+          "end_line": 1383,
+          "sha256": "a1429cf24a23f560dc7082a9fd94ee1f096082b9f1cc3f0d0dbf46ddc22f035f"
+        },
+        {
+          "file": "survival_voodoo_AN_no_mods_script.lua",
+          "name": "Survival_CalcWaveCounts",
+          "line": 1607,
+          "end_line": 1615,
+          "sha256": "3d78de2aa312341c61f124aa45412a4d1ff1481c5a58fb3736f9fc6827b0f20e"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 3,
+      "main_file_hashes": [
+        {
+          "path": "survival_voodoo_AN_no_mods_options.lua",
+          "bytes": 2275,
+          "sha256": "f45260da963e65fabf826c65a21a8dbeddae45fa0e63cf1512dc769240d292f8"
+        },
+        {
+          "path": "survival_voodoo_AN_no_mods_save.lua",
+          "bytes": 123662,
+          "sha256": "711089df451b5a872a8921c7ee0f40d557ee912aa732d3bc9d7c9a8efa3cd70a"
+        },
+        {
+          "path": "survival_voodoo_AN_no_mods_scenario.lua",
+          "bytes": 1139,
+          "sha256": "6f444c01ab396e4fa25cdc66bee7fef11c8e7f3c8d96a05a5115825b68513536"
+        },
+        {
+          "path": "survival_voodoo_AN_no_mods_script.lua",
+          "bytes": 53363,
+          "sha256": "1b259509893d98378d189557b30b4345ba9439bc6b9410ba0aafeee5678ab822"
+        }
+      ]
+    },
+    {
+      "id": 83,
+      "name": "Tomb Guard Survival v4",
+      "version": 4,
+      "relative_folder": "待测试_依赖与资源核对/12槽位/tomb_guard_survival",
+      "slots": 12,
+      "gameplay": "Tomb Guard多阵营职责守点",
+      "learning_value": "前后玩家分工、阵营预设与禁点防御平衡。",
+      "maintenance_boundary": "不能强制所有槽统一阵营或补单位；后期防空近似替代后需测平衡。",
+      "verification_status": "已修改待实测",
+      "lua_files": 4,
+      "options": 3,
+      "core_functions": [
+        {
+          "file": "tomb_guard_survival_script.lua",
+          "name": "OnPopulate",
+          "line": 896,
+          "end_line": 909,
+          "sha256": "fdd8a10a10f6416355a1838003e59f23b6adea14239e65c6293be625ad93dbe1"
+        },
+        {
+          "file": "tomb_guard_survival_script.lua",
+          "name": "OnStart",
+          "line": 984,
+          "end_line": 992,
+          "sha256": "85f7c5cbf822e915e15bba4d310e1edea5c779c3ed8190736398ce1867c79a01"
+        },
+        {
+          "file": "tomb_guard_survival_script.lua",
+          "name": "Survival_InitGame",
+          "line": 998,
+          "end_line": 1082,
+          "sha256": "620a151415cc4354ca2dd38ea46e4b7f85f7d4f080cdf8010384098f33e30e6d"
+        },
+        {
+          "file": "tomb_guard_survival_script.lua",
+          "name": "Survival_Tick",
+          "line": 1291,
+          "end_line": 1381,
+          "sha256": "0870cb5a4fb0ec9b8589cbd84c17c581c562d7265c7382ff2fc277ec89803dd6"
+        },
+        {
+          "file": "tomb_guard_survival_script.lua",
+          "name": "Survival_UpdateWaves",
+          "line": 1387,
+          "end_line": 1416,
+          "sha256": "aef373f033d4eb19442b143f0b28d47f7f7fc847815c42941a3b51f9c774a9b3"
+        },
+        {
+          "file": "tomb_guard_survival_script.lua",
+          "name": "Survival_SpawnWave",
+          "line": 1422,
+          "end_line": 1464,
+          "sha256": "2160fb2922bc63cdee707955fd1663faa9ad162fbe7cb5bdd1a25f8456aeec6e"
+        },
+        {
+          "file": "tomb_guard_survival_script.lua",
+          "name": "Survival_SpawnUnit",
+          "line": 1470,
+          "end_line": 1488,
+          "sha256": "a1429cf24a23f560dc7082a9fd94ee1f096082b9f1cc3f0d0dbf46ddc22f035f"
+        },
+        {
+          "file": "tomb_guard_survival_script.lua",
+          "name": "Survival_CalcWaveCounts",
+          "line": 1712,
+          "end_line": 1720,
+          "sha256": "b1fa90ccadfc7f6034bb71972a405c79861084e7bb6af4f5ff31260ef956e25f"
+        }
+      ],
+      "missing_scmap_assets": [],
+      "literal_wave_ids_missing_in_steam": [],
+      "wave_logic_cases": 3,
+      "main_file_hashes": [
+        {
+          "path": "tomb_guard_survival_options.lua",
+          "bytes": 2275,
+          "sha256": "f45260da963e65fabf826c65a21a8dbeddae45fa0e63cf1512dc769240d292f8"
+        },
+        {
+          "path": "tomb_guard_survival_save.lua",
+          "bytes": 207234,
+          "sha256": "e227e73cca7f9873e1ad2d3818c2783bac9bb224b812abdea48cfba708d01b1f"
+        },
+        {
+          "path": "tomb_guard_survival_scenario.lua",
+          "bytes": 1171,
+          "sha256": "913164ac2c93e389ec528c8f18f56f4f6ab495d4bfd07a6aab0b9c69d4aef604"
+        },
+        {
+          "path": "tomb_guard_survival_script.lua",
+          "bytes": 58066,
+          "sha256": "ae74bd54431dcb8d9129078aebd0a49ad32c8297754832169bc135a23195b8a0"
+        }
+      ]
+    }
+  ]
+}

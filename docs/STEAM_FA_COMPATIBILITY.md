@@ -145,3 +145,12 @@ startSeconds = tonumber(startSeconds) or 0
 - 保留内部旧文件名/作者版本历史作为来源，不据文件名中的v1断言当前上传版本低。真正的地图内容身份与安装目录冲突须另行确认。
 
 精确来源、保留与舍弃见 [整合记录](CONSOLIDATION_2026-10-16.md)。
+
+
+## 2026-10-16：实际Steam接口、旧Lua和双端资源
+
+- `SetIgnorePlayableRect`是原生全局接口，不是当前Steam `ScenarioFramework`模块方法。对照Steam官方X1CA_001:209；以`GetArmyBrain(name):GetArmyIndex()`将命名army变成数值索引。Order/Stranded误用已修，区域与军队不删。
+- 基础ScenarioUtilities源码在本机`mohodata.scd`内，而非必须在`lua.scd`；定位API应遍历实际所有挂载SCD，不因一个压缩包没有便宣布缺失。
+- Lua5.0式vararg函数定义可接受`...`参数列表，但不能直接作为表达式转发。现有备用EventDispatcher四份因此编译失败。未来若改造应保留参数个数及中间/末尾nil，测试监听器增删和一次性监听，不只让编译通过。
+- 不能用“所有扩展名.lua都编译成功”代替加载链分析：info-theme辅助数据不是运行入口；反之也不能忽略运行时真正会导入的失败模块。
+- Steam与FAF共享基础资源且加载不同扩展；SCMAP v56/v60不是Steam/FAF的对应编号。详见[双构建配置](AI_MAP_AUTHORING.md)与[原始来源](EXTERNAL_MAPPING_RESEARCH_2026-10-16.md)。未验证FAF，不报告双端通过。

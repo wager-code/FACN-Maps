@@ -1,3 +1,5 @@
+> **后续当前状态：62张。** 用户于2026-10-16要求删除9张确认需专用模组的地图，已备份并删除；本页71/83张为历史阶段。见[专用模组地图删除记录](MOD_MAP_REMOVAL_2026-10-16.md)。未新增游戏实测。
+
 > 最新本地状态：2026-10-16已按用户明确授权整合为71张，12张淘汰、23张升版。见 [整合与升版记录](CONSOLIDATION_2026-10-16.md)。下文83张/30张及其旧哈希、路径为历史快照，不自动适用于新版本。
 
 # 04槽位.zip 静态审计：已知问题、重复地形与待验证事项
@@ -238,3 +240,28 @@ AN 版 `待测试_依赖与资源核对/08槽位/survival_voodoo_AN_no_mods/surv
 ## F011：同名安装目录不是版本比较的唯一身份（静态确认，内容中心集成待核对）
 
 Mycelium、沙漠5th、Navy仍按人数保留不同内容，但既有目录名存在相同项。内容中心须以独立地图身份/人数区分；安装器不能仅按目录名互相覆盖。未经确认，不为解决上传元数据而擅改全部内部路径、地形资源路径。此次只更新map_version/显示名，未声称已验证内容中心安装或更新行为。
+
+
+## F012：62张当前代码研究与明确修正（2026-10-16）
+
+7张选项pref与key不一致：Escape的StartTime误指Difficulty；Sea Fleet、Desert Front、Genesis、Voodoo New、Terror Lands、Onix Voodoo的Wreckage偏好多了s。已按消费者使用的key统一，保留default和值；支持pref的大厅偏好混用/错拼被修正，不能扩称Steam全部自定义菜单已解决。
+
+Genesis of the Order的`Functionality/PlayableArea.lua:10–12`与Stranded的`PlayableArea.lua:13`调用不存在的ScenarioFramework.SetIgnorePlayableRect。本机Steam模块中没有此方法；官方X1CA_001_script.lua:209使用全局接口，Steam二进制也存在该名称。已改用全局接口并传入GetArmyBrain取得的数值army index，保留AI边界豁免，不用空函数忽略错误。
+
+9张27文件修订及严格升版见[本轮9张修正](CODE_MAINTENANCE_2026-10-16.md)；37项编译/隔离模块/偏好/版本用例通过。62张2234文件已验证。当前累计28张有改动，状态均不因这些检查升级为游戏实测通过。
+
+## F013：全量编译失败必须区分运行文件和备用素材
+
+627份Lua/字节码中622编译通过；Rainmakers的`info-theme.lua`是辅助数据格式，未发现活动引用；四份EventDispatcher.lua在Endless/Horde/Center EE/Aeon的vendor库中使用`...`转发，目标旧Lua不能编译，但只找到vendor测试引用，未发现生产Lua引用。它们是未来启用的兼容风险，不是已证实的地图启动失败。未为使统计全绿删除或改写这些来源文件。
+
+## F014：保留的玩法边界和资源疑点
+
+Zhuna没有内置生存链，来源外置模式待调查；AIX TeamPlayAI/Pass AIX是大厅AI对战布局，不应补写固定生存波次来改变原设计。Onix特殊army重叠问题仍待实测。
+
+`.scmap`ASCII路径扫描在目标Steam/当前包未找到DDay的`/env/Seraphim II/Props/Floe_prop.bp`、Temple的`/env/Seraphim II/Props/Floe_Floe_specteam.dds`。未证明其他所有动态资产均完整，未改二进制。完整格式解析和游戏画面对照仍有必要。
+
+## F015：AI制图参考目录与外部问题研究
+
+[62张代码地图册](SURVIVAL_CODE_ATLAS_2026-10-16.md)包含逐图62卡片、2833个函数定义的核心位置及361个选项。25张字面量经典波次75个首波隔离用例无错误；其余复杂模块只按数据/编译和明确专项范围报告。可复用工具`tools/scan_scfa_maps.py`已在当前包运行，纯只读。
+
+FAF与Steam共享基础但挂载/脚本/蓝图/美术资源不同，不能断言所有地图互不兼容。没有本机FAF完整资源/运行结果，不捏造贴图数量差或双端通过。已检索作者/开发者的Rainmakers任务UI、运输机击杀质量、海岸轰炸及编辑器资源/对称问题，含已关闭状态；见[外部研究](EXTERNAL_MAPPING_RESEARCH_2026-10-16.md)，不把网上Issue直接认作本包故障。

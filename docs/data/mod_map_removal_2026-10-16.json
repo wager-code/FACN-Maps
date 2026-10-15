@@ -1,0 +1,480 @@
+{
+  "date": "2026-10-16",
+  "authorization": "需要专用模组的 都删掉吧，模组我们也找不到的了",
+  "before_maps": 71,
+  "after_maps": 62,
+  "removed_count": 9,
+  "counts": {
+    "原槽位": 52,
+    "待测试": 10,
+    "需专用模组": 0
+  },
+  "game_started": false,
+  "retained_maps_unchanged": true,
+  "remaining_revised_maps": 22,
+  "backup": "专用模组地图删除_20261016/删除前9张专用模组地图备份.zip（用户本机，未上传）",
+  "backup_sha256": "91c6189bc5d8279a6c337d622714b1951aca708621c53cc36f958887e6bb34b8",
+  "backup_files": 68,
+  "removed_map_files": 67,
+  "removed": [
+    {
+      "id": 37,
+      "name": "Survival_5.thD_MayhemEdition",
+      "version": 5,
+      "slots": 6,
+      "classification": "必须配套模组（完整玩法）",
+      "current_rel": "需专用模组/06槽位/survival_5.thd_mayhemedition",
+      "files": [
+        {
+          "path": "Survival_5.thD_MayhemEdition.scmap",
+          "bytes": 2149722,
+          "sha256": "f940f52091edc4fbdc012434691fa4a306825dcb123cb693beb6c2f819860895"
+        },
+        {
+          "path": "Survival_5.thD_MayhemEdition_options.lua",
+          "bytes": 2325,
+          "sha256": "46194298e55d4f01c580a08e09681f6186628c53e1ac5017705d7460a4aaba9f"
+        },
+        {
+          "path": "Survival_5.thD_MayhemEdition_preview.png",
+          "bytes": 85296,
+          "sha256": "ce6ddf58cdd2d9bd9446b8d28cfda3f305ebc9c3a803d9c686240cbf0cd9ed79"
+        },
+        {
+          "path": "Survival_5.thD_MayhemEdition_save.lua",
+          "bytes": 98284,
+          "sha256": "613100807878397716d7acc98e5606300ccfc547f766f9eabad1696863e9d489"
+        },
+        {
+          "path": "Survival_5.thD_MayhemEdition_scenario.lua",
+          "bytes": 1411,
+          "sha256": "f7b159c6bb3ac1e9400d26e1ea1074b5d0abcc418fd3e846e19795d235c2f221"
+        },
+        {
+          "path": "Survival_5.thD_MayhemEdition_script.lua",
+          "bytes": 66239,
+          "sha256": "e0e5f8c2eea30c2757b92056d301f757427417db1fb89fa2413e194ebf7603c5"
+        }
+      ],
+      "terrain_sha256": "f940f52091edc4fbdc012434691fa4a306825dcb123cb693beb6c2f819860895",
+      "dependency": "Total Mayhem v1.35"
+    },
+    {
+      "id": 56,
+      "name": "survival_voodoo_double",
+      "version": 5,
+      "slots": 8,
+      "classification": "必须配套模组（完整玩法）",
+      "current_rel": "需专用模组/08槽位/survival_voodoo_double",
+      "files": [
+        {
+          "path": "survival_voodoo_double.scmap",
+          "bytes": 14686607,
+          "sha256": "797324679d09aa85dd41f9a623efc0e305ce29036b3bab52c1c75d39b5a2bdd8"
+        },
+        {
+          "path": "survival_voodoo_double_options.lua",
+          "bytes": 2275,
+          "sha256": "f45260da963e65fabf826c65a21a8dbeddae45fa0e63cf1512dc769240d292f8"
+        },
+        {
+          "path": "survival_voodoo_double_preview.png",
+          "bytes": 42089,
+          "sha256": "a94fd91eb01b6014fd2a6e5400b92062712d020b592efdb2c4c94f1761567b8b"
+        },
+        {
+          "path": "survival_voodoo_double_save.lua",
+          "bytes": 120189,
+          "sha256": "842b8242c808c3c51d7855e3714c8f8434307aa95e5a617b2e00b092788406e4"
+        },
+        {
+          "path": "survival_voodoo_double_scenario.lua",
+          "bytes": 998,
+          "sha256": "2e9bfb017f35a55d786e46df305aa69332d52fe02ed7cd9be36a94fcfa43a517"
+        },
+        {
+          "path": "survival_voodoo_double_script.lua",
+          "bytes": 55322,
+          "sha256": "8cc8668afd0425d1710dbe77dcb3a5ef826d06cab50be4bec49d732c7e9c9d8c"
+        }
+      ],
+      "terrain_sha256": "797324679d09aa85dd41f9a623efc0e305ce29036b3bab52c1c75d39b5a2bdd8",
+      "dependency": "Extreme Wars + Some Mods 2.1（作者原要求，历史版本未重新取得）"
+    },
+    {
+      "id": 59,
+      "name": "eternals survival dimension",
+      "version": 1,
+      "slots": 9,
+      "classification": "必须配套模组（完整玩法）",
+      "current_rel": "需专用模组/09槽位/eternals_survival_dimension",
+      "files": [
+        {
+          "path": "eternals_survival_dimension.scmap",
+          "bytes": 2150565,
+          "sha256": "bad7f5bd7c75df59b96c5785c1527b0cc5ecee43666640c7a2fb753f51810a7e"
+        },
+        {
+          "path": "eternals_survival_dimension_preview.png",
+          "bytes": 87425,
+          "sha256": "1aa6f3c8717628c38d19486d4426e4efe5601ed3932415de98b8a211064172ac"
+        },
+        {
+          "path": "eternals_survival_dimension_save.lua",
+          "bytes": 120158,
+          "sha256": "2467f73002b59a42e55ebf7c0929a904e089a045b1d23e7b5cc0279b917db58b"
+        },
+        {
+          "path": "eternals_survival_dimension_scenario.lua",
+          "bytes": 912,
+          "sha256": "e126847b7e71301cf7e8078d9a594115d9a3ebb012c64903a5afd77ef32285fa"
+        },
+        {
+          "path": "eternals_survival_dimension_script.lua",
+          "bytes": 322,
+          "sha256": "89b2484c2b7e7de112157030108a5e58295ffc9298bac6b3ba2a4c777757c0f5"
+        }
+      ],
+      "terrain_sha256": "bad7f5bd7c75df59b96c5785c1527b0cc5ecee43666640c7a2fb753f51810a7e",
+      "dependency": "Mayhem Eternals Survival（模组提供生存玩法）"
+    },
+    {
+      "id": 62,
+      "name": "swarm survival mk4",
+      "version": 3,
+      "slots": 9,
+      "classification": "必须配套模组（完整玩法）",
+      "current_rel": "需专用模组/09槽位/swarm_survival_mk4",
+      "files": [
+        {
+          "path": "swarm_survival_mk4.scmap",
+          "bytes": 2113586,
+          "sha256": "d9a054e1ae685333c9ef6f1e5314017b4926aaabcf920e5bc9a39f0574ea2a4e"
+        },
+        {
+          "path": "swarm_survival_mk4_preview.png",
+          "bytes": 75394,
+          "sha256": "5e34a978f1b7a2fc85bf0e98bb22f57cf3f22ebf514283fd79e24481fd049c64"
+        },
+        {
+          "path": "swarm_survival_mk4_save.lua",
+          "bytes": 88688,
+          "sha256": "c4384ee02d8cd000912d7857200664e3a3ee7e80abcd8dd3d8365bfda95246c9"
+        },
+        {
+          "path": "swarm_survival_mk4_scenario.lua",
+          "bytes": 870,
+          "sha256": "4b6752dd7fcb15d911f9b031c00842f9622f7548c2ad61d2c92ed6b9bd1c2e34"
+        },
+        {
+          "path": "swarm_survival_mk4_script.lua",
+          "bytes": 427,
+          "sha256": "fae0c553abd2943e773898a3d70081b50287d0b761d2283743f5b7505bcfb430"
+        }
+      ],
+      "terrain_sha256": "d9a054e1ae685333c9ef6f1e5314017b4926aaabcf920e5bc9a39f0574ea2a4e",
+      "dependency": "Swarm Survival（模组提供生存玩法）"
+    },
+    {
+      "id": 64,
+      "name": "swarm survival 10 players",
+      "version": 19,
+      "slots": 11,
+      "classification": "必须配套模组（完整玩法）",
+      "current_rel": "需专用模组/11槽位/swarm_survival_10_players",
+      "files": [
+        {
+          "path": "swarm_survival_10_players.scmap",
+          "bytes": 2101930,
+          "sha256": "168dc2607f08624b3ea62c18110d7291a83ee4e9669e3faf37a8984cf8d6a427"
+        },
+        {
+          "path": "swarm_survival_10_players_preview.png",
+          "bytes": 74107,
+          "sha256": "6c7ce3fcc89d456d3352059762d2ad0ad1cecb5a9686adcba1ab56b7127361f2"
+        },
+        {
+          "path": "swarm_survival_10_players_save.lua",
+          "bytes": 93294,
+          "sha256": "3acab7afeee4757c9296392c754d95dce085ce7c109120cc2c636a7e24cb8a93"
+        },
+        {
+          "path": "swarm_survival_10_players_scenario.lua",
+          "bytes": 952,
+          "sha256": "c8b625e34852cd823ea2b6dd5e26b935068852b889c11e0620123e0183333867"
+        },
+        {
+          "path": "swarm_survival_10_players_script.lua",
+          "bytes": 322,
+          "sha256": "89b2484c2b7e7de112157030108a5e58295ffc9298bac6b3ba2a4c777757c0f5"
+        }
+      ],
+      "terrain_sha256": "168dc2607f08624b3ea62c18110d7291a83ee4e9669e3faf37a8984cf8d6a427",
+      "dependency": "Swarm Survival（模组提供生存玩法）"
+    },
+    {
+      "id": 70,
+      "name": "Survival Unit Mayhem",
+      "version": 2,
+      "slots": 4,
+      "classification": "必须配套模组（完整玩法）",
+      "current_rel": "需专用模组/04槽位/survival_unit_mayhem",
+      "files": [
+        {
+          "path": "survival_unit_mayhem.scmap",
+          "bytes": 3870569,
+          "sha256": "b12b0a15cd23c13cb4e2feb4d23e11adad422307d7e52b0115638aa1e9d10378"
+        },
+        {
+          "path": "survival_unit_mayhem.v0002.dds",
+          "bytes": 262272,
+          "sha256": "f9590993d68bfca5c4e96be7f52c8bbf1276da3d2f228d5fcf90ed6ca2373dc5"
+        },
+        {
+          "path": "survival_unit_mayhem.v0002.small.png",
+          "bytes": 8902,
+          "sha256": "1e6fb03908f3507918647afe552c234207aac0c92cd834554c508da44b921e37"
+        },
+        {
+          "path": "survival_unit_mayhem_options.lua",
+          "bytes": 2275,
+          "sha256": "2040ece591662cf6796badc042e1b4a3b231a64e4d4acef5fc3115d70b160525"
+        },
+        {
+          "path": "survival_unit_mayhem_preview.png",
+          "bytes": 53524,
+          "sha256": "9a99089f0da6003d3c10c10ea5985420ffe6a9fb3606c6f30141958eddc8fca7"
+        },
+        {
+          "path": "survival_unit_mayhem_save.lua",
+          "bytes": 97986,
+          "sha256": "a91aec5bdba2ea69f50471c9d350c7af4f85efb51f1d18c99f705cb7a67ea48a"
+        },
+        {
+          "path": "survival_unit_mayhem_scenario.lua",
+          "bytes": 1026,
+          "sha256": "c68999072c93c0c0e687d7ab03aff6c81f500a5e932c8a10c9d801102848a5f0"
+        },
+        {
+          "path": "survival_unit_mayhem_script.lua",
+          "bytes": 75650,
+          "sha256": "55a69278128c028206102ddac27ed62d1a91a58abc13aeaaaab9a7171b78c998"
+        }
+      ],
+      "terrain_sha256": "b12b0a15cd23c13cb4e2feb4d23e11adad422307d7e52b0115638aa1e9d10378",
+      "dependency": "Total Mayhem v1.35"
+    },
+    {
+      "id": 73,
+      "name": "Survival Beach Ramp Mayhem",
+      "version": 2,
+      "slots": 6,
+      "classification": "必须配套模组（完整玩法）",
+      "current_rel": "需专用模组/06槽位/survival_beach_ramp_mayhem",
+      "files": [
+        {
+          "path": "survival_beach_ramp_mayhem.scmap",
+          "bytes": 2150115,
+          "sha256": "90b59708423748e0c2c67b092d7328bd19528f6fcd51d1bc911936647e09e6f3"
+        },
+        {
+          "path": "survival_beach_ramp_mayhem.v0002.dds",
+          "bytes": 262272,
+          "sha256": "3476bb8ed4829343b616f7b904b501ec93c76838624aa9e728ebda412e58fc0b"
+        },
+        {
+          "path": "survival_beach_ramp_mayhem.v0002.small.png",
+          "bytes": 14115,
+          "sha256": "c8abfefbd46e50b9d7b755588e472223c10d4703ccc6e115c83c43ca054442a1"
+        },
+        {
+          "path": "survival_beach_ramp_mayhem_options.lua",
+          "bytes": 2331,
+          "sha256": "67c9da7af8cc9256cbdc3ad43ec3f851ef9de8f39e69fd6bdad691bb5725a42d"
+        },
+        {
+          "path": "survival_beach_ramp_mayhem_preview.png",
+          "bytes": 84342,
+          "sha256": "5fb7a3b26908202959d50b73307eb77675d5f1eece950300111648989e28d1af"
+        },
+        {
+          "path": "survival_beach_ramp_mayhem_save.lua",
+          "bytes": 131313,
+          "sha256": "e9b19586b32065f603361d022d9878d2be30a8045811424f6c8cf832adecc9c8"
+        },
+        {
+          "path": "survival_beach_ramp_mayhem_scenario.lua",
+          "bytes": 1169,
+          "sha256": "65147b576a67ddd7891cb673335f914c09fe0589228c5ea00fa61412c27ba11c"
+        },
+        {
+          "path": "survival_beach_ramp_mayhem_script.lua",
+          "bytes": 67655,
+          "sha256": "526a0956e1d5524e2282add9d52491c2e5d18dd576b2311568e081fc6b84df62"
+        }
+      ],
+      "terrain_sha256": "90b59708423748e0c2c67b092d7328bd19528f6fcd51d1bc911936647e09e6f3",
+      "dependency": "Total Mayhem v1.35"
+    },
+    {
+      "id": 76,
+      "name": "DDDX RPG survival",
+      "version": 156,
+      "slots": 7,
+      "classification": "必须配套模组（完整玩法）",
+      "current_rel": "需专用模组/07槽位/dddx_rpg_survival",
+      "files": [
+        {
+          "path": "DDDX_RPG_survival.scmap",
+          "bytes": 7700670,
+          "sha256": "13cfda049d983de75ed72a1ec067e5deb6bc48f69a123fc12ffd442dec2261d3"
+        },
+        {
+          "path": "dddx_rpg_survival.v0156.dds",
+          "bytes": 32896,
+          "sha256": "bc92fd3db81448712bbbfb0985ae2e965be07b891d709887ed838137f5c62bca"
+        },
+        {
+          "path": "dddx_rpg_survival.v0156.small.png",
+          "bytes": 17345,
+          "sha256": "4d4d41eedf270618fb51031ab5e6b78564c8bf611fb89383a6ba3aad6c845e57"
+        },
+        {
+          "path": "DDDX_RPG_survival_options.lua",
+          "bytes": 5821,
+          "sha256": "51d3813582a3365717b2f5f9ca703b395e4841365ede0fd6e53809b4965bd662"
+        },
+        {
+          "path": "DDDX_RPG_survival_save.lua",
+          "bytes": 486724,
+          "sha256": "892f474290b75b77437e2b04ba333cce41360b201c66b6240ce3becdf7a7b4c4"
+        },
+        {
+          "path": "DDDX_RPG_survival_saveOLD.lua",
+          "bytes": 411802,
+          "sha256": "d1e8d7148ebb96fe57addfe5168f723968fffed0c33c3fd20a6ec2a41426d9d5"
+        },
+        {
+          "path": "DDDX_RPG_survival_scenario.lua",
+          "bytes": 1795,
+          "sha256": "0ac267e6ad9146e22c72f5ca23486e6237c90970c852c00667e9ef8c45712754"
+        },
+        {
+          "path": "DDDX_RPG_survival_script.lua",
+          "bytes": 470446,
+          "sha256": "e7a8c38cdb283ebee3da0757acd00566388619f5186b037290276b25bdf8619e"
+        },
+        {
+          "path": "DDDX_RPG_survival_tables.lua",
+          "bytes": 1847,
+          "sha256": "06185a9f7dee15cfc1e82727a09a53ca27eed3854f0b5b2c717384df9ea2fb8b"
+        },
+        {
+          "path": "preview.jpg",
+          "bytes": 61653,
+          "sha256": "b5a405e079fc53170d1eb7b66a1fdca18de7bb21a16fc78732f58c640933852c"
+        },
+        {
+          "path": "preview_.jpg",
+          "bytes": 60511,
+          "sha256": "2c1e48940ae1bfefa7792f830f1105359cf23f4393af0e7801d866a8a073069b"
+        },
+        {
+          "path": "src/frp/MonsterSpawn.lua",
+          "bytes": 1074,
+          "sha256": "7ea7376727e588003ae77519ff1d28e91cda59ad283c92dd4f39333b3889a48d"
+        },
+        {
+          "path": "src/frp/RandomEvents.lua",
+          "bytes": 50595,
+          "sha256": "a73f8415f24bd48ef8c423ed396463c03b73a51820c795e2c10d51ae047d879f"
+        },
+        {
+          "path": "src/lib/ColorChanger.lua",
+          "bytes": 852,
+          "sha256": "b7ffb087b55a26d581b9e4be7539beedd62f8e913ae0f8378b4c261096307706"
+        },
+        {
+          "path": "src/lib/UnitRevealer.lua",
+          "bytes": 1233,
+          "sha256": "6f2297f06b584ff888082c6b20ce4f753f6df46d0ac02397322e1d98f29b9a12"
+        }
+      ],
+      "terrain_sha256": "13cfda049d983de75ed72a1ec067e5deb6bc48f69a123fc12ffd442dec2261d3",
+      "dependency": "Survival Mayhem&BO Balance + Total Mayhem + BlackOps Unleashed；BlackOps ACUs 仅需安装"
+    },
+    {
+      "id": 77,
+      "name": "Survival_Mayhem&BO_3D v89",
+      "version": 89,
+      "slots": 7,
+      "classification": "必须配套模组（完整玩法）",
+      "current_rel": "需专用模组/07槽位/survival_mayhem&bo_3d",
+      "files": [
+        {
+          "path": "survival_mayhem&bo_3d_v1.scmap",
+          "bytes": 7622900,
+          "sha256": "a1d0e5e7ff54822fa4242b49b292f65541b5793e8050b4da039cba04ae815f3d"
+        },
+        {
+          "path": "survival_mayhem&bo_3d_v1.v0088.dds",
+          "bytes": 262272,
+          "sha256": "33f480062d4f06eb3779d9cf8e0b7740a9586d63b9a40107ee79d7a096119b6c"
+        },
+        {
+          "path": "survival_mayhem&bo_3d_v1.v0088.small.png",
+          "bytes": 9788,
+          "sha256": "3f6578901e1faebbea772b133f3d99778fe9baaa1d58c69ea227f5df2ea17079"
+        },
+        {
+          "path": "survival_mayhem&bo_3d_v1_options.lua",
+          "bytes": 3892,
+          "sha256": "dc8ee9ad5446beea20a2b0d9c273f7a898d71358622408df02f484d662dbe912"
+        },
+        {
+          "path": "survival_mayhem&bo_3d_v1_preview.png",
+          "bytes": 54128,
+          "sha256": "156a72655f056bec6b76d5789f8da8ecfd307f37c8a5958e3b6b2aa4c1f1ae82"
+        },
+        {
+          "path": "survival_mayhem&bo_3d_v1_save.lua",
+          "bytes": 189252,
+          "sha256": "e2b88b8c1ab4d2e5776c191c572e84715eb232281ff2a9dd70413316ca5af7e2"
+        },
+        {
+          "path": "survival_mayhem&bo_3d_v1_scenario.lua",
+          "bytes": 1556,
+          "sha256": "c0c12bde002678421dd591ea7ded8fc8ff89d1ae0809562ad67c95a181734465"
+        },
+        {
+          "path": "survival_mayhem&bo_3d_v1_script.lua",
+          "bytes": 258169,
+          "sha256": "88b6eeaebde824ca8d1472fe1614b9d115097b898687c275c14133f576305c43"
+        },
+        {
+          "path": "FACN_CHANGELOG.md",
+          "bytes": 810,
+          "sha256": "2eeddf19295d54d534cd89524e7bdf0ddad7b2e44f8b75cb24dd9b3e462236c5"
+        }
+      ],
+      "terrain_sha256": "a1d0e5e7ff54822fa4242b49b292f65541b5793e8050b4da039cba04ae815f3d",
+      "dependency": "Total Mayhem v1.36 + BlackOps Unleashed v14；Balance 推荐且部分功能需要"
+    }
+  ],
+  "remaining_limitations": "62张未发现已确认的强制专用模组要求；10张仍在依赖/资源待测试区，Zhuna等仍有待调查线索，未游戏实测。",
+  "verification": {
+    "date": "2026-10-16",
+    "before_maps": 71,
+    "after_maps": 62,
+    "removed_maps": 9,
+    "removed_map_files": 67,
+    "final_map_files": 2228,
+    "scenarios": 62,
+    "mod_directory_absent": true,
+    "retained_map_hashes_unchanged": true,
+    "backup_sha256": "91c6189bc5d8279a6c337d622714b1951aca708621c53cc36f958887e6bb34b8",
+    "metadata_files_updated": 12,
+    "game_started": false,
+    "verified": true
+  }
+}

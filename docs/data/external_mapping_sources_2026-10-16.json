@@ -1,0 +1,75 @@
+{
+  "checked_date": "2026-10-16",
+  "notes": "Issue statuses are retrieval snapshots, not proof of local reproducibility. FAF engine annotations are not substitutes for Steam binary/source evidence.",
+  "sources": [
+    {
+      "url": "https://github.com/FAForever/fa/issues/2619",
+      "title": "Units in transports are not counted as kills",
+      "state": "closed",
+      "state_reason": "completed",
+      "created_at": "2018-10-16T22:25:01Z",
+      "updated_at": "2024-04-22T08:15:22Z",
+      "closed_at": "2024-04-22T08:15:22Z",
+      "author": "JeroenDeDauw"
+    },
+    {
+      "url": "https://github.com/ozonexo3/FAForeverMapEditor/issues/74",
+      "title": "Texture symmetry painting bug",
+      "state": "open",
+      "state_reason": null,
+      "created_at": "2018-07-04T10:18:40Z",
+      "updated_at": "2018-07-05T05:33:48Z",
+      "closed_at": null,
+      "author": "ozonexo3"
+    },
+    {
+      "url": "https://github.com/ozonexo3/FAForeverMapEditor/issues/136",
+      "title": "Add that paths in scmap file can be edited",
+      "state": "open",
+      "state_reason": null,
+      "created_at": "2021-01-16T11:29:37Z",
+      "updated_at": "2021-01-16T15:41:25Z",
+      "closed_at": null,
+      "author": "badbwoi"
+    },
+    {
+      "url": "https://github.com/FAForever/fa/issues/7133",
+      "title": "[Bug]: Cannot attack ground where terrain and water are the exact same elevation",
+      "state": "open",
+      "state_reason": null,
+      "created_at": "2026-06-03T05:35:30Z",
+      "updated_at": "2026-06-29T15:57:15Z",
+      "closed_at": null,
+      "author": "piisawheel"
+    },
+    {
+      "url": "https://github.com/FAForever/fa/blob/develop/init_shared.lua",
+      "title": "init_shared.lua",
+      "blob_sha": "b1673014f6bc071e6ccaf6b9c5f16a5683d786d3"
+    },
+    {
+      "url": "https://github.com/FAForever/fa/blob/develop/engine/Sim.lua",
+      "title": "Sim.lua",
+      "blob_sha": "ad7372d4627b85dad250f886abb192795c54ba78"
+    },
+    {
+      "url": "https://github.com/FAForever/fa-automation-procedural-content/blob/main/README.md",
+      "title": "README.md",
+      "blob_sha": "139ae11cb0dc50b7b3d8486bd4a1532629f260d3"
+    },
+    {
+      "url": "https://github.com/SupremeCommanderMaps/SurvivalVersus/blob/master/README.md",
+      "title": "README.md",
+      "blob_sha": "f8b86b18637f7a0bb8e80d7710b9447022777284"
+    },
+    {
+      "url": "https://github.com/FAForever/fa/issues/6841",
+      "title": "When an objective fails, so does the announcement",
+      "state": "closed",
+      "state_reason": "completed",
+      "created_at": "2025-06-01T09:01:20Z",
+      "closed_at": "2025-06-09T06:47:10Z",
+      "author": "Garanas"
+    }
+  ]
+}
