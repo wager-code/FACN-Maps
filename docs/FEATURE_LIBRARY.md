@@ -69,3 +69,14 @@
 `desert_front_survival`、`survival_genesis`、`voodoo_battle_survival_new`、`survival_terror_lands`、`onixs_voodoo_survival` 的模组检测/条件导入可作为“原版可用+额外支持”的结构参考。必须连同初始化基础单位池、检测条件、空池保护、单位限制及玩法选项审查；不能把支持列表中的每个编号当成强制依赖。
 
 原版降级不是通用玩法增强：替代单位的兵种、武器/技能、机动与平衡要在报告列明。小范围替换参考 [VANILLA_MIGRATION.md](VANILLA_MIGRATION.md)，多层英雄/外置波次模式不适合直接套此方法。来源哈希和当前路径见本轮摘要，不承诺跨版本兼容。
+
+## 本轮可复用整合功能（2026-10-16，已修改待实测）
+
+| 来源保留图 | 新选项/函数 | 正确迁移边界 |
+| --- | --- | --- |
+| Horde EE v22 | opt_FACN_HordeWaveSet；src/FACNWaveSelector.lua | 选择1为EE，2为Aeon Fixed；单位表/命令表必须配套，不能遗失路线与协助过滤。 |
+| 黑日v2 | opt_FACN_TargetHealthMode | 1作者公式，2固定150000。只迁移生命规则，旧模型与传送门逻辑不带入。 |
+| practice v9 | opt_FACN_EnemyScaling | 1固定4人，2仅统计已占用ARMY_1至4；原脚本人数也影响目标属性，须说明且测试空槽。 |
+| Escape v4 | FACNCountSequentialMarkers / FACNDetectEscortMarkers | 分别检查WAYPOINT_0起、BOSS_BATTLE_1起、MAP_EXPANSION_1起；缺号回退，不能盲目count-1。 |
+
+验证的是隔离真实函数/建表入口；实机和多人待测，不能将这些功能直接称为已发布组件。完整取舍与版本号见 [整合报告](CONSOLIDATION_2026-10-16.md)。

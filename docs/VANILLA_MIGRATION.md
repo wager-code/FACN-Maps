@@ -62,3 +62,9 @@
 同包 `06槽位/survival_5thdimension` v8 已有内置原版波表，可作为 MayhemEdition 选择原版玩法的现成方案；两者地形相同但存档/资源/波次不同，不能盲目覆盖脚本。Genesis/desert_front 等有按检测到的 MOD 导入单位表的实现，可参考条件性支持方式；复制时必须连同空表保护、人数、限制、胜负与选项一起验证。
 
 FAF 单位来源：[DRLK001](https://github.com/FAForever/fa/blob/develop/units/DRLK001/DRLK001_unit.bp)、[DALK003](https://github.com/FAForever/fa/blob/develop/units/DALK003/DALK003_unit.bp)、[ZAB9601](https://github.com/FAForever/fa/blob/develop/units/ZAB9601/ZAB9601_unit.bp)、[ZEB9501](https://github.com/FAForever/fa/blob/develop/units/ZEB9501/ZEB9501_unit.bp)、[XRB2309](https://github.com/FAForever/fa/blob/develop/units/XRB2309/XRB2309_unit.bp)。这些链接用于来源对照，不能证明其在目标 Steam 发行版存在。
+
+## 本轮候选已部分写回（2026-10-16后续）
+
+用户确认按建议整合并接受取舍后，原15候选中13张保留图已写回；旧Voodoo battle v1和非AN no_mods淘汰。Omega取消两个后期模组单位引用后回到3槽，仍标已修改待实测。
+
+上文“候选未写回”是前一阶段历史状态，当前以 [整合报告](CONSOLIDATION_2026-10-16.md) 和 [新元数据](data/survival_consolidation_2026-10-16.json) 为准。重度模组地图仍保留模组依赖，没有把它们删成空波表。原版替换的武器/模型/技能/难度损失仍然成立。
