@@ -129,3 +129,91 @@ survival_sea_fleet
 ```
 
 不要把“问题线索”自动标记为“已修复”。
+
+---
+
+## 2026-10-16：当前83张地图增量复核
+
+此前04槽位ZIP与本次当前目录是不同快照。历史选项疑点不可直接自动套到当前文件；必须先核对来源哈希、目标大厅和实际消费路径。以下记录按当前文件重新核验。
+
+## 证据与适用范围
+
+2026-10-16 新增记录来自用户电脑当前 `02_生存与波次防守` 的 83 张实际地图，目标对照为本机 Steam 游戏安装。仓库没有上传这些地图源码/资源。下列为静态确认或隔离数据验证，不是 Steam 实机测试。此前 README 提及的 `04槽位.zip` 历史发现不能据此自动补造。
+
+文件级 SHA-256、实际配置版本、当前路径及非原版单位证据见 [本轮摘要数据](data/survival_audit_2026-10-16.json)。原始本地快照 2522 个文件在移动前后均核验一致；共移动 11 张地图，未改地图内容。
+
+## F001：单位编号正则漏检（静态确认）
+
+旧扫描只认“若干字母 + 四位数字”，漏掉 `BRNT1EXMOB`、`BRMT3BM2MK2` 等 Total Mayhem 编号，也漏掉 `DRLK001`、`DALK003` 等 FAF 编号。应从有效单位使用位置提取任意蓝图 ID，再与目标游戏实际加载的蓝图表比较。不要仅放宽正则后把颜色、UID、注释或可选模组列表当作强制依赖。
+
+- 症状：首波能刷不代表后期可运行；按固定编号正则会错误宣布零依赖。
+- 修复方法：核对活动波表、存档、直接/间接创建与条件分支；纯数据表可在目标 Lua 中隔离求值，不能执行未知游戏入口。
+- 剩余风险：动态字符串拼接、运行时蓝图克隆、字节码、MOD 挂载顺序仍需独立追踪。
+
+## F002：明确需配套模组的 11 张（静态确认）
+
+此分类表示完整玩法依赖，不表示每张都会在进入地图瞬间失败。Swarm/Eternals 可能只加载出空地形，单位模组图可能到后期才失败。
+
+| 地图 / 当前相对位置 | 依赖与证据 |
+| --- | --- |
+| Survival Omega<br>`需专用模组/03槽位/Survival Omega` | BlackOps 单位包（后期波次）。38 分钟波表开始直接抽取 BEL0402，45 分钟加入 BRL0401；无模组检测。能开局不代表能完成后期波次。 |
+| Survival_5.thD_MayhemEdition<br>`需专用模组/06槽位/survival_5.thd_mayhemedition` | Total Mayhem v1.35。作者说明明确要求；活动波表直接引用 40 种非 Steam 单位，含 BRNT1EXMOB 等长编号。BlackOps 只推荐。 |
+| Survival_Mayhem&BlackOps_3D<br>`需专用模组/07槽位/survival_mayhem&blackops_3d` | Total Mayhem v1.35 + BlackOps Unleashed v14。作者明确要求两者；地面、空军和海军波表均直接使用外部单位。 |
+| survival_voodoo_double<br>`需专用模组/08槽位/survival_voodoo_double` | Extreme Wars + Some Mods 2.1（作者原要求）。说明明确要求两者；7 分钟波表已含 URLEW0001，12 分钟含四族太空舰；另有 FAF 单位 DRLK001。历史模组具体版本仍需核对。 |
+| eternals survival dimension<br>`需专用模组/09槽位/eternals_survival_dimension` | Mayhem Eternals Survival。作者说明为该模组制作；本地图脚本只有初始化及禁止传送，没有刷兵与完整生存胜负系统。不开模组可进入地形，但不会运行原生存玩法。 |
+| swarm survival mk4<br>`需专用模组/09槽位/swarm_survival_mk4` | Swarm Survival。作者说明指定 Swarm Survival；脚本只有 InitializeArmies 和空 OnStart，波次由外置模组提供。 |
+| swarm survival 10 players<br>`需专用模组/11槽位/swarm_survival_10_players` | Swarm Survival。说明为 10 人对抗 AI 的 Swarm Survival 图；11 个大厅槽含对手槽，地图内没有波次系统。 |
+| Survival Unit Mayhem<br>`需专用模组/04槽位/survival_unit_mayhem` | Total Mayhem v1.35。作者明确要求；活动波表有 43 种非 Steam 单位，含 FAF 防空单位；BlackOps 只是兼容。 |
+| Survival Beach Ramp Mayhem<br>`需专用模组/06槽位/survival_beach_ramp_mayhem` | Total Mayhem v1.35。说明明确要求；活动波表与 MayhemEdition 使用相同外部单位体系；BlackOps 是推荐搭配。 |
+| DDDX RPG survival<br>`需专用模组/07槽位/dddx_rpg_survival` | Survival Mayhem&BO Balance + Total Mayhem + BlackOps Unleashed；BlackOps ACUs 仅需安装。作者区分启用与仅安装；除波次外，还有英雄、技能、升级、额外炮塔及资源建筑等专用单位。 |
+| Survival_Mayhem&BO_3D_v1<br>`需专用模组/07槽位/survival_mayhem&bo_3d` | Total Mayhem v1.36 + BlackOps Unleashed v14；Balance 为推荐且部分功能需要。说明明确要求前两者；Balance 解锁额外资源和史诗内容，不能混称所有模组都是开局必需。 |
+
+Omega 直接单位引用证据：`需专用模组/03槽位/Survival Omega/Survival Omega_script.lua:558`、`需专用模组/03槽位/Survival Omega/Survival Omega_script.lua:580`。BEL0402 位于 38 分钟波组，BRL0401 位于 45 分钟波组；时间是波表的相对时刻，仍受准备时间和脚本流程影响。模组归属可与同包 `survival_genesis/units/Units_BlackOps.lua` 中的分组对照。
+
+## F003：FAF 单位缺失不能自动归为专用模组（静态确认）
+
+| 地图 | 缺失蓝图及首次有效引用位置 |
+| --- | --- |
+| Dreamy Survival | `drlk001`：`04槽位/dreamy_survival/dreamy_survival_script.lua:1403` |
+| Fort Ictus Survival | `drlk001`：`04槽位/fort_ictus_survival/Fort_Ictus_Survival_script.lua:516` |
+| Sexy Survival | `dalk003`：`04槽位/sexy_survival/sexy_survival_script.lua:945`；`delk002`：`04槽位/sexy_survival/sexy_survival_script.lua:943`；`drlk001`：`04槽位/sexy_survival/sexy_survival_script.lua:944`；`dslk004`：`04槽位/sexy_survival/sexy_survival_script.lua:946` |
+| Broad Front Survival | `drlk001`：`06槽位/broad_front_survival/Broad_Front_Survival_script.lua:501` |
+| Center Arena Survival | `drlk001`：`08槽位/center_arena_survival/center_arena_survival_script.lua:372` |
+| voodoo battle v1 survival | `drlk001`：`08槽位/voodoo_battle_v1_survival/voodoo_battle_v1_survival_script.lua:475` |
+| Aeon Illuminate Survival | `dalk003`：`待测试_依赖与资源核对/05槽位/aeon_illuminate_survival/Aeon_Illuminate_Survival_save.lua:2628`；`zab9601`：`待测试_依赖与资源核对/05槽位/aeon_illuminate_survival/Aeon_Illuminate_Survival_save.lua:2852` |
+| deadzone survival | `drlk001`：`待测试_依赖与资源核对/06槽位/deadzone_survival/deadzone_survival_script.lua:501` |
+| Survival Stranded | `dslk004`：`待测试_依赖与资源核对/06槽位/survival_stranded/survival_stranded_save.lua:4715`；`xrb2309`：`待测试_依赖与资源核对/06槽位/survival_stranded/survival_stranded_save.lua:8871` |
+| Dune Survival | `zeb9501`：`待测试_依赖与资源核对/08槽位/dune_survival/Dune_Survival_save.lua:2242` |
+| Survival Temple | `drlk001`：`待测试_依赖与资源核对/08槽位/survival_temple/survival_temple_script.lua:372` |
+| survival_生存AN_voodoo_no_mods | `drlk001`：`待测试_依赖与资源核对/08槽位/survival_voodoo_AN_no_mods/survival_voodoo_AN_no_mods_script.lua:424` |
+| survival_voodoo_no_mods | `drlk001`：`待测试_依赖与资源核对/08槽位/survival_voodoo_no_mods/survival_voodoo_no_mods_script.lua:424` |
+| Tomb Guard Survival | `drlk001`：`待测试_依赖与资源核对/12槽位/tomb_guard_survival/tomb_guard_survival_script.lua:501` |
+
+特别是 `survival_voodoo_no_mods` 与 AN 版仍有活动 `DRLK001` 引用；作者的 no mods 名称并非 Steam 原版资源证明。Aeon Illuminate、Dune、Stranded 的部分引用在存档，不能只检查主脚本。建议替换与损失见 [纯原版迁移指南](VANILLA_MIGRATION.md)。
+
+## F004：主脚本相同不代表完整玩法相同（静态确认）
+
+Horde Aeon Fixed 与 Horde EE 的地形、存档、主脚本和菜单相同，但 23 个 `src/` 文件中 `WaveTable.lua`、`WaveOrders.lua` 不同。前者首波 `ual0201`，后者 `url0107`；协助命令的单位过滤也不同。不得只凭主脚本归并或删除；按阵营玩法分别保留。
+
+## F005：重复预览不等于重复地图（静态确认）
+
+Omega 与 Light 2a 的外置 DDS/large/small PNG 像素相同，地形文件和内嵌图不同；两者平坦高度数据相同不足以证明地形完全相同。NavyV28 与 Onix 的外置 PNG 相同，地形、存档和内嵌图不同。处理方法是按各自 `.scmap` 重建/选择正确预览，保留玩法，不靠缩略图去重。
+
+## F006：Voodoo 两版限制差异（静态确认）
+
+AN 版 `待测试_依赖与资源核对/08槽位/survival_voodoo_AN_no_mods/survival_voodoo_AN_no_mods_script.lua:938` 使用真实 `uaa0304`；另一版相同位置为目标原版没有的 `uaa0314`。这是一项有效单位限制差异，不是两版完全重复的证据，也不解决共同的 DRLK001 依赖。原注释把该限制称为实验空军，不能据注释重新推断或更改兵种意图。
+
+## F007：特殊军队误列普通大厅槽（静态确认，影响待实测）
+
+`09槽位/naval_survival_onix/naval_survival_onix_scenario.lua` 将 `ARMY_SUPERWEAPON` 同时放入 teams.armies 和 ExtraArmies。大厅 9 槽不应直接说明为 9 名人类合作版。应验证这一特殊槽的作者意图、占用行为、联盟/胜负与计数；本轮只记录，未删除该槽。
+
+## F008：外置生存模式与可选 MOD 支持要分开（静态确认/待调查）
+
+- Swarm mk4、Swarm 10 players、Eternals 的地图内没有完整波次/生存胜负实现，需要外部模式提供。删除模组后能进入地形不等于能游玩生存。
+- Zhunas Crater Swarm Survival 名称与空脚本提示外置模式，但无明确模组声明，状态为 **待调查**，未移动成已确认模组图。
+- desert_front、Genesis、Voodoo Battle new、Terror Lands、Onix Voodoo 按模组检测导入单位表，有原版分支。指定“仅模组单位”模式的需要不能扩大为整图必需。
+- `pass_survival_aix` 的 AIX 与 TeamPlayAI 的 AI 推荐不能机械视为专用生存模组依赖。
+
+## 证据限制
+
+83 个场景/菜单/存档数据用例通过目标 Lua 的隔离加载，15 个候选文件编译与 15 个迁移数据用例通过；没有运行 Steam 游戏，没有实机截图、多人日志或完整引擎初始化。具体分类与保留建议见 [本轮同图复核](SURVIVAL_AUDIT_2026-10-16.md)。

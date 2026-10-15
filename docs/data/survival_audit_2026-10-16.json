@@ -1,0 +1,3091 @@
+{
+  "date": "2026-10-16",
+  "scope": "02_生存与波次防守，83 current maps",
+  "evidence_status": "静态确认；未游戏实测",
+  "maps": [
+    {
+      "id": 1,
+      "name": "Rainmakers Survival",
+      "version": 65,
+      "slots": 3,
+      "classification": "未发现强制专用模组证据",
+      "rel": "03槽位/rainmakers_survival",
+      "current_rel": "03槽位/rainmakers_survival",
+      "terrain_sha256": "8486ee31cdc497ce769f87a6d8006031083f5d058c14af629f218194682f8278",
+      "height_sha256": "bcd2faea48028f51142f581214e94485347eee180e3985e0562f9d6010dcc2c2",
+      "embedded_preview_sha256": "2a26f275620c907b6c74fc032276504cfd246229202bb8b2c8872f36b84dde97",
+      "role_files": {
+        "script_file": {
+          "path": "Rainmakers_survival_script.lua",
+          "sha256": "41fb5a7acf3f99f72f78cf7d2b72499568b71521ae5b95bbc9d06704ad81dca5"
+        },
+        "save_file": {
+          "path": "Rainmakers_survival_save.lua",
+          "sha256": "c06e04a35eeb0a040c7e3db79ea3b4bda15e303182d2cd72e8550079ef660b84"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 2,
+      "name": "SH1R3_Mycelium2_Survival",
+      "version": 1,
+      "slots": 3,
+      "classification": "未发现强制专用模组证据",
+      "rel": "03槽位/SH1R3_Mycelium2_Survival",
+      "current_rel": "03槽位/SH1R3_Mycelium2_Survival",
+      "terrain_sha256": "4de5ab1c68cf04778d93148f980bb794c8361169db0b7f9671dbd27214fce900",
+      "height_sha256": "20beb463f3d1deec21650d5e1a2d4e09809bdb575695710c71ca6088e14b3b5e",
+      "embedded_preview_sha256": "73f26ff8482eedd9ccab443ea97bdc49981f8fea89e6b379955b83882d5ed275",
+      "role_files": {
+        "script_file": {
+          "path": "sh1r3_mycelium2_Survival_script.lua",
+          "sha256": "3ba40363d1c811f88e08727cfbc4ba13a775f9b8435d0240d22eaaf082ef3730"
+        },
+        "save_file": {
+          "path": "sh1r3_mycelium2_Survival_save.lua",
+          "sha256": "03d8a7881fbe292a2681d7ce94a7336a2b7fb752da029d76c1b3be52b60ffc3e"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 3,
+      "name": "Survival Omega",
+      "version": 1,
+      "slots": 3,
+      "classification": "必须配套模组（完整玩法）",
+      "rel": "03槽位/Survival Omega",
+      "current_rel": "需专用模组/03槽位/Survival Omega",
+      "terrain_sha256": "5fd09080ed0b0c7541f889babc3182cc2ae218c450869eb6c26851baec07185c",
+      "height_sha256": "e1c29c54f7a180a9bd38456af9ba938a2093e2093b6cf95169dad785248d782b",
+      "embedded_preview_sha256": "3f2c528b912250a9d7db4327652365c10ef68bd710c566ae198f1d77d83b5281",
+      "role_files": {
+        "script_file": {
+          "path": "Survival Omega_script.lua",
+          "sha256": "40c465e9a44b6000b509647d309d029bb35562563b2462a533584eabc78f724c"
+        },
+        "save_file": {
+          "path": "Survival Omega_save.lua",
+          "sha256": "dce98afd380bf9c2951fa0e7e781447103bd2469ce16587ef5518e6d95a42ded"
+        }
+      },
+      "active_wave_missing": {
+        "bel0402": 38.0,
+        "brl0401": 45.0
+      },
+      "saved_missing_units": {},
+      "required_mods": "BlackOps 单位包（后期波次）",
+      "evidence": "38 分钟波表开始直接抽取 BEL0402，45 分钟加入 BRL0401；无模组检测。能开局不代表能完成后期波次。",
+      "vanilla_feasibility": "可以做小范围替换，已准备候选",
+      "migration_method": "BEL0402 → UEL0401；BRL0401 → XRL0403。原时间表保留。",
+      "losses": "失去两种 BlackOps 实验单位的模型、武器、特效、技能和原平衡；代用品不是原单位。",
+      "unit_evidence": {
+        "brl0401": "需专用模组/03槽位/Survival Omega/Survival Omega_script.lua:580",
+        "bel0402": "需专用模组/03槽位/Survival Omega/Survival Omega_script.lua:558"
+      }
+    },
+    {
+      "id": 4,
+      "name": "5iver Survival Brainsucka",
+      "version": 1,
+      "slots": 4,
+      "classification": "未发现强制专用模组证据",
+      "rel": "04槽位/5iver Survival Brainsucka",
+      "current_rel": "04槽位/5iver Survival Brainsucka",
+      "terrain_sha256": "b7055fccdea0056b108d485bb3857f946213bd3711676acff331c4a72b37511f",
+      "height_sha256": "0004595168fe73614c3da59c30c9088d93282ba68a9e64a7efead7bc31894fe0",
+      "embedded_preview_sha256": "b622843175610bf24544bcb2a3659a61fab91db1220cfca968829de9e09ec84e",
+      "role_files": {
+        "script_file": {
+          "path": null,
+          "sha256": null
+        },
+        "save_file": {
+          "path": null,
+          "sha256": null
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 5,
+      "name": "Black Sun Defense - v1.0",
+      "version": 1,
+      "slots": 4,
+      "classification": "未发现强制专用模组证据",
+      "rel": "04槽位/BBF_BlackSunDefense",
+      "current_rel": "04槽位/BBF_BlackSunDefense",
+      "terrain_sha256": "f8be652ea49d29c2c18515cb0ed8181db41ee8aa9054c62e9efdbc155725f108",
+      "height_sha256": "cb2e11ca668fd88302efca5d22fb1e99dfb934401f3dcb059370d71a9a0ad742",
+      "embedded_preview_sha256": "1470a7f31dccddfb32d2870276f04840d4f4a62dbe97dabf93beb948ea562d18",
+      "role_files": {
+        "script_file": {
+          "path": "BBF_BlackSunDefense_script.lua",
+          "sha256": "68390c07c44628ccd17d5858bb353ce972747caa3e558c7294dfcdcf4f14b435"
+        },
+        "save_file": {
+          "path": "BBF_BlackSunDefense_save.lua",
+          "sha256": "31721c07cd5d496e1bd0bf9afe5ff87d59195c974987d6c47c2303bc1e305c0b"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 6,
+      "name": "BSD 0.9 - Black Sun Defense Health fix",
+      "version": 1,
+      "slots": 4,
+      "classification": "未发现强制专用模组证据",
+      "rel": "04槽位/BBF_BSD_09",
+      "current_rel": "04槽位/BBF_BSD_09",
+      "terrain_sha256": "f8be652ea49d29c2c18515cb0ed8181db41ee8aa9054c62e9efdbc155725f108",
+      "height_sha256": "cb2e11ca668fd88302efca5d22fb1e99dfb934401f3dcb059370d71a9a0ad742",
+      "embedded_preview_sha256": "1470a7f31dccddfb32d2870276f04840d4f4a62dbe97dabf93beb948ea562d18",
+      "role_files": {
+        "script_file": {
+          "path": "BBF_BSD_09_script.lua",
+          "sha256": "9668ec586bd47a09e0864e9b50a9dce99472864a19cc18da7a70a87301505f24"
+        },
+        "save_file": {
+          "path": "BBF_BSD_09_save.lua",
+          "sha256": "31721c07cd5d496e1bd0bf9afe5ff87d59195c974987d6c47c2303bc1e305c0b"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 7,
+      "name": "Desert Swarm v1c Beta",
+      "version": 1,
+      "slots": 4,
+      "classification": "未发现强制专用模组证据",
+      "rel": "04槽位/Desert_Swarm_v1c_Beta",
+      "current_rel": "04槽位/Desert_Swarm_v1c_Beta",
+      "terrain_sha256": "d189b7d5bc77ba857349896ce2bc0322bfc98194c35943981c5c44c404f65698",
+      "height_sha256": "9800274996bab0ae29814a073fbe1b7514d846e475b2152824eb3f89f5fe9cff",
+      "embedded_preview_sha256": "d131fc479ed852e923654335881853e8213b7ef17acbc4d499feb87fa659e4a9",
+      "role_files": {
+        "script_file": {
+          "path": "Desert_Swarm_v1c_Beta_script.lua",
+          "sha256": "4c6839087a8b419ac92233837cbd7e23052ca680eb3481c43a1d32d4a9315671"
+        },
+        "save_file": {
+          "path": "Desert_Swarm_v1c_Beta_save.lua",
+          "sha256": "dc4ccfbedd404b265eb82c761739b8ae82cba6e29fb8521072103960387e55fe"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 8,
+      "name": "Dreamy Survival",
+      "version": 15,
+      "slots": 4,
+      "classification": "FAF资源差异，非专用模组要求",
+      "rel": "04槽位/dreamy_survival",
+      "current_rel": "04槽位/dreamy_survival",
+      "terrain_sha256": "a853f56210e498c9da859db221f5fd591ef5dff37787a4781fc93ea4ab3685e6",
+      "height_sha256": "a0e1ec6e90cec1f2620a86853d5712b2d559afdaddc460c693ced4015d855573",
+      "embedded_preview_sha256": "1acc051528758faf7ea1de3775ef479020d98886123b2ac7d833dfdfa929c65b",
+      "role_files": {
+        "script_file": {
+          "path": "dreamy_survival_script.lua",
+          "sha256": "f1731adec6fa9572bbc91374737822bc58288118d90de23bfcb7ef86f669ab26"
+        },
+        "save_file": {
+          "path": "dreamy_survival_save.lua",
+          "sha256": "4dace91cdbf03e50217894bfe7a1d13bb557f5dad22e0491a75f28002d021f26"
+        }
+      },
+      "active_wave_missing": {
+        "drlk001": 19.0
+      },
+      "saved_missing_units": {},
+      "unit_evidence": {
+        "drlk001": "04槽位/dreamy_survival/dreamy_survival_script.lua:1403"
+      }
+    },
+    {
+      "id": 9,
+      "name": "Endless Survival Defense",
+      "version": 17,
+      "slots": 4,
+      "classification": "支持可选模组",
+      "rel": "04槽位/endless_survival_defense",
+      "current_rel": "04槽位/endless_survival_defense",
+      "terrain_sha256": "4c42b5098fe9396e3d0e5e0d566879c52ff9f1bb69ac2f98942b1dbcf0c3fdd9",
+      "height_sha256": "8a212dc6525a455910bdbae06c51d546e4436a91d95fe54af2406384eaad51a2",
+      "embedded_preview_sha256": "fa687088bb259d4913a52b519774033eddd0743ccb71867f1b10677167da5785",
+      "role_files": {
+        "script_file": {
+          "path": "endless_survival_defense_script.lua",
+          "sha256": "faf27e9147f28588856b29bed5d5f6f55c6315b202a5692235f8021c2f4bbf3a"
+        },
+        "save_file": {
+          "path": "endless_survival_defense_save.lua",
+          "sha256": "66dfb3ef893f5c11c23fe46111bea4923c522919d0187666461ebe24750d10fb"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 10,
+      "name": "Fort Ictus Survival",
+      "version": 8,
+      "slots": 4,
+      "classification": "FAF资源差异，非专用模组要求",
+      "rel": "04槽位/fort_ictus_survival",
+      "current_rel": "04槽位/fort_ictus_survival",
+      "terrain_sha256": "a7ca26164efb4cbe9be78558ab1b3221a2724885a1471fb26e990b1c51a6dfd0",
+      "height_sha256": "e989cc720375a66d5598d7c232a0ceb3d939061474d8a0286067b5b1badf1441",
+      "embedded_preview_sha256": "7fca78454c100f12645e4b203a7a03a9a4ca16b068bcf33c7ea239fefce88814",
+      "role_files": {
+        "script_file": {
+          "path": "Fort_Ictus_Survival_script.lua",
+          "sha256": "eddca4e62aa5e778c546ca5d2ed8e2dd496971f51fa82fb37ec25e42e4a004e9"
+        },
+        "save_file": {
+          "path": "Fort_Ictus_Survival_save.lua",
+          "sha256": "5e2616a723af1c86a3167075032169634190e622f6cef1254d40c7bb8d367572"
+        }
+      },
+      "active_wave_missing": {
+        "drlk001": 16.0
+      },
+      "saved_missing_units": {},
+      "unit_evidence": {
+        "drlk001": "04槽位/fort_ictus_survival/Fort_Ictus_Survival_script.lua:516"
+      }
+    },
+    {
+      "id": 11,
+      "name": "Sexy Survival",
+      "version": 12,
+      "slots": 4,
+      "classification": "FAF资源差异，非专用模组要求",
+      "rel": "04槽位/sexy_survival",
+      "current_rel": "04槽位/sexy_survival",
+      "terrain_sha256": "4ca2534479685141a32822edace2524631e414064d3a08dfe9736515b6c1a191",
+      "height_sha256": "aa92665cbd8b9b3f0afe9913603c250d9bc347d64bd3952caa06ca3cb71de58b",
+      "embedded_preview_sha256": "4c543492e9e700423826e3deebcb79decc39591fd5018f14aa37082ea01ea2bc",
+      "role_files": {
+        "script_file": {
+          "path": "sexy_survival_script.lua",
+          "sha256": "57c497c6e3c07673b4248af31d88722531412f3b9b6901bf1dfd8230bfa29105"
+        },
+        "save_file": {
+          "path": "sexy_survival_save.lua",
+          "sha256": "b472a5a8ec03884e45ff02144f5ae096f20dddfe965538e90316689f09e1513b"
+        }
+      },
+      "active_wave_missing": {
+        "dalk003": 17.0,
+        "delk002": 17.0,
+        "dslk004": 17.0,
+        "drlk001": 17.0
+      },
+      "saved_missing_units": {},
+      "unit_evidence": {
+        "delk002": "04槽位/sexy_survival/sexy_survival_script.lua:943",
+        "dalk003": "04槽位/sexy_survival/sexy_survival_script.lua:945",
+        "drlk001": "04槽位/sexy_survival/sexy_survival_script.lua:944",
+        "dslk004": "04槽位/sexy_survival/sexy_survival_script.lua:946"
+      }
+    },
+    {
+      "id": 12,
+      "name": "SH1R3_Mycelium2_Survival",
+      "version": 2,
+      "slots": 4,
+      "classification": "未发现强制专用模组证据",
+      "rel": "04槽位/sh1r3_mycelium2_survival",
+      "current_rel": "04槽位/sh1r3_mycelium2_survival",
+      "terrain_sha256": "b9746a0170fd35a024aee7499a82066cb44f601b747d6ba229e84ab068165739",
+      "height_sha256": "20beb463f3d1deec21650d5e1a2d4e09809bdb575695710c71ca6088e14b3b5e",
+      "embedded_preview_sha256": "d2a6bc9e6fe2749f941b0703bd3e7b5f0d70127490b1d303b639f47bdfacb576",
+      "role_files": {
+        "script_file": {
+          "path": "SH1R3_Mycelium2_Survival_script.lua",
+          "sha256": "0801487686cfa931c99d04635a1eb9ec1d6994cf410d4b4731664a633da8f891"
+        },
+        "save_file": {
+          "path": "SH1R3_Mycelium2_Survival_save.lua",
+          "sha256": "5224651ae91094af14193d62a94ee8bab1f4bc94504f24b0d7238fb01760082e"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 13,
+      "name": "Survival of the Fittest",
+      "version": 1,
+      "slots": 4,
+      "classification": "未发现强制专用模组证据",
+      "rel": "04槽位/Supreme_survival",
+      "current_rel": "04槽位/Supreme_survival",
+      "terrain_sha256": "56797e7a7dda519ac748553727b1194b4add28bfc7f7bbbea1046a488fe992af",
+      "height_sha256": "af44fef9f64a142056e40ec91dbf7fdf73b61346be0c7b75bf6cf7d072de68e3",
+      "embedded_preview_sha256": "bed5fc9aba5fc83abdfd332c75536351e0214eac5ab867ce5c73d615d9d274cb",
+      "role_files": {
+        "script_file": {
+          "path": "Supreme_survival_script.lua",
+          "sha256": "9ffc4d9765ea5c159c263767da9231684cd52535870f8fd5d00e7999d45922b3"
+        },
+        "save_file": {
+          "path": "Supreme_survival_save.lua",
+          "sha256": "0c95406a98926d0543e5cb17fe7b3abfbf24ff30e346e65ab33571587f58a290"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 14,
+      "name": "Survival Attack",
+      "version": 1,
+      "slots": 4,
+      "classification": "未发现强制专用模组证据",
+      "rel": "04槽位/survival attack",
+      "current_rel": "04槽位/survival attack",
+      "terrain_sha256": "c8057d9dfef5c1ac8f463f83f1503d1a4933a009c846882c2492c42057b3d130",
+      "height_sha256": "65c0acc09ad47260195c4ce524713232a0cf10741686f2d58510c526b4dd2e67",
+      "embedded_preview_sha256": "7012fda90587b99a89e1e8fc9f4ccb078f1cfa3189502feb8478e6c9d43c4772",
+      "role_files": {
+        "script_file": {
+          "path": "survival attack_script.lua",
+          "sha256": "a277a8fb39f64486db634810f42aea13b2f9cba88441a14c63ff72e653d6f54b"
+        },
+        "save_file": {
+          "path": "survival attack_save.lua",
+          "sha256": "a09c00e73c05cd2a5f61d2a7ff6bafc7b71895783b4f6f0768fdec0d7a5c5d2e"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 15,
+      "name": "Survival Run v8",
+      "version": 1,
+      "slots": 4,
+      "classification": "未发现强制专用模组证据",
+      "rel": "04槽位/Survival Run",
+      "current_rel": "04槽位/Survival Run",
+      "terrain_sha256": "78c1d74f484a360dcde57fd1b9edf52ba21a4cc9eb55f9e13a0c3077972a99e3",
+      "height_sha256": "4e647ddde41ee0e63c3da76fea3b540f39200b1a2e4c1958b5d3f667c01ccccf",
+      "embedded_preview_sha256": "11f099a41d47dc7e0281f824ecabb81aa7fb55a895a5bac8c420b97429310137",
+      "role_files": {
+        "script_file": {
+          "path": "Survival Run v8_script.lua",
+          "sha256": "903ba7c717fc0e60bbd5dfb24b06a57f87182a3e02d3d09cc5c738c416d76729"
+        },
+        "save_file": {
+          "path": "Survival Run v8_save.lua",
+          "sha256": "e5bff87e512ba6e2c85ee96c4147e5120bd8f91a6e3e29660c380100d2a1450e"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 16,
+      "name": "survival_5thdimension v6",
+      "version": 1,
+      "slots": 4,
+      "classification": "未发现强制专用模组证据",
+      "rel": "04槽位/survival_5thdimension",
+      "current_rel": "04槽位/survival_5thdimension",
+      "terrain_sha256": "f940f52091edc4fbdc012434691fa4a306825dcb123cb693beb6c2f819860895",
+      "height_sha256": "379b110516c13a1a9496a2fccb10c2be9591bd58e93a4eae19a019da3fbe308a",
+      "embedded_preview_sha256": "eb9924d32872b6d4d74b60182673cdc1e7ce99d20004780ed04dda56a7461c1d",
+      "role_files": {
+        "script_file": {
+          "path": "survival_5thdimension_v6_script.lua",
+          "sha256": "d72e5a54a356dce49d63dc614365d385d77f9257ddb465a4d99e410403281670"
+        },
+        "save_file": {
+          "path": "survival_5thdimension_v6_save.lua",
+          "sha256": "6337c9689dc5440619cf21f26a6935b67f015f4bceabdb7ff59ca83e73fba6b0"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 17,
+      "name": "survival_5thdimension_practice",
+      "version": 3,
+      "slots": 4,
+      "classification": "未发现强制专用模组证据",
+      "rel": "04槽位/survival_5thdimension_practice",
+      "current_rel": "04槽位/survival_5thdimension_practice",
+      "terrain_sha256": "c283a1347fb5b64ca902c899da2317735834e727fa734d0ecab90c521b0ec511",
+      "height_sha256": "a8b4dcf7af970c6fc46543bd5c3eb8194739327e1d4fda2e86ddd068bfe7c845",
+      "embedded_preview_sha256": "0590da026cdd3ccc4490b70139e57aeb029c9b3937bc77921188c5df5bac9e50",
+      "role_files": {
+        "script_file": {
+          "path": "survival_5thdimension_practice_script.lua",
+          "sha256": "4e0c30bd9f14e8b97d5820227387ceb407eda766526b44cd32ce9f2be50e46b3"
+        },
+        "save_file": {
+          "path": "survival_5thdimension_practice_save.lua",
+          "sha256": "19bab61f217661375834d103d0ecbed1001a3ace3302e536f173356fd5260042"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 18,
+      "name": "Survival Blackbox 10",
+      "version": 1,
+      "slots": 4,
+      "classification": "支持可选模组",
+      "rel": "04槽位/Survival_BlackBox_10",
+      "current_rel": "04槽位/Survival_BlackBox_10",
+      "terrain_sha256": "ef5321d1c63f545da5c49848dd7e3f557f5f5c5d2b576a121d90b42bcf8b3cbd",
+      "height_sha256": "9842b4cea678ae1ec5c75b423647d075a9ea39f0fee7c17cea543d6b26d34dc1",
+      "embedded_preview_sha256": "947558b7da8fec7969b34403a51b88327852d2c64586a0fc24d3e2ceadea8e7e",
+      "role_files": {
+        "script_file": {
+          "path": "Survival_BlackBox_10_script.lua",
+          "sha256": "f787a26e76f77dbbd35a85a8c9e10fe060c640d63c3bbcc94119428687615217"
+        },
+        "save_file": {
+          "path": "Survival_BlackBox_10_save.lua",
+          "sha256": "a88fe8c8beb77f9ec0e670313ca5ef44949f5032b1f0f98f3089d4faef60adad"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 19,
+      "name": "Survival Defense Atoll",
+      "version": 1,
+      "slots": 4,
+      "classification": "未发现强制专用模组证据",
+      "rel": "04槽位/survival_defense_atoll",
+      "current_rel": "04槽位/survival_defense_atoll",
+      "terrain_sha256": "90bd71eee7e63a0b00f681633c88626e9b2dfe041692abe0915f8ba2a80189cd",
+      "height_sha256": "d56bba5b43cf423ad8a4486fd169dac2af5f121b22a606e67f5ba05fccd25772",
+      "embedded_preview_sha256": "31ab3cef4a4260eea9146cad701441cc15d981febf5fad4d50cc349869e57b3d",
+      "role_files": {
+        "script_file": {
+          "path": "Survival_Defense_Atoll_script.lua",
+          "sha256": "9efcb650c37d7b5b5c9240156b9c0bb8caaa559a8989b8589e786feca3a82d46"
+        },
+        "save_file": {
+          "path": "Survival_Defense_Atoll_save.lua",
+          "sha256": "9d7a2a832e3e31e4ed7f99bb17a8f0adf302ca8c4c98015bbc2b82ef8c56b61f"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 20,
+      "name": "Survival Escape",
+      "version": 1,
+      "slots": 4,
+      "classification": "未发现强制专用模组证据",
+      "rel": "04槽位/Survival_Escape",
+      "current_rel": "04槽位/Survival_Escape",
+      "terrain_sha256": "3abef0f2095ff2c4fd43290fcbd0023116c538994dadfc00c7f3d0d16554dba6",
+      "height_sha256": "8cc187cd2adbef49ef487dd972b58e64b999b35369861bfc6b9601c8da6f996e",
+      "embedded_preview_sha256": "de8604e7c92697a01c5652b333d26471e8a57aceea9db71caf5bbd3df77383ef",
+      "role_files": {
+        "script_file": {
+          "path": "Survival_Escape_script.lua",
+          "sha256": "8efc2e1bd8aec9a74e29ceffc9f52c017a6775a8f3a15006187988119a2a4c98"
+        },
+        "save_file": {
+          "path": "Survival_Escape_save.lua",
+          "sha256": "6dd1397e86dfc6338af11a4eee79d20a9406abaea75001c48a823e9406ea9bc8"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 21,
+      "name": "Survival Escape v3ga",
+      "version": 1,
+      "slots": 4,
+      "classification": "支持可选模组",
+      "rel": "04槽位/Survival_Escape_v3ga",
+      "current_rel": "04槽位/Survival_Escape_v3ga",
+      "terrain_sha256": "3abef0f2095ff2c4fd43290fcbd0023116c538994dadfc00c7f3d0d16554dba6",
+      "height_sha256": "8cc187cd2adbef49ef487dd972b58e64b999b35369861bfc6b9601c8da6f996e",
+      "embedded_preview_sha256": "de8604e7c92697a01c5652b333d26471e8a57aceea9db71caf5bbd3df77383ef",
+      "role_files": {
+        "script_file": {
+          "path": "Survival_Escape_v3ga_script.lua",
+          "sha256": "600ba6e2efcb5d3581062a6d7dfc36d9efcbfcb06f87f2443582d58601f5b710"
+        },
+        "save_file": {
+          "path": "Survival_Escape_v3ga_save.lua",
+          "sha256": "6dd1397e86dfc6338af11a4eee79d20a9406abaea75001c48a823e9406ea9bc8"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 22,
+      "name": "Survival EXtreme",
+      "version": 1,
+      "slots": 4,
+      "classification": "未发现强制专用模组证据",
+      "rel": "04槽位/Survival_Extreme",
+      "current_rel": "04槽位/Survival_Extreme",
+      "terrain_sha256": "9c0c1ac1fcd13b9806ec7ddd1f3b38bbcfdc00c8a96f6b9daf80bdd90c581287",
+      "height_sha256": "23c1e6287571106878a64bb74552048b451528608277b2dffab768ad06058e39",
+      "embedded_preview_sha256": "f4b32ff1878414bb10f2fdaa9745bb070d8593f4c061a2b4aed0325b0f57ee38",
+      "role_files": {
+        "script_file": {
+          "path": "Survival_Extreme_script.lua",
+          "sha256": "2b77f590c9e26ae4a2d8918ba575ae66b91826cd254751248c3235fae5a0bae9"
+        },
+        "save_file": {
+          "path": "Survival_Extreme_save.lua",
+          "sha256": "dada02ec3747c1360f048f41cf2a64a145a5a62654174c103dc6fd2c25dabaf1"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 23,
+      "name": "Survival EXtreme Desert",
+      "version": 1,
+      "slots": 4,
+      "classification": "未发现强制专用模组证据",
+      "rel": "04槽位/Survival_ExtremeDesert",
+      "current_rel": "04槽位/Survival_ExtremeDesert",
+      "terrain_sha256": "8c8b24a52896f1d656e41a770218e017924f1c648a35a8e257a3758defc73c84",
+      "height_sha256": "3c6c476d91ee540c6d89cd709399eecaf0690d3d2ff964232e17e17b010a3e0e",
+      "embedded_preview_sha256": "3eecf3aa7f14a520a59657452b82ad413ab5cd33bc4d866f03a19aed81bf276b",
+      "role_files": {
+        "script_file": {
+          "path": "Survival_ExtremeDesert_script.lua",
+          "sha256": "a870cd0c9bf604064f5d407b248a05b786cba70a0291bbbfa1b65d6572653978"
+        },
+        "save_file": {
+          "path": "Survival_ExtremeDesert_save.lua",
+          "sha256": "bd7ade99c53bcc2359f09e033db908dce700e69d1b9450dc1736f34ee797049b"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 24,
+      "name": "Survival EXtreme Desert V2fA",
+      "version": 1,
+      "slots": 4,
+      "classification": "未发现强制专用模组证据",
+      "rel": "04槽位/Survival_ExtremeDesertV2fA",
+      "current_rel": "04槽位/Survival_ExtremeDesertV2fA",
+      "terrain_sha256": "99304fe7981e3e525f4422a4186e0eadae8f9edbe11d817a47d98488122b3ca0",
+      "height_sha256": "c86094159cdec456b53e9a2b4d52ba3b5dd4061165dd0cdee5bb0b04727ae888",
+      "embedded_preview_sha256": "d9fb32cde95df6d79cdad370275c227c74f3ec10d541d4f2a1e9d1ac99d7955a",
+      "role_files": {
+        "script_file": {
+          "path": "Survival_ExtremeDesertV2fA_script.lua",
+          "sha256": "ee211aa4902dd5626bf65cbfcb1d61901f10706e91e83f7bc1e68c6bddaaf953"
+        },
+        "save_file": {
+          "path": "Survival_ExtremeDesertV2fA_save.lua",
+          "sha256": "6140dbecc884f5c8f69bf38ed3bf6b181d892f0c97c5e8d0ddfb814e63ba73b4"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 25,
+      "name": "Survival EXtreme NavyV2",
+      "version": 1,
+      "slots": 4,
+      "classification": "未发现强制专用模组证据",
+      "rel": "04槽位/Survival_ExtremeNavy",
+      "current_rel": "04槽位/Survival_ExtremeNavy",
+      "terrain_sha256": "887ae453bff60c625436b59edd0fe8e2bf12fb086faf1e63077bc8bf9d1e85fb",
+      "height_sha256": "050a115cec16c0ff27a5756d124579f693c94767709106820e7befffc7151531",
+      "embedded_preview_sha256": "b47ec84e9dde57f20678bfb83cb48e0c01c753d086f1c6d568800660237d91a0",
+      "role_files": {
+        "script_file": {
+          "path": "Survival_ExtremeNavyV2_script.lua",
+          "sha256": "364a6d464ceffd5165819525d384c29eb996e1f4267fa119ccc8b9d3141e9a38"
+        },
+        "save_file": {
+          "path": "Survival_ExtremeNavyV2_save.lua",
+          "sha256": "c80d893306615bfc7b666532a6ca308d0784fd21f3ea9d13fe25b77f098caaa5"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 26,
+      "name": "Survival Horde",
+      "version": 5,
+      "slots": 4,
+      "classification": "未发现强制专用模组证据",
+      "rel": "04槽位/survival_horde",
+      "current_rel": "04槽位/survival_horde",
+      "terrain_sha256": "f88057c59f89302d359384ca614e365b7222a2db196a4a64049de08b59c4479f",
+      "height_sha256": "72814436ecdb3580716cc9d4392588975ad233209a61599ef73a2734240be284",
+      "embedded_preview_sha256": "2790c3087e74f9974e871f2048bd371365ac9cdaf55988fba15f5e22ba5a822c",
+      "role_files": {
+        "script_file": {
+          "path": "survival_horde_script.lua",
+          "sha256": "715a31620256b2aab3af5a057cefea53d7008710321de46fd3e61c691ade1cf4"
+        },
+        "save_file": {
+          "path": "survival_horde_save.lua",
+          "sha256": "c39974e48f1de1dea1affa75ec3fec87542f80fea1a263648cd7c6ee04f9922d"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 27,
+      "name": "Survival Horde Aeon",
+      "version": 8,
+      "slots": 4,
+      "classification": "未发现强制专用模组证据",
+      "rel": "04槽位/survival_horde_aeon",
+      "current_rel": "04槽位/survival_horde_aeon",
+      "terrain_sha256": "f88057c59f89302d359384ca614e365b7222a2db196a4a64049de08b59c4479f",
+      "height_sha256": "72814436ecdb3580716cc9d4392588975ad233209a61599ef73a2734240be284",
+      "embedded_preview_sha256": "2790c3087e74f9974e871f2048bd371365ac9cdaf55988fba15f5e22ba5a822c",
+      "role_files": {
+        "script_file": {
+          "path": "survival_horde_aeon_script.lua",
+          "sha256": "553976b469b975bb49b19677a4f7ca37a4ccaf13ef6036c74636285c8ac80cb7"
+        },
+        "save_file": {
+          "path": "survival_horde_aeon_save.lua",
+          "sha256": "4d2a31e0d677879151dde3e037fadc84840c9e32cf633367706f908996ed1064"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 28,
+      "name": "Survival Horde Aeon Fixed",
+      "version": 21,
+      "slots": 4,
+      "classification": "未发现强制专用模组证据",
+      "rel": "04槽位/survival_horde_aeon_fixed",
+      "current_rel": "04槽位/survival_horde_aeon_fixed",
+      "terrain_sha256": "f88057c59f89302d359384ca614e365b7222a2db196a4a64049de08b59c4479f",
+      "height_sha256": "72814436ecdb3580716cc9d4392588975ad233209a61599ef73a2734240be284",
+      "embedded_preview_sha256": "2790c3087e74f9974e871f2048bd371365ac9cdaf55988fba15f5e22ba5a822c",
+      "role_files": {
+        "script_file": {
+          "path": "survival_horde_aeon_fixed_script.lua",
+          "sha256": "5b95ffeba8850f671c1b76a12129dba75fa59506191e3dcc93fdedbb31561bd3"
+        },
+        "save_file": {
+          "path": "survival_horde_aeon_fixed_save.lua",
+          "sha256": "4d2a31e0d677879151dde3e037fadc84840c9e32cf633367706f908996ed1064"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 29,
+      "name": "Survival Horde EE",
+      "version": 21,
+      "slots": 4,
+      "classification": "未发现强制专用模组证据",
+      "rel": "04槽位/survival_horde_ee",
+      "current_rel": "04槽位/survival_horde_ee",
+      "terrain_sha256": "f88057c59f89302d359384ca614e365b7222a2db196a4a64049de08b59c4479f",
+      "height_sha256": "72814436ecdb3580716cc9d4392588975ad233209a61599ef73a2734240be284",
+      "embedded_preview_sha256": "2790c3087e74f9974e871f2048bd371365ac9cdaf55988fba15f5e22ba5a822c",
+      "role_files": {
+        "script_file": {
+          "path": "survival_horde_ee_script.lua",
+          "sha256": "1839ccd3cbacd0b233d0cdb418d41c0c84e8483efe57104e1f57bc1169a1a900"
+        },
+        "save_file": {
+          "path": "survival_horde_ee_save.lua",
+          "sha256": "4d2a31e0d677879151dde3e037fadc84840c9e32cf633367706f908996ed1064"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 30,
+      "name": "Survival Insane (Beta1)",
+      "version": 1,
+      "slots": 4,
+      "classification": "未发现强制专用模组证据",
+      "rel": "04槽位/Survival_Insane_Beta1",
+      "current_rel": "04槽位/Survival_Insane_Beta1",
+      "terrain_sha256": "4ecc04ed2068641ff24798f9350f50af5ca25527284c298b97109c0430d8523b",
+      "height_sha256": "c86094159cdec456b53e9a2b4d52ba3b5dd4061165dd0cdee5bb0b04727ae888",
+      "embedded_preview_sha256": "a3f7435ea1ec65fd733d823704f4878ef78421908a76c08b1a66b69e44a31300",
+      "role_files": {
+        "script_file": {
+          "path": "Survival_Insane_Beta1_script.lua",
+          "sha256": "9db1631a362f3f3914e379351e61beb3924455b77ecded138a0bbcc2f471ad12"
+        },
+        "save_file": {
+          "path": "Survival_Insane_Beta1_save.lua",
+          "sha256": "ba6ed604999cc9e281057d81c4a1f5146c36b829d91dd3bda0a0004072084e17"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 31,
+      "name": "Survival Insane NvS (Beta1)",
+      "version": 1,
+      "slots": 4,
+      "classification": "未发现强制专用模组证据",
+      "rel": "04槽位/Survival_Insane_NvS_Beta1",
+      "current_rel": "04槽位/Survival_Insane_NvS_Beta1",
+      "terrain_sha256": "ad5492e628379e76110b8c16c31f90c44265c5a4264f9846f9221d293b0e681e",
+      "height_sha256": "c5e1485e09a5f5519d23ba9f6cdfd80d3f16b6158ce30308884b96581d48ae3c",
+      "embedded_preview_sha256": "554b6596d092eaa69d91c6adaedcb6cd23abf9b09dabf0d7c3741d8a2999e687",
+      "role_files": {
+        "script_file": {
+          "path": "Survival_Insane_NvS_Beta1_script.lua",
+          "sha256": "d921fdf3f90d6a7deb3b03e5cfd3ed7dee0cbdff6fd28ea90e8a9e078f10ea6c"
+        },
+        "save_file": {
+          "path": "Survival_Insane_NvS_Beta1_save.lua",
+          "sha256": "ce4adfb73dab9cd03b54d0d1401dd02baf98543477698a6f4af562691798893f"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 32,
+      "name": "Survival North and South Barrens",
+      "version": 1,
+      "slots": 4,
+      "classification": "未发现强制专用模组证据",
+      "rel": "04槽位/survival_NorthSouth_Barrens",
+      "current_rel": "04槽位/survival_NorthSouth_Barrens",
+      "terrain_sha256": "ce16eea787e58dc4d3f812ef2bf5f6a476278971025166245206807d0108bc2f",
+      "height_sha256": "c5e1485e09a5f5519d23ba9f6cdfd80d3f16b6158ce30308884b96581d48ae3c",
+      "embedded_preview_sha256": "b61f3ae485458e8fe0c38600851dab93e04b5832ee16a93f33936abbcb4d3777",
+      "role_files": {
+        "script_file": {
+          "path": "survival_NorthSouth_Barrens_script.lua",
+          "sha256": "c243977ad0890f998d83014280d3f0ad53187db3d49fbb5a1e635db09991cd8b"
+        },
+        "save_file": {
+          "path": "survival_NorthSouth_Barrens_save.lua",
+          "sha256": "ebca45ba7feadef0cb85e77675b5699f5d308f84edf1eee5c11ff02edbaf599e"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 33,
+      "name": "Survival Sea Fleet",
+      "version": 6,
+      "slots": 4,
+      "classification": "未发现强制专用模组证据",
+      "rel": "04槽位/survival_sea_fleet",
+      "current_rel": "04槽位/survival_sea_fleet",
+      "terrain_sha256": "82cacdafec7988cc22e0bb810c4390b1ec6c58f701755c7951cfe93d21b2d77e",
+      "height_sha256": "2d20a1d7e0f87cebd3c36f9192a61ce672ca29143b343cde5af873ac2e001252",
+      "embedded_preview_sha256": "4bee41e1c138c24f90956a7763aad0d81c24495f717450dd19b7903a1710ac20",
+      "role_files": {
+        "script_file": {
+          "path": "survival_sea_fleet_script.lua",
+          "sha256": "e1d1fa7d405cb3caef37100b4e5d37073e1397845a5f712a33b1866f8bcf4417"
+        },
+        "save_file": {
+          "path": "survival_sea_fleet_save.lua",
+          "sha256": "e1bfb40646ef308493d7fd0021c78385b6d0908f4c1d4fe7a9ee390b0b05719f"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 34,
+      "name": "Genesis of the Order Survival",
+      "version": 12,
+      "slots": 5,
+      "classification": "未发现强制专用模组证据",
+      "rel": "05槽位/genesis_of_the_order_survival",
+      "current_rel": "05槽位/genesis_of_the_order_survival",
+      "terrain_sha256": "9f37f7db12f00ae7bf82416a8c2fbf8809b1a6c939971e02c5ea60a25cd6dcde",
+      "height_sha256": "a11ea5e5db6007aadda96fd0544c372dc6219c9d0d36f56b9eaf40ce771e710c",
+      "embedded_preview_sha256": "ffb8d78a0fc56f82399269a75d824a8c0317fdb05953c8c40e44838f8991f0eb",
+      "role_files": {
+        "script_file": {
+          "path": "Genesis_of_the_Order_Survival_script.lua",
+          "sha256": "cecebfbef25960e66984e34c4b759854b059b24597e5ff9e1ed32fa633022fbf"
+        },
+        "save_file": {
+          "path": "Genesis_of_the_Order_Survival_save.lua",
+          "sha256": "b1301ce292493e9201321a9c316e06970ff3be86de6b82de0cec4206f14f35ee"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 35,
+      "name": "Broad Front Survival",
+      "version": 7,
+      "slots": 6,
+      "classification": "FAF资源差异，非专用模组要求",
+      "rel": "06槽位/broad_front_survival",
+      "current_rel": "06槽位/broad_front_survival",
+      "terrain_sha256": "12d13010e4c0beacfc0b0fcc57a99676fe063e5259c19a302a57404f2914d2d0",
+      "height_sha256": "07cefa9321148af29bfedc12899dd1f3a779fd0f9962980ebd40329b8250810d",
+      "embedded_preview_sha256": "9d5ef74decea033ffc2602ed0bde995523d641133c1f7709b59267800572b2b3",
+      "role_files": {
+        "script_file": {
+          "path": "Broad_Front_Survival_script.lua",
+          "sha256": "5f4128a7e2fe387b19f73f3426ce3d1e7aa385ce7767f7e24161eae1a27865f3"
+        },
+        "save_file": {
+          "path": "Broad_Front_Survival_save.lua",
+          "sha256": "96cebe4b3394732c835889ea3fd6e8cff555f885f189eeb2b9b94ab05617f634"
+        }
+      },
+      "active_wave_missing": {
+        "drlk001": 16.0
+      },
+      "saved_missing_units": {},
+      "unit_evidence": {
+        "drlk001": "06槽位/broad_front_survival/Broad_Front_Survival_script.lua:501"
+      }
+    },
+    {
+      "id": 36,
+      "name": "desert front survival",
+      "version": 9,
+      "slots": 6,
+      "classification": "支持可选模组",
+      "rel": "06槽位/desert_front_survival",
+      "current_rel": "06槽位/desert_front_survival",
+      "terrain_sha256": "c6779adc16931dd0180b722fa9db2196edab0b035b4b4bfa8d33bda08ae3bf18",
+      "height_sha256": "05bbe857b28a85f1975efccbf63952196109c3cbc20077fa111f2e732dba8b7a",
+      "embedded_preview_sha256": "329dae7535f42fd8fa07c4bb0107cbd0086dc1168d3ea22a7b862cffebc3493d",
+      "role_files": {
+        "script_file": {
+          "path": "desert_front_survival_script.lua",
+          "sha256": "bdb6b57d9a331b96dd67ee0cf7892f858a3f99a693c1f0624d6e98aa18a425ef"
+        },
+        "save_file": {
+          "path": "desert_front_survival_save.lua",
+          "sha256": "40fd657fb34f9ed8a760b1da00d2d31ca309c3b612c0da24dd3c5d16052e3801"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 37,
+      "name": "Survival_5.thD_MayhemEdition",
+      "version": 5,
+      "slots": 6,
+      "classification": "必须配套模组（完整玩法）",
+      "rel": "06槽位/survival_5.thd_mayhemedition",
+      "current_rel": "需专用模组/06槽位/survival_5.thd_mayhemedition",
+      "terrain_sha256": "f940f52091edc4fbdc012434691fa4a306825dcb123cb693beb6c2f819860895",
+      "height_sha256": "379b110516c13a1a9496a2fccb10c2be9591bd58e93a4eae19a019da3fbe308a",
+      "embedded_preview_sha256": "eb9924d32872b6d4d74b60182673cdc1e7ce99d20004780ed04dda56a7461c1d",
+      "role_files": {
+        "script_file": {
+          "path": "Survival_5.thD_MayhemEdition_script.lua",
+          "sha256": "e0e5f8c2eea30c2757b92056d301f757427417db1fb89fa2413e194ebf7603c5"
+        },
+        "save_file": {
+          "path": "Survival_5.thD_MayhemEdition_save.lua",
+          "sha256": "613100807878397716d7acc98e5606300ccfc547f766f9eabad1696863e9d489"
+        }
+      },
+      "active_wave_missing": {
+        "brnt2bm": 18.5,
+        "brot3ncm2": 35.0,
+        "brot3ham": 32.5,
+        "brnt3bat": 37.75,
+        "brot3hades": 38.0,
+        "brot2asb": 18.0,
+        "brpt1extank2": 15.0,
+        "brmt3snake": 23.25,
+        "brnt1extk": 13.5,
+        "brnt1exm1": 11.5,
+        "brpt2hvbot": 22.5,
+        "brnt3doomsday": 42.0,
+        "brot3coug": 25.0,
+        "brmt3cloaker": 32.5,
+        "brnt1advbot": 15.0,
+        "brmt3bm2mk2": 13.5,
+        "brnt3ow": 32.5,
+        "brot2exbm": 21.5,
+        "brpt3shbm": 38.0,
+        "brnt3shbm2": 34.75,
+        "brot2exth": 32.5,
+        "brpt3ml": 28.0,
+        "brmt3ava": 27.75,
+        "brnt3advbtbot": 26.5,
+        "brmt2beetle": 23.5,
+        "brot3exm1": 25.0,
+        "brnt2sniper": 23.5,
+        "brmt2medm": 22.5,
+        "brpt2exbot": 20.5,
+        "brot1exm1": 8.5,
+        "brnt2exlm": 19.5,
+        "brnt3blasp": 35.0,
+        "brnt2exm1": 18.5,
+        "brmt1extank": 11.5,
+        "brot3ml": 21.5,
+        "brmt3advbtbot": 18.25,
+        "brmt1exm1": 7.0,
+        "brnt1exmob": 6.75,
+        "brmt1beetle": 16.5,
+        "brnt3shbm": 35.0
+      },
+      "saved_missing_units": {},
+      "required_mods": "Total Mayhem v1.35",
+      "evidence": "作者说明明确要求；活动波表直接引用 40 种非 Steam 单位，含 BRNT1EXMOB 等长编号。BlackOps 只推荐。",
+      "vanilla_feasibility": "可以做原版改编；更建议直接选现有原版图",
+      "migration_method": "保留 6 槽 v8 原版；若保留 Mayhem 地形存档，则逐项把 40 种非原版波次单位换为同角色原版单位并重新平衡。",
+      "losses": "失去 Total Mayhem 特色单位、首领武器/行为与难度曲线；不能称原模组版零损失迁移。",
+      "unit_evidence": {
+        "brmt2medm": "需专用模组/06槽位/survival_5.thd_mayhemedition/Survival_5.thD_MayhemEdition_script.lua:488",
+        "brpt1extank2": "需专用模组/06槽位/survival_5.thd_mayhemedition/Survival_5.thD_MayhemEdition_script.lua:346",
+        "brmt1extank": "需专用模组/06槽位/survival_5.thd_mayhemedition/Survival_5.thD_MayhemEdition_script.lua:278",
+        "brot3ncm2": "需专用模组/06槽位/survival_5.thd_mayhemedition/Survival_5.thD_MayhemEdition_script.lua:850",
+        "brot3hades": "需专用模组/06槽位/survival_5.thd_mayhemedition/Survival_5.thD_MayhemEdition_script.lua:888",
+        "brnt1exm1": "需专用模组/06槽位/survival_5.thd_mayhemedition/Survival_5.thD_MayhemEdition_script.lua:278",
+        "brnt2exm1": "需专用模组/06槽位/survival_5.thd_mayhemedition/Survival_5.thD_MayhemEdition_script.lua:419",
+        "brnt3shbm2": "需专用模组/06槽位/survival_5.thd_mayhemedition/Survival_5.thD_MayhemEdition_script.lua:786",
+        "brmt3bm2mk2": "需专用模组/06槽位/survival_5.thd_mayhemedition/Survival_5.thD_MayhemEdition_script.lua:328",
+        "brmt2beetle": "需专用模组/06槽位/survival_5.thd_mayhemedition/Survival_5.thD_MayhemEdition_script.lua:529",
+        "brmt3advbtbot": "需专用模组/06槽位/survival_5.thd_mayhemedition/Survival_5.thD_MayhemEdition_script.lua:402",
+        "brnt1advbot": "需专用模组/06槽位/survival_5.thd_mayhemedition/Survival_5.thD_MayhemEdition_script.lua:346",
+        "brnt3doomsday": "需专用模组/06槽位/survival_5.thd_mayhemedition/Survival_5.thD_MayhemEdition_script.lua:900",
+        "brot2exth": "需专用模组/06槽位/survival_5.thd_mayhemedition/Survival_5.thD_MayhemEdition_script.lua:768",
+        "brnt1extk": "需专用模组/06槽位/survival_5.thd_mayhemedition/Survival_5.thD_MayhemEdition_script.lua:328",
+        "brnt2sniper": "需专用模组/06槽位/survival_5.thd_mayhemedition/Survival_5.thD_MayhemEdition_script.lua:529",
+        "brot2asb": "需专用模组/06槽位/survival_5.thd_mayhemedition/Survival_5.thD_MayhemEdition_script.lua:384",
+        "brot3coug": "需专用模组/06槽位/survival_5.thd_mayhemedition/Survival_5.thD_MayhemEdition_script.lua:549",
+        "brnt2exlm": "需专用模组/06槽位/survival_5.thd_mayhemedition/Survival_5.thD_MayhemEdition_script.lua:436",
+        "brnt3blasp": "需专用模组/06槽位/survival_5.thd_mayhemedition/Survival_5.thD_MayhemEdition_script.lua:850",
+        "brnt3bat": "需专用模组/06槽位/survival_5.thd_mayhemedition/Survival_5.thD_MayhemEdition_script.lua:869",
+        "brot2exbm": "需专用模组/06槽位/survival_5.thd_mayhemedition/Survival_5.thD_MayhemEdition_script.lua:471",
+        "brpt2exbot": "需专用模组/06槽位/survival_5.thd_mayhemedition/Survival_5.thD_MayhemEdition_script.lua:454",
+        "brnt1exmob": "需专用模组/06槽位/survival_5.thd_mayhemedition/Survival_5.thD_MayhemEdition_script.lua:192",
+        "brnt3advbtbot": "需专用模组/06槽位/survival_5.thd_mayhemedition/Survival_5.thD_MayhemEdition_script.lua:571",
+        "brpt2hvbot": "需专用模组/06槽位/survival_5.thd_mayhemedition/Survival_5.thD_MayhemEdition_script.lua:488",
+        "brmt1exm1": "需专用模组/06槽位/survival_5.thd_mayhemedition/Survival_5.thD_MayhemEdition_script.lua:211",
+        "brot3ham": "需专用模组/06槽位/survival_5.thd_mayhemedition/Survival_5.thD_MayhemEdition_script.lua:767",
+        "brot3ml": "需专用模组/06槽位/survival_5.thd_mayhemedition/Survival_5.thD_MayhemEdition_script.lua:471",
+        "brot1exm1": "需专用模组/06槽位/survival_5.thd_mayhemedition/Survival_5.thD_MayhemEdition_script.lua:227",
+        "brpt3ml": "需专用模组/06槽位/survival_5.thd_mayhemedition/Survival_5.thD_MayhemEdition_script.lua:650",
+        "brnt3shbm": "需专用模组/06槽位/survival_5.thd_mayhemedition/Survival_5.thD_MayhemEdition_script.lua:786",
+        "brmt1beetle": "需专用模组/06槽位/survival_5.thd_mayhemedition/Survival_5.thD_MayhemEdition_script.lua:366",
+        "brot3exm1": "需专用模组/06槽位/survival_5.thd_mayhemedition/Survival_5.thD_MayhemEdition_script.lua:549",
+        "brmt3snake": "需专用模组/06槽位/survival_5.thd_mayhemedition/Survival_5.thD_MayhemEdition_script.lua:509",
+        "brnt3ow": "需专用模组/06槽位/survival_5.thd_mayhemedition/Survival_5.thD_MayhemEdition_script.lua:768",
+        "brmt3ava": "需专用模组/06槽位/survival_5.thd_mayhemedition/Survival_5.thD_MayhemEdition_script.lua:590",
+        "brnt2bm": "需专用模组/06槽位/survival_5.thd_mayhemedition/Survival_5.thD_MayhemEdition_script.lua:419",
+        "brmt3cloaker": "需专用模组/06槽位/survival_5.thd_mayhemedition/Survival_5.thD_MayhemEdition_script.lua:767",
+        "brpt3shbm": "需专用模组/06槽位/survival_5.thd_mayhemedition/Survival_5.thD_MayhemEdition_script.lua:888"
+      }
+    },
+    {
+      "id": 38,
+      "name": "survival_5thdimension v8",
+      "version": 1,
+      "slots": 6,
+      "classification": "未发现强制专用模组证据",
+      "rel": "06槽位/survival_5thdimension",
+      "current_rel": "06槽位/survival_5thdimension",
+      "terrain_sha256": "f940f52091edc4fbdc012434691fa4a306825dcb123cb693beb6c2f819860895",
+      "height_sha256": "379b110516c13a1a9496a2fccb10c2be9591bd58e93a4eae19a019da3fbe308a",
+      "embedded_preview_sha256": "eb9924d32872b6d4d74b60182673cdc1e7ce99d20004780ed04dda56a7461c1d",
+      "role_files": {
+        "script_file": {
+          "path": "survival_5thdimension_v8_script.lua",
+          "sha256": "a9ee4b8e86f757eb51bb10336749f0dc045956c6c19d02f834e025a58755944d"
+        },
+        "save_file": {
+          "path": "survival_5thdimension_v8_save.lua",
+          "sha256": "0c366acbb798269318ddd4430128f2c0341f755eff445ebaacb962f8a8c418d8"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 39,
+      "name": "Survival Genesis",
+      "version": 16,
+      "slots": 6,
+      "classification": "支持可选模组",
+      "rel": "06槽位/survival_genesis",
+      "current_rel": "06槽位/survival_genesis",
+      "terrain_sha256": "39181a0fee8a7c85c38842cae4caf5b336ca284c22bcc53fe7aaeef40dd20b70",
+      "height_sha256": "633d00b24f2b4ebfd20d0aaca9e261166e99a9d365d32caa3a1b7ff902daaae7",
+      "embedded_preview_sha256": "705754016011b14a213181dec68eb92eb0fece29fa318ff4d97d19329ef41e3c",
+      "role_files": {
+        "script_file": {
+          "path": "Survival_Genesis_script.lua",
+          "sha256": "842ded6581ea8c0a893ccfb59de6a2dfe3d275f0bc73bbeee4208c62f4163563"
+        },
+        "save_file": {
+          "path": "Survival_Genesis_save.lua",
+          "sha256": "ab7c77df86e6b416d8fe47fc5ebe8245f91fa2fa467afe765c19f67f1a1926fb"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 40,
+      "name": "Survival_Mayhem&BlackOps_3D",
+      "version": 9,
+      "slots": 7,
+      "classification": "必须配套模组（完整玩法）",
+      "rel": "07槽位/survival_mayhem&blackops_3d",
+      "current_rel": "需专用模组/07槽位/survival_mayhem&blackops_3d",
+      "terrain_sha256": "7a129335ea84a8adc7693d03fcbbb466effc2c42c8f691b3c6d8196ce22efd08",
+      "height_sha256": "f8bbb12623e3bc7fd62e9cb9fc1742bdee7c66f89e47bd753d24cfaad4cf344e",
+      "embedded_preview_sha256": "49cd034299444d07dd7a0116fff0f3aebb40d26e6fefeaf7ace85abc6656d9fa",
+      "role_files": {
+        "script_file": {
+          "path": "Survival_Mayhem&BO_3D_script.lua",
+          "sha256": "e047d64e6a2135816c7b2d39966c272f69fb3366da3b3cfce93eecca61695515"
+        },
+        "save_file": {
+          "path": "Survival_Mayhem&BO_3D_save.lua",
+          "sha256": "56eb6ad5d0000db148cf42487aff4bc825595709b619400b9e5d33d420d26b26"
+        }
+      },
+      "active_wave_missing": {
+        "brot3ncm2": 42.75,
+        "brost1battleship": 12.5,
+        "brnt3bat": 46.0,
+        "brpat1exgunship": 21.5,
+        "brpt1extank2": 17.0,
+        "brmt3snake": 28.14999961853,
+        "brnt1extk": 13.5,
+        "brnt3shbm2": 42.5,
+        "brmt2medm": 27.0,
+        "brpt2hvbot": 27.0,
+        "brnt3doomsday": 48.0,
+        "brot3coug": 32.0,
+        "brmt1extank": 11.5,
+        "brnt1advbot": 17.0,
+        "brot2exbm": 26.0,
+        "brmat2advbomber": 21.5,
+        "brmt1exm1": 7.5,
+        "brmat1exgs": 18.0,
+        "brpt2exbot": 25.0,
+        "brnt2exlm": 24.0,
+        "bal0401": 46.0,
+        "brnt2exm1": 21.5,
+        "brnt1exmob": 7.25,
+        "brmt1beetle": 18.0,
+        "bss0306": 21.25,
+        "broat3bomber": 12.5,
+        "brpat1advbomb": 24.0,
+        "brnt2bm": 21.5,
+        "broat2exgs": 7.25,
+        "bsl0401": 35.0,
+        "bra0409": 21.25,
+        "broat2fibo": 21.5,
+        "brnat3bomber": 42.75,
+        "brmst1battlecruiser": 26.0,
+        "brot1extank": 12.5,
+        "brnt1exm1": 11.5,
+        "brnat1exgs": 24.0,
+        "bsa0310": 25.0,
+        "brmt3cloaker": 40.5,
+        "bss0401": 48.0,
+        "bel0402": 48.0,
+        "brmt3bm2mk2": 13.5,
+        "brot3hades": 46.299999237061,
+        "brnt3ow": 40.5,
+        "broat3pride": 46.0,
+        "bes0402": 46.0,
+        "brl0401": 42.75,
+        "brnt3shbm": 42.75,
+        "brnt2sniper": 28.39999961853,
+        "bea0402": 40.5,
+        "brnst2advbattleship": 35.25,
+        "brot2exth": 40.5,
+        "brot3ham": 40.5,
+        "brpt3ml": 35.25,
+        "brmt3ava": 35.0,
+        "brnt3advbtbot": 33.5,
+        "brs0305": 32.0,
+        "brot3exm1": 32.0,
+        "brmt2beetle": 28.39999961853,
+        "brost2advbattleship": 42.75,
+        "bal0402": 40.5,
+        "brot2asb": 7.25,
+        "brot1exm2": 10.5,
+        "brpt3shbm": 46.299999237061,
+        "bss0206": 28.39999961853,
+        "brnt3blasp": 42.75,
+        "brot3ml": 26.0,
+        "brmt3advbtbot": 21.25,
+        "brmat2gunship": 24.0,
+        "brot1exm1": 8.5
+      },
+      "saved_missing_units": {},
+      "required_mods": "Total Mayhem v1.35 + BlackOps Unleashed v14",
+      "evidence": "作者明确要求两者；地面、空军和海军波表均直接使用外部单位。",
+      "vanilla_feasibility": "可以改编，工作量较大",
+      "migration_method": "替换陆/海/空各类外部单位，检查特殊单位创建和强化；保留地图内置刷兵系统。",
+      "losses": "丢失 Mayhem/BlackOps 的兵种、独特技能、海空军与首领差异；波次强度须重调。",
+      "unit_evidence": {
+        "brmt2medm": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:820",
+        "brpt1extank2": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:545",
+        "brmst1battlecruiser": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:799",
+        "bra0409": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:652",
+        "broat3bomber": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:476",
+        "brot3ncm2": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:1448",
+        "brnat1exgs": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:728",
+        "brot3hades": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:1511",
+        "brnt1exm1": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:454",
+        "brnt2exm1": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:668",
+        "bss0306": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:651",
+        "brnt3shbm2": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:1380",
+        "brmt2beetle": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:871",
+        "brmt3advbtbot": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:647",
+        "brnt1advbot": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:545",
+        "brnt3doomsday": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:1609",
+        "brpat1exgunship": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:675",
+        "broat2fibo": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:673",
+        "bal0401": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:1489",
+        "bel0402": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:1641",
+        "brot3coug": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:911",
+        "broat3pride": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:1492",
+        "brnt3blasp": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:1448",
+        "brot2exbm": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:778",
+        "broat2exgs": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:293",
+        "brpt2hvbot": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:820",
+        "brmat2gunship": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:731",
+        "brot3ham": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:1281",
+        "brnt3shbm": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:1380",
+        "brmt1beetle": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:576",
+        "brpat1advbomb": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:729",
+        "brot3exm1": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:911",
+        "brnt3ow": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:1282",
+        "brnt2bm": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:668",
+        "brost2advbattleship": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:1459",
+        "brnat3bomber": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:1463",
+        "brmt3cloaker": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:1281",
+        "bal0402": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:1355",
+        "brpt3shbm": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:1511",
+        "brmat2advbomber": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:674",
+        "bss0401": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:1648",
+        "brs0305": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:914",
+        "brmt1extank": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:454",
+        "bss0206": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:879",
+        "brot1extank": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:477",
+        "brmt3bm2mk2": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:513",
+        "bsl0401": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:1053",
+        "brot2exth": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:1282",
+        "brost1battleship": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:475",
+        "brnst2advbattleship": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:1126",
+        "brnt1extk": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:513",
+        "brnt2sniper": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:871",
+        "brot2asb": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:294",
+        "brnt3bat": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:1488",
+        "brpt2exbot": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:751",
+        "brnt1exmob": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:290",
+        "brl0401": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:1451",
+        "brnt3advbtbot": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:938",
+        "brmt1exm1": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:313",
+        "brot3ml": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:778",
+        "brot1exm1": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:354",
+        "bsa0310": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:762",
+        "brmat1exgs": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:587",
+        "brpt3ml": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:1115",
+        "bea0402": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:1362",
+        "brmt3snake": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:847",
+        "brmt3ava": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:1051",
+        "brot1exm2": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:431",
+        "bes0402": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:1491",
+        "brnt2exlm": "需专用模组/07槽位/survival_mayhem&blackops_3d/Survival_Mayhem&BO_3D_script.lua:697"
+      }
+    },
+    {
+      "id": 41,
+      "name": "Zhunas Crater Swarm Survival",
+      "version": 3,
+      "slots": 7,
+      "classification": "疑似外置Swarm玩法，待核实",
+      "rel": "07槽位/zhunas_crater_swarm_survival",
+      "current_rel": "07槽位/zhunas_crater_swarm_survival",
+      "terrain_sha256": "0d172e565d602e9a35306e4e75edaabcbd33928fe3a9d8438e4f0d1bf5c98ff7",
+      "height_sha256": "cb682768f336a90cb4b57795617cd0628b04bb993f8690569d8b0cec7cd17205",
+      "embedded_preview_sha256": "ae84a9b1e72eec1c25fb94745e80a156fc310729ba9a673af936fe598b5cdfe8",
+      "role_files": {
+        "script_file": {
+          "path": "Zhunas_Crater_Swarm_Survival_script.lua",
+          "sha256": "4591d7969e592acbb61f953478833e75cc3a742ce4dbf477db79c5f1dc1932de"
+        },
+        "save_file": {
+          "path": "Zhunas_Crater_Swarm_Survival_save.lua",
+          "sha256": "b74c24672d57acecd82784f154c87f0df301052f79b0d2dbc0eadef085cf235f"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 42,
+      "name": "5iver Survival LandNaval v2",
+      "version": 2,
+      "slots": 8,
+      "classification": "支持可选模组",
+      "rel": "08槽位/5iver_survival_landnaval",
+      "current_rel": "08槽位/5iver_survival_landnaval",
+      "terrain_sha256": "b8009709ba2aa787ade50eff326c345d3c2e020d6d1717bee2680f5eb33ad2f8",
+      "height_sha256": "1b52d9ab601757c66a751052e6fee47dd3c76606b680c901b0961bbbc756d83b",
+      "embedded_preview_sha256": "5592e3882d51361d24fe51a86e9312af367add0b66c6c05c9097efd6c8c3b248",
+      "role_files": {
+        "script_file": {
+          "path": "5iver_survival_landnaval_v2_script.lua",
+          "sha256": "a6d00a91c9a03200e172f367f97449cb7b9d2657f17a0eac42d6067e6f202c94"
+        },
+        "save_file": {
+          "path": "5iver_survival_landnaval_v2_save.lua",
+          "sha256": "4eef6e299f8ac021648d7e45193c92d414b522c70fbade38d8bc0513ff56679f"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 43,
+      "name": "AIX survival TeamPlayAI",
+      "version": 1,
+      "slots": 8,
+      "classification": "未发现强制专用模组证据",
+      "rel": "08槽位/AIX survival TeamPlayAI",
+      "current_rel": "08槽位/AIX survival TeamPlayAI",
+      "terrain_sha256": "e8eb58bf1d668ffb8db69e0cd1a02d8d0e3b7c52376a67a70bf38e74fad9087d",
+      "height_sha256": "bbea116b06deebe1402a6b6fe99c3762648e5c78d321ae8aed15b558233ccf94",
+      "embedded_preview_sha256": "0778b912be9493946c6921e76582a9e412b632f685effe7fce6bd111a3d61eea",
+      "role_files": {
+        "script_file": {
+          "path": "AIX survival TeamPlayAI_script.lua",
+          "sha256": "6d4cc64cfd5e52841d359bb29ffa9afa8b84b430e5629356d43974ab0effe865"
+        },
+        "save_file": {
+          "path": "AIX survival TeamPlayAI_save.lua",
+          "sha256": "fc374de83a5729ef8406d24de40e6a2c172435cbbcb828f81ee8b84a212b7835"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 44,
+      "name": "Battle of Thermopylae Survival",
+      "version": 1,
+      "slots": 8,
+      "classification": "未发现强制专用模组证据",
+      "rel": "08槽位/battle of thermopylae survival",
+      "current_rel": "08槽位/battle of thermopylae survival",
+      "terrain_sha256": "3ca0076e57a9b62e6d58b0501397d433b7e3f28e5f27f4c25bea0c45710eb2ed",
+      "height_sha256": "68eda13214a15124a54da2bfa6535f70f478aac59497a9b3d7b8239fd3985490",
+      "embedded_preview_sha256": "b84b9a1fe8e5c0f991428a40c3b2bcbd764ea5cbc4b45a70d423c78be3696440",
+      "role_files": {
+        "script_file": {
+          "path": "battle of thermopylae survival_script.lua",
+          "sha256": "a0f298627ae69117ef4dd855f211177230e9194075cc855dd9e21b6adb5e25b9"
+        },
+        "save_file": {
+          "path": "battle of thermopylae survival_save.lua",
+          "sha256": "716b7dc71d1f7994ba8f1f0fc391f02bfe59784d7686319ef3040a14c7ce38b6"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 45,
+      "name": "beach survival",
+      "version": 6,
+      "slots": 8,
+      "classification": "未发现强制专用模组证据",
+      "rel": "08槽位/beach_survival",
+      "current_rel": "08槽位/beach_survival",
+      "terrain_sha256": "2f041427c78da603cee7325cd1ce67000c0adde7ea471d1192fa0d1619d394d2",
+      "height_sha256": "3590e486e21e5e301bd2022f93bda4c747b1b85d69716a4e5db685db7a419d70",
+      "embedded_preview_sha256": "8b311211092d61b9b1dd80e2653d63eac553add132a0b9944fc0483ef4c064f7",
+      "role_files": {
+        "script_file": {
+          "path": "beach_survival_script.lua",
+          "sha256": "458c4f67885bb87d1d1b1d150561fa153b040341e348c244f8c2c16059bee913"
+        },
+        "save_file": {
+          "path": "beach_survival_save.lua",
+          "sha256": "44cc2075e0d82cc044862e6af3c3e726b55a3083bb631ed1ff3f339b4e302e61"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 46,
+      "name": "Center Arena Survival",
+      "version": 17,
+      "slots": 8,
+      "classification": "FAF资源差异，非专用模组要求",
+      "rel": "08槽位/center_arena_survival",
+      "current_rel": "08槽位/center_arena_survival",
+      "terrain_sha256": "0acc63805e67cdca836a9b327210313225fa17f54094801a2c6027b90e546903",
+      "height_sha256": "d539456f7e34da75c431ae6b86bf07e06a0071a98cf3223353837cc7b9fe7c80",
+      "embedded_preview_sha256": "10fd01dcf72b4f1c3178c7897606691955c03b1a02655f3429914196727779bc",
+      "role_files": {
+        "script_file": {
+          "path": "center_arena_survival_script.lua",
+          "sha256": "a73e3a38329b6b340166677fd8345475ac2d47ea3161adf776a27e9764983562"
+        },
+        "save_file": {
+          "path": "center_arena_survival_save.lua",
+          "sha256": "4904c7b2372d76301cbe6a2348744140283135b64cf8c6cf2dfc1e87759b4c48"
+        }
+      },
+      "active_wave_missing": {
+        "drlk001": 16.0
+      },
+      "saved_missing_units": {},
+      "unit_evidence": {
+        "drlk001": "08槽位/center_arena_survival/center_arena_survival_script.lua:372"
+      }
+    },
+    {
+      "id": 47,
+      "name": "Final Rush Survival",
+      "version": 6,
+      "slots": 8,
+      "classification": "支持可选模组",
+      "rel": "08槽位/Final Rush Survival",
+      "current_rel": "08槽位/Final Rush Survival",
+      "terrain_sha256": "d7172b3222120ea110f51e8e665913adf18f5af66f46072a858abf67595fdc9a",
+      "height_sha256": "ca0f4dd5fe42c2423224cc42c0cba1e0d34d7492432f7a23876485d5a289a908",
+      "embedded_preview_sha256": "dc3a408639fabd90062cd924d41b193eebdbe352db6610084acfda0fc2c0d58c",
+      "role_files": {
+        "script_file": {
+          "path": "Final Rush Survival_script.lua",
+          "sha256": "f262266a5b709b287f2d8b8141b9f0ab41a26c634d0329962bfcbe3f8ab3eed2"
+        },
+        "save_file": {
+          "path": "Final Rush Survival_save.lua",
+          "sha256": "8ee891ea784b2ad70e310a846c7cfbd37016027f6c3d0250a0d5fadd137a76b7"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 48,
+      "name": "Forges Survival",
+      "version": 5,
+      "slots": 8,
+      "classification": "未发现强制专用模组证据",
+      "rel": "08槽位/forges_survival",
+      "current_rel": "08槽位/forges_survival",
+      "terrain_sha256": "20ab97cb76f74a5f14883821d3ab802632e3c31f1a4e2821f3815571b8a9ea7c",
+      "height_sha256": "d0c64bd1ee570b50387297f711b1b26dea1d7c788e4db14191acedf67fb3b87a",
+      "embedded_preview_sha256": "cc4c6e225a50addc086ef2e5092dce38dda371959a6885e369ebbdd7f86a47f2",
+      "role_files": {
+        "script_file": {
+          "path": "Forges_Survival_script.lua",
+          "sha256": "464ebc44e6a0110148a5f95aae57c69c8ef0ab9786eed8cb6b430f230c7876bf"
+        },
+        "save_file": {
+          "path": "Forges_Survival_save.lua",
+          "sha256": "664ebee89e6be88acf6c1e31b03729ce0ba1201a8b77583250fb982f3fd169be"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 49,
+      "name": "Not Agincourt Survival",
+      "version": 4,
+      "slots": 8,
+      "classification": "未发现强制专用模组证据",
+      "rel": "08槽位/not_agincourt_survival",
+      "current_rel": "08槽位/not_agincourt_survival",
+      "terrain_sha256": "d6c433b93543e61e959947b88bfcc26b9881d8785ef355e484fab4f28b32f3b5",
+      "height_sha256": "3375296b722a507bbbff2d48adbdeb2062f0bdbf36558ea7ff56a9dd2ccfd96d",
+      "embedded_preview_sha256": "af40a962ae77acfe08d9e7e4b6fe840a331bc31e3f625a39ee294ddac12377b4",
+      "role_files": {
+        "script_file": {
+          "path": "Not_Agincourt_Survival_script.lua",
+          "sha256": "34d919221730240fdd2484ef6fbf3e41fad3ebd8f94a9f9b90e8fc2e926cc6f7"
+        },
+        "save_file": {
+          "path": "Not_Agincourt_Survival_save.lua",
+          "sha256": "6d0c9b65076db3ead127ffa939816d73f6edab605071eeffc7071212d7355ca9"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 50,
+      "name": "Survival Light 2a",
+      "version": 2,
+      "slots": 8,
+      "classification": "未发现强制专用模组证据",
+      "rel": "08槽位/Survival Light 2a",
+      "current_rel": "08槽位/Survival Light 2a",
+      "terrain_sha256": "a08a0ef297cedf798a96c81002c83f765ba3545cd567803d6a343a7b53ca7541",
+      "height_sha256": "e1c29c54f7a180a9bd38456af9ba938a2093e2093b6cf95169dad785248d782b",
+      "embedded_preview_sha256": "47b6d8924820f7cf6a0be9299adb43c75e32feabd56ab6ab9e7d1b7a0a3d8273",
+      "role_files": {
+        "script_file": {
+          "path": "Survival Light 2a_script.lua",
+          "sha256": "515c084e0f070240c53bfbefb3134a53e315a6d9ed2819f65b8835b517965393"
+        },
+        "save_file": {
+          "path": "Survival Light 2a_save.lua",
+          "sha256": "abb67ed4af4b83ec2788c4e6658d3fd6219c15a1d0fb057f660532c0d7fad53a"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 51,
+      "name": "Survival 5th Dimension Center EE",
+      "version": 6,
+      "slots": 8,
+      "classification": "未发现强制专用模组证据",
+      "rel": "08槽位/survival_5th_dimension_center_ee",
+      "current_rel": "08槽位/survival_5th_dimension_center_ee",
+      "terrain_sha256": "44b998c4a47e3a90cf799600c977115d175812a050b97d3f1f9dea23a2aef3ba",
+      "height_sha256": "31938e7ded3cccaedab70796223cc18ac2afe91b3d9c3565d6178f27a9e78d49",
+      "embedded_preview_sha256": "97279687b0bba0a036d175ca346dc18ab3fb8d0573acb625467e844b3a7de6c5",
+      "role_files": {
+        "script_file": {
+          "path": "survival_5th_dimension_center_ee_script.lua",
+          "sha256": "1f1f29823a9a6bafa1d50a3d2b4225dd7a59f580a9165c13447306519c77be56"
+        },
+        "save_file": {
+          "path": "survival_5th_dimension_center_ee_save.lua",
+          "sha256": "b9d20797392554dfd6ba59fab8c8b0ff6128bfcd1593da38bab9240d31040a8d"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 52,
+      "name": "Survival 5th Dimension Center v6",
+      "version": 6,
+      "slots": 8,
+      "classification": "未发现强制专用模组证据",
+      "rel": "08槽位/Survival_5thdim_center",
+      "current_rel": "08槽位/Survival_5thdim_center",
+      "terrain_sha256": "44b998c4a47e3a90cf799600c977115d175812a050b97d3f1f9dea23a2aef3ba",
+      "height_sha256": "31938e7ded3cccaedab70796223cc18ac2afe91b3d9c3565d6178f27a9e78d49",
+      "embedded_preview_sha256": "97279687b0bba0a036d175ca346dc18ab3fb8d0573acb625467e844b3a7de6c5",
+      "role_files": {
+        "script_file": {
+          "path": "Survival_5thdim_center_script.lua",
+          "sha256": "4851aa08e584cf46498bf0170653ec049f5c2902ad2887880f044b1f85b408fd"
+        },
+        "save_file": {
+          "path": "Survival_5thdim_center_save.lua",
+          "sha256": "ca860ecccb6f9b46a8e9ec1229fc05f0b4313154e76609a53cb28a344c70c9ba"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 53,
+      "name": "survival_5thdimension",
+      "version": 1,
+      "slots": 8,
+      "classification": "未发现强制专用模组证据",
+      "rel": "08槽位/survival_5thdimension",
+      "current_rel": "08槽位/survival_5thdimension",
+      "terrain_sha256": "c283a1347fb5b64ca902c899da2317735834e727fa734d0ecab90c521b0ec511",
+      "height_sha256": "a8b4dcf7af970c6fc46543bd5c3eb8194739327e1d4fda2e86ddd068bfe7c845",
+      "embedded_preview_sha256": "0590da026cdd3ccc4490b70139e57aeb029c9b3937bc77921188c5df5bac9e50",
+      "role_files": {
+        "script_file": {
+          "path": "survival_5thdimension_script.lua",
+          "sha256": "ad6e9626d02a409af54ae879f8a879719ef417e9eb2515b8e0360cffb2c3b5b0"
+        },
+        "save_file": {
+          "path": "survival_5thdimension_save.lua",
+          "sha256": "19bab61f217661375834d103d0ecbed1001a3ace3302e536f173356fd5260042"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 54,
+      "name": "survival_5thdimension 8 player",
+      "version": 4,
+      "slots": 8,
+      "classification": "未发现强制专用模组证据",
+      "rel": "08槽位/survival_5thdimension_8_player",
+      "current_rel": "08槽位/survival_5thdimension_8_player",
+      "terrain_sha256": "3f9edb14b3114136eb4d23b7959631ff0b4626ecc4c31e88e170d99b32484414",
+      "height_sha256": "a8b4dcf7af970c6fc46543bd5c3eb8194739327e1d4fda2e86ddd068bfe7c845",
+      "embedded_preview_sha256": "ccb1dfd18767dcffbbf007c8d6784f6275897f56427d4310a4e23c3cb8b9ab3a",
+      "role_files": {
+        "script_file": {
+          "path": "survival_5thdimension_8_player_script.lua",
+          "sha256": "fdc14df344cc696e94277bd084c93b4a466d39ddcc60975770ceff061ba1a0cb"
+        },
+        "save_file": {
+          "path": "survival_5thdimension_8_player_save.lua",
+          "sha256": "6614cb64f957fbe2009e40e50c804528d7446ce4a1e236d03c7d5cfd5d511277"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 55,
+      "name": "Survival EXtreme NavyV28",
+      "version": 1,
+      "slots": 8,
+      "classification": "未发现强制专用模组证据",
+      "rel": "08槽位/Survival_ExtremeNavy",
+      "current_rel": "08槽位/Survival_ExtremeNavy",
+      "terrain_sha256": "0eabe067d97d4de06f58e48943b4bd3ea1c80619548fbd8ca6cb3b3870b83128",
+      "height_sha256": "94988b78826ebb80d7f9ecd5f03df886fc533f3c68793f479de7cf0bfef20cc8",
+      "embedded_preview_sha256": "5b2ad462fa81f70aea954b07db879ac746f1f8515185abade0ccf09b5a126dc9",
+      "role_files": {
+        "script_file": {
+          "path": "Survival_ExtremeNavyV28_script.lua",
+          "sha256": "5896bf70d9d05255da1cea71bacc7632d20cc1465158ffc104109d92486b0338"
+        },
+        "save_file": {
+          "path": "Survival_ExtremeNavyV28_save.lua",
+          "sha256": "3afdb18404dcdfdb7eafdfb35aa7d38bf15effe367de29a8b93b1f9eb026e115"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 56,
+      "name": "survival_voodoo_double",
+      "version": 5,
+      "slots": 8,
+      "classification": "必须配套模组（完整玩法）",
+      "rel": "08槽位/survival_voodoo_double",
+      "current_rel": "需专用模组/08槽位/survival_voodoo_double",
+      "terrain_sha256": "797324679d09aa85dd41f9a623efc0e305ce29036b3bab52c1c75d39b5a2bdd8",
+      "height_sha256": "a2fa077237f4be6b95b18baa24403bf04471a63ea25f4bb51f1e85f51b2b644c",
+      "embedded_preview_sha256": "4d2fa3620e9e27b7321aa191440f0b5aaa713aae91312cce1f3210df628bd36c",
+      "role_files": {
+        "script_file": {
+          "path": "survival_voodoo_double_script.lua",
+          "sha256": "8cc8668afd0425d1710dbe77dcb3a5ef826d06cab50be4bec49d732c7e9c9d8c"
+        },
+        "save_file": {
+          "path": "survival_voodoo_double_save.lua",
+          "sha256": "842b8242c808c3c51d7855e3714c8f8434307aa95e5a617b2e00b092788406e4"
+        }
+      },
+      "active_wave_missing": {
+        "drlk001": 16.0,
+        "xsse0001": 12.0,
+        "urlew0001": 7.0,
+        "uase0001": 12.0,
+        "uese0001": 12.0,
+        "urse0001": 12.0,
+        "xsle0001": 7.0,
+        "qel01112": 34.0,
+        "ualew0001": 7.0,
+        "uea0401": 25.0,
+        "uelew0004": 22.5,
+        "uelew0001": 7.0
+      },
+      "saved_missing_units": {},
+      "required_mods": "Extreme Wars + Some Mods 2.1（作者原要求）",
+      "evidence": "说明明确要求两者；7 分钟波表已含 URLEW0001，12 分钟含四族太空舰；另有 FAF 单位 DRLK001。历史模组具体版本仍需核对。",
+      "vanilla_feasibility": "可以改编，损失明显",
+      "migration_method": "太空舰按海陆空角色改为原版舰船/炮艇/实验单位；同时替换 DRLK001 等，不能只删作者说明。",
+      "losses": "太空舰模型、跨地形移动/特殊武器、Extreme Wars 与 Some Mods 的特色单位消失；替代舰船还受水深和通路限制。",
+      "unit_evidence": {
+        "xsse0001": "需专用模组/08槽位/survival_voodoo_double/survival_voodoo_double_script.lua:363",
+        "drlk001": "需专用模组/08槽位/survival_voodoo_double/survival_voodoo_double_script.lua:426",
+        "uelew0004": "需专用模组/08槽位/survival_voodoo_double/survival_voodoo_double_script.lua:561",
+        "uea0401": "需专用模组/08槽位/survival_voodoo_double/survival_voodoo_double_script.lua:624",
+        "uese0001": "需专用模组/08槽位/survival_voodoo_double/survival_voodoo_double_script.lua:363",
+        "uelew0001": "需专用模组/08槽位/survival_voodoo_double/survival_voodoo_double_script.lua:267",
+        "xsle0001": "需专用模组/08槽位/survival_voodoo_double/survival_voodoo_double_script.lua:267",
+        "qel01112": "需专用模组/08槽位/survival_voodoo_double/survival_voodoo_double_script.lua:791",
+        "urlew0001": "需专用模组/08槽位/survival_voodoo_double/survival_voodoo_double_script.lua:267",
+        "urse0001": "需专用模组/08槽位/survival_voodoo_double/survival_voodoo_double_script.lua:363",
+        "ualew0001": "需专用模组/08槽位/survival_voodoo_double/survival_voodoo_double_script.lua:267",
+        "uase0001": "需专用模组/08槽位/survival_voodoo_double/survival_voodoo_double_script.lua:363"
+      }
+    },
+    {
+      "id": 57,
+      "name": "voodoo battle survival new",
+      "version": 1,
+      "slots": 8,
+      "classification": "支持可选模组",
+      "rel": "08槽位/voodoo_battle_survival_new",
+      "current_rel": "08槽位/voodoo_battle_survival_new",
+      "terrain_sha256": "73fe33b9126616d49f5f4d54ff15db8493f0700785ab9290e459ab0913abb70f",
+      "height_sha256": "2c6c8c57ec284525690058d80c80011d884b8542bd53a627a1d23f86d0bab90b",
+      "embedded_preview_sha256": "b8708e0b56e8c34b1709174ba9bdc3a41ff25f104ecd9709efdb59f28548ac2d",
+      "role_files": {
+        "script_file": {
+          "path": "voodoo_battle_survival_new_script.lua",
+          "sha256": "bdb6b57d9a331b96dd67ee0cf7892f858a3f99a693c1f0624d6e98aa18a425ef"
+        },
+        "save_file": {
+          "path": "voodoo_battle_survival_new_save.lua",
+          "sha256": "15ebe7794e2d49a30be0c3ce10373abd7dbba1c277902af190c71f042a140981"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 58,
+      "name": "voodoo battle v1 survival",
+      "version": 3,
+      "slots": 8,
+      "classification": "FAF资源差异，非专用模组要求",
+      "rel": "08槽位/voodoo_battle_v1_survival",
+      "current_rel": "08槽位/voodoo_battle_v1_survival",
+      "terrain_sha256": "fde30a5cdfbc915d0000813d42fd9dc22755af511475a93472789e76eb8b97f2",
+      "height_sha256": "2c6c8c57ec284525690058d80c80011d884b8542bd53a627a1d23f86d0bab90b",
+      "embedded_preview_sha256": "038b5c95d0a4dbf9262c0262154d39bfb34222fd32ac2bfa1f0cc158c8fdb529",
+      "role_files": {
+        "script_file": {
+          "path": "voodoo_battle_v1_survival_script.lua",
+          "sha256": "de99a1e41576aea968aae5940b480af62c93bd6b9d18b0b397ef3db969a937f7"
+        },
+        "save_file": {
+          "path": "voodoo_battle_v1_survival_save.lua",
+          "sha256": "108562eb8a11b3fb340270c726931026e27291795d9c05ccb0307a72b2da47e6"
+        }
+      },
+      "active_wave_missing": {
+        "drlk001": 16.0
+      },
+      "saved_missing_units": {},
+      "unit_evidence": {
+        "drlk001": "08槽位/voodoo_battle_v1_survival/voodoo_battle_v1_survival_script.lua:475"
+      }
+    },
+    {
+      "id": 59,
+      "name": "eternals survival dimension",
+      "version": 1,
+      "slots": 9,
+      "classification": "必须配套模组（完整玩法）",
+      "rel": "09槽位/eternals_survival_dimension",
+      "current_rel": "需专用模组/09槽位/eternals_survival_dimension",
+      "terrain_sha256": "bad7f5bd7c75df59b96c5785c1527b0cc5ecee43666640c7a2fb753f51810a7e",
+      "height_sha256": "2a34c897b780958cd09a034c835fbb201d0a23106afb536b1f44241faa0c14d8",
+      "embedded_preview_sha256": "f03af5c2bfa937c10d4faf1e5259144e753e9fd13303a5b56480fb2ba0ffbb5a",
+      "role_files": {
+        "script_file": {
+          "path": "eternals_survival_dimension_script.lua",
+          "sha256": "89b2484c2b7e7de112157030108a5e58295ffc9298bac6b3ba2a4c777757c0f5"
+        },
+        "save_file": {
+          "path": "eternals_survival_dimension_save.lua",
+          "sha256": "2467f73002b59a42e55ebf7c0929a904e089a045b1d23e7b5cc0279b917db58b"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "required_mods": "Mayhem Eternals Survival",
+      "evidence": "作者说明为该模组制作；本地图脚本只有初始化及禁止传送，没有刷兵与完整生存胜负系统。不开模组可进入地形，但不会运行原生存玩法。",
+      "vanilla_feasibility": "进入地形可以；原生存玩法无法只靠删依赖保留",
+      "migration_method": "需另写原版刷兵、敌方军队管理、难度、胜负及资源规则，或移植经验证的内置生存脚本。",
+      "losses": "原 Eternals 的波次表、首领、难度与模组规则在地图包中没有实现，无法从地图单独恢复。",
+      "unit_evidence": {}
+    },
+    {
+      "id": 60,
+      "name": "naval survival onix",
+      "version": 69,
+      "slots": 9,
+      "classification": "未发现强制专用模组证据",
+      "rel": "09槽位/naval_survival_onix",
+      "current_rel": "09槽位/naval_survival_onix",
+      "terrain_sha256": "91259bda2c3f4f96ffd8aa896481b92c6387811dfab7e31a460178403a15eabd",
+      "height_sha256": "6dc06ebd35172a48952a980d9fe1a1f9ada97e842c8649239db26a49eb6029f2",
+      "embedded_preview_sha256": "a838f7ce2f42080de9b137983d20448023f35a851be730cdd8e5af57fb11b170",
+      "role_files": {
+        "script_file": {
+          "path": "naval_survival_onix_script.lua",
+          "sha256": "30d861faf8944975f83d42ab19db91870ae200d50cc924a026849447cea64444"
+        },
+        "save_file": {
+          "path": "naval_survival_onix_save.lua",
+          "sha256": "d7d746a280c0cfcb647f0ef56d60e36ed424dda4b16ec3fc16736b60db687c66"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 61,
+      "name": "pass survival aix v2",
+      "version": 15,
+      "slots": 9,
+      "classification": "未发现强制专用模组证据",
+      "rel": "09槽位/pass_survival_aix",
+      "current_rel": "09槽位/pass_survival_aix",
+      "terrain_sha256": "67ed6b68dd20067684122e4a3c52834ecec794639803539024366cad676b7fa0",
+      "height_sha256": "4269a3f0d8eba1242331bfee54e363186f929f502a26a1945edfba2f00c5516b",
+      "embedded_preview_sha256": "ea92e37452f50e30f10ee79e20d072b11bcec5714b6092827a9f5a34b04d8275",
+      "role_files": {
+        "script_file": {
+          "path": "pass_survival_aix_v2_script.lua",
+          "sha256": "89b2484c2b7e7de112157030108a5e58295ffc9298bac6b3ba2a4c777757c0f5"
+        },
+        "save_file": {
+          "path": "pass_survival_aix_v2_save.lua",
+          "sha256": "6a75d3fbf5b0f0b378b5b6eeb4b37014a382c9720b4ee2a25e51abced4281fab"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 62,
+      "name": "swarm survival mk4",
+      "version": 3,
+      "slots": 9,
+      "classification": "必须配套模组（完整玩法）",
+      "rel": "09槽位/swarm_survival_mk4",
+      "current_rel": "需专用模组/09槽位/swarm_survival_mk4",
+      "terrain_sha256": "d9a054e1ae685333c9ef6f1e5314017b4926aaabcf920e5bc9a39f0574ea2a4e",
+      "height_sha256": "4d578247db6b43e7912e071120fb1fb6c94484cbad559e8e9283bcb3906690ae",
+      "embedded_preview_sha256": "649bb0e88dd5234ed89023ee163a4de522adb95d7e66fbc2694170952190aa52",
+      "role_files": {
+        "script_file": {
+          "path": "swarm_survival_mk4_script.lua",
+          "sha256": "fae0c553abd2943e773898a3d70081b50287d0b761d2283743f5b7505bcfb430"
+        },
+        "save_file": {
+          "path": "swarm_survival_mk4_save.lua",
+          "sha256": "c4384ee02d8cd000912d7857200664e3a3ee7e80abcd8dd3d8365bfda95246c9"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "required_mods": "Swarm Survival",
+      "evidence": "作者说明指定 Swarm Survival；脚本只有 InitializeArmies 和空 OnStart，波次由外置模组提供。",
+      "vanilla_feasibility": "进入地形可以；需重建原版生存系统",
+      "migration_method": "地图只有初始化。需要新增内置波次/目标/胜负，并验证 1～8 名合作方与对手槽。",
+      "losses": "失去 Swarm 的自动生成、难度、首领与完整模式规则；移植后属于新玩法。",
+      "unit_evidence": {}
+    },
+    {
+      "id": 63,
+      "name": "Survival Terror Lands",
+      "version": 1,
+      "slots": 10,
+      "classification": "支持可选模组",
+      "rel": "10槽位/survival_terror_lands",
+      "current_rel": "10槽位/survival_terror_lands",
+      "terrain_sha256": "4975013b866a4ebf917ab83dd611de984e7b8128e2848154c925ee838e3d73de",
+      "height_sha256": "6de204e15c8ec5fabd329fe01aad194414253595f2328a4ac71a0bc3f490be56",
+      "embedded_preview_sha256": "ea251f989ae548464f741a92fe1f0ebb252714132ff9f2f2f2c55be2b0ba926d",
+      "role_files": {
+        "script_file": {
+          "path": "Survival_Terror_Lands_script.lua",
+          "sha256": "dcf28504bf4c72b9ebcbca525ae8bed389c185c255bf916e53ccba0697672b2c"
+        },
+        "save_file": {
+          "path": "Survival_Terror_Lands_save.lua",
+          "sha256": "ec0b9c734b480388df78bd53b98297dd3bb2f701821a5c8621a594330c2427be"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 64,
+      "name": "swarm survival 10 players",
+      "version": 19,
+      "slots": 11,
+      "classification": "必须配套模组（完整玩法）",
+      "rel": "11槽位/swarm_survival_10_players",
+      "current_rel": "需专用模组/11槽位/swarm_survival_10_players",
+      "terrain_sha256": "168dc2607f08624b3ea62c18110d7291a83ee4e9669e3faf37a8984cf8d6a427",
+      "height_sha256": "4a65c840b5b5131dbe87b6adf1fac9e9fedcb94712d1ff8423c0f0428204900d",
+      "embedded_preview_sha256": "49ff2f3dd3d4239185b9a60556e6213e04287c169fb7bbedeffdbccfbbe6e2d3",
+      "role_files": {
+        "script_file": {
+          "path": "swarm_survival_10_players_script.lua",
+          "sha256": "89b2484c2b7e7de112157030108a5e58295ffc9298bac6b3ba2a4c777757c0f5"
+        },
+        "save_file": {
+          "path": "swarm_survival_10_players_save.lua",
+          "sha256": "3acab7afeee4757c9296392c754d95dce085ce7c109120cc2c636a7e24cb8a93"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "required_mods": "Swarm Survival",
+      "evidence": "说明为 10 人对抗 AI 的 Swarm Survival 图；11 个大厅槽含对手槽，地图内没有波次系统。",
+      "vanilla_feasibility": "进入地形可以；需重建原版生存系统",
+      "migration_method": "同 Swarm mk4，但额外验证 10 名合作方与第 11 槽，不可照搬 4 人计数。",
+      "losses": "原 Swarm 规则、波次与同步行为无法靠空 OnStart 替代。",
+      "unit_evidence": {}
+    },
+    {
+      "id": 65,
+      "name": "66安尔乐v05C",
+      "version": 5,
+      "slots": 12,
+      "classification": "支持可选模组",
+      "rel": "12槽位/Anerle",
+      "current_rel": "12槽位/Anerle",
+      "terrain_sha256": "4b8d45d228e9fc74d3b8ead23d548e7c5a9e0d1998994d2fd0774eadfc5c23b3",
+      "height_sha256": "5b6ceacbe88151bc1278da0425ccce76e05cb397e56b3d5893643a110d7ec9b2",
+      "embedded_preview_sha256": "a9294e5903b9ffa7119d64874aeccf1895142606e38c3622e7489d5fa033b962",
+      "role_files": {
+        "script_file": {
+          "path": "Anerle.v05C_script.lua",
+          "sha256": "2189674388f7b261073810faddf24e583b38b08d5d78899e89db9b48a7d7623f"
+        },
+        "save_file": {
+          "path": "Anerle.v05C_save.lua",
+          "sha256": "acd186da93d8d3db8043da4549112aec22c4bfe6bf24edad93c2d8b94e614d9e"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 66,
+      "name": "Survival EpischeLAN",
+      "version": 5,
+      "slots": 12,
+      "classification": "未发现强制专用模组证据",
+      "rel": "12槽位/survival_epischelan",
+      "current_rel": "12槽位/survival_epischelan",
+      "terrain_sha256": "91073f0228089108deed703873d6b6f578648841c8586e6773370cdbdbe03a8b",
+      "height_sha256": "d8e10b587355955b78eca9a3c79fb5601edb21e2ba2e92014e6c151db46d8ab0",
+      "embedded_preview_sha256": "13d4e79f09135900a6d6b0ada86358fa814819488cc21e7bfc49b722c02c2f0d",
+      "role_files": {
+        "script_file": {
+          "path": "Survival_EpischeLAN_script.lua",
+          "sha256": "a95f1c915c537c4e1469716ecc63b59d7914b7d16d96caae186dad2da6e9a451"
+        },
+        "save_file": {
+          "path": "Survival_EpischeLAN_save.lua",
+          "sha256": "50a6b80c836c88a3b9b7186cd28368828da259d456f140b88c6022a1bdad1eab"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 67,
+      "name": "Survival EpischeLAN Redone",
+      "version": 1,
+      "slots": 12,
+      "classification": "未发现强制专用模组证据",
+      "rel": "12槽位/survival_epischelan_redone",
+      "current_rel": "12槽位/survival_epischelan_redone",
+      "terrain_sha256": "46a3b1efc3e011657bfd50fd77e1244478da5690fb3d847117f3800c9e5e9f1c",
+      "height_sha256": "97bc28396eba95f3dedfb4deff3fe941e2ed219aa23f706cda05643944631a21",
+      "embedded_preview_sha256": "62fb200070785ee5729db52441257f5dd9f65171eec6f2be1f0f30f34684f608",
+      "role_files": {
+        "script_file": {
+          "path": "Survival_Epischelan_Redone_script.lua",
+          "sha256": "a95f1c915c537c4e1469716ecc63b59d7914b7d16d96caae186dad2da6e9a451"
+        },
+        "save_file": {
+          "path": "Survival_Epischelan_Redone_save.lua",
+          "sha256": "2ef813155f2ee1e6e37280201a61d162e369d38d9548e135e263c37a089ef539"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 68,
+      "name": "survival_5thdimension 16 player",
+      "version": 8,
+      "slots": 16,
+      "classification": "未发现强制专用模组证据",
+      "rel": "16槽位/survival_5thdimension_16_player",
+      "current_rel": "16槽位/survival_5thdimension_16_player",
+      "terrain_sha256": "1d17bbccf735f496c85737bfede966bf740b509859801cad90036372a527f37f",
+      "height_sha256": "65aed5c39a276123c1fcb30a052c77890ee8df0a9343fb20eab2e36da7473822",
+      "embedded_preview_sha256": "8d45112e2131bf7c50aeac2c70976a61a8c78f29dd6bb4e6de604eaf4e278bd3",
+      "role_files": {
+        "script_file": {
+          "path": "survival_5thdimension_16_player_script.lua",
+          "sha256": "3f5d6f3f1a008ce30e6ccaa27076e0f9f8607ebd25cbe3cacb10f53953602ffb"
+        },
+        "save_file": {
+          "path": "survival_5thdimension_16_player_save.lua",
+          "sha256": "ed522fd0c16fad61d519b7800e21e31f5ba49f64860133200951c64ac22fd598"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 69,
+      "name": "Survival DDay Horde",
+      "version": 2,
+      "slots": 4,
+      "classification": "未发现强制专用模组证据",
+      "rel": "待测试_依赖与资源核对/04槽位/survival_dday_horde",
+      "current_rel": "待测试_依赖与资源核对/04槽位/survival_dday_horde",
+      "terrain_sha256": "54d4383338150297041b0548d2cd2adb26309eb873dbe93f0b6dd3e479e41461",
+      "height_sha256": "9c54229858c0f97bd5b74652b611918d74655d8761a3e7c1a217da758ed6f034",
+      "embedded_preview_sha256": "e242bd385382fd55a46711bc94175a5eec4d1e2e5ff7f801cd758df84ba7e64b",
+      "role_files": {
+        "script_file": {
+          "path": "survival_dday_horde_script.lua",
+          "sha256": "3f8004a8b827fec8cb629de0d2a2cbc8277eb450e1007e01906c45dfec3e33df"
+        },
+        "save_file": {
+          "path": "survival_dday_horde_save.lua",
+          "sha256": "8c750afebe1dc928bcc49d2d8660641ad7c01e8aeed2b86f3f76371991700dba"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 70,
+      "name": "Survival Unit Mayhem",
+      "version": 2,
+      "slots": 4,
+      "classification": "必须配套模组（完整玩法）",
+      "rel": "待测试_依赖与资源核对/04槽位/survival_unit_mayhem",
+      "current_rel": "需专用模组/04槽位/survival_unit_mayhem",
+      "terrain_sha256": "b12b0a15cd23c13cb4e2feb4d23e11adad422307d7e52b0115638aa1e9d10378",
+      "height_sha256": "51a50aa5024d0e1726d399ff78d5f45cd988cb5da09469033b613f9673019748",
+      "embedded_preview_sha256": "92d4b0d6a4a6535c411f22282628988288e84da365ec132f6990325022db7028",
+      "role_files": {
+        "script_file": {
+          "path": "survival_unit_mayhem_script.lua",
+          "sha256": "55a69278128c028206102ddac27ed62d1a91a58abc13aeaaaab9a7171b78c998"
+        },
+        "save_file": {
+          "path": "survival_unit_mayhem_save.lua",
+          "sha256": "a91aec5bdba2ea69f50471c9d350c7af4f85efb51f1d18c99f705cb7a67ea48a"
+        }
+      },
+      "active_wave_missing": {
+        "brot3ncm2": 35.0,
+        "brot3ham": 32.5,
+        "brnt3bat": 37.75,
+        "brot3hades": 38.0,
+        "brot2asb": 18.0,
+        "brnat3bomber": 23.5,
+        "brpt1extank2": 15.0,
+        "drlk001": 20.5,
+        "brnt1exm1": 11.5,
+        "brpt2hvbot": 22.5,
+        "brnt3doomsday": 42.0,
+        "brot3coug": 25.0,
+        "brmt3cloaker": 32.5,
+        "brot2exth": 32.5,
+        "brnt1advbot": 15.0,
+        "brmt3bm2mk2": 13.5,
+        "brpt3shbm": 38.0,
+        "brnt3ow": 32.5,
+        "dalk003": 7.0,
+        "brot2exbm": 21.5,
+        "brnt3shbm2": 34.75,
+        "brpt3ml": 28.0,
+        "brmt3ava": 27.75,
+        "brnt3advbtbot": 26.5,
+        "brmt3snake": 23.25,
+        "brot3exm1": 25.0,
+        "brnt2sniper": 23.5,
+        "brmt1exm1": 7.0,
+        "brmt2beetle": 23.5,
+        "brmt2medm": 22.5,
+        "brnt2exm1": 18.5,
+        "brpt2exbot": 20.5,
+        "brot1exm1": 8.5,
+        "brnt2bm": 18.5,
+        "brnt2exlm": 19.5,
+        "brnt3blasp": 35.0,
+        "brot3ml": 21.5,
+        "brmt3advbtbot": 18.25,
+        "brnt1extk": 13.5,
+        "brnt1exmob": 6.75,
+        "brmt1beetle": 16.5,
+        "brnt3shbm": 35.0,
+        "brmt1extank": 11.5
+      },
+      "saved_missing_units": {},
+      "required_mods": "Total Mayhem v1.35",
+      "evidence": "作者明确要求；活动波表有 43 种非 Steam 单位，含 FAF 防空单位；BlackOps 只是兼容。",
+      "vanilla_feasibility": "可以改编，需同时处理模组与 FAF 单位",
+      "migration_method": "对 43 种非原版波次单位建立同角色替换，保留机动部队/火炮限制并检查剩余原版兵种能否通关。",
+      "losses": "Total Mayhem 特色单位与首领消失；防空替换会改变玩家可用兵种和敌军强度；另有缺失地形纹理独立处理。",
+      "unit_evidence": {
+        "brmt2medm": "需专用模组/04槽位/survival_unit_mayhem/survival_unit_mayhem_script.lua:501",
+        "brpt1extank2": "需专用模组/04槽位/survival_unit_mayhem/survival_unit_mayhem_script.lua:348",
+        "drlk001": "需专用模组/04槽位/survival_unit_mayhem/survival_unit_mayhem_script.lua:457",
+        "brmt1extank": "需专用模组/04槽位/survival_unit_mayhem/survival_unit_mayhem_script.lua:279",
+        "brot3ncm2": "需专用模组/04槽位/survival_unit_mayhem/survival_unit_mayhem_script.lua:896",
+        "brot3hades": "需专用模组/04槽位/survival_unit_mayhem/survival_unit_mayhem_script.lua:948",
+        "brnt1exm1": "需专用模组/04槽位/survival_unit_mayhem/survival_unit_mayhem_script.lua:279",
+        "brnt2exm1": "需专用模组/04槽位/survival_unit_mayhem/survival_unit_mayhem_script.lua:426",
+        "brnt3shbm2": "需专用模组/04槽位/survival_unit_mayhem/survival_unit_mayhem_script.lua:828",
+        "brmt3bm2mk2": "需专用模组/04槽位/survival_unit_mayhem/survival_unit_mayhem_script.lua:329",
+        "brmt2beetle": "需专用模组/04槽位/survival_unit_mayhem/survival_unit_mayhem_script.lua:543",
+        "brmt3advbtbot": "需专用模组/04槽位/survival_unit_mayhem/survival_unit_mayhem_script.lua:407",
+        "brnt1advbot": "需专用模组/04槽位/survival_unit_mayhem/survival_unit_mayhem_script.lua:348",
+        "brnt3doomsday": "需专用模组/04槽位/survival_unit_mayhem/survival_unit_mayhem_script.lua:965",
+        "brot2exth": "需专用模组/04槽位/survival_unit_mayhem/survival_unit_mayhem_script.lua:809",
+        "brnt1extk": "需专用模组/04槽位/survival_unit_mayhem/survival_unit_mayhem_script.lua:329",
+        "brnt2sniper": "需专用模组/04槽位/survival_unit_mayhem/survival_unit_mayhem_script.lua:543",
+        "brot2asb": "需专用模组/04槽位/survival_unit_mayhem/survival_unit_mayhem_script.lua:388",
+        "brot3coug": "需专用模组/04槽位/survival_unit_mayhem/survival_unit_mayhem_script.lua:565",
+        "brnt2exlm": "需专用模组/04槽位/survival_unit_mayhem/survival_unit_mayhem_script.lua:444",
+        "brnt3blasp": "需专用模组/04槽位/survival_unit_mayhem/survival_unit_mayhem_script.lua:896",
+        "brnt3bat": "需专用模组/04槽位/survival_unit_mayhem/survival_unit_mayhem_script.lua:916",
+        "brot2exbm": "需专用模组/04槽位/survival_unit_mayhem/survival_unit_mayhem_script.lua:483",
+        "brpt2exbot": "需专用模组/04槽位/survival_unit_mayhem/survival_unit_mayhem_script.lua:465",
+        "brnt1exmob": "需专用模组/04槽位/survival_unit_mayhem/survival_unit_mayhem_script.lua:192",
+        "brnt3advbtbot": "需专用模组/04槽位/survival_unit_mayhem/survival_unit_mayhem_script.lua:589",
+        "brpt2hvbot": "需专用模组/04槽位/survival_unit_mayhem/survival_unit_mayhem_script.lua:501",
+        "brmt1exm1": "需专用模组/04槽位/survival_unit_mayhem/survival_unit_mayhem_script.lua:212",
+        "brot3ham": "需专用模组/04槽位/survival_unit_mayhem/survival_unit_mayhem_script.lua:808",
+        "brot3ml": "需专用模组/04槽位/survival_unit_mayhem/survival_unit_mayhem_script.lua:483",
+        "brot1exm1": "需专用模组/04槽位/survival_unit_mayhem/survival_unit_mayhem_script.lua:230",
+        "dalk003": "需专用模组/04槽位/survival_unit_mayhem/survival_unit_mayhem_script.lua:213",
+        "brpt3ml": "需专用模组/04槽位/survival_unit_mayhem/survival_unit_mayhem_script.lua:674",
+        "brnt3shbm": "需专用模组/04槽位/survival_unit_mayhem/survival_unit_mayhem_script.lua:828",
+        "brmt1beetle": "需专用模组/04槽位/survival_unit_mayhem/survival_unit_mayhem_script.lua:370",
+        "brot3exm1": "需专用模组/04槽位/survival_unit_mayhem/survival_unit_mayhem_script.lua:565",
+        "brmt3snake": "需专用模组/04槽位/survival_unit_mayhem/survival_unit_mayhem_script.lua:521",
+        "brnt3ow": "需专用模组/04槽位/survival_unit_mayhem/survival_unit_mayhem_script.lua:809",
+        "brmt3ava": "需专用模组/04槽位/survival_unit_mayhem/survival_unit_mayhem_script.lua:611",
+        "brnt2bm": "需专用模组/04槽位/survival_unit_mayhem/survival_unit_mayhem_script.lua:426",
+        "brnat3bomber": "需专用模组/04槽位/survival_unit_mayhem/survival_unit_mayhem_script.lua:534",
+        "brmt3cloaker": "需专用模组/04槽位/survival_unit_mayhem/survival_unit_mayhem_script.lua:808",
+        "brpt3shbm": "需专用模组/04槽位/survival_unit_mayhem/survival_unit_mayhem_script.lua:948"
+      }
+    },
+    {
+      "id": 71,
+      "name": "Aeon Illuminate Survival",
+      "version": 11,
+      "slots": 5,
+      "classification": "FAF资源差异，非专用模组要求",
+      "rel": "待测试_依赖与资源核对/05槽位/aeon_illuminate_survival",
+      "current_rel": "待测试_依赖与资源核对/05槽位/aeon_illuminate_survival",
+      "terrain_sha256": "e831da2cc0fbc2f876b7c1020ce7dae14df14fa5bbe2a6ad1daa374eabb2fe3f",
+      "height_sha256": "f540b2293781a0a4c2ff2f84c1bb8de7e40f0cde3349217bab90a7651d866b50",
+      "embedded_preview_sha256": "b57947eeaf76792ef266f32b76987cbdebd5330e1bbfb3a53321a61d1c8a91b6",
+      "role_files": {
+        "script_file": {
+          "path": "Aeon_Illuminate_Survival_script.lua",
+          "sha256": "d0da763359b4f0db60263e2a0a0c5d27454d96892d7621f17d7f723a3e04c884"
+        },
+        "save_file": {
+          "path": "Aeon_Illuminate_Survival_save.lua",
+          "sha256": "5c211be107cc8329098437a2b2a256106feee32021a17785d4f8df909ff30b62"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {
+        "zab9601": 2,
+        "dalk003": 14
+      },
+      "unit_evidence": {
+        "dalk003": "待测试_依赖与资源核对/05槽位/aeon_illuminate_survival/Aeon_Illuminate_Survival_save.lua:2628",
+        "zab9601": "待测试_依赖与资源核对/05槽位/aeon_illuminate_survival/Aeon_Illuminate_Survival_save.lua:2852"
+      }
+    },
+    {
+      "id": 72,
+      "name": "deadzone survival",
+      "version": 8,
+      "slots": 6,
+      "classification": "FAF资源差异，非专用模组要求",
+      "rel": "待测试_依赖与资源核对/06槽位/deadzone_survival",
+      "current_rel": "待测试_依赖与资源核对/06槽位/deadzone_survival",
+      "terrain_sha256": "62df89fcc18026593887e70317fb73eebad18987ddfec98eb6354f88bfc1536e",
+      "height_sha256": "0ffb05450c90c616e39daaacdae4406702d4779f82918b6200304038e274901b",
+      "embedded_preview_sha256": "1376d8064468805f92065e12f34c2205b96523b776785ad789fcc5f6e87086e7",
+      "role_files": {
+        "script_file": {
+          "path": "deadzone_survival_script.lua",
+          "sha256": "632924cd9c3a649a2235e26d57e594922dfc468d49dfd8ee8e8f0e0c3c603b94"
+        },
+        "save_file": {
+          "path": "deadzone_survival_save.lua",
+          "sha256": "8cfc6f26718fcb8b4bd3ff18b35b7c2ccc1cd230f46fe94cf762962c90fb274b"
+        }
+      },
+      "active_wave_missing": {
+        "drlk001": 16.0
+      },
+      "saved_missing_units": {},
+      "unit_evidence": {
+        "drlk001": "待测试_依赖与资源核对/06槽位/deadzone_survival/deadzone_survival_script.lua:501"
+      }
+    },
+    {
+      "id": 73,
+      "name": "Survival Beach Ramp Mayhem",
+      "version": 2,
+      "slots": 6,
+      "classification": "必须配套模组（完整玩法）",
+      "rel": "待测试_依赖与资源核对/06槽位/survival_beach_ramp_mayhem",
+      "current_rel": "需专用模组/06槽位/survival_beach_ramp_mayhem",
+      "terrain_sha256": "90b59708423748e0c2c67b092d7328bd19528f6fcd51d1bc911936647e09e6f3",
+      "height_sha256": "e52c3778b498086d4c7c976bda90b06528fc86963f95eca692db5f5e80614d10",
+      "embedded_preview_sha256": "8c92eb902422c1c950ee866df061335cd4bf6af14c7be938a91771b51432a8ba",
+      "role_files": {
+        "script_file": {
+          "path": "survival_beach_ramp_mayhem_script.lua",
+          "sha256": "526a0956e1d5524e2282add9d52491c2e5d18dd576b2311568e081fc6b84df62"
+        },
+        "save_file": {
+          "path": "survival_beach_ramp_mayhem_save.lua",
+          "sha256": "e9b19586b32065f603361d022d9878d2be30a8045811424f6c8cf832adecc9c8"
+        }
+      },
+      "active_wave_missing": {
+        "brnt2bm": 18.5,
+        "brot3ncm2": 35.0,
+        "brot3ham": 32.5,
+        "brnt3bat": 37.75,
+        "brot3hades": 38.0,
+        "brot2asb": 18.0,
+        "brpt1extank2": 15.0,
+        "brmt3snake": 23.25,
+        "brnt1extk": 13.5,
+        "brnt1exm1": 11.5,
+        "brpt2hvbot": 22.5,
+        "brnt3doomsday": 42.0,
+        "brot3coug": 25.0,
+        "brmt3cloaker": 32.5,
+        "brnt1advbot": 15.0,
+        "brmt3bm2mk2": 13.5,
+        "brnt3ow": 32.5,
+        "brot2exbm": 21.5,
+        "brpt3shbm": 38.0,
+        "brnt3shbm2": 34.75,
+        "brot2exth": 32.5,
+        "brpt3ml": 28.0,
+        "brmt3ava": 27.75,
+        "brnt3advbtbot": 26.5,
+        "brmt2beetle": 23.5,
+        "brot3exm1": 25.0,
+        "brnt2sniper": 23.5,
+        "brmt2medm": 22.5,
+        "brpt2exbot": 20.5,
+        "brot1exm1": 8.5,
+        "brnt2exlm": 19.5,
+        "brnt3blasp": 35.0,
+        "brnt2exm1": 18.5,
+        "brmt1extank": 11.5,
+        "brot3ml": 21.5,
+        "brmt3advbtbot": 18.25,
+        "brmt1exm1": 7.0,
+        "brnt1exmob": 6.75,
+        "brmt1beetle": 16.5,
+        "brnt3shbm": 35.0
+      },
+      "saved_missing_units": {},
+      "required_mods": "Total Mayhem v1.35",
+      "evidence": "说明明确要求；活动波表与 MayhemEdition 使用相同外部单位体系；BlackOps 是推荐搭配。",
+      "vanilla_feasibility": "可以改编，工作量中等",
+      "migration_method": "采用同系原版波表为参考，保持此图地形、路线、6 槽布局和自有资源，逐波验证。",
+      "losses": "Mayhem 特色波次和首领消失；替换波表会改变首领时刻、构成和难度，不能直接拿别图脚本覆盖。",
+      "unit_evidence": {
+        "brmt2medm": "需专用模组/06槽位/survival_beach_ramp_mayhem/survival_beach_ramp_mayhem_script.lua:487",
+        "brpt1extank2": "需专用模组/06槽位/survival_beach_ramp_mayhem/survival_beach_ramp_mayhem_script.lua:345",
+        "brmt1extank": "需专用模组/06槽位/survival_beach_ramp_mayhem/survival_beach_ramp_mayhem_script.lua:277",
+        "brot3ncm2": "需专用模组/06槽位/survival_beach_ramp_mayhem/survival_beach_ramp_mayhem_script.lua:851",
+        "brot3hades": "需专用模组/06槽位/survival_beach_ramp_mayhem/survival_beach_ramp_mayhem_script.lua:890",
+        "brnt1exm1": "需专用模组/06槽位/survival_beach_ramp_mayhem/survival_beach_ramp_mayhem_script.lua:277",
+        "brnt2exm1": "需专用模组/06槽位/survival_beach_ramp_mayhem/survival_beach_ramp_mayhem_script.lua:418",
+        "brnt3shbm2": "需专用模组/06槽位/survival_beach_ramp_mayhem/survival_beach_ramp_mayhem_script.lua:787",
+        "brmt3bm2mk2": "需专用模组/06槽位/survival_beach_ramp_mayhem/survival_beach_ramp_mayhem_script.lua:327",
+        "brmt2beetle": "需专用模组/06槽位/survival_beach_ramp_mayhem/survival_beach_ramp_mayhem_script.lua:527",
+        "brmt3advbtbot": "需专用模组/06槽位/survival_beach_ramp_mayhem/survival_beach_ramp_mayhem_script.lua:401",
+        "brnt1advbot": "需专用模组/06槽位/survival_beach_ramp_mayhem/survival_beach_ramp_mayhem_script.lua:345",
+        "brnt3doomsday": "需专用模组/06槽位/survival_beach_ramp_mayhem/survival_beach_ramp_mayhem_script.lua:902",
+        "brot2exth": "需专用模组/06槽位/survival_beach_ramp_mayhem/survival_beach_ramp_mayhem_script.lua:769",
+        "brnt1extk": "需专用模组/06槽位/survival_beach_ramp_mayhem/survival_beach_ramp_mayhem_script.lua:327",
+        "brnt2sniper": "需专用模组/06槽位/survival_beach_ramp_mayhem/survival_beach_ramp_mayhem_script.lua:527",
+        "brot2asb": "需专用模组/06槽位/survival_beach_ramp_mayhem/survival_beach_ramp_mayhem_script.lua:383",
+        "brot3coug": "需专用模组/06槽位/survival_beach_ramp_mayhem/survival_beach_ramp_mayhem_script.lua:547",
+        "brnt2exlm": "需专用模组/06槽位/survival_beach_ramp_mayhem/survival_beach_ramp_mayhem_script.lua:435",
+        "brnt3blasp": "需专用模组/06槽位/survival_beach_ramp_mayhem/survival_beach_ramp_mayhem_script.lua:851",
+        "brnt3bat": "需专用模组/06槽位/survival_beach_ramp_mayhem/survival_beach_ramp_mayhem_script.lua:871",
+        "brot2exbm": "需专用模组/06槽位/survival_beach_ramp_mayhem/survival_beach_ramp_mayhem_script.lua:470",
+        "brpt2exbot": "需专用模组/06槽位/survival_beach_ramp_mayhem/survival_beach_ramp_mayhem_script.lua:453",
+        "brnt1exmob": "需专用模组/06槽位/survival_beach_ramp_mayhem/survival_beach_ramp_mayhem_script.lua:191",
+        "brnt3advbtbot": "需专用模组/06槽位/survival_beach_ramp_mayhem/survival_beach_ramp_mayhem_script.lua:569",
+        "brpt2hvbot": "需专用模组/06槽位/survival_beach_ramp_mayhem/survival_beach_ramp_mayhem_script.lua:487",
+        "brmt1exm1": "需专用模组/06槽位/survival_beach_ramp_mayhem/survival_beach_ramp_mayhem_script.lua:210",
+        "brot3ham": "需专用模组/06槽位/survival_beach_ramp_mayhem/survival_beach_ramp_mayhem_script.lua:768",
+        "brot3ml": "需专用模组/06槽位/survival_beach_ramp_mayhem/survival_beach_ramp_mayhem_script.lua:470",
+        "brot1exm1": "需专用模组/06槽位/survival_beach_ramp_mayhem/survival_beach_ramp_mayhem_script.lua:226",
+        "brpt3ml": "需专用模组/06槽位/survival_beach_ramp_mayhem/survival_beach_ramp_mayhem_script.lua:651",
+        "brnt3shbm": "需专用模组/06槽位/survival_beach_ramp_mayhem/survival_beach_ramp_mayhem_script.lua:787",
+        "brmt1beetle": "需专用模组/06槽位/survival_beach_ramp_mayhem/survival_beach_ramp_mayhem_script.lua:365",
+        "brot3exm1": "需专用模组/06槽位/survival_beach_ramp_mayhem/survival_beach_ramp_mayhem_script.lua:547",
+        "brmt3snake": "需专用模组/06槽位/survival_beach_ramp_mayhem/survival_beach_ramp_mayhem_script.lua:507",
+        "brnt3ow": "需专用模组/06槽位/survival_beach_ramp_mayhem/survival_beach_ramp_mayhem_script.lua:769",
+        "brmt3ava": "需专用模组/06槽位/survival_beach_ramp_mayhem/survival_beach_ramp_mayhem_script.lua:591",
+        "brnt2bm": "需专用模组/06槽位/survival_beach_ramp_mayhem/survival_beach_ramp_mayhem_script.lua:418",
+        "brmt3cloaker": "需专用模组/06槽位/survival_beach_ramp_mayhem/survival_beach_ramp_mayhem_script.lua:768",
+        "brpt3shbm": "需专用模组/06槽位/survival_beach_ramp_mayhem/survival_beach_ramp_mayhem_script.lua:890"
+      }
+    },
+    {
+      "id": 74,
+      "name": "Survival Experimental Factory",
+      "version": 3,
+      "slots": 6,
+      "classification": "未发现强制专用模组证据",
+      "rel": "待测试_依赖与资源核对/06槽位/survival_experimental_factory",
+      "current_rel": "待测试_依赖与资源核对/06槽位/survival_experimental_factory",
+      "terrain_sha256": "c66d79985abdd2a4626b81144cb3e5309b124a28692e100e00262b7c5a1a9ed6",
+      "height_sha256": "978fce7cea836ae4b9dbac6f697cee7b63fb45018f0081925e8db4f9eb5deb6e",
+      "embedded_preview_sha256": "c90f8f01ca4469e22912908ae3dd26cd6e481eba1595346364385bbf38640335",
+      "role_files": {
+        "script_file": {
+          "path": "Survival_Experimental_Factory_script.lua",
+          "sha256": "76349fe4170479d3a61df877490357f3e48da652012fa7dba894d03851982d35"
+        },
+        "save_file": {
+          "path": "Survival_Experimental_Factory_save.lua",
+          "sha256": "f92ec3cdcfed16abaf3d015b16ae97fbb018c48694988f6c715829bf11bfe5ca"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 75,
+      "name": "Survival Stranded",
+      "version": 21,
+      "slots": 6,
+      "classification": "FAF资源差异，非专用模组要求",
+      "rel": "待测试_依赖与资源核对/06槽位/survival_stranded",
+      "current_rel": "待测试_依赖与资源核对/06槽位/survival_stranded",
+      "terrain_sha256": "da764ef588db8ba8e99a35e8a2039fa6dedc9d7cf51103942f36547af5ee27b5",
+      "height_sha256": "e495a240b496f52f80aca9fde240b9ec31880b903fe3e475c7977adc5a5e0a8d",
+      "embedded_preview_sha256": "92ce8b117da5587c41619d7635093b2f9ef155594bc91022c1db337ee41d35e8",
+      "role_files": {
+        "script_file": {
+          "path": "survival_stranded_script.lua",
+          "sha256": "bf4d1c2ae7830a75eed782756ed9882ccaf611d5c5cc649d09d06fe93edb899f"
+        },
+        "save_file": {
+          "path": "survival_stranded_save.lua",
+          "sha256": "c0e42a707f5e90c8c9ff1759e1944a93ae775e556de182e397d39422859e1a3b"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {
+        "dslk004": 2,
+        "xrb2309": 10
+      },
+      "unit_evidence": {
+        "dslk004": "待测试_依赖与资源核对/06槽位/survival_stranded/survival_stranded_save.lua:4715",
+        "xrb2309": "待测试_依赖与资源核对/06槽位/survival_stranded/survival_stranded_save.lua:8871"
+      }
+    },
+    {
+      "id": 76,
+      "name": "DDDX RPG survival",
+      "version": 156,
+      "slots": 7,
+      "classification": "必须配套模组（完整玩法）",
+      "rel": "待测试_依赖与资源核对/07槽位/dddx_rpg_survival",
+      "current_rel": "需专用模组/07槽位/dddx_rpg_survival",
+      "terrain_sha256": "13cfda049d983de75ed72a1ec067e5deb6bc48f69a123fc12ffd442dec2261d3",
+      "height_sha256": "6fbc8acbf7f4c8a7a8b9169db5fc193da8d5ca3674d6af5ebe3555bf97f6547a",
+      "embedded_preview_sha256": "ae00c1cda52fe8e2b1f71aa0e0e34837e5ee854f3d2f967d1e8ad410589c16e3",
+      "role_files": {
+        "script_file": {
+          "path": "DDDX_RPG_survival_script.lua",
+          "sha256": "e7a8c38cdb283ebee3da0757acd00566388619f5186b037290276b25bdf8619e"
+        },
+        "save_file": {
+          "path": "DDDX_RPG_survival_save.lua",
+          "sha256": "892f474290b75b77437e2b04ba333cce41360b201c66b6240ce3becdf7a7b4c4"
+        }
+      },
+      "active_wave_missing": {
+        "sbrmt3ava": 35.0,
+        "brot3ncm2": 28.14999961853,
+        "brmt3aa": 26.0,
+        "brost1battleship": 12.5,
+        "brnt3bat": 46.0,
+        "brot1exmobart": 21.25,
+        "brpat1exgunship": 21.5,
+        "brot3aa": 24.200000762939,
+        "brot2asb": 7.25,
+        "brpt1extank2": 17.0,
+        "brnt3aa": 21.5,
+        "brnt3shbm2": 42.200000762939,
+        "brmt2medm": 27.0,
+        "brpt2hvbot": 27.0,
+        "brnt3doomsday": 48.0,
+        "brot3coug": 32.0,
+        "brmt1extank": 11.5,
+        "brnt1advbot": 17.0,
+        "brnt2exmdf": 35.25,
+        "brot2exbm": 26.0,
+        "brmat2advbomber": 21.5,
+        "brmt1exm1": 7.5,
+        "brmat1exgs": 18.0,
+        "brpt2exbot": 25.0,
+        "brnt2exlm": 24.200000762939,
+        "bal0401": 46.0,
+        "brnt2exm1": 21.5,
+        "brnt1exmob": 7.25,
+        "brmt1beetle": 18.0,
+        "bss0306": 21.25,
+        "brpat1advbomb": 24.200000762939,
+        "brnt2bm": 21.5,
+        "bsl0401": 35.0,
+        "bra0409": 21.25,
+        "broat2fibo": 21.5,
+        "brnat3bomber": 12.5,
+        "bss0401": 48.0,
+        "bel0402": 48.0,
+        "brmst1battlecruiser": 26.0,
+        "brot1extank": 12.5,
+        "brnt1exm1": 11.5,
+        "brnat1exgs": 21.5,
+        "brot3hades": 46.299999237061,
+        "bsa0310": 25.0,
+        "brmt3cloaker": 40.5,
+        "broat3pride": 46.0,
+        "bes0402": 46.0,
+        "brs0305": 28.14999961853,
+        "brl0401": 42.450000762939,
+        "brmt3snake": 42.450000762939,
+        "brmt3bm2mk2": 13.39999961853,
+        "brnt3ow": 40.5,
+        "brnt3shbm": 42.450000762939,
+        "bea0402": 40.5,
+        "brot2exth": 40.5,
+        "brot3ham": 40.5,
+        "brpt3ml": 35.25,
+        "brnst2advbattleship": 35.25,
+        "brmt3ava": 35.0,
+        "brpt1btbot": 33.5,
+        "broat3bomber": 33.5,
+        "broat2exgs": 33.5,
+        "brnt3advbtbot": 33.5,
+        "brot3exm1": 32.0,
+        "brot1exm2": 10.5,
+        "brmt2beetle": 28.39999961853,
+        "brnt2sniper": 28.39999961853,
+        "brost2advbattleship": 42.450000762939,
+        "bal0402": 40.5,
+        "brot1exm1": 8.5,
+        "brpt3shbm": 46.299999237061,
+        "bss0206": 28.39999961853,
+        "brmat2gunship": 24.200000762939,
+        "brnt3blasp": 42.450000762939,
+        "broat1exgs": 7.25,
+        "brot3ml": 26.0,
+        "brmt3advbtbot": 21.25,
+        "brnt1extk": 13.39999961853
+      },
+      "saved_missing_units": {
+        "sbrot1hpd": 2
+      },
+      "required_mods": "Survival Mayhem&BO Balance + Total Mayhem + BlackOps Unleashed；BlackOps ACUs 仅需安装",
+      "evidence": "作者区分启用与仅安装；除波次外，还有英雄、技能、升级、额外炮塔及资源建筑等专用单位。",
+      "vanilla_feasibility": "只能重做为简化 RPG；不能完整保留原体验",
+      "migration_method": "同时重写英雄创建/等级形态/强化/技能、专用炮塔/资源建筑、非原版波表及对应 UI/效果依赖。",
+      "losses": "英雄形态、升级解锁、独特技能、Balance 的建筑/单位、部分特效与首领均会削减；只替换波表仍会在开局或升级时报错。",
+      "unit_evidence": {
+        "brmt2medm": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:948",
+        "brpt1extank2": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:660",
+        "brmst1battlecruiser": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:925",
+        "bra0409": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:765",
+        "broat3bomber": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:1136",
+        "brot3ncm2": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:977",
+        "brnat1exgs": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:792",
+        "brot3hades": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:1713",
+        "brnt1exm1": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:567",
+        "brnt2exm1": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:782",
+        "bss0306": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:764",
+        "brnt3shbm2": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:1562",
+        "brmt2beetle": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:1003",
+        "brmt3advbtbot": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:758",
+        "brnt1advbot": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:660",
+        "sbrmt3ava": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:1203",
+        "brnt3doomsday": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:1817",
+        "brpat1exgunship": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:790",
+        "broat2fibo": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:788",
+        "bal0401": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:1688",
+        "bel0402": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:1852",
+        "brot3coug": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:1047",
+        "broat3pride": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:1694",
+        "brnt3blasp": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:1636",
+        "brot2exbm": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:900",
+        "broat2exgs": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:1133",
+        "brpt2hvbot": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:948",
+        "brmat2gunship": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:850",
+        "brot3ham": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:1445",
+        "brnt3shbm": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:1562",
+        "brmt1beetle": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:689",
+        "brpat1advbomb": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:848",
+        "brot3aa": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:843",
+        "brot3exm1": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:1047",
+        "brnt3ow": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:1446",
+        "brnt2bm": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:782",
+        "brost2advbattleship": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:1650",
+        "brnat3bomber": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:588",
+        "brmt3cloaker": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:1445",
+        "bal0402": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:1523",
+        "brpt3shbm": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:1713",
+        "brmat2advbomber": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:789",
+        "brnt2exmdf": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:1282",
+        "bss0401": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:1869",
+        "brs0305": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:982",
+        "brmt1extank": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:567",
+        "bss0206": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:1014",
+        "brot1extank": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:589",
+        "brmt3bm2mk2": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:627",
+        "bsl0401": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:1207",
+        "brot2exth": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:1446",
+        "brost1battleship": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:587",
+        "brnst2advbattleship": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:1289",
+        "brnt1extk": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:627",
+        "brnt2sniper": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:1003",
+        "brmt3aa": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:921",
+        "brot2asb": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:409",
+        "brnt3bat": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:1687",
+        "brpt2exbot": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:871",
+        "brnt3aa": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:785",
+        "brot1exmobart": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:760",
+        "brnt1exmob": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:404",
+        "brl0401": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:1639",
+        "brnt3advbtbot": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:1079",
+        "brmt1exm1": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:429",
+        "brot3ml": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:900",
+        "brot1exm1": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:471",
+        "bsa0310": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:883",
+        "brmat1exgs": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:700",
+        "brpt3ml": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:1275",
+        "bea0402": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:1533",
+        "sbrot1hpd": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_save.lua:6868",
+        "brmt3snake": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:1636",
+        "brmt3ava": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:1203",
+        "brot1exm2": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:546",
+        "brpt1btbot": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:1166",
+        "bes0402": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:1690",
+        "brnt2exlm": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:813",
+        "broat1exgs": "需专用模组/07槽位/dddx_rpg_survival/DDDX_RPG_survival_script.lua:408"
+      }
+    },
+    {
+      "id": 77,
+      "name": "Survival_Mayhem&BO_3D_v1",
+      "version": 88,
+      "slots": 7,
+      "classification": "必须配套模组（完整玩法）",
+      "rel": "待测试_依赖与资源核对/07槽位/survival_mayhem&bo_3d",
+      "current_rel": "需专用模组/07槽位/survival_mayhem&bo_3d",
+      "terrain_sha256": "a1d0e5e7ff54822fa4242b49b292f65541b5793e8050b4da039cba04ae815f3d",
+      "height_sha256": "d48d6e41bc16d12d9da52009e8069fef00e569e05c549602a798322a8d3fd2d1",
+      "embedded_preview_sha256": "27c5f189f37a233405fc8d0c7a052f896909b058490ac44705b013f40b3c20f7",
+      "role_files": {
+        "script_file": {
+          "path": "survival_mayhem&bo_3d_v1_script.lua",
+          "sha256": "88b6eeaebde824ca8d1472fe1614b9d115097b898687c275c14133f576305c43"
+        },
+        "save_file": {
+          "path": "survival_mayhem&bo_3d_v1_save.lua",
+          "sha256": "e2b88b8c1ab4d2e5776c191c572e84715eb232281ff2a9dd70413316ca5af7e2"
+        }
+      },
+      "active_wave_missing": {
+        "brot3ncm2": 28.14999961853,
+        "brmt3aa": 26.0,
+        "brost1battleship": 12.5,
+        "brnt3bat": 46.0,
+        "brot1exmobart": 21.25,
+        "brpat1exgunship": 21.5,
+        "brot3aa": 24.0,
+        "brot2asb": 7.25,
+        "brpt1extank2": 17.0,
+        "brnt3aa": 21.5,
+        "brnt1extk": 13.5,
+        "brnt3shbm2": 42.5,
+        "brmt2medm": 27.0,
+        "brpt2hvbot": 27.0,
+        "brnt3doomsday": 48.0,
+        "brot3coug": 32.0,
+        "brmt1extank": 11.5,
+        "brnt1advbot": 17.0,
+        "brnt2exmdf": 35.25,
+        "brot2exbm": 26.0,
+        "brmat2advbomber": 21.5,
+        "brmt1exm1": 7.5,
+        "brmat1exgs": 18.0,
+        "brpt2exbot": 25.0,
+        "brnt2exlm": 24.0,
+        "bal0401": 46.0,
+        "brnt2exm1": 21.5,
+        "brnt1exmob": 7.25,
+        "brmt1beetle": 18.0,
+        "bss0306": 21.25,
+        "brpat1advbomb": 24.0,
+        "brnt2bm": 21.5,
+        "bsl0401": 35.0,
+        "bra0409": 21.25,
+        "broat2fibo": 21.5,
+        "brnat3bomber": 12.5,
+        "brmst1battlecruiser": 26.0,
+        "bss0401": 48.0,
+        "bel0402": 48.0,
+        "brot1extank": 12.5,
+        "brnt1exm1": 11.5,
+        "brnat1exgs": 21.5,
+        "bsa0310": 25.0,
+        "brmt3cloaker": 40.5,
+        "brot3hades": 46.299999237061,
+        "broat3pride": 46.0,
+        "bes0402": 46.0,
+        "brl0401": 42.75,
+        "brmt3bm2mk2": 13.5,
+        "brmt3snake": 42.75,
+        "brnt3ow": 40.5,
+        "brnt3shbm": 42.75,
+        "bea0402": 40.5,
+        "brs0305": 28.14999961853,
+        "brot2exth": 40.5,
+        "brot3ham": 40.5,
+        "brpt3ml": 35.25,
+        "brnst2advbattleship": 35.25,
+        "brmat2gunship": 24.0,
+        "brmt3ava": 35.0,
+        "brpt1btbot": 33.5,
+        "broat3bomber": 33.5,
+        "broat2exgs": 33.5,
+        "brnt3advbtbot": 33.5,
+        "brot3exm1": 32.0,
+        "brmt2beetle": 28.39999961853,
+        "brot1exm2": 10.5,
+        "brnt2sniper": 28.39999961853,
+        "brost2advbattleship": 42.75,
+        "bal0402": 40.5,
+        "brot1exm1": 8.5,
+        "brpt3shbm": 46.299999237061,
+        "bss0206": 28.39999961853,
+        "brnt3blasp": 42.75,
+        "broat1exgs": 7.25,
+        "brot3ml": 26.0,
+        "brmt3advbtbot": 21.25
+      },
+      "saved_missing_units": {},
+      "required_mods": "Total Mayhem v1.36 + BlackOps Unleashed v14；Balance 为推荐且部分功能需要",
+      "evidence": "说明明确要求前两者；Balance 解锁额外资源和史诗内容，不能混称所有模组都是开局必需。",
+      "vanilla_feasibility": "可以改编，需审计多层功能",
+      "migration_method": "替换 Mayhem/BlackOps 波次；移除或重做 Balance 专属目标/资源/首领/特效路径，再测全部高级选项。",
+      "losses": "Mayhem/BlackOps 单位和 Balance 资源发生器、Yolona/Artemis 等专属内容消失；地图可保留但玩法明显缩水。",
+      "unit_evidence": {
+        "brmt2medm": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:889",
+        "brpt1extank2": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:601",
+        "brmst1battlecruiser": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:866",
+        "bra0409": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:706",
+        "broat3bomber": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:1077",
+        "brot3ncm2": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:918",
+        "brnat1exgs": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:733",
+        "brot3hades": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:1651",
+        "brnt1exm1": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:508",
+        "brnt2exm1": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:723",
+        "bss0306": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:705",
+        "brnt3shbm2": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:1501",
+        "brmt2beetle": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:944",
+        "brmt3advbtbot": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:699",
+        "brnt1advbot": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:601",
+        "brnt3doomsday": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:1755",
+        "brpat1exgunship": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:731",
+        "broat2fibo": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:729",
+        "bal0401": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:1626",
+        "bel0402": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:1787",
+        "brot3coug": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:987",
+        "broat3pride": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:1632",
+        "brnt3blasp": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:1575",
+        "brot2exbm": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:841",
+        "broat2exgs": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:1074",
+        "brpt2hvbot": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:889",
+        "brmat2gunship": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:791",
+        "brot3ham": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:1381",
+        "brnt3shbm": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:1501",
+        "brmt1beetle": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:630",
+        "brpat1advbomb": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:789",
+        "brot3aa": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:784",
+        "brot3exm1": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:987",
+        "brnt3ow": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:1382",
+        "brnt2bm": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:723",
+        "brost2advbattleship": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:1588",
+        "brnat3bomber": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:529",
+        "brmt3cloaker": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:1381",
+        "bal0402": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:1459",
+        "brpt3shbm": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:1651",
+        "brmat2advbomber": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:730",
+        "brnt2exmdf": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:1220",
+        "bss0401": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:1800",
+        "brs0305": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:923",
+        "brmt1extank": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:508",
+        "bss0206": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:954",
+        "brot1extank": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:530",
+        "brmt3bm2mk2": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:568",
+        "bsl0401": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:1145",
+        "brot2exth": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:1382",
+        "brost1battleship": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:528",
+        "brnst2advbattleship": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:1227",
+        "brnt1extk": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:568",
+        "brnt2sniper": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:944",
+        "brmt3aa": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:862",
+        "brot2asb": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:353",
+        "brnt3bat": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:1625",
+        "brpt2exbot": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:812",
+        "brnt3aa": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:726",
+        "brot1exmobart": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:701",
+        "brnt1exmob": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:348",
+        "brl0401": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:1578",
+        "brnt3advbtbot": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:1020",
+        "brmt1exm1": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:372",
+        "brot3ml": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:841",
+        "brot1exm1": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:413",
+        "bsa0310": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:824",
+        "brmat1exgs": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:641",
+        "brpt3ml": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:1213",
+        "bea0402": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:1469",
+        "brmt3snake": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:1575",
+        "brmt3ava": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:1142",
+        "brot1exm2": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:487",
+        "brpt1btbot": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:1104",
+        "bes0402": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:1628",
+        "brnt2exlm": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:754",
+        "broat1exgs": "需专用模组/07槽位/survival_mayhem&bo_3d/survival_mayhem&bo_3d_v1_script.lua:352"
+      }
+    },
+    {
+      "id": 78,
+      "name": "Dune Survival",
+      "version": 1,
+      "slots": 8,
+      "classification": "FAF资源差异，非专用模组要求",
+      "rel": "待测试_依赖与资源核对/08槽位/dune_survival",
+      "current_rel": "待测试_依赖与资源核对/08槽位/dune_survival",
+      "terrain_sha256": "c78d2e42c63a9900c3a44d372d61ee487a53c0b5f47561aac2190c47448b909f",
+      "height_sha256": "694747dbef21412825caa3ae7e895432917b0e879204c15f2b2b005b54fa1847",
+      "embedded_preview_sha256": "d96e371435e10411d49d6f60a9f1f3af26e2d801f3998183afedfc456fe55f55",
+      "role_files": {
+        "script_file": {
+          "path": "Dune_Survival_script.lua",
+          "sha256": "e3711c7cb0e52184f9959747d07756bf8b3841a254c5821fc8b8a0ac953e2ee7"
+        },
+        "save_file": {
+          "path": "Dune_Survival_save.lua",
+          "sha256": "2f8a462d870eca6b931e9b1bfdf17b11b0055b59aaf02e8a99f08e932238a44f"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {
+        "zeb9501": 7
+      },
+      "unit_evidence": {
+        "zeb9501": "待测试_依赖与资源核对/08槽位/dune_survival/Dune_Survival_save.lua:2242"
+      }
+    },
+    {
+      "id": 79,
+      "name": "onixs voodoo survival",
+      "version": 16,
+      "slots": 8,
+      "classification": "支持可选模组",
+      "rel": "待测试_依赖与资源核对/08槽位/onixs_voodoo_survival",
+      "current_rel": "待测试_依赖与资源核对/08槽位/onixs_voodoo_survival",
+      "terrain_sha256": "c7fb03c45049be5c42fd9b7f201a8a720ba9ba0b533eb7f7e99266457ef1ec76",
+      "height_sha256": "4c278dcaec7b23623646986ae2e65b3649d4ca66a701e65ff4d80a358ed2267d",
+      "embedded_preview_sha256": "f28a1c34eb860fa8470250c6d59bc66dff2827b523f06ae71e1421b573d064b0",
+      "role_files": {
+        "script_file": {
+          "path": "onixs_voodoo_survival_script.lua",
+          "sha256": "dec6cec48171d0d585ffea34b8955d9a8e96aa7af13f100ac026f021d936cc12"
+        },
+        "save_file": {
+          "path": "onixs_voodoo_survival_save.lua",
+          "sha256": "4634273e126a050d6c066204b9a76626650e7d0441d9b1b8bde9d656b5aa98bc"
+        }
+      },
+      "active_wave_missing": {},
+      "saved_missing_units": {},
+      "unit_evidence": {}
+    },
+    {
+      "id": 80,
+      "name": "Survival Temple",
+      "version": 4,
+      "slots": 8,
+      "classification": "FAF资源差异，非专用模组要求",
+      "rel": "待测试_依赖与资源核对/08槽位/survival_temple",
+      "current_rel": "待测试_依赖与资源核对/08槽位/survival_temple",
+      "terrain_sha256": "f22b022d60ce535945dbe1643c814ba209876df31842241beaa985b2dcae6225",
+      "height_sha256": "8d3ce79ae57b5517a581098737f55fc508f1da9689c2acd0c0dc70042d0d0b4f",
+      "embedded_preview_sha256": "06416555d2deaaba7166e9bf2d1f5ce7b7eea40b69b099b7b4f7599448e73f0b",
+      "role_files": {
+        "script_file": {
+          "path": "survival_temple_script.lua",
+          "sha256": "5b4daa5f8bf54151f1463d02e80bcb51782df2a2d83c9d0021c5662cdb20a1c7"
+        },
+        "save_file": {
+          "path": "survival_temple_save.lua",
+          "sha256": "8d3d4dc52f7b74223695c182577f5d49d2b3d6e0eda5504039fd54826d1328f5"
+        }
+      },
+      "active_wave_missing": {
+        "drlk001": 16.0
+      },
+      "saved_missing_units": {},
+      "unit_evidence": {
+        "drlk001": "待测试_依赖与资源核对/08槽位/survival_temple/survival_temple_script.lua:372"
+      }
+    },
+    {
+      "id": 81,
+      "name": "survival_生存AN_voodoo_no_mods",
+      "version": 3,
+      "slots": 8,
+      "classification": "FAF资源差异，非专用模组要求",
+      "rel": "待测试_依赖与资源核对/08槽位/survival_voodoo_AN_no_mods",
+      "current_rel": "待测试_依赖与资源核对/08槽位/survival_voodoo_AN_no_mods",
+      "terrain_sha256": "cbda53a69ee6994192bcf9aa306d2508cbcba59fe89dee7ce4b0847867668351",
+      "height_sha256": "7d0ebb63158e45a2a55712cdd38a65180a14e809fc1047e09d59849a3b1ea0c3",
+      "embedded_preview_sha256": "1624b47a331fb4b3377830d6c57542672ca93710edae9786c9c12fd1be3cbc81",
+      "role_files": {
+        "script_file": {
+          "path": "survival_voodoo_AN_no_mods_script.lua",
+          "sha256": "663b44dc54d3b6cbed78c1ff3449a7ede85ab9d0c9d451a5a93265d71447d381"
+        },
+        "save_file": {
+          "path": "survival_voodoo_AN_no_mods_save.lua",
+          "sha256": "711089df451b5a872a8921c7ee0f40d557ee912aa732d3bc9d7c9a8efa3cd70a"
+        }
+      },
+      "active_wave_missing": {
+        "drlk001": 16.0
+      },
+      "saved_missing_units": {},
+      "unit_evidence": {
+        "drlk001": "待测试_依赖与资源核对/08槽位/survival_voodoo_AN_no_mods/survival_voodoo_AN_no_mods_script.lua:424"
+      }
+    },
+    {
+      "id": 82,
+      "name": "survival_voodoo_no_mods",
+      "version": 3,
+      "slots": 8,
+      "classification": "FAF资源差异，非专用模组要求",
+      "rel": "待测试_依赖与资源核对/08槽位/survival_voodoo_no_mods",
+      "current_rel": "待测试_依赖与资源核对/08槽位/survival_voodoo_no_mods",
+      "terrain_sha256": "cbda53a69ee6994192bcf9aa306d2508cbcba59fe89dee7ce4b0847867668351",
+      "height_sha256": "7d0ebb63158e45a2a55712cdd38a65180a14e809fc1047e09d59849a3b1ea0c3",
+      "embedded_preview_sha256": "1624b47a331fb4b3377830d6c57542672ca93710edae9786c9c12fd1be3cbc81",
+      "role_files": {
+        "script_file": {
+          "path": "survival_voodoo_no_mods_script.lua",
+          "sha256": "4638be8bde6593ea1c6785dfb57a2d9d7086d7a3921f6ae761ef992c438a35e3"
+        },
+        "save_file": {
+          "path": "survival_voodoo_no_mods_save.lua",
+          "sha256": "711089df451b5a872a8921c7ee0f40d557ee912aa732d3bc9d7c9a8efa3cd70a"
+        }
+      },
+      "active_wave_missing": {
+        "drlk001": 16.0
+      },
+      "saved_missing_units": {},
+      "unit_evidence": {
+        "drlk001": "待测试_依赖与资源核对/08槽位/survival_voodoo_no_mods/survival_voodoo_no_mods_script.lua:424"
+      }
+    },
+    {
+      "id": 83,
+      "name": "Tomb Guard Survival",
+      "version": 3,
+      "slots": 12,
+      "classification": "FAF资源差异，非专用模组要求",
+      "rel": "待测试_依赖与资源核对/12槽位/tomb_guard_survival",
+      "current_rel": "待测试_依赖与资源核对/12槽位/tomb_guard_survival",
+      "terrain_sha256": "48c9af03bf3867afd6b75d6698c1ee4d5b66fc88b091e6d2a7a1a71911266665",
+      "height_sha256": "1ac1725a0d767e71aaa64b4b6de04ed053b3782aabdbbfed7ecaeff7cec3d146",
+      "embedded_preview_sha256": "d358ca44a43367ffa03d6866b158c090f7239f6678aa76e078905465e6861c89",
+      "role_files": {
+        "script_file": {
+          "path": "tomb_guard_survival_script.lua",
+          "sha256": "b82d04138627069f45b0e50ca071cb26ae6443522c5a18a316cee2fb0c23696e"
+        },
+        "save_file": {
+          "path": "tomb_guard_survival_save.lua",
+          "sha256": "e227e73cca7f9873e1ad2d3818c2783bac9bb224b812abdea48cfba708d01b1f"
+        }
+      },
+      "active_wave_missing": {
+        "drlk001": 16.0
+      },
+      "saved_missing_units": {},
+      "unit_evidence": {
+        "drlk001": "待测试_依赖与资源核对/12槽位/tomb_guard_survival/tomb_guard_survival_script.lua:501"
+      }
+    }
+  ],
+  "groups": [
+    {
+      "name": "黑日防守",
+      "ids": [
+        5,
+        6
+      ],
+      "evidence": "地形、内嵌图和存档逐字节相同；脚本与准备时间不同。",
+      "recommendation": "优先留 BBF_BlackSunDefense（作者 v1.0）。旧版不是纯副本：防守物为 ope6006、固定 150000 血；v1.0 改为 uec1901，生命公式 getDifValueDESC(130000)+20000，传送门改为成对生成并联动击杀，准备首项 150 秒而旧版 120 秒。没有 Steam 实战前，不建议直接删除 0.9。"
+    },
+    {
+      "name": "Mycelium 3 槽与 4 槽",
+      "ids": [
+        2,
+        12
+      ],
+      "evidence": "高度数据相同，内嵌图近似；完整地形文件与起点、资源布置不同。",
+      "recommendation": "按人数保留：3 槽和 4 槽均有用途。配置和联盟/玩家处理分别适配对应人数；静态资源标记为 42 与 56 个质量点。不能因 4 槽版本号较大就替代 3 槽。"
+    },
+    {
+      "name": "5th Dimension 沙漠版",
+      "ids": [
+        16,
+        38,
+        37
+      ],
+      "evidence": "三者 .scmap 和内嵌图完全相同；存档和波次不同。",
+      "recommendation": "纯原版优先 6 槽 survival_5thdimension v8；4 槽 v6 按人数另留。v6/v8 都给前四军队各预置 8 名指挥官；v8 多出第 39 分钟波组，目标时间由 2400 改为 2700 秒，目标视野由 350 改为 380，资源标记由 80 质量/0 碳氢变成 108/2。MayhemEdition 为独立模组玩法，静态资源为 114/6，预置友方 Paragon；放入模组区。"
+    },
+    {
+      "name": "5th Dimension 原图、练习与扩人数",
+      "ids": [
+        53,
+        17,
+        54,
+        68
+      ],
+      "evidence": "原图与 practice 地形、内嵌图、存档相同；8 player 与 16 player 为相近地形扩展。",
+      "recommendation": "1～4 人练习优先 practice（4 个阵营选择、缺人补充指挥官逻辑，固定按 4 人计敌军）；原版保留其 1～4 人+被囚 AI 槽规则。真正 8 人选 8_player，16 人选 16_player；后两者质量点都是 128，碳氢分别 8/16，出生点与人数逻辑不同。不要把原版 8 个大厅槽误当 8 名人类玩家。"
+    },
+    {
+      "name": "5th Dimension Center",
+      "ids": [
+        52,
+        51
+      ],
+      "evidence": "完整地形与内嵌图相同；主脚本和模块、选项不同。",
+      "recommendation": "优先 Center EE v6：9 项设置，原 Center v6 只有 3 项；EE 增加自动回收、全阵营、能量奖励、目标生命/回血/视野，并重做终局和远程舰射击目标。目标和最终波次平衡不同，旧版仅作经典玩法来源；不能只对比同为 v6 的数字。"
+    },
+    {
+      "name": "Horde 四版本",
+      "ids": [
+        26,
+        27,
+        28,
+        29
+      ],
+      "evidence": "四者 .scmap 完全相同。Aeon、Aeon Fixed、EE 的存档也相同。",
+      "recommendation": "EE 与 Aeon Fixed 分别保留：虽然主脚本相同，23 个 src 文件中的 WaveTable.lua 与 WaveOrders.lua 不同，EE 首波 URL0107，Aeon Fixed 首波 UAL0201，协助命令过滤单位也随阵营变化。原 Horde 留作经典规则；旧 Aeon 可优先用 Aeon Fixed 替代（由 1 项扩为 6 项设置），实测前不删除。"
+    },
+    {
+      "name": "Survival Escape",
+      "ids": [
+        20,
+        21
+      ],
+      "evidence": "完整地形、内嵌图、存档完全相同；主脚本不同。",
+      "recommendation": "纯原版先选原 Survival_Escape；v3ga 面向 Total Veterancy/BlackOps 的平衡但未发现强制外部单位。v3ga 自动统计路点/首领标记，改变护送目标生命、视野与移动节奏，原独立追踪线程结构也改变。模组推荐不等于开局必需，两个版本不是简单新旧副本。"
+    },
+    {
+      "name": "Extreme Desert / Insane",
+      "ids": [
+        23,
+        24,
+        30
+      ],
+      "evidence": "V2fA 与 Insane 高度数据相同，内嵌图极近；完整文件不同。普通 ExtremeDesert 也近似但地形不相同。",
+      "recommendation": "经典沙漠防守优先 ExtremeDesert；V2fA 与 Insane 按规则另留。Insane 新增 HealthBuff/UnitCountMult、重做地面/空军波表与难度节奏，默认准备/目标等也不同，不能只看同一沙漠缩略图。"
+    },
+    {
+      "name": "NorthSouth / Insane NvS",
+      "ids": [
+        32,
+        31
+      ],
+      "evidence": "高度数据相同；内嵌预览和完整地形不同，NvS 带限制区域标识。",
+      "recommendation": "常规防守优先 NorthSouth_Barrens；Insane NvS 留作挑战版。波表、准备/间隔、目标选项以及可玩区域设计不同，旧修复只处理了 NorthSouth 的强制难度和军队计数，没有合并 Insane 玩法。"
+    },
+    {
+      "name": "Navy 与 Onix",
+      "ids": [
+        25,
+        55,
+        60
+      ],
+      "evidence": "4 槽与 8 槽为人数扩展；8 槽 Navy 与 Onix 的外置 PNG 完全相同，但内嵌预览与完整地形不同。",
+      "recommendation": "4 人选 NavyV2，8 人优先 NavyV28。Onix 主脚本/选项与 8 槽版同系，但地形、起点、初始海军/工事和资源不同（44 质量/8 碳氢对 52/16）。Onix 还把 ARMY_SUPERWEAPON 同时列入大厅与 ExtraArmies，需核实特殊槽使用，不能把 9 槽当 9 名正常合作玩家。相同外图属于沿用预览，不能据此删地图。"
+    },
+    {
+      "name": "Voodoo Battle 两版",
+      "ids": [
+        58,
+        57
+      ],
+      "evidence": "高度数据相同，内嵌图极近；完整地形和存档不同。",
+      "recommendation": "优先 voodoo_battle_survival_new 作为设置丰富的候选：18 项、按已启用模组装载单位表，有原版分支；v1 只有 3 项且活动波表仍含 DRLK001。两版资源布局明显不同（73 对 25 个静态质量标记），换新版会改变经济和波次；并非无损替代。"
+    },
+    {
+      "name": "Voodoo no_mods 与 AN",
+      "ids": [
+        82,
+        81
+      ],
+      "evidence": "完整地形、内嵌图、存档、菜单相同；主脚本只有一条单位限制差异。",
+      "recommendation": "优先 AN 版：将不存在的 categories.uaa0314 改为原版存在的 categories.uaa0304，恢复该单位限制。两者仍在后期波表使用 DRLK001，名字 no_mods 不能证明可在纯 Steam 原版完整运行。已准备两版的 DRLK001 替换候选，未写回。"
+    },
+    {
+      "name": "EpischeLAN 两版",
+      "ids": [
+        66,
+        67
+      ],
+      "evidence": "预览相似但完整地形与高度数据不同；主脚本和菜单规范化后相同。",
+      "recommendation": "稳定基准优先原 EpischeLAN v5；Redone 作为地形改版保留。两者静态资源数量同为 144 质量/24 碳氢，但 Redone 改地形高度、位置和部分 SpawnWithArmy 绑定。不能把它当脚本升级版，是否更好取决于重做后的通路/布置实测。"
+    },
+    {
+      "name": "Omega 与 Light：复制外置图",
+      "ids": [
+        3,
+        50
+      ],
+      "evidence": "外置 DDS/large/small PNG 像素相同，实际 .scmap 与内嵌图不同；只有平坦高度数据相同。",
+      "recommendation": "两张都保留，玩法完全不同。Omega 为 3 槽、经典波次且后期需 BlackOps；Light 为 8 槽、12 项设置、指挥官/预建工厂规则。应分别重建匹配的外置预览，不应因复制缩略图删除地图。本轮仅记录，不改预览。"
+    },
+    {
+      "name": "Mayhem 3D 与 DDDX RPG",
+      "ids": [
+        40,
+        77,
+        76
+      ],
+      "evidence": "可辨认的同系地形改作；尺寸/完整地形/脚本不相同。",
+      "recommendation": "追求完整模组生存优先 1024 尺寸的 3D v88 作为测试候选，512 尺寸 v9 留作较旧规则。RPG v156 单独保留，英雄槽、升级、技能使其成为独立玩法，不能被普通 3D 版替代；三者均放入模组区。"
+    }
+  ]
+}

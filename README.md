@@ -45,3 +45,15 @@ maps/                # 未来可选：经审核的地图资源（须检查授权
 - Steam 本机安装目录下的 `gamedata/*.scd` 及实际游戏日志才是目标环境最终依据。
 
 文档内容是维护规范而非自动修复程序。Codex 在有本仓库写权限的工作区中应按 `AGENTS.md` 更新并提交记录。
+
+## 2026-10-16 本地复核增量
+
+本次读取了用户本地当前83张生存地图，源码与资源未上传本仓库；静态审计不代表Steam实机通过。已记录11张完整玩法需模组、14张FAF单位差异、15组预览/地形/玩法比较。11张仅移动分类，2522个文件哈希保持。
+
+- [逐图依赖发现与证据](docs/KNOWN_MAP_FINDINGS.md)
+- [无模组迁移方法与明确损失](docs/VANILLA_MIGRATION.md)
+- [相同图片和不同版本保留建议](docs/SURVIVAL_AUDIT_2026-10-16.md)
+- [可复现摘要、源文件哈希和路径](docs/data/survival_audit_2026-10-16.json)
+- [测试与发布](docs/TEST_AND_RELEASE.md) · [维护日志](docs/MAINTENANCE_LOG.md)
+
+15张局部候选通过编译和数据核验但未写回原图，仍需单人、后期波次、模型/武器和多人实测。Swarm/Eternals及DDDX RPG不能靠替换几个单位保留完整原模式。

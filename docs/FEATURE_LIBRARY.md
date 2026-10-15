@@ -63,3 +63,9 @@
 ```
 
 **注意**：`Survival_BlackBox_10` 中的 `opt_sacu_only` 不只是“新增单位”，还关联单位限制和规则变化；移植时不能省略配套限制函数。
+
+## 可选模组池与原版降级（2026-10-16）
+
+`desert_front_survival`、`survival_genesis`、`voodoo_battle_survival_new`、`survival_terror_lands`、`onixs_voodoo_survival` 的模组检测/条件导入可作为“原版可用+额外支持”的结构参考。必须连同初始化基础单位池、检测条件、空池保护、单位限制及玩法选项审查；不能把支持列表中的每个编号当成强制依赖。
+
+原版降级不是通用玩法增强：替代单位的兵种、武器/技能、机动与平衡要在报告列明。小范围替换参考 [VANILLA_MIGRATION.md](VANILLA_MIGRATION.md)，多层英雄/外置波次模式不适合直接套此方法。来源哈希和当前路径见本轮摘要，不承诺跨版本兼容。
