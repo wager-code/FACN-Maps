@@ -83,3 +83,11 @@
 Steam接口查所有实际SCD；ScenarioUtilities可能在mohodata.scd。原生全局与ScenarioFramework模块方法分清；SetIgnorePlayableRect以官方战役调用和本机引擎为据。版本和显示名实际求值，不能误替换团队的name字段。
 
 AI制图用受控地形工具/格式解析器及可验证Lua/数据，按Steam/FAF分别记录API、单位、资源和游戏测试。没有FAF本机资源/测试就标未验证；不得把SCMAP v56/v60当平台标签，或声称两边所有地图都不可互通。外部Issue是复现线索，核对日期和关闭状态后再决定是否移植。
+
+## Fort Ictus特殊槽待调查（2026-10-18）
+
+维修此图先读docs/FORT_ICTUS_GAMEPLAY_2026-10-18.md及结算专项。活动仍v9，两处地图7文件不变；未部署的v10候选不得当成修复版。第4槽INITIAL396条记录，与前三槽不同；用户实测敌对，但脚本列为合作人数/胜负，未查清前不能强制全员结盟或改成3人敌堡玩法。结盟前uaa0314无效限制是待日志验证的初始化中断线索。
+
+## Fort Ictus恢复后的环境（2026-10-19）
+
+以docs/FORT_ICTUS_RECOVERY_2026-10-19.md为最新：包内v9七文件指纹不变，但此前安装图目录和SupremeCommander.exe入口缺失，不得照历史记录声称两处仍在。用户无日志。旧队伍夹具跳过AddRestriction，新的573蓝图类别夹具只追踪Lua封装向记录桩传nil，均未证明本机原生接口报错。不得重新运行未采用v10写回或自动恢复被移除的目录。

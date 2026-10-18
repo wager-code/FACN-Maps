@@ -154,3 +154,7 @@ startSeconds = tonumber(startSeconds) or 0
 - Lua5.0式vararg函数定义可接受`...`参数列表，但不能直接作为表达式转发。现有备用EventDispatcher四份因此编译失败。未来若改造应保留参数个数及中间/末尾nil，测试监听器增删和一次性监听，不只让编译通过。
 - 不能用“所有扩展名.lua都编译成功”代替加载链分析：info-theme辅助数据不是运行入口；反之也不能忽略运行时真正会导入的失败模块。
 - Steam与FAF共享基础资源且加载不同扩展；SCMAP v56/v60不是Steam/FAF的对应编号。详见[双构建配置](AI_MAP_AUTHORING.md)与[原始来源](EXTERNAL_MAPPING_RESEARCH_2026-10-16.md)。未验证FAF，不报告双端通过。
+
+## 2026-10-19：初始化测试不能将缺失类别兜底为任意值
+
+Fort Ictus调查的旧队伍用例把AddRestriction作无操作桩，并给任意类别键返回占位值，因此绕开了结盟前的uaa0314风险。573蓝图类别夹具加实际Lua封装只能证明该夹具里的参数流；原生AddBuildRestriction未执行，不能据此声称游戏崩溃。先取得当前构建的日志和首个错误栈，分开记录静态缺失、Lua参数转交与原生行为。
