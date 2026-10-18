@@ -301,3 +301,13 @@ FAF与Steam共享基础但挂载/脚本/蓝图/美术资源不同，不能断言
 - v8 的 `_save.lua` SHA-256 与维护卡 v9 完全一致；但 v8 的 `_scenario.lua`、`_options.lua`、`_script.lua` 与 v9 指纹不同，且 v8 使用 `fort_ictus_survival.v0008` 虚拟路径。不能用旧 v8 直接替代当前 v9，也不能将 v8 内容冒充新版本。
 - 当前 v9 维护卡的波次单位清单已全部映射到 Steam 索引中存在的单位，但 `uaa0314` 限制仍是独立待调查风险。优先基于最新 v9 做最小修改。
 - 详细文件哈希、证据边界与回归计划见 [FAF v8 → Steam 静态审计](FORT_ICTUS_FAF_V8_STEAM_AUDIT_2026-10-19.md)。本轮没有修改地图本体，也没有 Steam 实机测试。
+## F020：Fort Ictus v8 派生 Steam 候选（2026-10-19）
+
+- 候选文件：`Fort_Ictus_Survival_Steam_Candidate_v11.zip`，SHA-256 `4ac2f416230ab6439bcfbaea8b85303fe748eecb98b9b2cdfa9adf6d4fe175c3`。
+- 来源仍是上传的 v8（源 ZIP SHA-256 `cea02527a8cc7f73762e44031abb244ac46f6fa531a80a9c37c6257623831bf4`），不是当前维护版 v9；v9 完整包不在当前工作目录/仓库，不能声称此候选继承了 v9 全部修订。
+- 独立场景名 `Fort Ictus Survival Steam Candidate`，`map_version = 11`，虚拟目录 `fort_ictus_survival_steam_candidate`，防止覆盖现有版本。11 是隔离测试候选版本号，不是正式发布。
+- 13 处活动波次 `DRLK001` 替换为 `URL0205`。这把 FAF T3 防空替换成 Cybran T2 防空，明确会降低原单位科技/强度并改变波次平衡。
+- `categories.uaa0314` 调用增加 `if categories.uaa0314 then` guard，避免缺失类别作为 nil 传给限制 API；没有将第4槽结盟、人数、胜负或结算逻辑纳入此补丁。
+- 静态验收：ZIP `testzip()` 通过、5 个成员、三个虚拟路径指向独立目录、活动 `DRLK001` 残留 0、guard 存在、SCMAP 哈希与原始一致。
+- 状态：**已修改待实测**。未执行 Steam 编译或游戏测试。第4槽阵营/人数冲突、菜单默认值、结算表空白仍是独立风险。
+- 详细记录见 [专项静态审计](FORT_ICTUS_FAF_V8_STEAM_AUDIT_2026-10-19.md)。只有取得当前 v9 完整包后，才可将最小补丁移植到 v9 并做新候选。

@@ -107,3 +107,6 @@ maps/                # 未来可选：经审核的地图资源（须检查授权
 ### Fort Ictus Survival：FAF v8 → Steam 迁移审计
 
 新收到的 v8 源包与仓库当前维护版 v9 并不相同。已记录 FAF 单位依赖、无效类别风险、版本/目录差异和后续回归范围；详见 [Fort Ictus v8 静态审计](docs/FORT_ICTUS_FAF_V8_STEAM_AUDIT_2026-10-19.md)。修复必须基于最新 v9，不从旧 v8 覆盖已有修改；目前没有新的 Steam 实机通过记录。
+### Fort Ictus Steam 测试候选（非正式发布）
+
+基于当前上传的 v8 单独生成了 `Fort_Ictus_Survival_Steam_Candidate_v11.zip`，并未覆盖当前维护版 v9。候选修复了 13 个活动 FAF 单位引用，并为缺失类别调用增加 guard；地形未改，Steam 实机仍待测。详细证据、SHA-256 和限制见 [专项审计报告](docs/FORT_ICTUS_FAF_V8_STEAM_AUDIT_2026-10-19.md)。

@@ -83,3 +83,10 @@ FAF 单位来源：[DRLK001](https://github.com/FAForever/fa/blob/develop/units/
 | 状态 | 静态确认；未执行 Steam 实机测试 |
 
 完整证据与文件指纹见 [Fort Ictus v8 静态审计](FORT_ICTUS_FAF_V8_STEAM_AUDIT_2026-10-19.md)。此条目不代表完整无损迁移，也不授权删除或覆盖 FAF 原始版。
+### 后续：Fort Ictus v8 派生候选已生成（2026-10-19）
+
+- 测试包：`Fort_Ictus_Survival_Steam_Candidate_v11.zip`；SHA-256 `4ac2f416230ab6439bcfbaea8b85303fe748eecb98b9b2cdfa9adf6d4fe175c3`。
+- 独立目录 `fort_ictus_survival_steam_candidate`、场景名 `Fort Ictus Survival Steam Candidate`、候选 `map_version=11`，不会覆盖当前 v9。
+- 最小修改：活动波次 `DRLK001 → URL0205`（T3 → T2，玩法损失明确）；缺失类别 `uaa0314` 加存在性 guard。
+- 不修改地形、存档、选项默认值或第4槽/胜负逻辑；该候选仍可能保留原图的特殊槽与结算问题。
+- 状态：已修改待实测。它基于 v8，不是 v9 的升级包；若要替换当前 v9，须先取得 v9 完整包并移植/回归，不能直接覆盖。
