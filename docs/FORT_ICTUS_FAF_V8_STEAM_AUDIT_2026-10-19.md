@@ -93,3 +93,19 @@ v8 的三个选项在 `_options.lua` 中分别使用 `default = 10`、`default =
 - 已执行：ZIP 完整性检查、文件清单与 SHA-256、ScenarioInfo 路径/版本审查、常量 import 检查、Lua 字符串/注释扫描、活动波次单位引用审查、SCMAP 可打印资源路径抽查。
 - 未执行：Steam 游戏启动、目标 Steam Lua 引擎编译、实机刷波、完整资源加载、单人/多人对局。
 - 当前结论：**可行的原版改编候选；未完成 Steam 实机验证。**
+## 后续动作：独立 Steam 候选包（2026-10-19）
+
+由于当前可用文件只有上传的 v8 ZIP，而仓库没有 v9 完整地图包，已另行生成**不覆盖 v9 的 v8 派生测试候选**：
+
+- ZIP：`Fort_Ictus_Survival_Steam_Candidate_v11.zip`
+- SHA-256：`4ac2f416230ab6439bcfbaea8b85303fe748eecb98b9b2cdfa9adf6d4fe175c3`
+- 场景名：`Fort Ictus Survival Steam Candidate`
+- `map_version = 11`；虚拟目录 `fort_ictus_survival_steam_candidate`。这是隔离测试候选，不是已发布的 v11，也不是当前 v9 的替代品。
+- 13 处活动波次 `DRLK001` 改为仓库已有候选映射 `URL0205`（Cybran T2 防空单位）；明确损失为 T3/FAF 单位强度与原平衡下降，须实测波次难度。
+- 对 `categories.uaa0314` 增加存在性判断，避免 Steam 环境将缺失类别 nil 传入 `AddRestriction`；若该类别存在仍保留限制。
+- 更新场景名、描述、版本和 map/save/script 三个虚拟路径，使用独立文件夹，避免与现有地图冲突。
+- `.scmap`、`_save.lua`、`_options.lua` 内容保持原始哈希；没有改变第4槽联盟/胜负逻辑，也没有猜测修改菜单默认值。
+
+静态验证：ZIP 完整性通过；恰有 5 个文件；13 处活动 `DRLK001` 全部替换，活动引用剩余 0；`uaa0314` guard 存在；三个虚拟路径一致；地形哈希不变。
+
+**尚未验证**：目标 Steam Lua 引擎编译、Steam 大厅、开局初始化、首波/后期、特殊第4槽、多人与结算。由于源基底是 v8，不能证明其包含 v9 所有修订；当前状态为“已修改待实测”。若要修复并发布当前 v9，仍须取得 v9 完整包后将最小补丁移植过去。
