@@ -199,3 +199,12 @@ LuaPlus_1081.dll 的本机对照 SHA-256：`54167a0d72df75a06109879a9e3eb95bd5e8
 - [ ] 检查首波、T2/T3 阶段和所有替换单位原本出现的后期波次；核对数量、路线、目标选择、地图边界及难度。
 - [ ] 回归 Fort Ictus 的特殊第4槽、额外 ALLY/ENEMY 军队、人数缩放、保护目标毁灭、计时胜利、玩家退出及中途结束结算。
 - [ ] 记录 Steam 构建、地图包哈希、无 MOD 清单、首个错误日志、单人/多人结果；未跑过的项目明确写“未测试”。
+## J. Fort Ictus v8 派生 Steam 候选 v11
+
+- [ ] 安装时使用独立目录 `fort_ictus_survival_steam_candidate`，不得覆盖 `fort_ictus_survival`。
+- [ ] 确认场景列表显示 `Fort Ictus Survival Steam Candidate`，地图版本 11，map/save/script 三个虚拟路径均可解析。
+- [ ] 在无额外 MOD 的 Steam 环境启动并检查首个错误日志，确认 `categories.uaa0314` guard 后初始化能继续。
+- [ ] 验证所有已替换波次：`URL0205` 在各出现阶段可生成、下达命令且不会改变刷兵计数/线程；检查 T3 → T2 替换后的后期难度。
+- [ ] 回归默认和非默认选项、首波、后期波次、保护目标死亡、计时胜利、特殊第4槽、多人同步及中途结束结算。
+- [ ] 记录候选 ZIP SHA-256 `4ac2f416230ab6439bcfbaea8b85303fe748eecb98b9b2cdfa9adf6d4fe175c3` 与 Steam 构建/日志。未跑过的项目保持“未测试”；不得因静态检查通过就标“Steam 单人/多人通过”。
+- [ ] 如果要将修复移植至当前 v9，先取得完整 v9 包并逐文件比较；禁止用 v8 候选直接覆盖 v9。
