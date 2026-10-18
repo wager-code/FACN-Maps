@@ -168,3 +168,10 @@ Fort Ictus调查的旧队伍用例把AddRestriction作无操作桩，并给任�
 - v8 的存档文件与当前 v9 相同，但 scenario/options/script 指纹不同。只把 v8 用作来源审计；实际修复应基于最新 v9，避免丢失已做的单位替换和路径修订。
 
 详见 [Fort Ictus FAF v8 静态审计](FORT_ICTUS_FAF_V8_STEAM_AUDIT_2026-10-19.md)。
+## Fort Ictus 候选补丁：缺失单位与缺失类别分开处理（2026-10-19）
+
+v8 派生测试候选中采用两个不同策略：
+
+- 活动波次蓝图 `DRLK001` 确认不在目标 Steam 蓝图索引中，按仓库已有候选映射替换为 `URL0205`。此类替换会改变原单位属性与波次平衡，必须记录损失并测试。
+- `categories.uaa0314` 是传入限制 API 的类别值，不是直接刷出的单位 ID。仅当该字段存在时才调用 `AddRestriction`，避免将 nil 传入原生接口；不能把这个 guard 写成已证实的崩溃修复，仍需游戏日志/实机验证。
+- 这个补丁仅作用于 v8 派生候选，不自动证明当前 v9 已修复。v9 与 v8 的 script/options/scenario 指纹不同，移植前必须比较文件并将改动以最小差异应用。
