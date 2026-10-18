@@ -158,3 +158,13 @@ startSeconds = tonumber(startSeconds) or 0
 ## 2026-10-19：初始化测试不能将缺失类别兜底为任意值
 
 Fort Ictus调查的旧队伍用例把AddRestriction作无操作桩，并给任意类别键返回占位值，因此绕开了结盟前的uaa0314风险。573蓝图类别夹具加实际Lua封装只能证明该夹具里的参数流；原生AddBuildRestriction未执行，不能据此声称游戏崩溃。先取得当前构建的日志和首个错误栈，分开记录静态缺失、Lua参数转交与原生行为。
+## 2026-10-19：Fort Ictus v8 — FAF 单位依赖与具名 MOD 依赖分开判定
+
+`fort_ictus_survival.v0008` 只有三个常规游戏模块导入，没有 `/mods/`、`src/`、`vendor/` 或外置 MOD 包引用。不要把“没有具名 MOD 导入”写成“完全原版兼容”。
+
+- 活动波次 `DRLK001` 在仓库目标 Steam 蓝图清单中不存在，但存在于 FAF 源码。它属于直接单位蓝图依赖，不要求地图脚本一定显式 import MOD 才会依赖该蓝图。
+- 注释掉的备用波次示例里的单位 ID 不等于活动依赖；要剥离注释后核对真正的活动表、存档单位和条件分支。
+- `categories.uaa0314` 是另一种问题：它出现在 `ScenarioFramework.AddRestriction` 中，而不是创建/刷出单位的位置。缺失类别可能向原生限制 API 传入 nil；应区分静态缺失、Lua 参数流与原生运行结果，未取得日志不能宣称已崩溃。
+- v8 的存档文件与当前 v9 相同，但 scenario/options/script 指纹不同。只把 v8 用作来源审计；实际修复应基于最新 v9，避免丢失已做的单位替换和路径修订。
+
+详见 [Fort Ictus FAF v8 静态审计](FORT_ICTUS_FAF_V8_STEAM_AUDIT_2026-10-19.md)。
