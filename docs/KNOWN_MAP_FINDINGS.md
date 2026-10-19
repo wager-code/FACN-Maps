@@ -350,3 +350,8 @@ E:/SCFA/maps没有对应条目；实际位于个人Documents/My Games/Gas Powere
 ## F027：Brainsucka强制模组检测被此前文本分类漏检（2026-10-20）
 
 主脚本SHA5196bac1…未变，目标LuaPlus实际OnStart缺少UID d36d33e5-3927-499f-8990-55555b000001时不调用正常任务初始化，提示线程还会调用缺失CreateDialogue。测试UID令其进入初始化记录桩，不等于拥有模组。已纠正04卡片及地图册；62张保留数不变，不能再据此前分类断言全部无强制依赖。没有地图修改、删除或新游戏测试。详见同一[专项](BRAINSUCKA_LUAC_AND_REQUIRED_MOD_2026-10-20.md)。
+
+
+## F028：Survival Horde EE v22中途退出直接跳过结算（2026-10-20）
+
+用户确认中途退出直接回大厅。主脚本848行Sync.CampaignMode=true，经schook UserSync进入UI；原版tabs.EndGame在战役模式下传midGame=true，score.CreateDialog直接ExitGame并return，不创建普通结算表。包/安装44文件SHA一致；与Steam安装的5种相关原始代码逐一SHA相同，目标LuaPlus5项检查通过，包含实际退出分支对照。未实机点击退出、未验证自然胜负或FAF当前版。不能将其与Fort Ictus的空白表混为一谈，也不能只关闭战役模式或导入UI模块来假装修复。独立失败条件`or "ARMY_5"`真值问题另记，未改地图。见[专项](HORDE_EE_MANUAL_EXIT_2026-10-20.md)。

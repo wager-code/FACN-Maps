@@ -141,3 +141,8 @@
 ### 2026-10-20：Brainsucka发布误报与模组分类纠正
 
 核对8文件与历史SHA一致，三条引用存在；目标LuaPlus8项检查通过并复现实际OnStart强制模组检测，纠正文本扫描漏判。FACN源码补齐客户端/网关luac引用校验，隔离核心476、网关65、实际地图打包45项通过，ZIP八文件逐项SHA一致且地图不变。未修改地图修订1、未删除、未替换正式EXE或真实发布。见[证据和边界](BRAINSUCKA_LUAC_AND_REQUIRED_MOD_2026-10-20.md)。
+
+
+### 2026-10-20：Horde EE中途退出结算调用链
+
+用户问为何中途退出没有结算。核对包内与安装副本v22共44文件SHA完全一致；从两套实际安装SCD提取tabs/score/基础UserSync/战役hook/campaignmanager，5种文件逐一SHA一致。目标LuaPlus5项加载/路由检查通过，实际CampaignMode同步链导致midGame直接ExitGame；普通模式对照进入SessionEndGame。新增F028、29卡片及维修方法；未修改地图或全局SCD，没有自然通关、实际UI或多人结果。独立失败通知条件真值问题待后续处理。见[记录](HORDE_EE_MANUAL_EXIT_2026-10-20.md)。
