@@ -227,3 +227,7 @@ LuaPlus_1081.dll 的本机对照 SHA-256：`54167a0d72df75a06109879a9e3eb95bd5e8
 ## 多地形文件的发布清单（Omega，2026-10-19）
 
 已选scenario必须解析出实际地形路径；历史old文件若无活动引用，可从导出清单排除并在目录外保留原始档案。多scenario、多个活动SCMAP、动态引用不明时不得自动取首个或按old命名删除。验证地形尺寸与scenario/save一致、出生坐标可用，不能用Omega256×256历史地形代替512×256现地形。同步安装与地图包前先核对修订、脚本和已有修复，不从同地形推断同版本。
+
+## 预览来源一致性（2026-10-20，Omega）
+
+记录显式scenario.preview、当前SCMAP内嵌DDS、外置DDS/large/small PNG与工具缓存的来源。默认preview为空时检查原版mapselect/lobby的SetTextureFromMap回退；不要将历史外置图片当作游戏实际地形证据。若同步预览，备份原图，验证DDS载荷字节、大PNG像素、小PNG参考缩放，并确认SCMAP和Lua未变。实机/内容中心刷新作为单独验收，文件正确不等于内存缓存已更新。

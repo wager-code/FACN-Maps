@@ -128,3 +128,7 @@
 ### 2026-10-19：按用户明确授权清理Omega旧地形
 
 条件核验通过后，仅删除E:/SCFA/maps/Survival Omega/Survival Omega old.scmap（723802字节），先在工作区保存同哈希外部备份。其余8文件SHA保持，当前512×256地形及scenario/script/options未改，目录仅剩1个SCMAP。没有升版、同步v3、修改单位或运行游戏/上传；旧256×256历史地形可恢复。原双地形报告追加实际结果，保留清理前事实。
+
+### 2026-10-20：Omega旧安装副本预览来源同步
+
+用户反馈游戏/文件夹图片不同。删除前后8文件SHA一致，确认原外置红图与当前SCMAP灰色星空内嵌图原先不同。核对本机mapselect/lobby的preview→SetTextureFromMap回退。备份3原图后，仅提取原生DDS并转换large/small PNG；字节/像素/缩放验证通过，其余5文件（SCMAP＋4Lua）不变。不改玩法或修订号，不声称已同步维护包v3；游戏/中心缓存刷新未实测。见[专项记录](OMEGA_PREVIEW_MISMATCH_2026-10-20.md)。

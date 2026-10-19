@@ -186,3 +186,7 @@ X1CA_TUT原版scenario复用SCMP_019.scmap，独立save/script/strings仍属于�
 原脚本的 Survival_GetPOS 对空表执行 math.random(1, table.getn(...))，空表会产生非法随机范围。v10 候选同时修正四个存档标记名，并为炮兵 marker 列表缺失/耗尽增加安全回退。修正拼写是主修复，回退只是防御性保护。
 
 候选另修复内层联盟判断的变量错误，并统一显示名/目录名与版本字段。人数计算、选项默认值和缺失类别 guard 仍需 Steam 实机确认。详见 [Fort Ictus v10 修复报告](FORT_ICTUS_V10_STEAM_REPAIR_2026-10-19.md)。
+
+## Omega预览选择与资源同步（2026-10-20）
+
+本机原版mapselect.lua:364–365和lobby.lua:1016–1017先尝试scenario.preview，失败后SetTextureFromMap读取活动地形。preview为空时，文件夹旁边的外置PNG/DDS不一定就是游戏显示来源。旧安装Omega原外置红图与内嵌灰色星空图不同；只提取已有内嵌DDS并生成同源PNG即可同步外置预览，不能重绘或更改地形。详见[专项记录](OMEGA_PREVIEW_MISMATCH_2026-10-20.md)。
