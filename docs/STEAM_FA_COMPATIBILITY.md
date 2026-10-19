@@ -201,3 +201,8 @@ X1CA_TUT原版scenario复用SCMP_019.scmap，独立save/script/strings仍属于�
 地图scenario的type='skirmish'不保证普通UI。检查主脚本Sync.CampaignMode，再追实际schook.scd中的UserSync同步块、campaignmanager.campaignMode和tabs.EndGame。在本机Steam代码，战役中途退出传score.CreateDialog(nil,nil,nil,true)，其midGame分支直接ExitGame并return，普通结算界面不会创建。基础UserSync位于mohodata.scd，战役扩展在schook.scd，不能只查lua.scd。
 
 “没有打开结算”与“打开但数据空白”分别调查；手动退出、自然胜负、退出程序也不是同一入口。不要在地图模拟环境直接import UI模块并声称修改了UI，也不要直接关闭战役UI或修改全局退出代码；保留目标面板/计时/存取档和多人语义，限定地图适配后再实测。实际Horde EE v22证据见[专项](HORDE_EE_MANUAL_EXIT_2026-10-20.md)。
+
+
+## 初始化报错可能同时阻断刷兵与分数（2026-10-20）
+
+本机schook/lua/simInit.lua的BeginSession先调用baseBeginSession，后启动aibrain分数采集与同步；基础BeginSession直接执行地图OnPopulate/OnStart。检查空白结算时，应先核对地图开局是否返回，不要直接修改全局score界面。Insane Beta1默认黑日控制中心UEC1902无Weapon，目标存在不代表GetWeapon(1)可用；检查实际蓝图武器条目及对象后才调射程。万古资源发生器有DeathWeapon，不能凭“经济建筑”名称断言无武器。详见[最小修复及隔离测试](INSANE_BETA1_STARTUP_SCORE_FIX_2026-10-20.md)。

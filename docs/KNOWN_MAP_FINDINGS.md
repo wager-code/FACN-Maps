@@ -355,3 +355,8 @@ E:/SCFA/maps没有对应条目；实际位于个人Documents/My Games/Gas Powere
 ## F028：Survival Horde EE v22中途退出直接跳过结算（2026-10-20）
 
 用户确认中途退出直接回大厅。主脚本848行Sync.CampaignMode=true，经schook UserSync进入UI；原版tabs.EndGame在战役模式下传midGame=true，score.CreateDialog直接ExitGame并return，不创建普通结算表。包/安装44文件SHA一致；与Steam安装的5种相关原始代码逐一SHA相同，目标LuaPlus5项检查通过，包含实际退出分支对照。未实机点击退出、未验证自然胜负或FAF当前版。不能将其与Fort Ictus的空白表混为一谈，也不能只关闭战役模式或导入UI模块来假装修复。独立失败条件`or "ARMY_5"`真值问题另记，未改地图。见[专项](HORDE_EE_MANUAL_EXIT_2026-10-20.md)。
+
+
+## F029：Insane Beta1默认目标无武器令刷兵与分数同步均未启动（2026-10-20，已修改待实测）
+
+Steam4玩家默认准备、10分钟无波次且结算空白。UEC1902无Weapon，setupGame在旧769–773行却按第1件武器调整射程；OnStart在启动刷兵前中断，原版schook BeginSession在地图返回后才创建统计线程。实际蓝图/完整地图/原生统计函数模型复现此链。已仅为射程调用加蓝图条目和武器对象guard，包及安装升v2，36项隔离＋3项落盘Lua核验通过；SCMAP/save/options/预览不变。外围8传送门不带炮塔，另8斯卡萨在错误前已创建；用户记不清外形，未据此加炮塔。真实UI/游戏/多人待测。见[专项](INSANE_BETA1_STARTUP_SCORE_FIX_2026-10-20.md)。

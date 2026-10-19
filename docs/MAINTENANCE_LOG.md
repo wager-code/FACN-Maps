@@ -146,3 +146,8 @@
 ### 2026-10-20：Horde EE中途退出结算调用链
 
 用户问为何中途退出没有结算。核对包内与安装副本v22共44文件SHA完全一致；从两套实际安装SCD提取tabs/score/基础UserSync/战役hook/campaignmanager，5种文件逐一SHA一致。目标LuaPlus5项加载/路由检查通过，实际CampaignMode同步链导致midGame直接ExitGame；普通模式对照进入SessionEndGame。新增F028、29卡片及维修方法；未修改地图或全局SCD，没有自然通关、实际UI或多人结果。独立失败通知条件真值问题待后续处理。见[记录](HORDE_EE_MANUAL_EXIT_2026-10-20.md)。
+
+
+### 2026-10-20：Insane Beta1 v1→v2初始化修复
+
+核对包与安装v1六文件一致，备份地图与两份清单后，修复默认黑日无武器目标射程调用。两处仅改script/scenario并新增变更说明；v2七文件SHA一致，4个原资产保持。36项目标LuaPlus模型与实际统计函数检查、部署后3项加载/求值通过，113个单位字面量均在实际573蓝图中。仅更新清单ID30，62张数量保持，累计修改29；原局日志和游戏内验收尚无，外围火炮不凭用户不确定外形改动。见[修复、备份与边界](INSANE_BETA1_STARTUP_SCORE_FIX_2026-10-20.md)。
