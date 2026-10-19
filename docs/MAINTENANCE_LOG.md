@@ -111,3 +111,12 @@
 ### 2026-10-19：X1CA_TUT上传限制只读分析
 
 用户提供内容中心预检截图与安装目录。核对教程4文件195755字节、外部SCMP_019地形3514994字节；相关8文件SHA均与Steam相同。5项目标Lua检查通过：4编译＋scenario求值，确认campaign、外部地形和map_version缺省，未执行教程玩法。SCMAP路径解析未发现额外/maps路径。形成依赖条目、保持路径合包、暂存独立副本方案，优先前两种；原始文件均未改，未修改中心源码或实际上传。见[专项分析](X1CA_TUT_PUBLICATION_2026-10-19.md)。
+## 2026-10-19：基于本机 v9 包制作 Fort Ictus v10 Steam 修复候选
+
+- 用户上传 RAR SHA-256：e615d864586d2e391a2cfad6421fc52a92be6188348d8bdca20d45a793d7ad87。
+- 新发现：save 中有 4 个 SURVIVAL_ATY_1..4，script 却读取 SURVIVAL_ARTY_；属于拼写不一致，导致炮兵 marker 列表为空。修正四个标记，并在 Survival_GetPOS 增加空列表/耗尽保护和备用出生点。
+- 修正联盟内循环变量；玩家人数改为统计 ListArmies() 中的四个玩家槽，仍需验证空槽/电脑队友行为；对 categories.uaa0314 加 guard；三个选项默认值改为第一项并同步脚本 fallback；设置 preview 路径。
+- 文件夹和游戏基础显示名统一为 Fort Ictus Survival；版本改为 map_version = 10，不把 v10 拼进显示名或文件夹名；更新四条 VFS 路径。
+- 输出候选 ZIP：Fort_Ictus_Survival_v10_Steam_Candidate.zip，SHA-256 1fdfc61347b65705ff558e56c7170abda341938877f09b4a4a4b95940362076b。地形文件哈希不变。
+- 静态验证：ZIP 完整性、7 文件清单、路径名、4 个 marker、空表保护、类别 guard、联盟变量、人数逻辑与选项默认值检查均通过。
+- 测试状态：尚未执行 Steam 实机启动、Lua 引擎编译、37 分钟炮兵波次、1/2/4 人数、空槽、多人与胜负结算。候选为“已修改待实测”，不是已验证正式版。详情见 [v10 修复报告](FORT_ICTUS_V10_STEAM_REPAIR_2026-10-19.md)。
