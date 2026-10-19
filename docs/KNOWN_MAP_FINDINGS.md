@@ -337,3 +337,7 @@ FAF与Steam共享基础但挂载/脚本/蓝图/美术资源不同，不能断言
 ## F024：Omega外置预览与地形内嵌预览不一致（2026-10-20，已修改待界面验证）
 
 删除old后保留8文件的哈希与删除前相同；红色外置DDS/PNG与灰色星空背景内嵌预览原先就不同。scenario.preview为空，原版mapselect/lobby会从当前SCMAP回退取图。已先备份后仅同步3张外置预览为活动SCMAP内嵌图；DDS载荷/大图像素/小图参考缩放核验通过，SCMAP与四个Lua保持。未实测实时缓存刷新，也未升级安装副本v1的玩法。详见[来源与修正](OMEGA_PREVIEW_MISMATCH_2026-10-20.md)。
+
+## F025：Fort Ictus v8在用户maps目录中有解压目录与ZIP（2026-10-20）
+
+E:/SCFA/maps没有对应条目；实际位于个人Documents/My Games/Gas Powered Games/Supreme Commander Forged Alliance/maps：fort_ictus_survival.v0008目录和同名ZIP。去掉ZIP顶层包装目录后5文件SHA完全相同，两份scenario均为同名v8。SupComDataPath会挂载用户maps的目录与ZIP，原版maputil从虚拟/maps枚举scenario，能解释同名条目。未实测运行时VFS，未移动/删除；维护v9/候选不能当作此处v8。见[确切来源与路径](FORT_ICTUS_DUPLICATE_SOURCES_2026-10-20.md)。

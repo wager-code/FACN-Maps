@@ -190,3 +190,7 @@ X1CA_TUT原版scenario复用SCMP_019.scmap，独立save/script/strings仍属于�
 ## Omega预览选择与资源同步（2026-10-20）
 
 本机原版mapselect.lua:364–365和lobby.lua:1016–1017先尝试scenario.preview，失败后SetTextureFromMap读取活动地形。preview为空时，文件夹旁边的外置PNG/DDS不一定就是游戏显示来源。旧安装Omega原外置红图与内嵌灰色星空图不同；只提取已有内嵌DDS并生成同源PNG即可同步外置预览，不能重绘或更改地形。详见[专项记录](OMEGA_PREVIEW_MISMATCH_2026-10-20.md)。
+
+## 安装maps不是唯一地图来源（2026-10-20）
+
+本机SupComDataPath.lua还会挂载SHGetFolderPath(PERSONAL)下的My Games/Gas Powered Games/Supreme Commander Forged Alliance/maps，mount_contents可同时挂载目录与ZIP，并移除zip/scd后缀生成挂载点。原版maputil从虚拟/maps递归枚举scenario。Fort Ictus v8的解压目录与同名ZIP同时存在，可产生同名同版场景来源；ZIP有顶层包装目录，不能不核对成员层级就当作等价可用的单独挂载包。定位地图先查scenario显示名、实际路径和哈希，不仅搜索安装文件夹名称。只读定位不构成删除授权。见[案例](FORT_ICTUS_DUPLICATE_SOURCES_2026-10-20.md)。

@@ -132,3 +132,7 @@
 ### 2026-10-20：Omega旧安装副本预览来源同步
 
 用户反馈游戏/文件夹图片不同。删除前后8文件SHA一致，确认原外置红图与当前SCMAP灰色星空内嵌图原先不同。核对本机mapselect/lobby的preview→SetTextureFromMap回退。备份3原图后，仅提取原生DDS并转换large/small PNG；字节/像素/缩放验证通过，其余5文件（SCMAP＋4Lua）不变。不改玩法或修订号，不声称已同步维护包v3；游戏/中心缓存刷新未实测。见[专项记录](OMEGA_PREVIEW_MISMATCH_2026-10-20.md)。
+
+### 2026-10-20：定位Fort Ictus两条同名v8来源
+
+用户找不到E盘安装maps中的Fort Ictus。只读搜索确认它在用户Documents下maps目录，目录＋ZIP均在。ZIP完整性通过，剥离包装目录后5文件与解压版哈希完全一致；两份scenario名和修订均相同。核对SupComDataPath用户目录/ZIP挂载和maputil枚举，记录备份ZIP应放到扫描根外的后续去重建议。本次仅定位，无文件移动、删除或实际游戏VFS确认，不能回推旧局加载源。见[定位记录](FORT_ICTUS_DUPLICATE_SOURCES_2026-10-20.md)。
