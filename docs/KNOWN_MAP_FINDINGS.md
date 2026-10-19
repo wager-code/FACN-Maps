@@ -325,3 +325,7 @@ FAF与Steam共享基础但挂载/脚本/蓝图/美术资源不同，不能断言
 - 候选 ZIP SHA-256：1fdfc61347b65705ff558e56c7170abda341938877f09b4a4a4b95940362076b；地图文件夹与场景基础名统一为 Fort Ictus Survival，map_version = 10。
 - 地形 .scmap 哈希保持不变。静态 ZIP/路径/marker/代码条件检查通过；没有执行 Steam 游戏，人数、默认选项、炮兵波次和多人联盟仍待实测。
 - 详细报告：[Fort Ictus v10 Steam 修复候选](FORT_ICTUS_V10_STEAM_REPAIR_2026-10-19.md)。
+
+## F023：Survival Omega历史地形使目录计数预检失败（2026-10-19）
+
+安装目录含当前Survival Omega.scmap（512×256）和old.scmap（256×256），并非相同文件；scenario只引用前者。3个出生标记x=430.5，84个标记x>256，不能替换成小地形。发布宜按已选scenario闭包，未引用old另归档而非随机取首个文件。当前安装修订1仍含BlackOps单位，不能套用维护包v3结论；本次未删、未同步、未实机/上传。见[双地形分析](OMEGA_EXTRA_TERRAIN_2026-10-19.md)。
