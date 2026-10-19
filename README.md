@@ -110,3 +110,7 @@ maps/                # 未来可选：经审核的地图资源（须检查授权
 ### Fort Ictus Steam 测试候选（非正式发布）
 
 基于当前上传的 v8 单独生成了 `Fort_Ictus_Survival_Steam_Candidate_v11.zip`，并未覆盖当前维护版 v9。候选修复了 13 个活动 FAF 单位引用，并为缺失类别调用增加 guard；地形未改，Steam 实机仍待测。详细证据、SHA-256 和限制见 [专项审计报告](docs/FORT_ICTUS_FAF_V8_STEAM_AUDIT_2026-10-19.md)。
+
+## 官方教程共享地形发布分析（2026-10-19）
+
+[X1CA_TUT与内容中心上传限制](docs/X1CA_TUT_PUBLICATION_2026-10-19.md)：官方教程4文件与Steam一致，复用SCMP_019地形，不能把跨目录依赖当作地图损坏。说明内置依赖/完整合包/独立副本三种路线，区分格式version=3和未声明map_version；原图未改、内容中心未改。

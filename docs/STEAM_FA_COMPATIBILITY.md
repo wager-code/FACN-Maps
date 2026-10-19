@@ -175,3 +175,7 @@ v8 派生测试候选中采用两个不同策略：
 - 活动波次蓝图 `DRLK001` 确认不在目标 Steam 蓝图索引中，按仓库已有候选映射替换为 `URL0205`。此类替换会改变原单位属性与波次平衡，必须记录损失并测试。
 - `categories.uaa0314` 是传入限制 API 的类别值，不是直接刷出的单位 ID。仅当该字段存在时才调用 `AddRestriction`，避免将 nil 传入原生接口；不能把这个 guard 写成已证实的崩溃修复，仍需游戏日志/实机验证。
 - 这个补丁仅作用于 v8 派生候选，不自动证明当前 v9 已修复。v9 与 v8 的 script/options/scenario 指纹不同，移植前必须比较文件并将改动以最小差异应用。
+
+## 官方教程跨地图引用与发布闭包（2026-10-19）
+
+X1CA_TUT原版scenario复用SCMP_019.scmap，独立save/script/strings仍属于教程。共享地形是官方正常设计，不能直接判坏或删除重复；发布时则必须明确内置依赖或带齐依赖并保持路径。不能只把campaign改skirmish绕过打包器。其version=3是Lua格式，map_version未声明，内容中心须与发布修订分开。见[X1CA_TUT案例](X1CA_TUT_PUBLICATION_2026-10-19.md)。
