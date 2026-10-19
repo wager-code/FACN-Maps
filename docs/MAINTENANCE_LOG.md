@@ -136,3 +136,8 @@
 ### 2026-10-20：定位Fort Ictus两条同名v8来源
 
 用户找不到E盘安装maps中的Fort Ictus。只读搜索确认它在用户Documents下maps目录，目录＋ZIP均在。ZIP完整性通过，剥离包装目录后5文件与解压版哈希完全一致；两份scenario名和修订均相同。核对SupComDataPath用户目录/ZIP挂载和maputil枚举，记录备份ZIP应放到扫描根外的后续去重建议。本次仅定位，无文件移动、删除或实际游戏VFS确认，不能回推旧局加载源。见[定位记录](FORT_ICTUS_DUPLICATE_SOURCES_2026-10-20.md)。
+
+
+### 2026-10-20：Brainsucka发布误报与模组分类纠正
+
+核对8文件与历史SHA一致，三条引用存在；目标LuaPlus8项检查通过并复现实际OnStart强制模组检测，纠正文本扫描漏判。FACN源码补齐客户端/网关luac引用校验，隔离核心476、网关65、实际地图打包45项通过，ZIP八文件逐项SHA一致且地图不变。未修改地图修订1、未删除、未替换正式EXE或真实发布。见[证据和边界](BRAINSUCKA_LUAC_AND_REQUIRED_MOD_2026-10-20.md)。

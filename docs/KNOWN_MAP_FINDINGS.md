@@ -341,3 +341,12 @@ FAF与Steam共享基础但挂载/脚本/蓝图/美术资源不同，不能断言
 ## F025：Fort Ictus v8在用户maps目录中有解压目录与ZIP（2026-10-20）
 
 E:/SCFA/maps没有对应条目；实际位于个人Documents/My Games/Gas Powered Games/Supreme Commander Forged Alliance/maps：fort_ictus_survival.v0008目录和同名ZIP。去掉ZIP顶层包装目录后5文件SHA完全相同，两份scenario均为同名v8。SupComDataPath会挂载用户maps的目录与ZIP，原版maputil从虚拟/maps枚举scenario，能解释同名条目。未实测运行时VFS，未移动/删除；维护v9/候选不能当作此处v8。见[确切来源与路径](FORT_ICTUS_DUPLICATE_SOURCES_2026-10-20.md)。
+
+
+## F026：Brainsucka的luac真实存在却被发布预检误报缺失（2026-10-20）
+
+实际三条引用均存在，8文件SHA与10月15日一致。FACN客户端和网关仅接受_save.lua/_script.lua，客户端还把后缀不符报为缺失；打包枚举不排除luac。两端源码补齐lua/luac并保留路径、ZIP与哈希保护。隔离核心476、网关65及实际地图专项45项通过；正式EXE与真实上传未验证。见[专项](BRAINSUCKA_LUAC_AND_REQUIRED_MOD_2026-10-20.md)。
+
+## F027：Brainsucka强制模组检测被此前文本分类漏检（2026-10-20）
+
+主脚本SHA5196bac1…未变，目标LuaPlus实际OnStart缺少UID d36d33e5-3927-499f-8990-55555b000001时不调用正常任务初始化，提示线程还会调用缺失CreateDialogue。测试UID令其进入初始化记录桩，不等于拥有模组。已纠正04卡片及地图册；62张保留数不变，不能再据此前分类断言全部无强制依赖。没有地图修改、删除或新游戏测试。详见同一[专项](BRAINSUCKA_LUAC_AND_REQUIRED_MOD_2026-10-20.md)。
