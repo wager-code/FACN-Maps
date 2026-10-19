@@ -315,3 +315,13 @@ FAF与Steam共享基础但挂载/脚本/蓝图/美术资源不同，不能断言
 ## F021：X1CA_TUT官方教程共享地形被独立包规则拦截（2026-10-19）
 
 教程4文件195755字节，scenario.map引用SCMP_019/SCMP_019.scmap；与被引用地形及原对战配置共8文件均匹配Steam副本。这是正常官方依赖，不是损坏或重复玩法。当前仅教程目录不构成地形完整包，不能只取消检查。建议中心支持内置依赖清单或保持虚拟路径的合包；campaign教程与skirmish分别启动。scenario只有Lua格式version=3，没有map_version，界面显示3的来源需中心源码确认。详细证据与方案见[专项分析](X1CA_TUT_PUBLICATION_2026-10-19.md)。未改原图或实际上传。
+## F022：Fort Ictus v9 炮兵 marker 前缀拼写不一致（2026-10-19）
+
+- 来源：用户上传本机地图 fort_ictus_survival.rar，RAR SHA-256 e615d864586d2e391a2cfad6421fc52a92be6188348d8bdca20d45a793d7ad87。
+- 场景读取逻辑使用 GetMarker("SURVIVAL_ARTY_" .. i)，但 Fort_Ictus_Survival_save.lua 中 4 个标记实际命名为 SURVIVAL_ATY_1..4（漏掉字母 R）。这不是地图没有炮兵点，而是脚本与存档名称不匹配。
+- 原 Survival_GetPOS 对空 marker 列表直接调用 math.random(1, table.getn(...))，在炮兵特殊波次中可能触发 math.random(1, 0)。
+- v10 候选修复四个 marker 名称，并为炮兵 marker 列表空/耗尽增加回退到普通出生点的保护。
+- 同一候选还修正内层联盟判断变量、把玩家人数计算改为统计 ARMY_1..ARMY_4、对 categories.uaa0314 加存在性 guard，并把三项大厅默认选项对齐到第一项。
+- 候选 ZIP SHA-256：1fdfc61347b65705ff558e56c7170abda341938877f09b4a4a4b95940362076b；地图文件夹与场景基础名统一为 Fort Ictus Survival，map_version = 10。
+- 地形 .scmap 哈希保持不变。静态 ZIP/路径/marker/代码条件检查通过；没有执行 Steam 游戏，人数、默认选项、炮兵波次和多人联盟仍待实测。
+- 详细报告：[Fort Ictus v10 Steam 修复候选](FORT_ICTUS_V10_STEAM_REPAIR_2026-10-19.md)。

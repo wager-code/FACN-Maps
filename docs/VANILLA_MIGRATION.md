@@ -90,3 +90,11 @@ FAF 单位来源：[DRLK001](https://github.com/FAForever/fa/blob/develop/units/
 - 最小修改：活动波次 `DRLK001 → URL0205`（T3 → T2，玩法损失明确）；缺失类别 `uaa0314` 加存在性 guard。
 - 不修改地形、存档、选项默认值或第4槽/胜负逻辑；该候选仍可能保留原图的特殊槽与结算问题。
 - 状态：已修改待实测。它基于 v8，不是 v9 的升级包；若要替换当前 v9，须先取得 v9 完整包并移植/回归，不能直接覆盖。
+### Fort Ictus v9 → v10 Steam 修复候选（2026-10-19）
+
+- 真实源包是用户本机 v9 RAR，SHA-256 e615d864586d2e391a2cfad6421fc52a92be6188348d8bdca20d45a793d7ad87，不再是此前的 v8 派生候选。
+- 新发现四个炮兵 marker 的存档名漏了字母 R（SURVIVAL_ATY_1..4）；脚本读取 SURVIVAL_ARTY_。v10 修正拼写并增加空表保护/备用出生点。
+- 同时修正联盟循环变量，按四个玩家槽统计 ListArmies() 结果，给 categories.uaa0314 加存在性 guard，并将三项选项默认值/脚本 fallback 统一为第一项。
+- 地图基础显示名与文件夹名均为 Fort Ictus Survival，版本单独显示为 map_version = 10。
+- ZIP SHA-256：1fdfc61347b65705ff558e56c7170abda341938877f09b4a4a4b95940362076b。地形哈希未变。
+- 状态：静态修复候选，未进行 Steam 游戏测试；不得写成已验证可玩。详见 [v10 修复报告](FORT_ICTUS_V10_STEAM_REPAIR_2026-10-19.md)。

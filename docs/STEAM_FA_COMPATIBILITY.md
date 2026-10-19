@@ -179,3 +179,10 @@ v8 派生测试候选中采用两个不同策略：
 ## 官方教程跨地图引用与发布闭包（2026-10-19）
 
 X1CA_TUT原版scenario复用SCMP_019.scmap，独立save/script/strings仍属于教程。共享地形是官方正常设计，不能直接判坏或删除重复；发布时则必须明确内置依赖或带齐依赖并保持路径。不能只把campaign改skirmish绕过打包器。其version=3是Lua格式，map_version未声明，内容中心须与发布修订分开。见[X1CA_TUT案例](X1CA_TUT_PUBLICATION_2026-10-19.md)。
+## Fort Ictus v9：marker 拼写不一致与空列表防护（2026-10-19）
+
+本机 v9 包中，Fort_Ictus_Survival_save.lua 的炮兵标记名为 SURVIVAL_ATY_1..4，而脚本使用 GetMarker("SURVIVAL_ARTY_" .. i)。少一个字母 R 会让脚本读不到原本存在的标记。审计时不能只搜索脚本期待的名字，然后断言地图缺少该标记；必须比对 save 中实际键名。
+
+原脚本的 Survival_GetPOS 对空表执行 math.random(1, table.getn(...))，空表会产生非法随机范围。v10 候选同时修正四个存档标记名，并为炮兵 marker 列表缺失/耗尽增加安全回退。修正拼写是主修复，回退只是防御性保护。
+
+候选另修复内层联盟判断的变量错误，并统一显示名/目录名与版本字段。人数计算、选项默认值和缺失类别 guard 仍需 Steam 实机确认。详见 [Fort Ictus v10 修复报告](FORT_ICTUS_V10_STEAM_REPAIR_2026-10-19.md)。

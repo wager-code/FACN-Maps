@@ -114,3 +114,6 @@ maps/                # 未来可选：经审核的地图资源（须检查授权
 ## 官方教程共享地形发布分析（2026-10-19）
 
 [X1CA_TUT与内容中心上传限制](docs/X1CA_TUT_PUBLICATION_2026-10-19.md)：官方教程4文件与Steam一致，复用SCMP_019地形，不能把跨目录依赖当作地图损坏。说明内置依赖/完整合包/独立副本三种路线，区分格式version=3和未声明map_version；原图未改、内容中心未改。
+## Fort Ictus v10 Steam 修复候选（2026-10-19）
+
+已基于用户本机 v9 包发现并记录炮兵 marker 拼写问题：save 使用 SURVIVAL_ATY_1..4，script 读取 SURVIVAL_ARTY_。v10 候选还统一地图文件夹/基础显示名、版本字段、场景路径、选项默认值，并修复联盟判断变量与空列表保护。静态检查通过，Steam 实机尚未验证。详见 [修复报告](docs/FORT_ICTUS_V10_STEAM_REPAIR_2026-10-19.md)。
