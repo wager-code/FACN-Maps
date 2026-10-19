@@ -117,3 +117,7 @@ AI制图用受控地形工具/格式解析器及可验证Lua/数据，按Steam/F
 ## Insane Beta1初始化修复（2026-10-20）
 
 ID30当前包及E:/SCFA/maps副本为v2，修改前v1六文件和两份清单在本地专项ZIP备份。UEC1902没有Weapon，旧射程调用中断OnStart，继而阻断刷兵及schook BeginSession后续统计线程；v2仅对目标武器调整作guard，不改全局结算。36项隔离＋3项部署后Lua检查通过，未游戏实测。62张保留数不变，累计修改计数29。维护前读docs/INSANE_BETA1_STARTUP_SCORE_FIX_2026-10-20.md及30卡片，不能用v1旧哈希覆盖v2或把外围传送门当作缺失炮塔。
+
+## Sea Fleet用户实测与三症状排查（2026-10-20）
+
+ID33当前安装及维护包v8，4墙体类别改为蓝图小写键、xsb2406按supernuke原意改为实际xsb2401，保留原联盟/人数/波次。16＋2项目标Lua检查通过，用户随后明确“没问题了”；本次问题登记为用户实测正常，不冒称助手实测或完整Steam/多人/FAF通过。根因无原始日志，不把模型原生断言当日志。维护前读docs/SEA_FLEET_ALLIANCE_STARTUP_SCORE_2026-10-20.md和33卡片；同队AI敌对＋不刷兵＋空白结算先查OnPopulate/OnStart是否返回，再查大厅恢复与统计启动。ArmyToPlayerID本图为本地槽位转换函数且包含AI，不凭函数名/注释改合作逻辑。

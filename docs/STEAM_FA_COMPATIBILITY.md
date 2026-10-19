@@ -206,3 +206,9 @@ X1CA_TUT原版scenario复用SCMP_019.scmap，独立save/script/strings仍属于�
 ## 初始化报错可能同时阻断刷兵与分数（2026-10-20）
 
 本机schook/lua/simInit.lua的BeginSession先调用baseBeginSession，后启动aibrain分数采集与同步；基础BeginSession直接执行地图OnPopulate/OnStart。检查空白结算时，应先核对地图开局是否返回，不要直接修改全局score界面。Insane Beta1默认黑日控制中心UEC1902无Weapon，目标存在不代表GetWeapon(1)可用；检查实际蓝图武器条目及对象后才调射程。万古资源发生器有DeathWeapon，不能凭“经济建筑”名称断言无武器。详见[最小修复及隔离测试](INSANE_BETA1_STARTUP_SCORE_FIX_2026-10-20.md)。
+
+## 同队AI异常伴随不刷兵与空白结算：先查初始化（2026-10-20）
+
+本机基础BeginSession的大厅队伍恢复在地图OnPopulate/OnStart之后，schook的分数采集/同步又在基础函数返回后启动。三种症状并存时，先找结盟前的初始化断点，不直接改全局结算UI或循环外交。Sea Fleet v8修正小写墙体类别和xsb2406→xsb2401后用户反馈正常；这是本次问题的用户实测结果，无修复前日志，不能把原生nil行为或唯一根因写成已由日志证实。
+
+本图ArmyToPlayerID在文件末尾自行定义，按军队名转槽号、包括AI；检查完整定义，不能仅凭“human”注释决定重写盟友和人数。类别参数要对照实际蓝图及大小写；模型应保留拒绝nil和容忍nil两种对照，以免把测试替身的异常冒称游戏异常。详见[Sea Fleet案例](SEA_FLEET_ALLIANCE_STARTUP_SCORE_2026-10-20.md)。

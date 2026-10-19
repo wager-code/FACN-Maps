@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-20",
+  "map_id": 33,
+  "revision_before": 7,
+  "revision_after": 8,
+  "user_feedback": "没问题了",
+  "feedback_source": "本会话用户明确回复，部署v8之后",
+  "assistant_gameplay_tested": false,
+  "original_log_available": false,
+  "full_acceptance_matrix_verified": false,
+  "multiplayer_verified": false,
+  "faf_verified": false,
+  "lua_isolated_checks": 16,
+  "post_deployment_checks": 2,
+  "files_per_copy": 11,
+  "hashes": {
+    "FACN_CHANGELOG.md": "a57bc9ac76642533a178aa84771474ac7d184415dbfae96b3636b9886221fea8",
+    "survival_sea_fleet.scmap": "82cacdafec7988cc22e0bb810c4390b1ec6c58f701755c7951cfe93d21b2d77e",
+    "survival_sea_fleet_options.lua": "536df56ab788fe20713271e483afd21cce94fc607dc5dcdea55a7bdb04f3a539",
+    "survival_sea_fleet_preview.png": "87eac297452d837c0cb1dc4e5a153a9daa83187f4a12a1502a36d27c63099209",
+    "survival_sea_fleet_save.lua": "e1bfb40646ef308493d7fd0021c78385b6d0908f4c1d4fe7a9ee390b0b05719f",
+    "survival_sea_fleet_scenario.lua": "54c9925b83ddd0d845e32673043b0b206bb74ef7e66aa7830c0d21de1322dbde",
+    "survival_sea_fleet_script.lua": "eb99708524d6e5ea9c3955a5d459c0d059b09ad3656b12ec7bb751c5b8bf6484",
+    "env/decals/Decal_Line.dds": "af9b3bd594d82fb146235417b23b6022e35649c0f4581cb35aad3c8777963880",
+    "env/layers/Asphalt_d.dds": "610bc7ddde5033cc5128e4ca76d5da159182741447aba336a2a1173699f37883",
+    "env/layers/Black_Border.dds": "4c1726b58d950eed3bc4a37f2b912e0f630559cff441ebc4c7a78e88b1327158",
+    "env/layers/Blank_Normal.dds": "6b2d104a60d3d4b1cd2bd0372b46fc49ff0700bfcd3decd05764a4acea8a13b9"
+  },
+  "unchanged_files": [
+    "survival_sea_fleet.scmap",
+    "survival_sea_fleet_options.lua",
+    "survival_sea_fleet_preview.png",
+    "survival_sea_fleet_save.lua",
+    "env/decals/Decal_Line.dds",
+    "env/layers/Asphalt_d.dds",
+    "env/layers/Black_Border.dds",
+    "env/layers/Blank_Normal.dds"
+  ],
+  "function_lines": {
+    "OnPopulate": 310,
+    "OnStart": 398,
+    "Survival_InitGame": 413,
+    "Survival_Tick": 672,
+    "Survival_SpawnWave": 766,
+    "Survival_SpawnUnit": 843,
+    "ArmyToPlayerID": 1150
+  },
+  "fixes": [
+    "wall blueprint category keys to lowercase",
+    "xsb2406 -> xsb2401 preserving supernuke restriction intent",
+    "OnStart completion log"
+  ],
+  "retained_logic": [
+    "alliances",
+    "player count",
+    "wave data",
+    "routes",
+    "victory/defeat"
+  ],
+  "native_nil_behavior_proven": false,
+  "unique_original_root_cause_proven": false
+}

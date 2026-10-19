@@ -6,6 +6,8 @@
 
 > 2026-10-20维护：ID30 Insane Beta1已修为v2，包与安装均更新；原默认目标无武器错误会阻断刷兵和原版统计初始化。36项隔离及3项部署后Lua核验通过，仍待游戏测试；当前累计29张有维护修改。下方28张及689项是10月16日快照。见[专项](INSANE_BETA1_STARTUP_SCORE_FIX_2026-10-20.md)。
 
+> 2026-10-20用户实测更新：ID33 Sea Fleet已修为v8，用户确认本次同队AI、开局与结算问题“没问题了”。16项隔离＋2项落盘Lua核验通过；用户反馈不扩展为其他地图、全波次/多人/FAF通过，累计修改仍29。见[专项](SEA_FLEET_ALLIANCE_STARTUP_SCORE_2026-10-20.md)。
+
 ## 覆盖和结论边界
 
 - 扫描627个Lua/字节码文件，识别2833个函数定义（按函数体哈希1674种），361个选项；总文本行含大型存档、辅助文件和重复库，不冒称每行均人工执行或语义证明。
@@ -54,7 +56,7 @@
 | 30 | [Survival Insane (Beta1)](maps/30.md) | 2 | Insane挑战版 | 4 |
 | 31 | [Survival Insane NvS (Beta1)](maps/31.md) | 1 | Insane North vs South挑战 | 4 |
 | 32 | [Survival North and South Barrens](maps/32.md) | 1 | North and South Barrens | 4 |
-| 33 | [Survival Sea Fleet v7](maps/33.md) | 7 | Sea Fleet海军与空军 | 5 |
+| 33 | [Survival Sea Fleet v8](maps/33.md) | 8 | Sea Fleet海军与空军 | 5 |
 | 34 | [Genesis of the Order Survival v13](maps/34.md) | 13 | Genesis of the Order剧情事件生存 | 6 |
 | 35 | [Broad Front Survival v8](maps/35.md) | 8 | Broad Front预建基地生存 | 3 |
 | 36 | [desert front survival v25](maps/36.md) | 25 | Desert Front多模式守点 | 18 |
