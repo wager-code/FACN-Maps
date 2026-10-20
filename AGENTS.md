@@ -138,3 +138,7 @@ ID33当前安装及维护包v8，4墙体类别改为蓝图小写键、xsb2406按
 ## 安装目录高级设置汉化核对（2026-10-20）
 
 用户明确要求E:/SCFA/maps中官方系统不要动。本轮只读：61官方排除、42自定义；3张高级菜单仍英文（5iver Survival Land 23项、5iver Survival Land Naval 25项、5iver_survival_landnaval-swarm 7项），31主体中文、8无自带菜单。42场景/菜单求值通过、960文件路径/SHA保持；没有翻译、删除或升版。安装42张不等于维护包62张，不因近似名字同步替换；后续看docs/INSTALLED_ADVANCED_OPTIONS_CHINESE_AUDIT_2026-10-20.md。
+
+## 三张5iver安装菜单汉化完成（2026-10-20）
+
+用户在审计后明确授权汉化并各升一级。E:/SCFA/maps中5iver Survival Land现v2、5iver Survival Land Naval现v2、5iver_survival_landnaval-swarm现v12；55项296显示字段已汉化，key/pref/default/数值/顺序不变，仅6个options/scenario修改。9+3项Lua核验通过、其余954文件不变，未UI/游戏实测。26原文件备份在工作区三张5iver高级设置汉化_20261020/汉化前3张完整地图备份.zip；前次“三张仍英文”为历史，后续以docs/THREE_5IVER_OPTIONS_LOCALIZATION_2026-10-20.md为准。没有改维护包62张或官方/系统，不要与维护包ID42同v2图混同。

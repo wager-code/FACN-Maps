@@ -1,0 +1,49 @@
+{
+  "maps_root": "E:\\SCFA\\maps",
+  "maps": [
+    {
+      "folder": "5iver Survival Land",
+      "before": 1,
+      "after": 2,
+      "display_fields_translated": 133
+    },
+    {
+      "folder": "5iver Survival Land Naval",
+      "before": 1,
+      "after": 2,
+      "display_fields_translated": 132
+    },
+    {
+      "folder": "5iver_survival_landnaval-swarm",
+      "before": 11,
+      "after": 12,
+      "display_fields_translated": 31
+    }
+  ],
+  "changed_files": [
+    "5iver Survival Land/5iver Survival Land_options.lua",
+    "5iver Survival Land/5iver Survival Land_scenario.lua",
+    "5iver Survival Land Naval/5iver Survival Land Naval_options.lua",
+    "5iver Survival Land Naval/5iver Survival Land Naval_scenario.lua",
+    "5iver_survival_landnaval-swarm/5iver_survival_landnaval-swarm_options.lua",
+    "5iver_survival_landnaval-swarm/5iver_survival_landnaval-swarm_scenario.lua"
+  ],
+  "unchanged_files": 954,
+  "official_maps_unchanged": true,
+  "no_added_or_removed_map_files": true,
+  "backup_map_files": 26,
+  "backup": "C:\\Users\\wager\\Documents\\ChatGPT\\地图\\三张5iver高级设置汉化_20261020\\汉化前3张完整地图备份.zip",
+  "backup_sha256": "7551e3f3eb804327e44ab546e844d86b65b17b7d1329739fbf242f1fc60537a7",
+  "candidate_checks": 9,
+  "ui_tested": false,
+  "gameplay_changed": false,
+  "after_sha256": {
+    "5iver Survival Land/5iver Survival Land_options.lua": "09030021318134190cad8727e4534037fa2383b097ae3e22015a20a9b74ca49c",
+    "5iver Survival Land/5iver Survival Land_scenario.lua": "0ad198c682c8211c706037ba0ac5afacbbca549a804e7254f4984404f2d936a3",
+    "5iver Survival Land Naval/5iver Survival Land Naval_options.lua": "a72a539a20622dddf3a570dc89183d0b347ee4477e48f91e3d548c0310ce6844",
+    "5iver Survival Land Naval/5iver Survival Land Naval_scenario.lua": "b7668d502d8e5527ef33856c364039162829154ad1d8d111267694c3303b4ce6",
+    "5iver_survival_landnaval-swarm/5iver_survival_landnaval-swarm_options.lua": "b638177b4a9e8d97e667031a7f13296a77d051bd1f8d13c18900c5c21bce820a",
+    "5iver_survival_landnaval-swarm/5iver_survival_landnaval-swarm_scenario.lua": "9604d9ab9cbbe8bc58c030d219b845c6c8130aefcfbe8dee732bbbd67f06e57b"
+  },
+  "postdeploy_checks_passed": 3
+}

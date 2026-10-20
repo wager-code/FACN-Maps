@@ -4,13 +4,13 @@
   "custom_maps": 42,
   "maps_with_options": 34,
   "options": 243,
-  "nonempty_display_fields": 2974,
-  "english_maps": 3,
-  "mostly_chinese_maps": 31,
+  "nonempty_display_fields": 2980,
+  "english_maps": 0,
+  "mostly_chinese_maps": 34,
   "without_own_options": 8,
   "lua_evaluation_passed": 42,
   "actual_ui_tested": false,
-  "map_modified": false,
+  "map_modified": true,
   "maps": [
     {
       "folder": "5iver Survival Brainsucka",
@@ -24,19 +24,19 @@
     {
       "folder": "5iver Survival Land",
       "name": "5iver Survival Land",
-      "version": 1,
+      "version": 2,
       "option_count": 23,
-      "status": "高级设置英文",
-      "notes": "",
+      "status": "主体中文",
+      "notes": "本轮高级设置汉化，待实际UI复核",
       "options_file": "5iver Survival Land/5iver Survival Land_options.lua"
     },
     {
       "folder": "5iver Survival Land Naval",
       "name": "5iver Survival LandNaval",
-      "version": 1,
+      "version": 2,
       "option_count": 25,
-      "status": "高级设置英文",
-      "notes": "",
+      "status": "主体中文",
+      "notes": "本轮高级设置汉化，待实际UI复核",
       "options_file": "5iver Survival Land Naval/5iver Survival Land Naval_options.lua"
     },
     {
@@ -51,10 +51,10 @@
     {
       "folder": "5iver_survival_landnaval-swarm",
       "name": "5iver_survival_landnaval-swarm",
-      "version": 11,
+      "version": 12,
       "option_count": 7,
-      "status": "高级设置英文",
-      "notes": "",
+      "status": "主体中文",
+      "notes": "本轮高级设置汉化，待实际UI复核",
       "options_file": "5iver_survival_landnaval-swarm/5iver_survival_landnaval-swarm_options.lua"
     },
     {
@@ -390,5 +390,23 @@
       "notes": "",
       "options_file": "XXX_Survival_5P/XXX_Survival_5P_options.lua"
     }
-  ]
+  ],
+  "initial_audit": {
+    "english_maps": 3,
+    "mostly_chinese_maps": 31,
+    "nonempty_display_fields": 2974,
+    "all_960_files_unchanged_at_audit": true
+  },
+  "latest_maintenance": {
+    "type": "three_map_options_localization",
+    "versions": [
+      2,
+      2,
+      12
+    ],
+    "candidate_checks": 9,
+    "postdeploy_checks": 3,
+    "only_changed_files": 6,
+    "reference": "THREE_5IVER_OPTIONS_LOCALIZATION_2026-10-20.md"
+  }
 }

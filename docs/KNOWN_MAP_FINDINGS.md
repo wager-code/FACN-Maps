@@ -381,3 +381,7 @@ v7主脚本462–465行墙体类别为大写键，480行xsb2406未见于本机57
 ## F034：安装目录仍有3张全英文高级菜单（2026-10-20，只读核对）
 
 用户要求检查E:/SCFA/maps，官方和系统不要动。排除61官方配置，检查42自定义/34活动菜单共243项，42项本机LuaPlus场景菜单求值通过。5iver Survival Land有23个、5iver Survival Land Naval有25个、5iver_survival_landnaval-swarm有7个英文标题及大量英文值/帮助，合计55项；其余31主体中文，8无自带高级设置。Grand Barrens有5处Boss，Practice有一处ARMY标识帮助。Adaptive/Endless注释中的英文不算活动菜单；AI/T1/UEF等缩写/专名不误报整图未译。960文件路径/SHA结束前后全部一致，没有翻译、删除、升版或动SCD；安装清单不替代62张维护包。详见[报告](INSTALLED_ADVANCED_OPTIONS_CHINESE_AUDIT_2026-10-20.md)。
+
+### F034后续：三张英文菜单已汉化并各升一级（2026-10-20）
+
+按用户明确授权，安装Land1→2、Land Naval1→2、landnaval-swarm11→12。55项菜单296显示字段汉化，6守备组合增中文帮助；key/pref/default/数值表达式/重复项和顺序保持。9项候选语义/加载＋3项实际落盘求值通过，960文件仅6个options/scenario改变、954保持，官方/系统与62维护包不动。三图26原文件完整归档SHA核验，真实UI/游戏未测。上方3张英文为历史审计状态，见[完成记录](THREE_5IVER_OPTIONS_LOCALIZATION_2026-10-20.md)。
