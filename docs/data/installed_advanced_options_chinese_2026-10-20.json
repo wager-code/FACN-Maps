@@ -1,0 +1,394 @@
+{
+  "root": "E:\\SCFA\\maps",
+  "official_excluded": 61,
+  "custom_maps": 42,
+  "maps_with_options": 34,
+  "options": 243,
+  "nonempty_display_fields": 2974,
+  "english_maps": 3,
+  "mostly_chinese_maps": 31,
+  "without_own_options": 8,
+  "lua_evaluation_passed": 42,
+  "actual_ui_tested": false,
+  "map_modified": false,
+  "maps": [
+    {
+      "folder": "5iver Survival Brainsucka",
+      "name": "5iver Survival Brainsucka",
+      "version": 1,
+      "option_count": 2,
+      "status": "主体中文",
+      "notes": "",
+      "options_file": "5iver Survival Brainsucka/5iver Survival Brainsucka_options.lua"
+    },
+    {
+      "folder": "5iver Survival Land",
+      "name": "5iver Survival Land",
+      "version": 1,
+      "option_count": 23,
+      "status": "高级设置英文",
+      "notes": "",
+      "options_file": "5iver Survival Land/5iver Survival Land_options.lua"
+    },
+    {
+      "folder": "5iver Survival Land Naval",
+      "name": "5iver Survival LandNaval",
+      "version": 1,
+      "option_count": 25,
+      "status": "高级设置英文",
+      "notes": "",
+      "options_file": "5iver Survival Land Naval/5iver Survival Land Naval_options.lua"
+    },
+    {
+      "folder": "5iver_survival_land_oxtreme",
+      "name": "5iver_survival_land_oxtreme",
+      "version": 10,
+      "option_count": 23,
+      "status": "主体中文",
+      "notes": "",
+      "options_file": "5iver_survival_land_oxtreme/5iver_survival_land_oxtreme_options.lua"
+    },
+    {
+      "folder": "5iver_survival_landnaval-swarm",
+      "name": "5iver_survival_landnaval-swarm",
+      "version": 11,
+      "option_count": 7,
+      "status": "高级设置英文",
+      "notes": "",
+      "options_file": "5iver_survival_landnaval-swarm/5iver_survival_landnaval-swarm_options.lua"
+    },
+    {
+      "folder": "6 fields of isis",
+      "name": "6 Fields of Isis v13",
+      "version": null,
+      "option_count": 0,
+      "status": "无地图自带高级设置",
+      "notes": "",
+      "options_file": ""
+    },
+    {
+      "folder": "6castles",
+      "name": "6Castlesv2",
+      "version": 2,
+      "option_count": 0,
+      "status": "无地图自带高级设置",
+      "notes": "",
+      "options_file": ""
+    },
+    {
+      "folder": "adaptive_black_mesa",
+      "name": "Adaptive Black Mesa",
+      "version": 4,
+      "option_count": 4,
+      "status": "主体中文",
+      "notes": "",
+      "options_file": "adaptive_black_mesa/Adaptive_Black_Mesa_options.lua"
+    },
+    {
+      "folder": "astro_crater_battles_4x4_teamplay_ai",
+      "name": "Astro Crater Battles 4x4 v2-2 TeamPlay AI",
+      "version": 1,
+      "option_count": 0,
+      "status": "无地图自带高级设置",
+      "notes": "",
+      "options_file": ""
+    },
+    {
+      "folder": "astro_surv_stm",
+      "name": "astro_surv_stm",
+      "version": 8,
+      "option_count": 7,
+      "status": "主体中文",
+      "notes": "",
+      "options_file": "astro_surv_stm/astro_surv_stm_options.lua"
+    },
+    {
+      "folder": "BBF_BlackSunDefense",
+      "name": "Black Sun Defense v2",
+      "version": 2,
+      "option_count": 3,
+      "status": "主体中文",
+      "notes": "",
+      "options_file": "BBF_BlackSunDefense/BBF_BlackSunDefense_options.lua"
+    },
+    {
+      "folder": "Desert_Swarm_v1c_Beta",
+      "name": "Desert Swarm v1c Beta",
+      "version": 1,
+      "option_count": 3,
+      "status": "主体中文",
+      "notes": "",
+      "options_file": "Desert_Swarm_v1c_Beta/Desert_Swarm_v1c_Beta_options.lua"
+    },
+    {
+      "folder": "dreamy_survival",
+      "name": "Dreamy Survival v16",
+      "version": 16,
+      "option_count": 3,
+      "status": "主体中文",
+      "notes": "",
+      "options_file": "dreamy_survival/dreamy_survival_options.lua"
+    },
+    {
+      "folder": "dunes_of_arracis",
+      "name": "Dunes of Arracis",
+      "version": 5,
+      "option_count": 0,
+      "status": "无地图自带高级设置",
+      "notes": "",
+      "options_file": ""
+    },
+    {
+      "folder": "endless_survival_defense",
+      "name": "Endless Survival Defense",
+      "version": 17,
+      "option_count": 24,
+      "status": "主体中文",
+      "notes": "",
+      "options_file": "endless_survival_defense/endless_survival_defense_options.lua"
+    },
+    {
+      "folder": "Fort Ictus Survival",
+      "name": "Fort Ictus Survival",
+      "version": 10,
+      "option_count": 3,
+      "status": "主体中文",
+      "notes": "",
+      "options_file": "Fort Ictus Survival/Fort_Ictus_Survival_options.lua"
+    },
+    {
+      "folder": "grand_barrens_survival",
+      "name": "grand_barrens_survival",
+      "version": 13,
+      "option_count": 21,
+      "status": "主体中文",
+      "notes": "少量Boss术语未中文化，主体中文",
+      "options_file": "grand_barrens_survival/grand_barrens_survival_options.lua"
+    },
+    {
+      "folder": "quad_pass_teamplay_ai_4v4",
+      "name": "Quad Pass TeamPlay AI 4v4",
+      "version": 2,
+      "option_count": 0,
+      "status": "无地图自带高级设置",
+      "notes": "",
+      "options_file": ""
+    },
+    {
+      "folder": "sexy_survival",
+      "name": "Sexy Survival v13",
+      "version": 13,
+      "option_count": 3,
+      "status": "主体中文",
+      "notes": "",
+      "options_file": "sexy_survival/sexy_survival_options.lua"
+    },
+    {
+      "folder": "sh1r3_mycelium2_survival",
+      "name": "SH1R3_Mycelium2_Survival",
+      "version": 2,
+      "option_count": 3,
+      "status": "主体中文",
+      "notes": "",
+      "options_file": "sh1r3_mycelium2_survival/SH1R3_Mycelium2_Survival_options.lua"
+    },
+    {
+      "folder": "signalpoint_team_ai",
+      "name": "Signalpoint Team AI",
+      "version": 15,
+      "option_count": 4,
+      "status": "主体中文",
+      "notes": "",
+      "options_file": "signalpoint_team_ai/signalpoint_team_ai_options.lua"
+    },
+    {
+      "folder": "Supreme_AOD",
+      "name": "Supreme Art of Defence",
+      "version": 5,
+      "option_count": 0,
+      "status": "无地图自带高级设置",
+      "notes": "",
+      "options_file": ""
+    },
+    {
+      "folder": "Supreme_survival",
+      "name": "Survival of the Fittest",
+      "version": 1,
+      "option_count": 0,
+      "status": "无地图自带高级设置",
+      "notes": "",
+      "options_file": ""
+    },
+    {
+      "folder": "survival attack",
+      "name": "Survival Attack",
+      "version": 1,
+      "option_count": 4,
+      "status": "主体中文",
+      "notes": "",
+      "options_file": "survival attack/Survival Attack_options.lua"
+    },
+    {
+      "folder": "Survival Omega",
+      "name": "Survival Omega",
+      "version": 1,
+      "option_count": 3,
+      "status": "主体中文",
+      "notes": "",
+      "options_file": "Survival Omega/Survival Omega_options.lua"
+    },
+    {
+      "folder": "Survival Run",
+      "name": "Survival Run v8",
+      "version": 1,
+      "option_count": 3,
+      "status": "主体中文",
+      "notes": "",
+      "options_file": "Survival Run/Survival Run v8_options.lua"
+    },
+    {
+      "folder": "survival_5thdimension",
+      "name": "survival_5thdimension v6",
+      "version": 1,
+      "option_count": 3,
+      "status": "主体中文",
+      "notes": "",
+      "options_file": "survival_5thdimension/survival_5thdimension_v6_options.lua"
+    },
+    {
+      "folder": "survival_5thdimension_practice",
+      "name": "survival_5thdimension_practice v9",
+      "version": 9,
+      "option_count": 8,
+      "status": "主体中文",
+      "notes": "一处中文帮助露出ARMY_1至ARMY_4内部标识，可改玩家槽位表述",
+      "options_file": "survival_5thdimension_practice/survival_5thdimension_practice_options.lua"
+    },
+    {
+      "folder": "Survival_BlackBox_10",
+      "name": "Survival Blackbox 10",
+      "version": 1,
+      "option_count": 12,
+      "status": "主体中文",
+      "notes": "",
+      "options_file": "Survival_BlackBox_10/Survival_BlackBox_10_options.lua"
+    },
+    {
+      "folder": "survival_defense_atoll",
+      "name": "Survival Defense Atoll",
+      "version": 1,
+      "option_count": 3,
+      "status": "主体中文",
+      "notes": "",
+      "options_file": "survival_defense_atoll/Survival_Defense_Atoll_options.lua"
+    },
+    {
+      "folder": "Survival_Escape",
+      "name": "Survival Escape v5",
+      "version": 5,
+      "option_count": 2,
+      "status": "主体中文",
+      "notes": "",
+      "options_file": "Survival_Escape/Survival_Escape_options.lua"
+    },
+    {
+      "folder": "Survival_Extreme",
+      "name": "Survival EXtreme",
+      "version": 1,
+      "option_count": 4,
+      "status": "主体中文",
+      "notes": "",
+      "options_file": "Survival_Extreme/Survival_Extreme_options.lua"
+    },
+    {
+      "folder": "Survival_ExtremeDesert",
+      "name": "Survival EXtreme Desert v3",
+      "version": 3,
+      "option_count": 4,
+      "status": "主体中文",
+      "notes": "",
+      "options_file": "Survival_ExtremeDesert/Survival_ExtremeDesert_options.lua"
+    },
+    {
+      "folder": "Survival_ExtremeNavy",
+      "name": "Survival EXtreme NavyV2",
+      "version": 1,
+      "option_count": 4,
+      "status": "主体中文",
+      "notes": "",
+      "options_file": "Survival_ExtremeNavy/Survival_ExtremeNavyV2_options.lua"
+    },
+    {
+      "folder": "survival_horde_ee",
+      "name": "Survival Horde EE v22",
+      "version": 22,
+      "option_count": 7,
+      "status": "主体中文",
+      "notes": "",
+      "options_file": "survival_horde_ee/survival_horde_ee_options.lua"
+    },
+    {
+      "folder": "Survival_Insane_Beta1",
+      "name": "Survival Insane (Beta1)",
+      "version": 4,
+      "option_count": 4,
+      "status": "主体中文",
+      "notes": "",
+      "options_file": "Survival_Insane_Beta1/Survival_Insane_Beta1_options.lua"
+    },
+    {
+      "folder": "Survival_Insane_NvS_Beta1",
+      "name": "Survival Insane NvS (Beta1)",
+      "version": 1,
+      "option_count": 4,
+      "status": "主体中文",
+      "notes": "",
+      "options_file": "Survival_Insane_NvS_Beta1/Survival_Insane_NvS_Beta1_options.lua"
+    },
+    {
+      "folder": "survival_NorthSouth_Barrens",
+      "name": "Survival North and South Barrens",
+      "version": 1,
+      "option_count": 4,
+      "status": "主体中文",
+      "notes": "",
+      "options_file": "survival_NorthSouth_Barrens/Survival_NorthSouth_Barrens_options.lua"
+    },
+    {
+      "folder": "survival_sea_fleet",
+      "name": "Survival Sea Fleet v8",
+      "version": 8,
+      "option_count": 5,
+      "status": "主体中文",
+      "notes": "",
+      "options_file": "survival_sea_fleet/survival_sea_fleet_options.lua"
+    },
+    {
+      "folder": "survival_vs_4player",
+      "name": "survival_vs_4player",
+      "version": 2,
+      "option_count": 0,
+      "status": "无地图自带高级设置",
+      "notes": "",
+      "options_file": ""
+    },
+    {
+      "folder": "XXX_Survival",
+      "name": "XXX_Survival",
+      "version": null,
+      "option_count": 3,
+      "status": "主体中文",
+      "notes": "",
+      "options_file": "XXX_Survival/XXX_Survival_options.lua"
+    },
+    {
+      "folder": "XXX_Survival_5P",
+      "name": "XXX_Survival_5P",
+      "version": 22,
+      "option_count": 8,
+      "status": "主体中文",
+      "notes": "",
+      "options_file": "XXX_Survival_5P/XXX_Survival_5P_options.lua"
+    }
+  ]
+}
