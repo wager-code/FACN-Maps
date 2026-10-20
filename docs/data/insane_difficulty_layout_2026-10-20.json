@@ -1,0 +1,512 @@
+{
+  "date": "2026-10-20",
+  "analysis_only": true,
+  "current_revision": 4,
+  "map_files_unchanged": true,
+  "difficulty": [
+    {
+      "difficulty": 1,
+      "label": "超级新手！（默认）",
+      "wave_max_hp_multiplier": 0.25,
+      "land_per_player_per_wave": 10,
+      "land_4players": 40,
+      "air_4players_ground_stage1": 4,
+      "air_4players_ground_stage10": 40,
+      "gate_hp": 25000,
+      "enemy_scathis_max_range": 300,
+      "objective_first_weapon_max_range": 350,
+      "guard_count_per_gate": 23,
+      "sam_per_gate": 0,
+      "extra_heavy_per_gate": 0
+    },
+    {
+      "difficulty": 2,
+      "label": "新手",
+      "wave_max_hp_multiplier": 0.5,
+      "land_per_player_per_wave": 15,
+      "land_4players": 60,
+      "air_4players_ground_stage1": 4,
+      "air_4players_ground_stage10": 60,
+      "gate_hp": 50000,
+      "enemy_scathis_max_range": 325,
+      "objective_first_weapon_max_range": 325,
+      "guard_count_per_gate": 23,
+      "sam_per_gate": 0,
+      "extra_heavy_per_gate": 0
+    },
+    {
+      "difficulty": 3,
+      "label": "普通",
+      "wave_max_hp_multiplier": 1.0,
+      "land_per_player_per_wave": 20,
+      "land_4players": 80,
+      "air_4players_ground_stage1": 8,
+      "air_4players_ground_stage10": 80,
+      "gate_hp": 100000,
+      "enemy_scathis_max_range": 350,
+      "objective_first_weapon_max_range": 300,
+      "guard_count_per_gate": 23,
+      "sam_per_gate": 0,
+      "extra_heavy_per_gate": 0
+    },
+    {
+      "difficulty": 4,
+      "label": "疯狂",
+      "wave_max_hp_multiplier": 1.5,
+      "land_per_player_per_wave": 25,
+      "land_4players": 100,
+      "air_4players_ground_stage1": 8,
+      "air_4players_ground_stage10": 100,
+      "gate_hp": 150000,
+      "enemy_scathis_max_range": 375,
+      "objective_first_weapon_max_range": 275,
+      "guard_count_per_gate": 23,
+      "sam_per_gate": 4,
+      "extra_heavy_per_gate": 0
+    },
+    {
+      "difficulty": 5,
+      "label": "超级疯狂",
+      "wave_max_hp_multiplier": 2.0,
+      "land_per_player_per_wave": 30,
+      "land_4players": 120,
+      "air_4players_ground_stage1": 12,
+      "air_4players_ground_stage10": 120,
+      "gate_hp": 200000,
+      "enemy_scathis_max_range": 400,
+      "objective_first_weapon_max_range": 250,
+      "guard_count_per_gate": 23,
+      "sam_per_gate": 4,
+      "extra_heavy_per_gate": 0
+    },
+    {
+      "difficulty": 6,
+      "label": "超级极端疯狂",
+      "wave_max_hp_multiplier": 2.5,
+      "land_per_player_per_wave": 35,
+      "land_4players": 140,
+      "air_4players_ground_stage1": 12,
+      "air_4players_ground_stage10": 140,
+      "gate_hp": 250000,
+      "enemy_scathis_max_range": 425,
+      "objective_first_weapon_max_range": 225,
+      "guard_count_per_gate": 23,
+      "sam_per_gate": 4,
+      "extra_heavy_per_gate": 0
+    },
+    {
+      "difficulty": 7,
+      "label": "超级加倍极端疯狂",
+      "wave_max_hp_multiplier": 3.0,
+      "land_per_player_per_wave": 40,
+      "land_4players": 160,
+      "air_4players_ground_stage1": 16,
+      "air_4players_ground_stage10": 160,
+      "gate_hp": 300000,
+      "enemy_scathis_max_range": 450,
+      "objective_first_weapon_max_range": 200,
+      "guard_count_per_gate": 27,
+      "sam_per_gate": 4,
+      "extra_heavy_per_gate": 4
+    },
+    {
+      "difficulty": 8,
+      "label": "超级加倍极端疯狂极限版！",
+      "wave_max_hp_multiplier": 3.5,
+      "land_per_player_per_wave": 45,
+      "land_4players": 180,
+      "air_4players_ground_stage1": 16,
+      "air_4players_ground_stage10": 180,
+      "gate_hp": 350000,
+      "enemy_scathis_max_range": 475,
+      "objective_first_weapon_max_range": 175,
+      "guard_count_per_gate": 27,
+      "sam_per_gate": 4,
+      "extra_heavy_per_gate": 4
+    },
+    {
+      "difficulty": 9,
+      "label": "他死了，吉姆！",
+      "wave_max_hp_multiplier": 4.0,
+      "land_per_player_per_wave": 50,
+      "land_4players": 200,
+      "air_4players_ground_stage1": 20,
+      "air_4players_ground_stage10": 200,
+      "gate_hp": 400000,
+      "enemy_scathis_max_range": 500,
+      "objective_first_weapon_max_range": 150,
+      "guard_count_per_gate": 27,
+      "sam_per_gate": 4,
+      "extra_heavy_per_gate": 4
+    }
+  ],
+  "proposed_startup_seconds": [
+    60,
+    120,
+    180,
+    240,
+    300,
+    360,
+    420,
+    480,
+    540,
+    600,
+    720,
+    840,
+    960,
+    1080,
+    1200
+  ],
+  "proposed_wave_interval_seconds": [
+    30,
+    60,
+    90,
+    120,
+    150,
+    180,
+    210,
+    240,
+    270,
+    300
+  ],
+  "absolute_stage_effects": [
+    {
+      "startup_minutes": 1,
+      "first_ground_pool_if_unchanged": 1,
+      "first_air_pool_if_unchanged": 1
+    },
+    {
+      "startup_minutes": 2,
+      "first_ground_pool_if_unchanged": 1,
+      "first_air_pool_if_unchanged": 1
+    },
+    {
+      "startup_minutes": 3,
+      "first_ground_pool_if_unchanged": 1,
+      "first_air_pool_if_unchanged": 1
+    },
+    {
+      "startup_minutes": 4,
+      "first_ground_pool_if_unchanged": 1,
+      "first_air_pool_if_unchanged": 1
+    },
+    {
+      "startup_minutes": 5,
+      "first_ground_pool_if_unchanged": 1,
+      "first_air_pool_if_unchanged": 1
+    },
+    {
+      "startup_minutes": 6,
+      "first_ground_pool_if_unchanged": 1,
+      "first_air_pool_if_unchanged": 1
+    },
+    {
+      "startup_minutes": 7,
+      "first_ground_pool_if_unchanged": 1,
+      "first_air_pool_if_unchanged": 1
+    },
+    {
+      "startup_minutes": 8,
+      "first_ground_pool_if_unchanged": 2,
+      "first_air_pool_if_unchanged": 1
+    },
+    {
+      "startup_minutes": 9,
+      "first_ground_pool_if_unchanged": 2,
+      "first_air_pool_if_unchanged": 1
+    },
+    {
+      "startup_minutes": 10,
+      "first_ground_pool_if_unchanged": 2,
+      "first_air_pool_if_unchanged": 2
+    },
+    {
+      "startup_minutes": 12,
+      "first_ground_pool_if_unchanged": 3,
+      "first_air_pool_if_unchanged": 2
+    },
+    {
+      "startup_minutes": 14,
+      "first_ground_pool_if_unchanged": 3,
+      "first_air_pool_if_unchanged": 2
+    },
+    {
+      "startup_minutes": 16,
+      "first_ground_pool_if_unchanged": 4,
+      "first_air_pool_if_unchanged": 2
+    },
+    {
+      "startup_minutes": 18,
+      "first_ground_pool_if_unchanged": 4,
+      "first_air_pool_if_unchanged": 3
+    },
+    {
+      "startup_minutes": 20,
+      "first_ground_pool_if_unchanged": 5,
+      "first_air_pool_if_unchanged": 3
+    }
+  ],
+  "proposed_layouts": {
+    "gate": {
+      "point": [
+        [
+          -10,
+          -14
+        ],
+        [
+          -10,
+          14
+        ],
+        [
+          -5,
+          -14
+        ],
+        [
+          -5,
+          14
+        ],
+        [
+          5,
+          -14
+        ],
+        [
+          5,
+          14
+        ],
+        [
+          10,
+          -14
+        ],
+        [
+          10,
+          14
+        ]
+      ],
+      "aa": [
+        [
+          -14,
+          -10
+        ],
+        [
+          -14,
+          -5
+        ],
+        [
+          -14,
+          5
+        ],
+        [
+          -14,
+          10
+        ],
+        [
+          14,
+          -10
+        ],
+        [
+          14,
+          -5
+        ],
+        [
+          14,
+          5
+        ],
+        [
+          14,
+          10
+        ]
+      ],
+      "shield": [
+        [
+          -9,
+          -9
+        ],
+        [
+          -9,
+          9
+        ],
+        [
+          9,
+          -9
+        ],
+        [
+          9,
+          9
+        ]
+      ],
+      "tmd": [
+        [
+          -7,
+          0
+        ],
+        [
+          7,
+          0
+        ]
+      ],
+      "radar": [
+        [
+          0,
+          -7
+        ]
+      ],
+      "heavy": [
+        [
+          -14,
+          -14
+        ],
+        [
+          -14,
+          14
+        ],
+        [
+          14,
+          -14
+        ],
+        [
+          14,
+          14
+        ]
+      ]
+    },
+    "artillery": {
+      "point": [
+        [
+          -10,
+          14
+        ],
+        [
+          -5,
+          14
+        ],
+        [
+          5,
+          14
+        ],
+        [
+          10,
+          14
+        ],
+        [
+          -14,
+          -3
+        ],
+        [
+          -14,
+          3
+        ],
+        [
+          14,
+          -3
+        ],
+        [
+          14,
+          3
+        ]
+      ],
+      "aa": [
+        [
+          -14,
+          8
+        ],
+        [
+          -14,
+          13
+        ],
+        [
+          14,
+          8
+        ],
+        [
+          14,
+          13
+        ],
+        [
+          -10,
+          -7.5
+        ],
+        [
+          -5,
+          -7.5
+        ],
+        [
+          5,
+          -7.5
+        ],
+        [
+          10,
+          -7.5
+        ]
+      ],
+      "shield": [
+        [
+          -8,
+          -3
+        ],
+        [
+          -8,
+          8
+        ],
+        [
+          8,
+          -3
+        ],
+        [
+          8,
+          8
+        ]
+      ],
+      "tmd": [
+        [
+          -7,
+          2
+        ],
+        [
+          7,
+          2
+        ]
+      ],
+      "radar": [
+        [
+          0,
+          -7
+        ]
+      ],
+      "heavy": [
+        [
+          -14,
+          -7
+        ],
+        [
+          -14,
+          18
+        ],
+        [
+          14,
+          -7
+        ],
+        [
+          14,
+          18
+        ]
+      ]
+    }
+  },
+  "tower_coverage_at_10_past_front_row": {
+    "v4": 4,
+    "compact": 8
+  },
+  "lua_checks": {
+    "data_evaluation": 1,
+    "difficulty_models": 36
+  },
+  "gameplay_tested": false,
+  "proposals_applied": false,
+  "geometry_checks": {
+    "count": 16,
+    "no_overlap_under_declared_envelopes": true,
+    "no_out_of_bounds": true,
+    "native_engine_footprints_fully_verified": false,
+    "all_guard_pad_corners_shield_covered_flat_model": true
+  }
+}
