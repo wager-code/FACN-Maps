@@ -218,3 +218,9 @@ X1CA_TUT原版scenario复用SCMP_019.scmap，独立save/script/strings仍属于�
 本机mohodata.scd/lua/sim/weapon.lua:421的AddDamageMod累加到DamageMod；284起GetDamageTable的DamageAmount=蓝图Damage+DamageMod。希望总伤害为D×M时，无其它修改应添加D×(M−1)，不是D×M；Horde UnitBuff为前者，Grand Barrens当前脚本669为后者。4组本机Lua隔离确认100基础选2分别200/300，仅覆盖普通武器、无其它加成模型；核爆、自定义投射物和Mod另查，不凭此一次改全图。
 
 GetSkirtRect需完整Footprint/Skirt/Offset，建筑Skirt、物理Footprint、模型大小、盾面尺寸不是一回事。5iver原模板确实可执行生成，但有8对已知完整Skirt相交；隔离CreateUnitHPR记录成功不证明实际碰撞/寻路正确。源码文件存在或DEBUG测试可调用也不代表正常玩法已启用。详见本次对比报告。
+
+## UEB4302战略反核实际上使用Tactical弹仓（2026-10-20）
+
+本机units.scd/units/UEB4302_unit.bp的AntiNuke拦STRATEGIC MISSILE，但NukeWeapon未设置、RULEUCC_SiloBuildTactical=true、储弹7/初弹0；mohodata Weapon.AmmoThread(false)调用GiveTacticalSiloAmmo。原lua/platoon.lua AntiNukeAI用SetAutoMode(true)开自动制造。因此“战略反核”不能按名字猜GiveNukeSiloAmmo，本图使用GiveTacticalSiloAmmo(7)；5iver此前同型接口待查现确认为匹配。原AmmoThread隔离确认，不代表实射/真实补弹通过；其它型号/补丁/模组重新核源码与蓝图。TMD拦TACTICAL MISSILE，不能替代战略反核。
+
+手动预装弹与AutoMode不同；没有质量收入的脚本刷兵army可能无法续造。Insane v6给反核仅敌方20质量/2000能量产出，本机弹成本/时间与BuildRate理论需15/1500、240秒一发；实际倍率/队列和拦截仍游戏验收，不用脚本无限补弹掩盖经济。

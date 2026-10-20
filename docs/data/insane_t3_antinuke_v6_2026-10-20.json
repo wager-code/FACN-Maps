@@ -1,0 +1,362 @@
+{
+  "revision_before": 5,
+  "revision_after": 6,
+  "copies_identical": true,
+  "after_hashes": {
+    "FACN_CHANGELOG.md": "9fd572a98c868e8688c5e15e692f50acb4113487e6f90a6f098e470b30bc6ef3",
+    "Survival_Insane_Beta1.scmap": "4ecc04ed2068641ff24798f9350f50af5ca25527284c298b97109c0430d8523b",
+    "Survival_Insane_Beta1_options.lua": "3e25f375ddbcfd74a8c7c43064251152baca7cda3e82e5518a6cc551ed6b3de8",
+    "Survival_Insane_Beta1_preview.png": "84b2025cf5e66ca052a372ea2265ec9dbea80e63202a53fefafdc61d3d034520",
+    "Survival_Insane_Beta1_save.lua": "ba6ed604999cc9e281057d81c4a1f5146c36b829d91dd3bda0a0004072084e17",
+    "Survival_Insane_Beta1_scenario.lua": "1ba622caac0fff193258fdcc339441b986728b6df94a3397eb758b39ebdecfb2",
+    "Survival_Insane_Beta1_script.lua": "1cc8cd53a0b96d9e43f34c234d545f89ff51a22ca35f6cfb3852991b5fb56d73"
+  },
+  "installed_total_files": 960,
+  "installed_changed_files": [
+    "Survival_Insane_Beta1/FACN_CHANGELOG.md",
+    "Survival_Insane_Beta1/Survival_Insane_Beta1_scenario.lua",
+    "Survival_Insane_Beta1/Survival_Insane_Beta1_script.lua"
+  ],
+  "other_installed_files_unchanged": 957,
+  "other_61_inventory_entries_unchanged": true,
+  "map_count": 62,
+  "revised_map_count": 29,
+  "gameplay_tested": false,
+  "backup": "C:\\Users\\wager\\Documents\\ChatGPT\\地图\\Insane_Beta1_T3与反核v6_20261020\\修改前v5与清单备份.zip",
+  "functions": [
+    {
+      "name": "OnPopulate",
+      "line": 61
+    },
+    {
+      "name": "OnStart",
+      "line": 142
+    },
+    {
+      "name": "startScenarioThreads",
+      "line": 163
+    },
+    {
+      "name": "setupGame",
+      "line": 688
+    },
+    {
+      "name": "spawnScathis",
+      "line": 804
+    },
+    {
+      "name": "spawnGateDefenses",
+      "line": 962
+    },
+    {
+      "name": "spawnArtilleryDefenses",
+      "line": 966
+    },
+    {
+      "name": "nextGateWavePosition",
+      "line": 971
+    },
+    {
+      "name": "spawnGates",
+      "line": 990
+    },
+    {
+      "name": "spawnSpecials",
+      "line": 1056
+    },
+    {
+      "name": "fireNukes",
+      "line": 1060
+    },
+    {
+      "name": "gameLogic",
+      "line": 1070
+    },
+    {
+      "name": "spawnThread",
+      "line": 1085
+    },
+    {
+      "name": "spawnWaveBS",
+      "line": 1168
+    },
+    {
+      "name": "CalcSpawnPos",
+      "line": 1182
+    },
+    {
+      "name": "spawnwave",
+      "line": 1221
+    },
+    {
+      "name": "doSpawnUnit",
+      "line": 1277
+    },
+    {
+      "name": "startAttackMove",
+      "line": 1332
+    },
+    {
+      "name": "nuke",
+      "line": 1356
+    },
+    {
+      "name": "killAllCommanders",
+      "line": 1364
+    },
+    {
+      "name": "getUsername",
+      "line": 1375
+    },
+    {
+      "name": "ArmyIndexer",
+      "line": 1380
+    },
+    {
+      "name": "armyKills",
+      "line": 1395
+    },
+    {
+      "name": "secondsToTime",
+      "line": 1401
+    },
+    {
+      "name": "msgOut",
+      "line": 1406
+    }
+  ],
+  "checks": {
+    "candidate": 50,
+    "installed": 3,
+    "gameplay": false
+  },
+  "per_core": {
+    "normal": {
+      "t3_point": 8,
+      "aa": 8,
+      "shield": 4,
+      "strategic_anti_nuke": 1,
+      "tactical_defense": 2,
+      "radar": 1,
+      "total": 24
+    },
+    "difficulty_7_plus": {
+      "t3_point": 12,
+      "total": 28
+    }
+  },
+  "all_16_cores": {
+    "normal_guards": 384,
+    "high_guards": 448,
+    "anti_nukes": 16,
+    "tactical_defense": 32
+  },
+  "strategic_defense": {
+    "blueprint": "ueb4302",
+    "initial_ammo": 7,
+    "ammo_api": "GiveTacticalSiloAmmo",
+    "auto_build": true,
+    "mass_production": 20,
+    "energy_production": 2000,
+    "stock_ammo_theoretical_seconds": 240,
+    "intercepts": "STRATEGIC MISSILE"
+  },
+  "four_by_four_anti_nuke_planning_envelope": true,
+  "sources": [
+    {
+      "package": "lua.scd",
+      "path": "lua/aibrain.lua",
+      "sha256": "0fc43a46d9d69f5b41a22f162058d9388355dbc1597cfa5bc4b283e24b8df2a0"
+    },
+    {
+      "package": "lua.scd",
+      "path": "lua/shield.lua",
+      "sha256": "63846e5b6c0f49e234c482a76f512a9878cfdb1fbfc564476f9a61c37ce3ce82"
+    },
+    {
+      "package": "lua.scd",
+      "path": "lua/sim/Unit.lua",
+      "sha256": "ced522e17b204aedfe196706fd3f3421af5f041cf692248ef56d43c97b52cd67"
+    },
+    {
+      "package": "mohodata.scd",
+      "path": "lua/sim/Unit.lua",
+      "sha256": "39476ea6da72a9ebdf95040139432e9a8322888b439e2616bbf15b8dc7089c07"
+    },
+    {
+      "package": "schook.scd",
+      "path": "schook/lua/simInit.lua",
+      "sha256": "1c95779eccc0ab72dff49ea756454cc11531eea8a69be224b1a74b0544caa601"
+    },
+    {
+      "package": "units.scd",
+      "path": "units/UAB0304/UAB0304_unit.bp",
+      "sha256": "3e0029f156b49dd168a2f0bd3b46086c3f1e3be1c4f7ec4c899fa9e49f7a71d7"
+    },
+    {
+      "package": "units.scd",
+      "path": "units/UAB2204/UAB2204_unit.bp",
+      "sha256": "ed67446216872bcd5678c401c84b0087b238d02dc5301ada7515296edaaa9458"
+    },
+    {
+      "package": "units.scd",
+      "path": "units/UAB2301/UAB2301_unit.bp",
+      "sha256": "26f1431c63b23a3d3f414331db4c1824d171527e1f59c7f637ec100b4f197f49"
+    },
+    {
+      "package": "units.scd",
+      "path": "units/UAB2304/UAB2304_unit.bp",
+      "sha256": "66bec16f278856954b999095ca49e2a1eb5133b4efccb21756fdebd21218ccd7"
+    },
+    {
+      "package": "units.scd",
+      "path": "units/UAB3101/UAB3101_unit.bp",
+      "sha256": "2e13daff88938b7da55e308ee696a4abcc2be3d01cd5023ecd32b79a4ae14262"
+    },
+    {
+      "package": "units.scd",
+      "path": "units/UAB4201/UAB4201_unit.bp",
+      "sha256": "96d6ae783a48f8c18d929e707a710e0d0a54fa9df16fed6d27c3f986d764533a"
+    },
+    {
+      "package": "units.scd",
+      "path": "units/UEB0304/UEB0304_unit.bp",
+      "sha256": "d312a74e9a6bb153922726e4995e28aa8cd43a031569661ce740e7847d1f25df"
+    },
+    {
+      "package": "units.scd",
+      "path": "units/UEB2204/UEB2204_unit.bp",
+      "sha256": "8e459e3d4f2528c88597b13df611cb6999ddd113e97d83237cd1049ab0788099"
+    },
+    {
+      "package": "units.scd",
+      "path": "units/UEB2301/UEB2301_unit.bp",
+      "sha256": "97f831fed87fef94266593852b044fd26b7b09e2066b494b0c6bb15aa93d67b9"
+    },
+    {
+      "package": "units.scd",
+      "path": "units/UEB2304/UEB2304_unit.bp",
+      "sha256": "6a0bfa968a2df65ad01e877ef63235e93a3e8ed66b9a2fe2a53d9bb97c7dc878"
+    },
+    {
+      "package": "units.scd",
+      "path": "units/UEB3101/UEB3101_unit.bp",
+      "sha256": "ee05e5e121a66c6e9f1fd13aa971044c6d9f5b553af6867683a02772ce96a5b3"
+    },
+    {
+      "package": "units.scd",
+      "path": "units/UEB4201/UEB4201_unit.bp",
+      "sha256": "c2b5b3e831873ddf4b8523a258c2d8cec40e837fa0f826972e00904e6cde8074"
+    },
+    {
+      "package": "units.scd",
+      "path": "units/UEB4301/UEB4301_unit.bp",
+      "sha256": "8e86fefc485a76ad1aa1e55894d0dbb3823cec2f58b175dccfbc6d67c6b67e78"
+    },
+    {
+      "package": "units.scd",
+      "path": "units/UEC1902/UEC1902_unit.bp",
+      "sha256": "160fd9ae82e5ac044bf997571854907ac54a361e11fdd4fc1eacfc07cdaa8030"
+    },
+    {
+      "package": "units.scd",
+      "path": "units/URB0304/URB0304_unit.bp",
+      "sha256": "47eaa42c5914f06f5121d0638bf83d4fcbfe6f4b44d8f043180bfa89dd5aeded"
+    },
+    {
+      "package": "units.scd",
+      "path": "units/URB2204/URB2204_unit.bp",
+      "sha256": "6794c891d2df57fb0f930c046bcbf88a229b29f057277eb1b0bb0504e4688499"
+    },
+    {
+      "package": "units.scd",
+      "path": "units/URB2301/URB2301_unit.bp",
+      "sha256": "6f61e9f0f4d02f1dcf9ca03ecd2206dd15aa1476709d470f448c4af3e6e69c0f"
+    },
+    {
+      "package": "units.scd",
+      "path": "units/URB2304/URB2304_unit.bp",
+      "sha256": "1d9170532ed36fa790a5cd50931ad1888e50b039091ec5590d4aa74c2ff23b64"
+    },
+    {
+      "package": "units.scd",
+      "path": "units/URB3101/URB3101_unit.bp",
+      "sha256": "9ad39baea926509e420f233c500da4d9180404fd93ee5035aa435d6cbc4627ce"
+    },
+    {
+      "package": "units.scd",
+      "path": "units/URB4201/URB4201_unit.bp",
+      "sha256": "26cb4384af189c0172fe943bbd818b8252bc8a9eafc307608de9b2df49c7fd7a"
+    },
+    {
+      "package": "units.scd",
+      "path": "units/URL0401/URL0401_unit.bp",
+      "sha256": "c0366fbe9bf45b4c5cb32c9b4618dd97d3756d46e6ff5e3d449d013e89669f74"
+    },
+    {
+      "package": "units.scd",
+      "path": "units/XEB2306/XEB2306_unit.bp",
+      "sha256": "44010918c0950cf314a8fb013742976f0fe164f32ceeb4d0c7116d3c0b0869de"
+    },
+    {
+      "package": "units.scd",
+      "path": "units/XSB0304/XSB0304_unit.bp",
+      "sha256": "8e1f1c4d6c331c5f10e9ae27b48e3417d10c83c57d1990743d7e70a915d63660"
+    },
+    {
+      "package": "units.scd",
+      "path": "units/XSB2204/XSB2204_unit.bp",
+      "sha256": "2f74bc09ac1dea5a42c9635d606687f4fd108fb85699868ad2590a9fd46a333d"
+    },
+    {
+      "package": "units.scd",
+      "path": "units/XSB2301/XSB2301_unit.bp",
+      "sha256": "db0cecfa0f6db894e6fc0e72f5dcb8f105f459c605cc78e14b33caf8558776ab"
+    },
+    {
+      "package": "units.scd",
+      "path": "units/XSB2304/XSB2304_unit.bp",
+      "sha256": "6b463a438facbd3b5fb394b92dd0562c13c93de36d9865d268fb8f05404aca07"
+    },
+    {
+      "package": "units.scd",
+      "path": "units/XSB3101/XSB3101_unit.bp",
+      "sha256": "29d3e25b538741a8c788574aa34f6f7701ed97bcc11c30ccfe825bf0b15f4d23"
+    },
+    {
+      "package": "units.scd",
+      "path": "units/XSB4201/XSB4201_unit.bp",
+      "sha256": "37f9d0f0ed0c2314306d99cdb71f4fe783ac0b94e7a3c8e55e337dcdead1b426"
+    },
+    {
+      "package": "lua.scd",
+      "path": "lua/AI/OpAI/BaseManager.lua",
+      "sha256": "9556432e5618b27252ab3873b8238ad6a109028447abbe23b9ebf69544c28c06"
+    },
+    {
+      "package": "lua.scd",
+      "path": "lua/platoon.lua",
+      "sha256": "c77b6689a38929dbd93ffc732fd8ea6a16b1754308883a558d650d2f1004ed5d"
+    },
+    {
+      "package": "mohodata.scd",
+      "path": "lua/sim/weapon.lua",
+      "sha256": "4148b4d77dce6f8dfd64dddcea2b7de7c0a0ef774d90f3292298880266fab30b"
+    },
+    {
+      "package": "projectiles.scd",
+      "path": "projectiles/TIMMissileIntercerptor01/TIMMissileIntercerptor01_proj.bp",
+      "sha256": "9e7aeaf8aa46b735e23aec6af37b4e2d2498c5cc55fd3c488e36791973dd7fc0"
+    },
+    {
+      "package": "units.scd",
+      "path": "units/UEB4302/UEB4302_script.lua",
+      "sha256": "71d541a10b39ac4264caa3f3bac81c687b139950eb4bef7c8c689c82bbab7247"
+    },
+    {
+      "package": "units.scd",
+      "path": "units/UEB4302/UEB4302_unit.bp",
+      "sha256": "83faa04034e547df7fe76433764fb34d29f0488f76a313dc4f27fc9f48cc3616"
+    }
+  ]
+}
