@@ -142,3 +142,7 @@ ID33当前安装及维护包v8，4墙体类别改为蓝图小写键、xsb2406按
 ## 三张5iver安装菜单汉化完成（2026-10-20）
 
 用户在审计后明确授权汉化并各升一级。E:/SCFA/maps中5iver Survival Land现v2、5iver Survival Land Naval现v2、5iver_survival_landnaval-swarm现v12；55项296显示字段已汉化，key/pref/default/数值/顺序不变，仅6个options/scenario修改。9+3项Lua核验通过、其余954文件不变，未UI/游戏实测。26原文件备份在工作区三张5iver高级设置汉化_20261020/汉化前3张完整地图备份.zip；前次“三张仍英文”为历史，后续以docs/THREE_5IVER_OPTIONS_LOCALIZATION_2026-10-20.md为准。没有改维护包62张或官方/系统，不要与维护包ID42同v2图混同。
+
+## 生存守备与高级玩法横向研究（2026-10-20，仅分析）
+
+当前安装E:/SCFA/maps研究35张生存/AOD、235项（另7自定义旁证），61官方不动；不等于维护包62图复查。见docs/SURVIVAL_DEFENSE_OPTIONS_COMPARISON_2026-10-20.md及data摘要。92本机Lua检查通过，地图960文件不变、Insane仍v4，未新游戏实测。5iver独立门/火炮守备可借鉴但有8对已知Skirt相交，Swarm极端HP、AOD无敌塔、Endless DEBUG圆环不能原样当普通堡垒。Grand Barrens×2伤害在普通无其它加成模型为×3、Run GROUP_6/UNIT_520.type='5'、Land菜单70/60实际key50与反核弹药均待单独处理；不得把发现当已修复，亦不得因先前纯汉化授权顺手改数值。

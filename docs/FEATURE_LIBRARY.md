@@ -91,3 +91,18 @@
 - 复杂系统：Endless的收入驱动、Anerle的队伍资源与竞争、Rainmakers/Order/Stranded的目标/事件模块；应按完整状态机理解。
 - 普通大厅AI布局和空初始化图不是内置波次模板。备用库未进入调用链也不能当作已经游戏验证的通用组件。
 - 本轮只修既有偏好键和原生API，不改变玩法、不新增全图菜单。未来制作的技术路线见[AI地图制作](AI_MAP_AUTHORING.md)。
+
+## 当前安装生存图可借鉴的布局与高级选项（2026-10-20）
+
+本轮研究35张生存/AOD、235活动选项；只读源码/本机Lua隔离，不冒称所有组合游戏验证。详见[SURVIVAL_DEFENSE_OPTIONS_COMPARISON](SURVIVAL_DEFENSE_OPTIONS_COMPARISON_2026-10-20.md)。
+
+| 来源 | 可复用机制 | 必须先核对 |
+| --- | --- | --- |
+| 5iver Land/Naval | 门/远程火炮/特殊敌军独立守备档，陆空海数量、生命、老练、科技时间分开 | 预设覆盖、占地相交、反核弹药接口、显示值与key；Swarm守备固定不在菜单 |
+| Run/Attack/Escape | 编辑器GROUP存整套防线，难度/区域/随机组合启用 | INITIAL与GROUP区分、Run GROUP_6非法type=5、全路线和空区测试 |
+| Horde EE v22 | buffDamage按Damage×(倍率−1)追加，生命/空军/回收独立 | 生存创建回调范围、5级老练、回收上限、射弹自定义覆盖 |
+| Grand Barrens v13 | 整波/持续、起始波、Boss、残骸、成长、开局资源和工程师 | 伤害“×2”当前附加原值得×3（普通无其它加成）、成长表达式与文案不一致 |
+| Endless v17 | 质量预算、6种AI风格、T2/3/4时间或收入门槛、7种Boss开关 | 活动路径；BaseSpanwer圆环仅DEBUG=false测试入口，不能宣称正常启用 |
+| AOD及survival_vs_4player | 密排地防/防空维持波次路线 | 其不可击杀性质；不能直接套到玩家应能反攻的敌方核心 |
+
+先定义数量、生命、伤害、盾量/恢复、科技计时、人数缩放分别作用于谁，再加菜单；新增选项须接入创建和更新路径，而非只加options表。

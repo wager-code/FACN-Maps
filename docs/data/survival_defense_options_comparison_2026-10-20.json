@@ -1,0 +1,1429 @@
+{
+  "date": "2026-10-20",
+  "scope": "E:/SCFA/maps; installed maps only, not the 62-map maintenance pack",
+  "official_excluded": 61,
+  "custom_maps_read": 42,
+  "survival_aod_maps": 35,
+  "other_custom_reference_maps": 7,
+  "survival_options": 235,
+  "all_custom_options": 243,
+  "checks": {
+    "native_lua_fixtures": 92,
+    "menu": 42,
+    "save": 42,
+    "template": 4,
+    "blueprint": 1,
+    "staged": 2,
+    "damage": 1,
+    "template_level_cases": 24,
+    "staged_cases": 54,
+    "damage_cases": 4,
+    "game_test": false
+  },
+  "actual_blueprints": 176,
+  "maps": [
+    {
+      "folder": "5iver Survival Brainsucka",
+      "name": "5iver Survival Brainsucka",
+      "version": 1,
+      "option_count": 2,
+      "guard_pattern": "主脚本编译；守备实现未完整核实，另有强制模组依赖历史证据"
+    },
+    {
+      "folder": "5iver Survival Land",
+      "name": "5iver Survival Land",
+      "version": 2,
+      "option_count": 23,
+      "guard_pattern": "核心周围分档生成守备；门/火炮共用模板"
+    },
+    {
+      "folder": "5iver Survival Land Naval",
+      "name": "5iver Survival LandNaval",
+      "version": 2,
+      "option_count": 25,
+      "guard_pattern": "核心周围分档生成守备；门/火炮共用模板"
+    },
+    {
+      "folder": "5iver_survival_land_oxtreme",
+      "name": "5iver_survival_land_oxtreme",
+      "version": 10,
+      "option_count": 23,
+      "guard_pattern": "核心周围分档生成守备；门/火炮共用模板"
+    },
+    {
+      "folder": "5iver_survival_landnaval-swarm",
+      "name": "5iver_survival_landnaval-swarm",
+      "version": 12,
+      "option_count": 7,
+      "guard_pattern": "核心周围分档生成守备；门/火炮共用模板"
+    },
+    {
+      "folder": "astro_surv_stm",
+      "name": "astro_surv_stm",
+      "version": 8,
+      "option_count": 7,
+      "guard_pattern": "波次型；未发现保存分组静态防御，不能据此排除全部运行时生成"
+    },
+    {
+      "folder": "BBF_BlackSunDefense",
+      "name": "Black Sun Defense v2",
+      "version": 2,
+      "option_count": 3,
+      "guard_pattern": "黑日保卫、裂隙刷兵；未见5iver式核心守备包"
+    },
+    {
+      "folder": "Desert_Swarm_v1c_Beta",
+      "name": "Desert Swarm v1c Beta",
+      "version": 1,
+      "option_count": 3,
+      "guard_pattern": "波次型；未发现保存分组静态防御，不能据此排除全部运行时生成"
+    },
+    {
+      "folder": "dreamy_survival",
+      "name": "Dreamy Survival v16",
+      "version": 16,
+      "option_count": 3,
+      "guard_pattern": "盟军INITIAL含54座防御/护盾/炮建筑"
+    },
+    {
+      "folder": "endless_survival_defense",
+      "name": "Endless Survival Defense",
+      "version": 17,
+      "option_count": 24,
+      "guard_pattern": "按质量预算生成波次及Base类建筑；圆环基地工具仅DEBUG测试入口"
+    },
+    {
+      "folder": "Fort Ictus Survival",
+      "name": "Fort Ictus Survival",
+      "version": 10,
+      "option_count": 3,
+      "guard_pattern": "ARMY_4 INITIAL堡垒；敌方GROUP_00另存，不能当作同队普通空白槽"
+    },
+    {
+      "folder": "grand_barrens_survival",
+      "name": "grand_barrens_survival",
+      "version": 13,
+      "option_count": 21,
+      "guard_pattern": "波次/首领/成长型；中央建筑是玩家防守目标"
+    },
+    {
+      "folder": "sexy_survival",
+      "name": "Sexy Survival v13",
+      "version": 13,
+      "option_count": 3,
+      "guard_pattern": "盟军及敌军INITIAL各4座防御建筑"
+    },
+    {
+      "folder": "sh1r3_mycelium2_survival",
+      "name": "SH1R3_Mycelium2_Survival",
+      "version": 2,
+      "option_count": 3,
+      "guard_pattern": "波次型；未发现保存分组静态防御，不能据此排除全部运行时生成"
+    },
+    {
+      "folder": "Supreme_AOD",
+      "name": "Supreme Art of Defence",
+      "version": 5,
+      "option_count": 0,
+      "guard_pattern": "脚本生成无敌封路地防/防空，维持波次路线"
+    },
+    {
+      "folder": "Supreme_survival",
+      "name": "Survival of the Fittest",
+      "version": 1,
+      "option_count": 0,
+      "guard_pattern": "AOD派生，脚本生成路线守备"
+    },
+    {
+      "folder": "survival attack",
+      "name": "Survival Attack",
+      "version": 1,
+      "option_count": 4,
+      "guard_pattern": "INITIAL固定防线＋分区按难度追加分组"
+    },
+    {
+      "folder": "Survival Omega",
+      "name": "Survival Omega",
+      "version": 1,
+      "option_count": 3,
+      "guard_pattern": "波次型；未发现保存分组静态防御，不能据此排除全部运行时生成"
+    },
+    {
+      "folder": "Survival Run",
+      "name": "Survival Run v8",
+      "version": 1,
+      "option_count": 3,
+      "guard_pattern": "INITIAL固定防线＋分区按难度追加分组"
+    },
+    {
+      "folder": "survival_5thdimension",
+      "name": "survival_5thdimension v6",
+      "version": 1,
+      "option_count": 3,
+      "guard_pattern": "波次型；未发现保存分组静态防御，不能据此排除全部运行时生成"
+    },
+    {
+      "folder": "survival_5thdimension_practice",
+      "name": "survival_5thdimension_practice v9",
+      "version": 9,
+      "option_count": 8,
+      "guard_pattern": "波次型；未发现保存分组静态防御，不能据此排除全部运行时生成"
+    },
+    {
+      "folder": "Survival_BlackBox_10",
+      "name": "Survival Blackbox 10",
+      "version": 1,
+      "option_count": 12,
+      "guard_pattern": "INITIAL大规模预置防线＋难度强化＋弹药/战略反导开关"
+    },
+    {
+      "folder": "survival_defense_atoll",
+      "name": "Survival Defense Atoll",
+      "version": 1,
+      "option_count": 3,
+      "guard_pattern": "波次型；未发现保存分组静态防御，不能据此排除全部运行时生成"
+    },
+    {
+      "folder": "Survival_Escape",
+      "name": "Survival Escape v5",
+      "version": 5,
+      "option_count": 2,
+      "guard_pattern": "INITIAL固定防线＋随机两套前线组合＋后续扩区"
+    },
+    {
+      "folder": "Survival_Extreme",
+      "name": "Survival EXtreme",
+      "version": 1,
+      "option_count": 4,
+      "guard_pattern": "脚本生成门及Scathis，未见5iver式核心守备包"
+    },
+    {
+      "folder": "Survival_ExtremeDesert",
+      "name": "Survival EXtreme Desert v3",
+      "version": 3,
+      "option_count": 4,
+      "guard_pattern": "脚本门/波次，未见5iver式核心守备包"
+    },
+    {
+      "folder": "Survival_ExtremeNavy",
+      "name": "Survival EXtreme NavyV2",
+      "version": 1,
+      "option_count": 4,
+      "guard_pattern": "脚本生成门及Scathis，未见5iver式核心守备包"
+    },
+    {
+      "folder": "survival_horde_ee",
+      "name": "Survival Horde EE v22",
+      "version": 22,
+      "option_count": 7,
+      "guard_pattern": "波表进攻型；空军/伤害/生命/回收可调，未见门外同类守备模板"
+    },
+    {
+      "folder": "Survival_Insane_Beta1",
+      "name": "Survival Insane (Beta1)",
+      "version": 4,
+      "option_count": 4,
+      "guard_pattern": "v4脚本生成每门23/27座守备；8台Scathis没有同类守备"
+    },
+    {
+      "folder": "Survival_Insane_NvS_Beta1",
+      "name": "Survival Insane NvS (Beta1)",
+      "version": 1,
+      "option_count": 4,
+      "guard_pattern": "敌军INITIAL含148座防御/盾/炮建筑"
+    },
+    {
+      "folder": "survival_NorthSouth_Barrens",
+      "name": "Survival North and South Barrens",
+      "version": 1,
+      "option_count": 4,
+      "guard_pattern": "敌军INITIAL含128座防御/盾/炮建筑"
+    },
+    {
+      "folder": "survival_sea_fleet",
+      "name": "Survival Sea Fleet v8",
+      "version": 8,
+      "option_count": 5,
+      "guard_pattern": "敌军INITIAL含93座防御/反导建筑，偏防空；另有盟军防线"
+    },
+    {
+      "folder": "survival_vs_4player",
+      "name": "survival_vs_4player",
+      "version": 2,
+      "option_count": 0,
+      "guard_pattern": "脚本生成密排无敌地防/防空，维持波次路线"
+    },
+    {
+      "folder": "XXX_Survival",
+      "name": "XXX_Survival",
+      "version": null,
+      "option_count": 3,
+      "guard_pattern": "波次型；未发现保存分组静态防御，不能据此排除全部运行时生成"
+    },
+    {
+      "folder": "XXX_Survival_5P",
+      "name": "XXX_Survival_5P",
+      "version": 22,
+      "option_count": 8,
+      "guard_pattern": "波次型；未发现保存分组静态防御，不能据此排除全部运行时生成"
+    }
+  ],
+  "templates": {
+    "5iver Survival Land": [
+      {
+        "level": 0,
+        "guards": 0,
+        "units": {}
+      },
+      {
+        "level": 1,
+        "guards": 0,
+        "units": {}
+      },
+      {
+        "level": 2,
+        "guards": 4,
+        "units": {
+          "xsb2304": 4
+        }
+      },
+      {
+        "level": 3,
+        "guards": 8,
+        "units": {
+          "xsb2304": 4,
+          "xeb2306": 4
+        }
+      },
+      {
+        "level": 4,
+        "guards": 20,
+        "units": {
+          "xsb2304": 8,
+          "xeb2306": 8,
+          "xsb4301": 4
+        }
+      },
+      {
+        "level": 5,
+        "guards": 32,
+        "units": {
+          "xsb2304": 8,
+          "xeb2306": 8,
+          "xsb4301": 4,
+          "ueb4302": 1,
+          "uab4201": 1,
+          "urb4201": 1,
+          "ueb4201": 1,
+          "uab2303": 8
+        }
+      }
+    ],
+    "5iver Survival Land Naval": [
+      {
+        "level": 0,
+        "guards": 0,
+        "units": {}
+      },
+      {
+        "level": 1,
+        "guards": 0,
+        "units": {}
+      },
+      {
+        "level": 2,
+        "guards": 4,
+        "units": {
+          "xsb2304": 4
+        }
+      },
+      {
+        "level": 3,
+        "guards": 8,
+        "units": {
+          "xsb2304": 4,
+          "xeb2306": 4
+        }
+      },
+      {
+        "level": 4,
+        "guards": 20,
+        "units": {
+          "xsb2304": 8,
+          "xeb2306": 8,
+          "xsb4301": 4
+        }
+      },
+      {
+        "level": 5,
+        "guards": 24,
+        "units": {
+          "xsb2304": 8,
+          "xeb2306": 8,
+          "xsb4301": 4,
+          "ueb4302": 1,
+          "uab4201": 1,
+          "urb4201": 1,
+          "ueb4201": 1
+        }
+      }
+    ],
+    "5iver_survival_land_oxtreme": [
+      {
+        "level": 0,
+        "guards": 0,
+        "units": {}
+      },
+      {
+        "level": 1,
+        "guards": 0,
+        "units": {}
+      },
+      {
+        "level": 2,
+        "guards": 4,
+        "units": {
+          "xsb2304": 4
+        }
+      },
+      {
+        "level": 3,
+        "guards": 8,
+        "units": {
+          "xsb2304": 4,
+          "xeb2306": 4
+        }
+      },
+      {
+        "level": 4,
+        "guards": 20,
+        "units": {
+          "xsb2304": 8,
+          "xeb2306": 8,
+          "xsb4301": 4
+        }
+      },
+      {
+        "level": 5,
+        "guards": 32,
+        "units": {
+          "xsb2304": 8,
+          "xeb2306": 8,
+          "xsb4301": 4,
+          "ueb4302": 1,
+          "uab4201": 1,
+          "urb4201": 1,
+          "ueb4201": 1,
+          "uab2303": 8
+        }
+      }
+    ],
+    "5iver_survival_landnaval-swarm": [
+      {
+        "level": 0,
+        "guards": 0,
+        "units": {}
+      },
+      {
+        "level": 1,
+        "guards": 0,
+        "units": {}
+      },
+      {
+        "level": 2,
+        "guards": 4,
+        "units": {
+          "xsb2304": 4
+        }
+      },
+      {
+        "level": 3,
+        "guards": 8,
+        "units": {
+          "xsb2304": 4,
+          "xeb2306": 4
+        }
+      },
+      {
+        "level": 4,
+        "guards": 20,
+        "units": {
+          "xsb2304": 8,
+          "xeb2306": 8,
+          "xsb4301": 4
+        }
+      },
+      {
+        "level": 5,
+        "guards": 24,
+        "units": {
+          "xsb2304": 8,
+          "xeb2306": 8,
+          "xsb4301": 4,
+          "ueb4302": 2,
+          "uab4201": 1,
+          "ueb4201": 1
+        }
+      }
+    ]
+  },
+  "known_5iver_skirt_intersections": [
+    {
+      "a": {
+        "id": "uab0304",
+        "x": 0,
+        "z": 0,
+        "rect": [
+          -5,
+          -5,
+          5,
+          5
+        ]
+      },
+      "b": {
+        "id": "xsb4301",
+        "index": 16,
+        "x": 7.5,
+        "z": 7.5,
+        "rect": [
+          4.5,
+          4.5,
+          10.5,
+          10.5
+        ]
+      },
+      "overlap_x": 0.5,
+      "overlap_z": 0.5
+    },
+    {
+      "a": {
+        "id": "uab0304",
+        "x": 0,
+        "z": 0,
+        "rect": [
+          -5,
+          -5,
+          5,
+          5
+        ]
+      },
+      "b": {
+        "id": "xsb4301",
+        "index": 17,
+        "x": 7.5,
+        "z": -7.5,
+        "rect": [
+          4.5,
+          -10.5,
+          10.5,
+          -4.5
+        ]
+      },
+      "overlap_x": 0.5,
+      "overlap_z": 0.5
+    },
+    {
+      "a": {
+        "id": "uab0304",
+        "x": 0,
+        "z": 0,
+        "rect": [
+          -5,
+          -5,
+          5,
+          5
+        ]
+      },
+      "b": {
+        "id": "xsb4301",
+        "index": 18,
+        "x": -7.5,
+        "z": 7.5,
+        "rect": [
+          -10.5,
+          4.5,
+          -4.5,
+          10.5
+        ]
+      },
+      "overlap_x": 0.5,
+      "overlap_z": 0.5
+    },
+    {
+      "a": {
+        "id": "uab0304",
+        "x": 0,
+        "z": 0,
+        "rect": [
+          -5,
+          -5,
+          5,
+          5
+        ]
+      },
+      "b": {
+        "id": "xsb4301",
+        "index": 19,
+        "x": -7.5,
+        "z": -7.5,
+        "rect": [
+          -10.5,
+          -10.5,
+          -4.5,
+          -4.5
+        ]
+      },
+      "overlap_x": 0.5,
+      "overlap_z": 0.5
+    },
+    {
+      "a": {
+        "id": "xeb2306",
+        "index": 4,
+        "x": 10,
+        "z": 10,
+        "rect": [
+          9,
+          9,
+          11,
+          11
+        ]
+      },
+      "b": {
+        "id": "xsb4301",
+        "index": 16,
+        "x": 7.5,
+        "z": 7.5,
+        "rect": [
+          4.5,
+          4.5,
+          10.5,
+          10.5
+        ]
+      },
+      "overlap_x": 1.5,
+      "overlap_z": 1.5
+    },
+    {
+      "a": {
+        "id": "xeb2306",
+        "index": 5,
+        "x": 10,
+        "z": -10,
+        "rect": [
+          9,
+          -11,
+          11,
+          -9
+        ]
+      },
+      "b": {
+        "id": "xsb4301",
+        "index": 17,
+        "x": 7.5,
+        "z": -7.5,
+        "rect": [
+          4.5,
+          -10.5,
+          10.5,
+          -4.5
+        ]
+      },
+      "overlap_x": 1.5,
+      "overlap_z": 1.5
+    },
+    {
+      "a": {
+        "id": "xeb2306",
+        "index": 6,
+        "x": -10,
+        "z": 10,
+        "rect": [
+          -11,
+          9,
+          -9,
+          11
+        ]
+      },
+      "b": {
+        "id": "xsb4301",
+        "index": 18,
+        "x": -7.5,
+        "z": 7.5,
+        "rect": [
+          -10.5,
+          4.5,
+          -4.5,
+          10.5
+        ]
+      },
+      "overlap_x": 1.5,
+      "overlap_z": 1.5
+    },
+    {
+      "a": {
+        "id": "xeb2306",
+        "index": 7,
+        "x": -10,
+        "z": -10,
+        "rect": [
+          -11,
+          -11,
+          -9,
+          -9
+        ]
+      },
+      "b": {
+        "id": "xsb4301",
+        "index": 19,
+        "x": -7.5,
+        "z": -7.5,
+        "rect": [
+          -10.5,
+          -10.5,
+          -4.5,
+          -4.5
+        ]
+      },
+      "overlap_x": 1.5,
+      "overlap_z": 1.5
+    }
+  ],
+  "damage_semantics": [
+    {
+      "grand_damage": 100,
+      "base_damage": 100,
+      "horde_damage": 100,
+      "menu_multiplier": 1
+    },
+    {
+      "grand_damage": 225,
+      "base_damage": 100,
+      "horde_damage": 125,
+      "menu_multiplier": 1.25
+    },
+    {
+      "grand_damage": 300,
+      "base_damage": 100,
+      "horde_damage": 200,
+      "menu_multiplier": 2
+    },
+    {
+      "grand_damage": 600,
+      "base_damage": 100,
+      "horde_damage": 500,
+      "menu_multiplier": 5
+    }
+  ],
+  "map_files_changed": false,
+  "map_source_hashes": [
+    {
+      "path": "5iver Survival Brainsucka/5iver Survival Brainsucka_options.lua",
+      "bytes": 1265,
+      "sha256": "5fa8636c82bf2103ac284701924d0e342f88a7d97a420c504efb13fc2c5cd53c",
+      "official": false
+    },
+    {
+      "path": "5iver Survival Brainsucka/5iver Survival Brainsucka_scenario.lua",
+      "bytes": 1021,
+      "sha256": "311a0b161b886d41a8068472f28b636bb80016f4a6f103ad4278f062ec4e0989",
+      "official": false
+    },
+    {
+      "path": "5iver Survival Brainsucka/5iver Survival Brainsucka_script.luac",
+      "bytes": 75162,
+      "sha256": "5196bac19638740a1ec05bfba485e9e9eeb36056982ee170a88d88de79388146",
+      "official": false
+    },
+    {
+      "path": "5iver Survival Land/5iver Survival Land_options.lua",
+      "bytes": 15013,
+      "sha256": "09030021318134190cad8727e4534037fa2383b097ae3e22015a20a9b74ca49c",
+      "official": false
+    },
+    {
+      "path": "5iver Survival Land/5iver Survival Land_scenario.lua",
+      "bytes": 983,
+      "sha256": "0ad198c682c8211c706037ba0ac5afacbbca549a804e7254f4984404f2d936a3",
+      "official": false
+    },
+    {
+      "path": "5iver Survival Land/5iver Survival Land_script.lua",
+      "bytes": 119364,
+      "sha256": "b26c5bc23f62f9caa83562e01780751f2419bd5d872038b3938843755c175f07",
+      "official": false
+    },
+    {
+      "path": "5iver Survival Land Naval/5iver Survival Land Naval_options.lua",
+      "bytes": 16635,
+      "sha256": "a72a539a20622dddf3a570dc89183d0b347ee4477e48f91e3d548c0310ce6844",
+      "official": false
+    },
+    {
+      "path": "5iver Survival Land Naval/5iver Survival Land Naval_scenario.lua",
+      "bytes": 1243,
+      "sha256": "b7668d502d8e5527ef33856c364039162829154ad1d8d111267694c3303b4ce6",
+      "official": false
+    },
+    {
+      "path": "5iver Survival Land Naval/5iver Survival Land Naval_script.lua",
+      "bytes": 155767,
+      "sha256": "c33d0460914fcf3d74798dcc981f5b6e5a4a862673c61f9d862a86f8ebf8a2aa",
+      "official": false
+    },
+    {
+      "path": "5iver_survival_land_oxtreme/5iver_survival_land_oxtreme_options.lua",
+      "bytes": 18856,
+      "sha256": "346b528bdf95fd6e61088b0c4c07299e97a0d226cf6130678a66c7f7081545e4",
+      "official": false
+    },
+    {
+      "path": "5iver_survival_land_oxtreme/5iver_survival_land_oxtreme_scenario.lua",
+      "bytes": 1419,
+      "sha256": "f424ec532069b40d8e73d6818aa4cd9bcf7886656d3b874783f2416a640933f0",
+      "official": false
+    },
+    {
+      "path": "5iver_survival_land_oxtreme/5iver_survival_land_oxtreme_script.lua",
+      "bytes": 119740,
+      "sha256": "18bfb80c8924482edc041f2ec9911b75f221a8bc59ffac3aa4b502b969157ec1",
+      "official": false
+    },
+    {
+      "path": "5iver_survival_landnaval-swarm/5iver_survival_landnaval-swarm_options.lua",
+      "bytes": 5301,
+      "sha256": "b638177b4a9e8d97e667031a7f13296a77d051bd1f8d13c18900c5c21bce820a",
+      "official": false
+    },
+    {
+      "path": "5iver_survival_landnaval-swarm/5iver_survival_landnaval-swarm_scenario.lua",
+      "bytes": 1219,
+      "sha256": "9604d9ab9cbbe8bc58c030d219b845c6c8130aefcfbe8dee732bbbd67f06e57b",
+      "official": false
+    },
+    {
+      "path": "5iver_survival_landnaval-swarm/5iver_survival_landnaval-swarm_script.lua",
+      "bytes": 209875,
+      "sha256": "2869f3f35fd3c94dee4a8ed4b374757ce855d23355d2484558ec3ff9319e04e4",
+      "official": false
+    },
+    {
+      "path": "6 fields of isis/6 Fields of Isis_scenario.lua",
+      "bytes": 1235,
+      "sha256": "5b7deca33f74b55f91cac13376565b1af6270cf33979fe9199d6d05609b3e46b",
+      "official": false
+    },
+    {
+      "path": "6 fields of isis/6 Fields of Isis_script.lua",
+      "bytes": 251,
+      "sha256": "32a28296f049f27b034944787cb87c5ebb9e3660f7dac93a7ea1342d36f73bc3",
+      "official": false
+    },
+    {
+      "path": "6castles/6castles_scenario.lua",
+      "bytes": 911,
+      "sha256": "b74957d6d011a5f44d381831ef2d47498e80db30def05e6396ebffa73f7c1aab",
+      "official": false
+    },
+    {
+      "path": "6castles/6castles_script.lua",
+      "bytes": 161,
+      "sha256": "61ac92d2cb5f838ced6882dd8ac81143aa7d82a2775215c67033ce8684065c68",
+      "official": false
+    },
+    {
+      "path": "adaptive_black_mesa/Adaptive_Black_Mesa_options.lua",
+      "bytes": 22147,
+      "sha256": "1c50fd0df39e0c7820680500217d83da831a81ec174514a0e1c269d3172ed0c4",
+      "official": false
+    },
+    {
+      "path": "adaptive_black_mesa/Adaptive_Black_Mesa_scenario.lua",
+      "bytes": 976,
+      "sha256": "0c272faead2c448e1e291a351f9af5c5e9b72752e4092d83ea0e9c8c671f040d",
+      "official": false
+    },
+    {
+      "path": "adaptive_black_mesa/Adaptive_Black_Mesa_script.lua",
+      "bytes": 39090,
+      "sha256": "916e0e2d59f9de961a67a43ae3112f625adf5658abe6b95e50a796c2deb62144",
+      "official": false
+    },
+    {
+      "path": "astro_crater_battles_4x4_teamplay_ai/astro_crater_battles_4x4_teamplay_ai_scenario.lua",
+      "bytes": 1088,
+      "sha256": "bdad7af769b70efab1ef1738c9e4bf9d1ddf085500c5d0e449deefb05b396c4b",
+      "official": false
+    },
+    {
+      "path": "astro_crater_battles_4x4_teamplay_ai/astro_crater_battles_4x4_teamplay_ai_script.lua",
+      "bytes": 427,
+      "sha256": "fae0c553abd2943e773898a3d70081b50287d0b761d2283743f5b7505bcfb430",
+      "official": false
+    },
+    {
+      "path": "astro_surv_stm/astro_surv_stm_options.lua",
+      "bytes": 6656,
+      "sha256": "bae3a93ffd9f644004751f3c3796d86871a0ee2d4190c78fb9eb45ade2dc173a",
+      "official": false
+    },
+    {
+      "path": "astro_surv_stm/astro_surv_stm_scenario.lua",
+      "bytes": 904,
+      "sha256": "84d8eea1bcab1300bea3e887b9979311279d2b4836dc8b34db84dd6e972a3719",
+      "official": false
+    },
+    {
+      "path": "astro_surv_stm/astro_surv_stm_script.lua",
+      "bytes": 66618,
+      "sha256": "9124a6e2b1ebc600b8163baf0d4532e093c2736cd6d27db04ca5bf9d5418d61e",
+      "official": false
+    },
+    {
+      "path": "BBF_BlackSunDefense/BBF_BlackSunDefense_options.lua",
+      "bytes": 2013,
+      "sha256": "a209c1d53a32f516b36fe06c19fa659c088fb627edfd577a3f4898c2210d07c8",
+      "official": false
+    },
+    {
+      "path": "BBF_BlackSunDefense/BBF_BlackSunDefense_scenario.lua",
+      "bytes": 994,
+      "sha256": "7f904d0adccfe78b3d53cee27f564542c18cafba283b458d31a4df6f676e2530",
+      "official": false
+    },
+    {
+      "path": "BBF_BlackSunDefense/BBF_BlackSunDefense_script.lua",
+      "bytes": 49016,
+      "sha256": "7bbd57271b682076253b15cd99f946ae5cc92f5b64a87ee0e79f23f39547af0d",
+      "official": false
+    },
+    {
+      "path": "Desert_Swarm_v1c_Beta/Desert_Swarm_v1c_Beta_options.lua",
+      "bytes": 2376,
+      "sha256": "d140078ab0c0b0c1a64f5abbfa0c8f4fdcf6a3073ca1fa5ab3f00f5528448a38",
+      "official": false
+    },
+    {
+      "path": "Desert_Swarm_v1c_Beta/Desert_Swarm_v1c_Beta_scenario.lua",
+      "bytes": 910,
+      "sha256": "99b03639d85250b5ae00b4d6d0cef5b3f8569bc08bb9f3408d120219f8f7d827",
+      "official": false
+    },
+    {
+      "path": "Desert_Swarm_v1c_Beta/Desert_Swarm_v1c_Beta_script.lua",
+      "bytes": 56707,
+      "sha256": "4c6839087a8b419ac92233837cbd7e23052ca680eb3481c43a1d32d4a9315671",
+      "official": false
+    },
+    {
+      "path": "dreamy_survival/dreamy_survival_options.lua",
+      "bytes": 2011,
+      "sha256": "4804b3d7885c7d6965290a21e7bcee9b500528fe124929ea799b82f83ee71ca5",
+      "official": false
+    },
+    {
+      "path": "dreamy_survival/dreamy_survival_scenario.lua",
+      "bytes": 1016,
+      "sha256": "300678aae877fd067ae5ff5d61437043e045224dd4d7784ecdfb0f7115d00ab8",
+      "official": false
+    },
+    {
+      "path": "dreamy_survival/dreamy_survival_script.lua",
+      "bytes": 152614,
+      "sha256": "8453629d381cbac7dc75da93a9cc4ef6a9173dda69f908b07772a173ceb86019",
+      "official": false
+    },
+    {
+      "path": "dunes_of_arracis/dunes_of_arracis_scenario.lua",
+      "bytes": 903,
+      "sha256": "9ee71440ea20b4e893697e82c0833eec1ebaa92c9e62cfa5c9a6d720a8e56bf6",
+      "official": false
+    },
+    {
+      "path": "dunes_of_arracis/dunes_of_arracis_script.lua",
+      "bytes": 152,
+      "sha256": "c9ec5197ed582becac6681ce0ac9cb267c4738c42498fe91317586064aa62e75",
+      "official": false
+    },
+    {
+      "path": "endless_survival_defense/endless_survival_defense_options.lua",
+      "bytes": 19874,
+      "sha256": "ab2cedb7e7ae4225ec0be97974f951babdec3515b75f3eb98c672f6c8cd06229",
+      "official": false
+    },
+    {
+      "path": "endless_survival_defense/endless_survival_defense_scenario.lua",
+      "bytes": 3781,
+      "sha256": "4e1ddc2b305ea6c30b3b34250da7ed0d46444d1c445ee071e944b708f6a4cee1",
+      "official": false
+    },
+    {
+      "path": "endless_survival_defense/endless_survival_defense_script.lua",
+      "bytes": 68224,
+      "sha256": "faf27e9147f28588856b29bed5d5f6f55c6315b202a5692235f8021c2f4bbf3a",
+      "official": false
+    },
+    {
+      "path": "Fort Ictus Survival/Fort_Ictus_Survival_options.lua",
+      "bytes": 2274,
+      "sha256": "2bbf4f6bdbee3ec1bfb520298bd8b274e4dcb6c1167c1d20cd77c71e83694215",
+      "official": false
+    },
+    {
+      "path": "Fort Ictus Survival/Fort_Ictus_Survival_scenario.lua",
+      "bytes": 1017,
+      "sha256": "d6a89e04dd1c88e924008724e746190851a3f8f6cf1257f95f33f3e383bd97ce",
+      "official": false
+    },
+    {
+      "path": "Fort Ictus Survival/Fort_Ictus_Survival_script.lua",
+      "bytes": 59547,
+      "sha256": "290b2c58f037c210dd0f1af1593fce2434195badc43f31331f86a3293b161aa9",
+      "official": false
+    },
+    {
+      "path": "grand_barrens_survival/grand_barrens_survival_options.lua",
+      "bytes": 14833,
+      "sha256": "51af4adabb1cbe01fdafc6e079f4cb9218513f769d9b1c88cea17f22fc27ddc8",
+      "official": false
+    },
+    {
+      "path": "grand_barrens_survival/grand_barrens_survival_scenario.lua",
+      "bytes": 1162,
+      "sha256": "89ee8bcc47e9bda0ceb76e885da2e3b4ca014981f0e203ff991c40a510e7372b",
+      "official": false
+    },
+    {
+      "path": "grand_barrens_survival/grand_barrens_survival_script.lua",
+      "bytes": 46838,
+      "sha256": "020b5094b03fcdded27c2cac694aa9ed82b0320e3d6c5680324fd71018351634",
+      "official": false
+    },
+    {
+      "path": "quad_pass_teamplay_ai_4v4/quad_pass_teamplay_ai_4v4_scenario.lua",
+      "bytes": 944,
+      "sha256": "d582cfbc5e36eb3c9c049df90b33c13220b92c22ce54595a9b3ab81850c70761",
+      "official": false
+    },
+    {
+      "path": "quad_pass_teamplay_ai_4v4/quad_pass_teamplay_ai_4v4_script.lua",
+      "bytes": 278,
+      "sha256": "4591d7969e592acbb61f953478833e75cc3a742ce4dbf477db79c5f1dc1932de",
+      "official": false
+    },
+    {
+      "path": "sexy_survival/sexy_survival_options.lua",
+      "bytes": 2509,
+      "sha256": "4e2d42314b00135d84d582be0a3307f84e249820e5f12fd7247356ac1daf4ee8",
+      "official": false
+    },
+    {
+      "path": "sexy_survival/sexy_survival_scenario.lua",
+      "bytes": 947,
+      "sha256": "02ae672ccb2a47a009508fc3b3256677b23bb0808a04a41941f5edc01bc51d34",
+      "official": false
+    },
+    {
+      "path": "sexy_survival/sexy_survival_script.lua",
+      "bytes": 167078,
+      "sha256": "760dc298868925bc214a9a778e4ddc27f733c1387c882b830514b6acfd861659",
+      "official": false
+    },
+    {
+      "path": "sh1r3_mycelium2_survival/SH1R3_Mycelium2_Survival_options.lua",
+      "bytes": 2351,
+      "sha256": "7e90ddb86f4e40d606a210041361b3bd8748dc7d621b4b6ad68efc6ad165b96f",
+      "official": false
+    },
+    {
+      "path": "sh1r3_mycelium2_survival/SH1R3_Mycelium2_Survival_scenario.lua",
+      "bytes": 1142,
+      "sha256": "b40188a88dfc30b87bfe2cb80e55fb3e5a8c5df4cd3ac89c8b5fa7f192691074",
+      "official": false
+    },
+    {
+      "path": "sh1r3_mycelium2_survival/SH1R3_Mycelium2_Survival_script.lua",
+      "bytes": 53978,
+      "sha256": "0801487686cfa931c99d04635a1eb9ec1d6994cf410d4b4731664a633da8f891",
+      "official": false
+    },
+    {
+      "path": "signalpoint_team_ai/signalpoint_team_ai_options.lua",
+      "bytes": 22147,
+      "sha256": "75e6269875f8e18ccd5515ce168fcba977ededfcb6f3ad35aa6feb77ee486f97",
+      "official": false
+    },
+    {
+      "path": "signalpoint_team_ai/signalpoint_team_ai_scenario.lua",
+      "bytes": 1274,
+      "sha256": "fd3c791d9f401027df8cb04ced91fd107102277456b59e1103ccef9f594e5265",
+      "official": false
+    },
+    {
+      "path": "signalpoint_team_ai/signalpoint_team_ai_script.lua",
+      "bytes": 40189,
+      "sha256": "75475851feb203b4e948caaeb102baa5e5404dfb3ea73c6d65d00e35ac5591cc",
+      "official": false
+    },
+    {
+      "path": "Supreme_AOD/Supreme_AOD_scenario.lua",
+      "bytes": 898,
+      "sha256": "9b55a4c45d1aea5b8d531a2251ed5bff4bdf569bb45641d673795ddd69d30f0f",
+      "official": false
+    },
+    {
+      "path": "Supreme_AOD/Supreme_AOD_script.lua",
+      "bytes": 18385,
+      "sha256": "6e39833dc8dd3156e11db4f6ba6bd374f0195ba65208efe8f2629d8de6ab8127",
+      "official": false
+    },
+    {
+      "path": "Supreme_survival/Supreme_survival_scenario.lua",
+      "bytes": 736,
+      "sha256": "a820379ae14a58dc222250f1d09ca46388bba8037bed6d52def6153eaea0f36d",
+      "official": false
+    },
+    {
+      "path": "Supreme_survival/Supreme_survival_script.lua",
+      "bytes": 22026,
+      "sha256": "9ffc4d9765ea5c159c263767da9231684cd52535870f8fd5d00e7999d45922b3",
+      "official": false
+    },
+    {
+      "path": "survival attack/Survival Attack_options.lua",
+      "bytes": 1774,
+      "sha256": "40013ca736c6f779258c79b02407e9fdfbdb625c3237f9f31b071d2295bcda8a",
+      "official": false
+    },
+    {
+      "path": "survival attack/survival attack_scenario.lua",
+      "bytes": 1266,
+      "sha256": "2d56b31e58736d1fd7327dded28ae959893e3bc0daf0c6a8e5a0057ae96b5385",
+      "official": false
+    },
+    {
+      "path": "survival attack/survival attack_script.lua",
+      "bytes": 59608,
+      "sha256": "a277a8fb39f64486db634810f42aea13b2f9cba88441a14c63ff72e653d6f54b",
+      "official": false
+    },
+    {
+      "path": "Survival Omega/Survival Omega_options.lua",
+      "bytes": 2906,
+      "sha256": "c871a6682eaa13ff3c8ceeaf3af6a419cb40e54ce7c406fa862d549f18f1de45",
+      "official": false
+    },
+    {
+      "path": "Survival Omega/Survival Omega_scenario.lua",
+      "bytes": 963,
+      "sha256": "8a3e5978fb3c16f63da5b1fa8323c4384d6878c14815b7c18c55bad55bca2b58",
+      "official": false
+    },
+    {
+      "path": "Survival Omega/Survival Omega_script.lua",
+      "bytes": 52078,
+      "sha256": "40c465e9a44b6000b509647d309d029bb35562563b2462a533584eabc78f724c",
+      "official": false
+    },
+    {
+      "path": "Survival Run/Survival Run v8_options.lua",
+      "bytes": 1642,
+      "sha256": "b0189aa2babb30f61136819626d5e40ee36ec62f7d6c8d432d35943c074ad07e",
+      "official": false
+    },
+    {
+      "path": "Survival Run/Survival Run v8_scenario.lua",
+      "bytes": 1113,
+      "sha256": "d45b39190f42a6756246538d72f778e8c909b369dd9b372ea0dd02da135752cf",
+      "official": false
+    },
+    {
+      "path": "Survival Run/Survival Run v8_script.lua",
+      "bytes": 45742,
+      "sha256": "903ba7c717fc0e60bbd5dfb24b06a57f87182a3e02d3d09cc5c738c416d76729",
+      "official": false
+    },
+    {
+      "path": "survival_5thdimension/survival_5thdimension_v6_options.lua",
+      "bytes": 2320,
+      "sha256": "42cf2cb66796bde24968d495b876bbb7b3bfe66de0b20ce55bb5832b553c2364",
+      "official": false
+    },
+    {
+      "path": "survival_5thdimension/survival_5thdimension_v6_scenario.lua",
+      "bytes": 1149,
+      "sha256": "b60be11b5d38542e4081fc81c6975564a4a0c5f43eeba12c742bd88c45f83766",
+      "official": false
+    },
+    {
+      "path": "survival_5thdimension/survival_5thdimension_v6_script.lua",
+      "bytes": 53402,
+      "sha256": "d72e5a54a356dce49d63dc614365d385d77f9257ddb465a4d99e410403281670",
+      "official": false
+    },
+    {
+      "path": "survival_5thdimension_practice/survival_5thdimension_practice_options.lua",
+      "bytes": 4775,
+      "sha256": "084b568e5c3b188ce12ff44fbce4e1d5a084199ea9f7a2ca312aeb4943691de3",
+      "official": false
+    },
+    {
+      "path": "survival_5thdimension_practice/survival_5thdimension_practice_scenario.lua",
+      "bytes": 1247,
+      "sha256": "bf16bab160f7294623595fdfe24ab6adddde1e32aae0b467505cb564ec422cb2",
+      "official": false
+    },
+    {
+      "path": "survival_5thdimension_practice/survival_5thdimension_practice_script.lua",
+      "bytes": 58109,
+      "sha256": "51c51ccb1dc906929fec8406e14946b9fe5ba3068778f1405be59b015df94116",
+      "official": false
+    },
+    {
+      "path": "Survival_BlackBox_10/Survival_BlackBox_10_options.lua",
+      "bytes": 8042,
+      "sha256": "716848fda5ebe48beb9d5f16f9a051d2988760280cecb109095082065acd781c",
+      "official": false
+    },
+    {
+      "path": "Survival_BlackBox_10/Survival_BlackBox_10_scenario.lua",
+      "bytes": 1323,
+      "sha256": "bcee7953581c260e2cc27caea181827cc44973e3bc3bc438e4861ccd1eb3b6d1",
+      "official": false
+    },
+    {
+      "path": "Survival_BlackBox_10/Survival_BlackBox_10_script.lua",
+      "bytes": 98781,
+      "sha256": "f787a26e76f77dbbd35a85a8c9e10fe060c640d63c3bbcc94119428687615217",
+      "official": false
+    },
+    {
+      "path": "survival_defense_atoll/Survival_Defense_Atoll_options.lua",
+      "bytes": 2465,
+      "sha256": "bdf383d71052e4e92c32b72b075a1e96b72fabff3acd7e16031eebddee890a39",
+      "official": false
+    },
+    {
+      "path": "survival_defense_atoll/Survival_Defense_Atoll_scenario.lua",
+      "bytes": 885,
+      "sha256": "cda9ecb308d5fc28c951a1052304828404045443d81053b099f2127d38dad9a2",
+      "official": false
+    },
+    {
+      "path": "survival_defense_atoll/Survival_Defense_Atoll_script.lua",
+      "bytes": 57548,
+      "sha256": "9efcb650c37d7b5b5c9240156b9c0bb8caaa559a8989b8589e786feca3a82d46",
+      "official": false
+    },
+    {
+      "path": "Survival_Escape/Survival_Escape_options.lua",
+      "bytes": 1042,
+      "sha256": "e373fcb61c0e760868a2efd0d7e22e9ad8be16cba72039a5a0dc8f9952291ec1",
+      "official": false
+    },
+    {
+      "path": "Survival_Escape/Survival_Escape_scenario.lua",
+      "bytes": 1073,
+      "sha256": "b6bf593a4f7a942ee33d4ce238fbdf1359dcd589d961a56cc59e202e3414d5dc",
+      "official": false
+    },
+    {
+      "path": "Survival_Escape/Survival_Escape_script.lua",
+      "bytes": 38734,
+      "sha256": "38d5a6c81b8e4a66b93ae66c565f430acb56bdf8bdb1882ead9544ff5739b1b4",
+      "official": false
+    },
+    {
+      "path": "Survival_Extreme/Survival_Extreme_options.lua",
+      "bytes": 2316,
+      "sha256": "0fc926b194082ad98be562add37c7154cd61dda983a87f9919e5d67febdf813b",
+      "official": false
+    },
+    {
+      "path": "Survival_Extreme/Survival_Extreme_scenario.lua",
+      "bytes": 853,
+      "sha256": "24fc6ab9f1007f17ebbc79ed6d7675fe7932a2bda7089e9163173e74a49a8081",
+      "official": false
+    },
+    {
+      "path": "Survival_Extreme/Survival_Extreme_script.lua",
+      "bytes": 34785,
+      "sha256": "2b77f590c9e26ae4a2d8918ba575ae66b91826cd254751248c3235fae5a0bae9",
+      "official": false
+    },
+    {
+      "path": "Survival_ExtremeDesert/Survival_ExtremeDesert_options.lua",
+      "bytes": 2178,
+      "sha256": "51c6e4e76b44a51c6f12702410f4af77075c9c69bbec2f2c477c9835d9f3a4b9",
+      "official": false
+    },
+    {
+      "path": "Survival_ExtremeDesert/Survival_ExtremeDesert_scenario.lua",
+      "bytes": 984,
+      "sha256": "64df238c470cfcc489e1a68a83eaa116efce5ac2ff8d05405be68c823b2e3826",
+      "official": false
+    },
+    {
+      "path": "Survival_ExtremeDesert/Survival_ExtremeDesert_script.lua",
+      "bytes": 33708,
+      "sha256": "a870cd0c9bf604064f5d407b248a05b786cba70a0291bbbfa1b65d6572653978",
+      "official": false
+    },
+    {
+      "path": "Survival_ExtremeNavy/Survival_ExtremeNavyV2_options.lua",
+      "bytes": 2320,
+      "sha256": "c18cfedaaec7fe915fa31f23718d8d012bd12c51c9c5e5a2970adfe67802bfbd",
+      "official": false
+    },
+    {
+      "path": "Survival_ExtremeNavy/Survival_ExtremeNavyV2_scenario.lua",
+      "bytes": 932,
+      "sha256": "d67134e82b7ed5448924176d5ac69f90fc62db81a7893e7282020ff2ee1df84b",
+      "official": false
+    },
+    {
+      "path": "Survival_ExtremeNavy/Survival_ExtremeNavyV2_script.lua",
+      "bytes": 34770,
+      "sha256": "364a6d464ceffd5165819525d384c29eb996e1f4267fa119ccc8b9d3141e9a38",
+      "official": false
+    },
+    {
+      "path": "survival_horde_ee/survival_horde_ee_options.lua",
+      "bytes": 8906,
+      "sha256": "bc9aac5866a178143dc8d8d24631dc611612663f7dfe7b4ef02d5070fc1bcced",
+      "official": false
+    },
+    {
+      "path": "survival_horde_ee/survival_horde_ee_scenario.lua",
+      "bytes": 1398,
+      "sha256": "945f1ee2bc36b9bff58034db8e79416d04ee075bdbb751c4ded5dfb172885b50",
+      "official": false
+    },
+    {
+      "path": "survival_horde_ee/survival_horde_ee_script.lua",
+      "bytes": 86474,
+      "sha256": "62bed7fb343b1059062440e02e66deca9241642c423c9d1257af05d43e71f38c",
+      "official": false
+    },
+    {
+      "path": "Survival_Insane_Beta1/Survival_Insane_Beta1_options.lua",
+      "bytes": 2756,
+      "sha256": "3e25f375ddbcfd74a8c7c43064251152baca7cda3e82e5518a6cc551ed6b3de8",
+      "official": false
+    },
+    {
+      "path": "Survival_Insane_Beta1/Survival_Insane_Beta1_scenario.lua",
+      "bytes": 1054,
+      "sha256": "5619b0aa67bcd1ab4e21cdb9b27327a2dd711384e93344d4d89d1841ad73d204",
+      "official": false
+    },
+    {
+      "path": "Survival_Insane_Beta1/Survival_Insane_Beta1_script.lua",
+      "bytes": 43978,
+      "sha256": "3f2275dbf4da2496e4c23d02d46863f53edc08e1c4fed91d06eaeeeedb71b070",
+      "official": false
+    },
+    {
+      "path": "Survival_Insane_NvS_Beta1/Survival_Insane_NvS_Beta1_options.lua",
+      "bytes": 2748,
+      "sha256": "e8a8eed1e6d38c5fa5a6a08bd5a14d49d9c34aaca91270824f38c17e66023d2c",
+      "official": false
+    },
+    {
+      "path": "Survival_Insane_NvS_Beta1/Survival_Insane_NvS_Beta1_scenario.lua",
+      "bytes": 936,
+      "sha256": "8d9e86829574ef8fb68a586307a23e66704a866912aaefd7abe7aabb623a6f78",
+      "official": false
+    },
+    {
+      "path": "Survival_Insane_NvS_Beta1/Survival_Insane_NvS_Beta1_script.lua",
+      "bytes": 41482,
+      "sha256": "d921fdf3f90d6a7deb3b03e5cfd3ed7dee0cbdff6fd28ea90e8a9e078f10ea6c",
+      "official": false
+    },
+    {
+      "path": "survival_NorthSouth_Barrens/Survival_NorthSouth_Barrens_options.lua",
+      "bytes": 2418,
+      "sha256": "95ff88d00063a551bcfa33176dfc64d92bed56cb6f97bf849b94149871c12a3f",
+      "official": false
+    },
+    {
+      "path": "survival_NorthSouth_Barrens/survival_NorthSouth_Barrens_scenario.lua",
+      "bytes": 979,
+      "sha256": "2d8fb0378709541e6085a11aa47cb338a0fcd5259e18307f74afbd59921a27a5",
+      "official": false
+    },
+    {
+      "path": "survival_NorthSouth_Barrens/survival_NorthSouth_Barrens_script.lua",
+      "bytes": 35106,
+      "sha256": "c243977ad0890f998d83014280d3f0ad53187db3d49fbb5a1e635db09991cd8b",
+      "official": false
+    },
+    {
+      "path": "survival_sea_fleet/survival_sea_fleet_options.lua",
+      "bytes": 2319,
+      "sha256": "536df56ab788fe20713271e483afd21cce94fc607dc5dcdea55a7bdb04f3a539",
+      "official": false
+    },
+    {
+      "path": "survival_sea_fleet/survival_sea_fleet_scenario.lua",
+      "bytes": 1011,
+      "sha256": "54c9925b83ddd0d845e32673043b0b206bb74ef7e66aa7830c0d21de1322dbde",
+      "official": false
+    },
+    {
+      "path": "survival_sea_fleet/survival_sea_fleet_script.lua",
+      "bytes": 35952,
+      "sha256": "eb99708524d6e5ea9c3955a5d459c0d059b09ad3656b12ec7bb751c5b8bf6484",
+      "official": false
+    },
+    {
+      "path": "survival_vs_4player/survival_vs_4player_scenario.lua",
+      "bytes": 941,
+      "sha256": "842c98451fd02fe622561994b421849e6405a30450d28b494b1e1b0dbc9ef879",
+      "official": false
+    },
+    {
+      "path": "survival_vs_4player/survival_vs_4player_script.lua",
+      "bytes": 20909,
+      "sha256": "43ef3b742c14b880bc64511e5ffbff27f611d4dafb6cbfe920a437d182349508",
+      "official": false
+    },
+    {
+      "path": "XXX_Survival/XXX_Survival_options.lua",
+      "bytes": 1991,
+      "sha256": "c08ff20aa9a5aa66e10395359b911c72530fe7311a5c79372299367d9f918450",
+      "official": false
+    },
+    {
+      "path": "XXX_Survival/XXX_Survival_scenario.lua",
+      "bytes": 929,
+      "sha256": "2197015a606ead455785ced6315aacfe11b28c17c00f7f54bb9b5e743f53b796",
+      "official": false
+    },
+    {
+      "path": "XXX_Survival/XXX_Survival_script.lua",
+      "bytes": 50439,
+      "sha256": "424ce3a8f31aa1f8ad3fdb9a9c16acbfbb8a299d00ee4c30781665d65284d9df",
+      "official": false
+    },
+    {
+      "path": "XXX_Survival_5P/XXX_Survival_5P_options.lua",
+      "bytes": 7646,
+      "sha256": "b9837fa43f2965c2ed60fdc4807d7a4bbbc981ebd4a2fe1a166a23837cf52920",
+      "official": false
+    },
+    {
+      "path": "XXX_Survival_5P/XXX_Survival_5P_scenario.lua",
+      "bytes": 1194,
+      "sha256": "1a484e8d440fb57183fcf90f84344c549a616ee099497eef6c7e4c304caedd8a",
+      "official": false
+    },
+    {
+      "path": "XXX_Survival_5P/XXX_Survival_5P_script.lua",
+      "bytes": 53526,
+      "sha256": "cc6ac7f25b3e97bc4af6be637031c1fdad3aeca05a1187dbd825a1f8e11820c5",
+      "official": false
+    }
+  ]
+}

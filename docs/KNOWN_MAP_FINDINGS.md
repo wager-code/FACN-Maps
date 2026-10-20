@@ -385,3 +385,11 @@ v7主脚本462–465行墙体类别为大写键，480行xsb2406未见于本机57
 ### F034后续：三张英文菜单已汉化并各升一级（2026-10-20）
 
 按用户明确授权，安装Land1→2、Land Naval1→2、landnaval-swarm11→12。55项菜单296显示字段汉化，6守备组合增中文帮助；key/pref/default/数值表达式/重复项和顺序保持。9项候选语义/加载＋3项实际落盘求值通过，960文件仅6个options/scenario改变、954保持，官方/系统与62维护包不动。三图26原文件完整归档SHA核验，真实UI/游戏未测。上方3张英文为历史审计状态，见[完成记录](THREE_5IVER_OPTIONS_LOCALIZATION_2026-10-20.md)。
+
+## F035：安装生存图防区与难度菜单跨图对比（2026-10-20，仅分析）
+
+读取42自定义，生存/AOD35张235项；排除61官方，7普通/Adaptive/TeamPlayAI仅旁证，不覆盖62维护包。5iver原函数实跑0～5档：Land/oxtreme最高32守备、Naval/Swarm24；共同4盾/8地防/8SAM，门与火炮共用模板。基于本机完整Footprint/Offset，4盾与10×10门/角炮有8对已知Skirt相交，不能把紧凑示例等同无碰撞布局。Swarm守备固定5/5/0，极端最大HP不等于开场当前HP；Endless圆环工具当前仅DEBUG入口，AOD封路塔不可击杀，不能移植为普通可摧毁核心防区。
+
+新静态问题：Grand Barrens脚本669行用AddDamageMod(Damage×倍率×成长)，本机mohodata Weapon是附加伤害，成长关闭普通100伤害选×2得到300；Horde使用Damage×(倍率−1)得到200。4组原片段/本机方法隔离通过；未覆盖自定义投射物及其它Mod，不改图。Run的save GROUP_6/UNIT_520.type='5'（479.5,30,259.5）本机无有效蓝图；原SpawnDefenses第3区难度>2请求该组，未取得此处游戏日志。5iver Land数量“70/60”实际key=50；反核使用GiveTacticalSiloAmmo，实际拦截待测。以上均未修复、未升版，不将分析替代实施授权。
+
+92项本机Lua检查通过：42菜单、42save、4防御函数（24组合）、1蓝图（176个）、2分区函数（54组合）、1伤害对照（4组合）。安装960文件路径/SHA保持，未新增游戏/多人实测。Insane仍v4、炮台没有同类守备，约30～31宽防区/外刷兵为候选；详见[完整分析](SURVIVAL_DEFENSE_OPTIONS_COMPARISON_2026-10-20.md)和data摘要。

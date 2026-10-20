@@ -212,3 +212,9 @@ X1CA_TUT原版scenario复用SCMP_019.scmap，独立save/script/strings仍属于�
 本机基础BeginSession的大厅队伍恢复在地图OnPopulate/OnStart之后，schook的分数采集/同步又在基础函数返回后启动。三种症状并存时，先找结盟前的初始化断点，不直接改全局结算UI或循环外交。Sea Fleet v8修正小写墙体类别和xsb2406→xsb2401后用户反馈正常；这是本次问题的用户实测结果，无修复前日志，不能把原生nil行为或唯一根因写成已由日志证实。
 
 本图ArmyToPlayerID在文件末尾自行定义，按军队名转槽号、包括AI；检查完整定义，不能仅凭“human”注释决定重写盟友和人数。类别参数要对照实际蓝图及大小写；模型应保留拒绝nil和容忍nil两种对照，以免把测试替身的异常冒称游戏异常。详见[Sea Fleet案例](SEA_FLEET_ALLIANCE_STARTUP_SCORE_2026-10-20.md)。
+
+## 伤害倍率与基地布置不能只看函数/菜单名称（2026-10-20）
+
+本机mohodata.scd/lua/sim/weapon.lua:421的AddDamageMod累加到DamageMod；284起GetDamageTable的DamageAmount=蓝图Damage+DamageMod。希望总伤害为D×M时，无其它修改应添加D×(M−1)，不是D×M；Horde UnitBuff为前者，Grand Barrens当前脚本669为后者。4组本机Lua隔离确认100基础选2分别200/300，仅覆盖普通武器、无其它加成模型；核爆、自定义投射物和Mod另查，不凭此一次改全图。
+
+GetSkirtRect需完整Footprint/Skirt/Offset，建筑Skirt、物理Footprint、模型大小、盾面尺寸不是一回事。5iver原模板确实可执行生成，但有8对已知完整Skirt相交；隔离CreateUnitHPR记录成功不证明实际碰撞/寻路正确。源码文件存在或DEBUG测试可调用也不代表正常玩法已启用。详见本次对比报告。
