@@ -10,6 +10,8 @@
 
 > 2026-10-20后续增强：ID30当前v3，加入传送门堡垒96/112单位，保留v2修复。50＋3项隔离/落盘检查通过，未游戏实测；累计修改数仍29。上方v2段为历史修复阶段。见[当前v3](INSANE_GATE_FORTRESS_V3_2026-10-20.md)。
 
+> 2026-10-20最新迭代：ID30已由v3升v4，按截图反馈收拢并加密为184/216建筑；50＋3项检查通过，仍待游戏实测，62/累计29保持。上方v2/v3是历史阶段。见[当前v4](INSANE_GATE_FORTRESS_V4_2026-10-20.md)。
+
 ## 覆盖和结论边界
 
 - 扫描627个Lua/字节码文件，识别2833个函数定义（按函数体哈希1674种），361个选项；总文本行含大型存档、辅助文件和重复库，不冒称每行均人工执行或语义证明。
@@ -55,7 +57,7 @@
 | 23 | [Survival EXtreme Desert v3](maps/23.md) | 3 | Extreme Desert常规版 | 4 |
 | 25 | [Survival EXtreme NavyV2](maps/25.md) | 1 | 四槽Extreme Navy | 4 |
 | 29 | [Survival Horde EE v22](maps/29.md) | 22 | Horde EE分路线防守 | 7 |
-| 30 | [Survival Insane (Beta1)](maps/30.md) | 3 | Insane挑战版 | 4 |
+| 30 | [Survival Insane (Beta1)](maps/30.md) | 4 | Insane挑战版 | 4 |
 | 31 | [Survival Insane NvS (Beta1)](maps/31.md) | 1 | Insane North vs South挑战 | 4 |
 | 32 | [Survival North and South Barrens](maps/32.md) | 1 | North and South Barrens | 4 |
 | 33 | [Survival Sea Fleet v8](maps/33.md) | 8 | Sea Fleet海军与空军 | 5 |

@@ -1,0 +1,117 @@
+{
+  "date": "2026-10-20",
+  "deployed": true,
+  "revision_before": 3,
+  "revision_after": 4,
+  "file_count": 7,
+  "copies_identical": true,
+  "after_hashes": {
+    "FACN_CHANGELOG.md": "0af4e2c53e89f5e9c39fd902232a199e8fd71da5d77dc1971c728077d8dbcdf6",
+    "Survival_Insane_Beta1.scmap": "4ecc04ed2068641ff24798f9350f50af5ca25527284c298b97109c0430d8523b",
+    "Survival_Insane_Beta1_options.lua": "3e25f375ddbcfd74a8c7c43064251152baca7cda3e82e5518a6cc551ed6b3de8",
+    "Survival_Insane_Beta1_preview.png": "84b2025cf5e66ca052a372ea2265ec9dbea80e63202a53fefafdc61d3d034520",
+    "Survival_Insane_Beta1_save.lua": "ba6ed604999cc9e281057d81c4a1f5146c36b829d91dd3bda0a0004072084e17",
+    "Survival_Insane_Beta1_scenario.lua": "5619b0aa67bcd1ab4e21cdb9b27327a2dd711384e93344d4d89d1841ad73d204",
+    "Survival_Insane_Beta1_script.lua": "3f2275dbf4da2496e4c23d02d46863f53edc08e1c4fed91d06eaeeeedb71b070"
+  },
+  "other_61_inventory_entries_unchanged": true,
+  "gameplay_tested": false,
+  "checks": 50,
+  "functions": [
+    {
+      "name": "OnPopulate",
+      "line": 61
+    },
+    {
+      "name": "OnStart",
+      "line": 142
+    },
+    {
+      "name": "startScenarioThreads",
+      "line": 163
+    },
+    {
+      "name": "setupGame",
+      "line": 688
+    },
+    {
+      "name": "spawnScathis",
+      "line": 804
+    },
+    {
+      "name": "spawnGateDefenses",
+      "line": 854
+    },
+    {
+      "name": "spawnGates",
+      "line": 919
+    },
+    {
+      "name": "spawnSpecials",
+      "line": 985
+    },
+    {
+      "name": "fireNukes",
+      "line": 989
+    },
+    {
+      "name": "gameLogic",
+      "line": 999
+    },
+    {
+      "name": "spawnThread",
+      "line": 1014
+    },
+    {
+      "name": "spawnWaveBS",
+      "line": 1097
+    },
+    {
+      "name": "CalcSpawnPos",
+      "line": 1111
+    },
+    {
+      "name": "spawnwave",
+      "line": 1150
+    },
+    {
+      "name": "doSpawnUnit",
+      "line": 1206
+    },
+    {
+      "name": "startAttackMove",
+      "line": 1265
+    },
+    {
+      "name": "nuke",
+      "line": 1289
+    },
+    {
+      "name": "killAllCommanders",
+      "line": 1297
+    },
+    {
+      "name": "getUsername",
+      "line": 1308
+    },
+    {
+      "name": "ArmyIndexer",
+      "line": 1313
+    },
+    {
+      "name": "armyKills",
+      "line": 1328
+    },
+    {
+      "name": "secondsToTime",
+      "line": 1334
+    },
+    {
+      "name": "msgOut",
+      "line": 1339
+    }
+  ],
+  "isolated_checks": 50,
+  "deployed_checks": 3,
+  "user_tested_v4": false
+}
