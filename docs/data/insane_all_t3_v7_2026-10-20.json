@@ -1,0 +1,167 @@
+{
+  "revision_before": 6,
+  "revision_after": 7,
+  "copies_identical": true,
+  "after_hashes": {
+    "FACN_CHANGELOG.md": "296af234dbcfaec9fd7c6c37e6e80afd0eba5fe4c491a61be7d7075b1c01b3f4",
+    "Survival_Insane_Beta1.scmap": "4ecc04ed2068641ff24798f9350f50af5ca25527284c298b97109c0430d8523b",
+    "Survival_Insane_Beta1_options.lua": "3e25f375ddbcfd74a8c7c43064251152baca7cda3e82e5518a6cc551ed6b3de8",
+    "Survival_Insane_Beta1_preview.png": "84b2025cf5e66ca052a372ea2265ec9dbea80e63202a53fefafdc61d3d034520",
+    "Survival_Insane_Beta1_save.lua": "ba6ed604999cc9e281057d81c4a1f5146c36b829d91dd3bda0a0004072084e17",
+    "Survival_Insane_Beta1_scenario.lua": "f0ba2ec586d7f08d26ecc6b130c2cbefe89f77155189edbc8782479c38fb4304",
+    "Survival_Insane_Beta1_script.lua": "39a18efc05f041407b77eb6898db26227c759a0eae7fd2ee8b32303b1606f348"
+  },
+  "installed_total_files": 960,
+  "installed_changed_files": [
+    "Survival_Insane_Beta1/FACN_CHANGELOG.md",
+    "Survival_Insane_Beta1/Survival_Insane_Beta1_scenario.lua",
+    "Survival_Insane_Beta1/Survival_Insane_Beta1_script.lua"
+  ],
+  "other_installed_files_unchanged": 957,
+  "other_61_inventory_entries_unchanged": true,
+  "map_count": 62,
+  "revised_map_count": 29,
+  "gameplay_tested": false,
+  "backup": "C:\\Users\\wager\\Documents\\ChatGPT\\地图\\Insane_Beta1全T3防空v7_20261020\\修改前v6与清单备份.zip",
+  "functions": [
+    {
+      "name": "OnPopulate",
+      "line": 61
+    },
+    {
+      "name": "OnStart",
+      "line": 142
+    },
+    {
+      "name": "startScenarioThreads",
+      "line": 163
+    },
+    {
+      "name": "setupGame",
+      "line": 688
+    },
+    {
+      "name": "spawnScathis",
+      "line": 804
+    },
+    {
+      "name": "spawnGateDefenses",
+      "line": 961
+    },
+    {
+      "name": "spawnArtilleryDefenses",
+      "line": 965
+    },
+    {
+      "name": "nextGateWavePosition",
+      "line": 970
+    },
+    {
+      "name": "spawnGates",
+      "line": 989
+    },
+    {
+      "name": "spawnSpecials",
+      "line": 1055
+    },
+    {
+      "name": "fireNukes",
+      "line": 1059
+    },
+    {
+      "name": "gameLogic",
+      "line": 1069
+    },
+    {
+      "name": "spawnThread",
+      "line": 1084
+    },
+    {
+      "name": "spawnWaveBS",
+      "line": 1167
+    },
+    {
+      "name": "CalcSpawnPos",
+      "line": 1181
+    },
+    {
+      "name": "spawnwave",
+      "line": 1220
+    },
+    {
+      "name": "doSpawnUnit",
+      "line": 1276
+    },
+    {
+      "name": "startAttackMove",
+      "line": 1331
+    },
+    {
+      "name": "nuke",
+      "line": 1355
+    },
+    {
+      "name": "killAllCommanders",
+      "line": 1363
+    },
+    {
+      "name": "getUsername",
+      "line": 1374
+    },
+    {
+      "name": "ArmyIndexer",
+      "line": 1379
+    },
+    {
+      "name": "armyKills",
+      "line": 1394
+    },
+    {
+      "name": "secondsToTime",
+      "line": 1400
+    },
+    {
+      "name": "msgOut",
+      "line": 1405
+    }
+  ],
+  "checks": {
+    "candidate": 50,
+    "installed": 3,
+    "gameplay": false
+  },
+  "all_difficulties": {
+    "t3_aa_per_core": 8,
+    "t2_aa_per_core": 0,
+    "t3_point_per_core": [
+      8,
+      12
+    ],
+    "t3_omni_per_core": 1,
+    "anti_nuke_per_core": 1,
+    "tactical_defense_per_core": 2
+  },
+  "all_16_cores": {
+    "t3_aa": 128,
+    "t2_aa": 0,
+    "t3_omni": 16,
+    "guards": [
+      384,
+      448
+    ]
+  },
+  "native_aa_ids": [
+    "uab2304",
+    "urb2304",
+    "ueb2304",
+    "xsb2304"
+  ],
+  "native_point_id": "xeb2306",
+  "native_omni_ids": [
+    "uab3104",
+    "urb3104",
+    "ueb3104",
+    "xsb3104"
+  ],
+  "difficulty_gate_for_anti_air": null
+}
