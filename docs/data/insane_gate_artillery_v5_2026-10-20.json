@@ -1,0 +1,159 @@
+{
+  "revision_before": 4,
+  "revision_after": 5,
+  "copies_identical": true,
+  "after_hashes": {
+    "FACN_CHANGELOG.md": "5c522dc66b99f329728efce758610945d6e26cd7e4480c511b9ee24f72451acb",
+    "Survival_Insane_Beta1.scmap": "4ecc04ed2068641ff24798f9350f50af5ca25527284c298b97109c0430d8523b",
+    "Survival_Insane_Beta1_options.lua": "3e25f375ddbcfd74a8c7c43064251152baca7cda3e82e5518a6cc551ed6b3de8",
+    "Survival_Insane_Beta1_preview.png": "84b2025cf5e66ca052a372ea2265ec9dbea80e63202a53fefafdc61d3d034520",
+    "Survival_Insane_Beta1_save.lua": "ba6ed604999cc9e281057d81c4a1f5146c36b829d91dd3bda0a0004072084e17",
+    "Survival_Insane_Beta1_scenario.lua": "c4119331ff328fe1030c09ce11db9701810fcd9a37b7979e7273ab8b061dcc83",
+    "Survival_Insane_Beta1_script.lua": "dd543d6a25a6f59dc07afc8e3dbac0effb7d4b4c3ef33e9f2c1244ba8ff7d4d0"
+  },
+  "installed_total_files": 960,
+  "installed_changed_files": [
+    "Survival_Insane_Beta1/FACN_CHANGELOG.md",
+    "Survival_Insane_Beta1/Survival_Insane_Beta1_scenario.lua",
+    "Survival_Insane_Beta1/Survival_Insane_Beta1_script.lua"
+  ],
+  "other_installed_files_unchanged": 957,
+  "other_61_inventory_entries_unchanged": true,
+  "map_count": 62,
+  "revised_map_count": 29,
+  "gameplay_tested": false,
+  "backup": "C:\\Users\\wager\\Documents\\ChatGPT\\地图\\Insane_Beta1紧凑防区v5_20261020\\修改前v4与清单备份.zip",
+  "functions": [
+    {
+      "name": "OnPopulate",
+      "line": 61
+    },
+    {
+      "name": "OnStart",
+      "line": 142
+    },
+    {
+      "name": "startScenarioThreads",
+      "line": 163
+    },
+    {
+      "name": "setupGame",
+      "line": 688
+    },
+    {
+      "name": "spawnScathis",
+      "line": 804
+    },
+    {
+      "name": "spawnGateDefenses",
+      "line": 949
+    },
+    {
+      "name": "spawnArtilleryDefenses",
+      "line": 953
+    },
+    {
+      "name": "nextGateWavePosition",
+      "line": 958
+    },
+    {
+      "name": "spawnGates",
+      "line": 977
+    },
+    {
+      "name": "spawnSpecials",
+      "line": 1043
+    },
+    {
+      "name": "fireNukes",
+      "line": 1047
+    },
+    {
+      "name": "gameLogic",
+      "line": 1057
+    },
+    {
+      "name": "spawnThread",
+      "line": 1072
+    },
+    {
+      "name": "spawnWaveBS",
+      "line": 1155
+    },
+    {
+      "name": "CalcSpawnPos",
+      "line": 1169
+    },
+    {
+      "name": "spawnwave",
+      "line": 1208
+    },
+    {
+      "name": "doSpawnUnit",
+      "line": 1264
+    },
+    {
+      "name": "startAttackMove",
+      "line": 1319
+    },
+    {
+      "name": "nuke",
+      "line": 1343
+    },
+    {
+      "name": "killAllCommanders",
+      "line": 1351
+    },
+    {
+      "name": "getUsername",
+      "line": 1362
+    },
+    {
+      "name": "ArmyIndexer",
+      "line": 1367
+    },
+    {
+      "name": "armyKills",
+      "line": 1382
+    },
+    {
+      "name": "secondsToTime",
+      "line": 1388
+    },
+    {
+      "name": "msgOut",
+      "line": 1393
+    }
+  ],
+  "checks": {
+    "candidate": 50,
+    "installed": 3,
+    "gameplay": false
+  },
+  "forts": 16,
+  "guards_per_fort": [
+    23,
+    27
+  ],
+  "total_guards": [
+    368,
+    432
+  ],
+  "shield_diameter": 44,
+  "spawn_pads": {
+    "ground": {
+      "columns": 7,
+      "rows": 5,
+      "spacing": 12,
+      "forward": 34
+    },
+    "air": {
+      "columns": 5,
+      "rows": 3,
+      "spacing": 28,
+      "forward": 40
+    }
+  },
+  "core_death_nuke_preserved": true,
+  "victory_rule": "all 8 gates destroyed; artillery optional"
+}

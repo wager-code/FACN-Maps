@@ -117,3 +117,5 @@ options声明default分别是难度5、准备300、波次60，但本机mapselect
 当前地图script SHA-256 `3f2275dbf4da2496e4c23d02d46863f53edc08e1c4fed91d06eaeeeedb71b070`，options SHA-256 `3e25f375ddbcfd74a8c7c43064251152baca7cda3e82e5518a6cc551ed6b3de8`。地图包/游戏目录七文件全部与分析前一致，版本清单未动。源码入口：setupGame688、spawnScathis804、spawnGateDefenses854、spawnGates919、gameLogic999、spawnThread1014、spawnWaveBS1097、doSpawnUnit1206、nuke1289，仅对上述SHA有效。
 
 参照：[当前v4](INSANE_GATE_FORTRESS_V4_2026-10-20.md) · [地图卡片](maps/30.md) · [AI制作方法](AI_MAP_AUTHORING.md)
+
+> 后续状态更新（2026-10-20）：本文为此前v4分析快照；Insane当前已落实v5门/火炮紧凑防区与外侧刷兵，50+3检查通过、仍待游戏实测。见[当前v5](INSANE_COMPACT_FORTS_V5_2026-10-20.md)，勿把本快照“尚未应用”当当前状态。
