@@ -8,7 +8,7 @@
 
 后续维护先读[生存地图用户要求与执行约定](docs/USER_REQUIREMENTS_SURVIVAL_MAPS_2026-10-21.md)：原设置保护、按生成链去重、复用准备时间并统一m:ss、独立SCU/工程师、指定地图单主ACU、名称隐藏版本，以及仅改地图文件解决发布预检。
 
-该页区分早期方案和后续明确取舍，并索引本轮9份专项。安装35张生存/AOD的当前菜单总390项，与维护包62张分开；相关新修改仍为“已修改待实测”，没有新增云发布或游戏通过声明。下方历史记录不能覆盖本页当前状态。
+该页区分早期方案和后续明确取舍，并索引本轮专项。安装地图与仓库维护包的数量、菜单统计和总体验收状态统一查看 [CURRENT_STATE.md](docs/CURRENT_STATE.md)；具体单图状态以对应最新专项为准。下方历史记录不能覆盖当前状态页。
 
 ## 给 Codex 的入口
 
@@ -16,6 +16,7 @@
 
 | 文件 | 内容 |
 | --- | --- |
+| [docs/CURRENT_STATE.md](docs/CURRENT_STATE.md) | **全局当前状态唯一入口**：维护包/安装地图数量、统计口径、验证状态与已知限制 |
 | [docs/STEAM_FA_COMPATIBILITY.md](docs/STEAM_FA_COMPATIBILITY.md) | Steam/FAF 兼容差异、Lua 接口核对顺序、已知风险与修复方案 |
 | [docs/FEATURE_LIBRARY.md](docs/FEATURE_LIBRARY.md) | 工程师、额外指挥官、阵营、难度、刷怪等选项的真实参考位置 |
 | [docs/KNOWN_MAP_FINDINGS.md](docs/KNOWN_MAP_FINDINGS.md) | 当前压缩包已发现的问题、重复地形分组与优先级 |
