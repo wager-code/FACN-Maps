@@ -224,3 +224,39 @@ GetSkirtRect需完整Footprint/Skirt/Offset，建筑Skirt、物理Footprint、�
 本机units.scd/units/UEB4302_unit.bp的AntiNuke拦STRATEGIC MISSILE，但NukeWeapon未设置、RULEUCC_SiloBuildTactical=true、储弹7/初弹0；mohodata Weapon.AmmoThread(false)调用GiveTacticalSiloAmmo。原lua/platoon.lua AntiNukeAI用SetAutoMode(true)开自动制造。因此“战略反核”不能按名字猜GiveNukeSiloAmmo，本图使用GiveTacticalSiloAmmo(7)；5iver此前同型接口待查现确认为匹配。原AmmoThread隔离确认，不代表实射/真实补弹通过；其它型号/补丁/模组重新核源码与蓝图。TMD拦TACTICAL MISSILE，不能替代战略反核。
 
 手动预装弹与AutoMode不同；没有质量收入的脚本刷兵army可能无法续造。Insane v6给反核仅敌方20质量/2000能量产出，本机弹成本/时间与BuildRate理论需15/1500、240秒一发；实际倍率/队列和拦截仍游戏验收，不用脚本无限补弹掩盖经济。
+
+## 2026-10-21：旧Lua上值、追加菜单及字节码适配
+
+[安装35图新增开局设置](INSTALLED_SURVIVAL_START_ADDITIONS_2026-10-21.md)记录本机验证：旧Lua闭包上值限制32，新增local会让Horde原大型Tick函数编译失败，应使用场景环境名称避免增加该函数捕获量。新增数字选项用不相交编码key并识别索引，不改旧default/pref。字节码私有刷兵函数实际在Functions.luac，须核对真实模块与缓存；不以主脚本字符串出现函数名就假设它导出了该函数。只读debug定位仅用于审计，发布实现不依赖debug库。
+
+## 2026-10-21：options.lua空环境与多人入口预读
+
+本机maputil.LoadScenario用空optionsEnv={}执行选项文件；与import模块显式__index=_G不同。选项文件必须是纯数据或自足局部代码，不能假定ipairs/table/import存在。首选显式options[N]静态赋值。多人入口gameselect在模块加载时枚举地图，地图菜单错误能表现为主菜单多人按钮无反应；不能因尚未进入房间就排除地图元数据。见[多人入口选项空环境修复](INSTALLED_OPTIONS_SANDBOX_FIX_2026-10-21.md)。
+
+## 2026-10-21｜菜单扩档需同步显式允许值解码器
+
+Astro的opt_Survival_BuildTime并非原始秒值，而是10000+秒；脚本Survival_DecodeOption还校验OrderedValues。仅在菜单追加新值会让新值回退旧fallback。应在菜单与原解码列表末尾同步追加，保持旧索引对应；使用编码值和选择索引各测试。移除重复菜单要同时忽略旧缓存键，无需删除用户偏好。见[准备时间合并记录](INSTALLED_PREPARATION_MENU_MERGE_2026-10-21.md)。
+
+## 2026-10-21｜去重不能遗失地图局部单位规则
+
+Endless旧开局赠送将单位质量/能量产出归零；更换生成入口应把此规则保留在该图局部回调，不改共享蓝图，不遗漏其它游戏经济逻辑。单位生成时机从原OnPopulate/OnStart/一秒线程统一到现有新OnStart后0.1秒需要实机回归；不能用模块生成计数断言代替限制/剧情/多人验收。m:ss显示按真实分钟/秒/编码值换算，键和default不变，仍须空环境菜单检查。详见[开局单位去重与时间显示](INSTALLED_START_UNIT_DEDUP_2026-10-21.md)。
+
+## 2026-10-21｜sandbox不等于禁止脚本判负，OnDefeat不等于弹结算表
+
+本机victory.CheckVictory仅三种普通胜负条件，其它值提前return；AIBrain.OnDefeat仍可标出局并写Sync.GameResult。schook.UserSync把结果给gameresult，DoGameResult提供“分数”点击回调而非立即CreateDialog。检查自动结算时分别验证目标回调、结果同步、整局EndGame与UI打开；不要用改掉沙盘替代生存脚本自身终局。源码/隔离与真实当局日志分开，见[沙盘与目标死亡只读核对](SANDBOX_OBJECTIVE_RESULT_AUDIT_2026-10-21.md)。
+
+## 2026-10-21｜大厅自动版本与地图手写版本
+
+本机第三方mapselect列表在sceninfo.name后追加VersionLoc+map_version；左侧详情另有独立Version块。按用户要求只改列表时保留左侧块与内部map_version，地图name中的旧vN需单独清理，保持路径不变。版本清理不可误伤4v4、5P等玩法标识。现既有UI包仅1项变，未动基础SCD；见[名称隐藏版本、左侧保留](MAP_NAME_VERSION_DISPLAY_2026-10-21.md)。
+
+## 2026-10-21｜CreateInitialArmyGroup空组回退
+
+本机mohodata.scd ScenarioUtilities:331先创建INITIAL，createCommander且返回nil/0单位时GetFactionIndex→factions.InitialUnit→原生CreateInitialArmyUnit。自定义存档中8台ACU会绕过该分支；将该礼包删为空组即可复用默认单台，不必改共享模块。InitializeArmies仍受ShouldCreateInitialArmyUnits/Civilian/Prebuilt规则影响，不能把隔离模型当所有引擎选项和模组通过。见[5thdimension单主指挥官](FIFTHDIMENSION_SINGLE_ACU_2026-10-21.md)。
+
+## 2026-10-21 · 发布预检和真实存档适配
+
+客户端报告luac缺失时先核对磁盘及运行客户端规则，不能仅凭另一个版本的源码判断。允许仅改地图时，可用目标游戏原生LuaPlus求值纯数据存档并导出真实等价Lua；必须保留数值/字符串键、类型字段、所有数据和元表语义，精确比较后才切换引用，不可直接重命名字节码或造空存档。SCFA LuaPlus普通table默认getmetatable可能是共享空表，不能按标准Lua的nil假设误判自定义元表。主字节码可由标准_script.lua入口在相同环境doscript，原MOD检查和引用保持。实现与边界见[两图专项](TWO_INSTALLED_MAP_PUBLICATION_STRUCTURE_2026-10-21.md)。
+
+## 2026-10-21 用户要求统一入口
+
+后续本轮生存地图维护遵循[用户要求与执行约定](USER_REQUIREMENTS_SURVIVAL_MAPS_2026-10-21.md)，其中明确后续取舍优先于历史相加方案。此次知识同步仅整理文档，未新增地图/软件改动或游戏测试结果。
